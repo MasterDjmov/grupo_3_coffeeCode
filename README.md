@@ -15,5 +15,8 @@ Ven y descubre el placer de combinar el arte del café con la pasión por el có
 - Diaz Caceres, Camila
 - Diaz Bordon, Facundo
 - Alvarez, Matias
-- Bustos, Patricia Alejandra
+- Bustos, Patricia Alejandra: 
+<blockquote><p style="color:#e74c3c;"> Licenciada en Sistemas y Docente. Conocimientos: PHP, JavaScript, HTML, CSS, MySQL. metodología SCRUM( Trello, asana).. GitHub. Aptitudes: Análisis y Gestión de datos, Resolución colaborativa de problemas, Comunicación, Trabajo en equipo.</p></blockquote>
+
+
 - Contreras, Teresita
