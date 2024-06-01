@@ -16,7 +16,7 @@ Ven y descubre el placer de combinar el arte del café con la pasión por el có
 - Diaz Bordon, Facundo
 - Alvarez, Matias
 - Bustos, Patricia Alejandra: 
-<blockquote><p style="color:#e74c3c; overflow-wrap: break-word; word-break: break-all;white-space: normal;"> Licenciada en Sistemas y Docente. Conocimientos: PHP, JavaScript, HTML, CSS, MySQL. Metodología SCRUM(Trello, asana). GitHub. Aptitudes: Análisis y Gestión de datos, Resolución colaborativa de problemas, Comunicación, Trabajo en equipo.</p></blockquote>
+<blockquote><p style="color:#e74c3c; overflow-wrap: break-word; word-break: break-all;white-space: normal; text-align: justify;"> Licenciada en Sistemas y Docente. Conocimientos: PHP, JavaScript, HTML, CSS, MySQL. Metodología SCRUM(Trello, asana). GitHub. Aptitudes: Análisis y Gestión de datos, Resolución colaborativa de problemas, Comunicación, Trabajo en equipo.</p></blockquote>
 
 
 - Contreras, Teresita
