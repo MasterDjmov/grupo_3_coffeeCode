@@ -1,10 +1,11 @@
 <div style="text-align: center;">
-  # "Coffee Code"
+  
+   # "CoffeeCode"
 
-  ### Café Especialidad
+   ### Café Especialidad
 </div>
----
 
+---
 ## Descripción:
 
 "Coffee Code" es un marketplace especializado en café de especialidad que combina la pasión por el café con la tecnología moderna. Es un espacio virtual donde los amantes del café pueden descubrir, explorar y adquirir una amplia gama de cafés de alta calidad provenientes de diversas partes del mundo. Este marketplace ofrece una cuidadosa selección de granos de café cultivados de manera sostenible y ética, con un enfoque en la excelencia en cada taza.
@@ -32,7 +33,7 @@ Ven y descubre el placer de combinar el arte del café con la pasión por el có
 
 Para diseñar el Sitio Web CoffeCode nos inspiramos en varias características clave que hacen que el sitio sea atractivo y efectivo.
 
-### https://www.modobarista.com/
+#### https://www.modobarista.com/
 
 - **Diseño Minimalista:** Mantiene un diseño limpio y simple para centrar la atención en los productos y la oferta.
 
@@ -48,7 +49,7 @@ Para diseñar el Sitio Web CoffeCode nos inspiramos en varias características c
 
 ### https://cafedelirante.com.ar/
 
-- **Tipografía:**Utiliza fuentes limpias y modernas. La tipografía principal del sitio parece ser una fuente sans-serif, fácil de leer y profesional.
+- **Tipografía:** Utiliza fuentes limpias y modernas. La tipografía principal del sitio parece ser una fuente sans-serif, fácil de leer y profesional.
 
 - **Tamaño de la Letra:** El tamaño de la letra es adecuado para la lectura cómoda, con los encabezados más grandes para resaltar secciones importantes y el texto del cuerpo en un tamaño mediano.
 
