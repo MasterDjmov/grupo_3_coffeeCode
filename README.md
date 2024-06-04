@@ -1,7 +1,9 @@
 <div style="text-align: center; font-family: Arial, sans-serif;">  
-    <p style="font-size: 3em; margin: 0.2em 0;">"CoffeeCode"</p>
+    <p style="font-size: 3em; margin: 0.2em 0;">"Coffee Code"</p>
     <p style="font-size: 2em; margin: 0.2em 0;">Café Especialidad</p>
+
 </div>
+
 ---
 ## Descripción:
 
