@@ -1,12 +1,4 @@
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <div style="text-align: center; font-family: Arial, sans-serif;">
-
-# "Coffee Code"
-##   Café Especialidad
-
-</div>
-</div>
-
+# <div align="center">"CoffeeCode"</div>
 ---
 ## Descripción:
 
@@ -20,15 +12,15 @@ Ven y descubre el placer de combinar el arte del café con la pasión por el có
 
 ## Integrantes:
 
-- Diaz Caceres, Camila
-- Diaz Bordon, Facundo:
+- **Diaz Caceres, Camila:**
+- **Diaz Bordon, Facundo:**
      <blockquote><p style="color:#e74c3c; overflow-wrap: break-word; word-break: break-all;white-space: normal; text-align: justify;"> Estudiante de Licenciatura en sistemas de información. Conocimientos: Java, HTML,CSS,Bootstrap, MySQL,PosgraesSQL.</p></blockquote>
-- Alvarez, Matias
-- Bustos, Patricia Alejandra: 
+- **Alvarez, Matias:**
+- **Bustos, Patricia Alejandra:** 
      <blockquote><p style="color:#e74c3c; overflow-wrap: break-word; word-break: break-all;white-space: normal; text-align: justify;"> Licenciada en Sistemas y Docente. Conocimientos: PHP, JavaScript, HTML, CSS, MySQL. Metodología SCRUM(Trello, asana). GitHub. Aptitudes: Análisis y Gestión de datos, Resolución colaborativa de problemas, Comunicación, Trabajo en equipo.</p></blockquote>
 
 
-- Contreras, Teresita
+- **Contreras, Teresita:**
 
 
 ## Inspiraciones:
