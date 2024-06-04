@@ -1,7 +1,10 @@
-<div style="text-align: center; font-family: Arial, sans-serif;">  
-    <p style="font-size: 3em; margin: 0.2em 0;">"Coffee Code"</p>
-    <p style="font-size: 2em; margin: 0.2em 0;">Café Especialidad</p>
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <div style="text-align: center; font-family: Arial, sans-serif;">
 
+# "Coffee Code"
+##   Café Especialidad
+
+</div>
 </div>
 
 ---
