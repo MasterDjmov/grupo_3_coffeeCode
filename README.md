@@ -1,5 +1,5 @@
-<h3 align="center"> "CoffeeCode"</h3>
-  <h4 align="center">  Café Especialidad</h4>
+<p style="font-size: 3em; margin: 0.2em 0; text-align: center; font-family: Arial, sans-serif;"> "CoffeeCode"</p>
+  <p style="font-size: 2em; margin: 0.2em 0; text-align: center; font-family: Arial, sans-serif;">  Café Especialidad</p>
 
 ---
 ## Descripción:
