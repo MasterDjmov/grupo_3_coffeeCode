@@ -1,9 +1,5 @@
-<div style="text-align: center;">
-  
-   # "CoffeeCode"
-
-   ### Café Especialidad
-</div>
+<h3 align="center"> "CoffeeCode"</h3>
+  <h4 align="center">  Café Especialidad</h4>
 
 ---
 ## Descripción:
@@ -28,7 +24,7 @@ Ven y descubre el placer de combinar el arte del café con la pasión por el có
 
 - Contreras, Teresita
 
----
+
 ## Inspiraciones:
 
 Para diseñar el Sitio Web CoffeCode nos inspiramos en varias características clave que hacen que el sitio sea atractivo y efectivo.
@@ -47,7 +43,7 @@ Para diseñar el Sitio Web CoffeCode nos inspiramos en varias características c
 
 - **Imágenes de Alta Resolución:** Ofrece múltiples imágenes de alta resolución de los productos.
 
-### https://cafedelirante.com.ar/
+#### https://cafedelirante.com.ar/
 
 - **Tipografía:** Utiliza fuentes limpias y modernas. La tipografía principal del sitio parece ser una fuente sans-serif, fácil de leer y profesional.
 
@@ -55,7 +51,7 @@ Para diseñar el Sitio Web CoffeCode nos inspiramos en varias características c
 
 - **Menús:** Los menús son claros y accesibles, generalmente en la parte superior de la página, con un tamaño de letra suficiente para ser leídos fácilmente sin ser intrusivos.
 
-### https://flatnwhite.com/argentina/
+#### https://flatnwhite.com/argentina/
 
 - **Botones Claros y Llamativos:** Botones de "Iniciar Sesión" y "Registrarse" prominentes.
 
@@ -71,7 +67,7 @@ Para diseñar el Sitio Web CoffeCode nos inspiramos en varias características c
 
 - **Blog y Tutoriales:** Sección de blog con artículos educativos y tutoriales en video.
 
-### https://siriuscoffee.mx/
+#### https://siriuscoffee.mx/
 
 - **Información detallada de productos:** Cada producto tiene su propia página con una descripción detallada, incluyendo el origen del café, proceso de tostado y notas de cata. También se incluyen precios y disponibilidad.
 
@@ -81,7 +77,7 @@ Para diseñar el Sitio Web CoffeCode nos inspiramos en varias características c
 
 - **Blog y contenidos educativos:** El sitio incluye una sección de blog donde se comparten artículos sobre café, sus procesos y consejos de preparación, lo cual puede ayudar a involucrar a los clientes y educarlos sobre los productos.
 
-### https://johnandjoe.com.ar/
+#### https://johnandjoe.com.ar/
 
 - **Diseño Visual Atractivo:** El sitio tiene un diseño moderno y atractivo, con imágenes de alta calidad que capturan la atención del visitante.
 
