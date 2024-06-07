@@ -12,7 +12,7 @@ Ven y descubre el placer de combinar el arte del café con la pasión por el có
 
 ## Integrantes:
 
-- **Diaz Caceres, Camila:**
+- **Diaz Caceres, Camila:** <blockquote><p style="color:#e74c3c; overflow-wrap: break-word; word-break: break-all;white-space: normal; text-align: justify;"> Eterna estudiante de la Lic. y Tec. en Turismo, mayorme mi formacion proviene de ese sector, carrera en stan by por el momento. Aptitudes: Liderazgo, organizacion, trabajo en equipo, delegacion de tareas, planificacion y creacion de proyectos/productos creativos y dinamicos en el sector turistico. Actualmente me considero una estudiante animada por aprender sobre la programacion, con ganas de aprovechar esta beca tan importante. Mis conocimientos en el mundo IT son los que nos estan facilitando en el curso, JavaScript, HTML, CSS, GitHub, Trello, GitBash, Node. Pequeños conocimientos en diseño y edicion con los programas de phothoshop, adobe illustrator, canva. Manejo de redes sociales, principalmente facebook e instagram. Conocimientos en cocina, particularmente en el mundo de la pasteleria (dato irrelevante? tal vez)
 - **Diaz Bordon, Facundo:**
      <blockquote><p style="color:#e74c3c; overflow-wrap: break-word; word-break: break-all;white-space: normal; text-align: justify;"> Estudiante de Licenciatura en sistemas de información. Conocimientos: Java, HTML,CSS,Bootstrap, MySQL,PosgraesSQL.</p></blockquote>
 - **Alvarez, Matias:**
