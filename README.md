@@ -85,3 +85,9 @@ Para diseñar el Sitio Web CoffeCode nos inspiramos en varias características c
 - **Navegación Intuitiva:** La navegación por el sitio es sencilla y directa, lo que facilita a los usuarios encontrar lo que están buscando.
 
 - **Productos/Servicios Destacados:** Se pueden ver productos destacados en la página principal, lo que permite a los visitantes tener una idea rápida de lo que ofrece la marca.
+
+### Tablero de trabajos
+
+**Sprint 1:** [Tablero Sprint 1](https://trello.com/invite/b/AHfLMFiX/ATTIa6ef7f18dd87e537f96575972e89c7832CF58050/tablero-sprint-1)
+
+**Sprint 2:** [Tablero Sprint 2](https://trello.com/invite/b/AHfLMFiX/ATTIa6ef7f18dd87e537f96575972e89c7832CF58050/tablero-sprint-2)
