@@ -26,3 +26,4 @@ app.get('*', (req, res) => {
     const ruta = req.path; //    /login
     ejecutarRutaDeController(ruta, req, res); // paso la ruta que llego a la función que se encuentra en controller.js
 });
+

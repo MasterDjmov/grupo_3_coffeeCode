@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+
+    .container-header{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .burger-menu {
+        color: black;
+        margin-bottom: 5px;
+        font-size: 2em;
+    }
+    
+    
+    .logo2{
+        width: 80px;
+        margin-top: -10px;
+    }
+    
+    .iconos{
+        padding-top: 14px;
+    }
+    
+    .iconos > i{
+        color: #000000; 
+        font-size: 1.5em;
+    }
+    
+
+}
+
+main{
+    background-color: #a99ac4;
+
+    .producto1 > img{
+        width: 100%;
+    
+    }
+    
+    .navbar{
+        padding: 2px 4px;
+        list-style: none;
+        
+    }
+    
+    .navbar-item{
+        display:inline;
+        font-size: 12px;
+        color: black;
+    }
+    
+    .navbar li+li:before{
+        padding: 4px;
+        color: black;
+        content: ">";
+    }
+    
+    .navbar-item a{
+        color: #291025;
+        text-decoration: none;
+    }
+    
+    .navbar-item a:hover{
+        color:  #823a6f;
+    }
+
+    h3{
+        padding-left: 20px;
+    }
+
+    .acordeon{
+        background-color: #a99ac4;
+        color: black;
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 14px;
+    }
+    .active, .acordeon:hover{
+        background-color: #a99ac4;
+    }
+    .panel{
+        padding: 0px 20px;
+        font-size: 13px;
+        display: none;
+        overflow: hidden;
+    }
+}
+
