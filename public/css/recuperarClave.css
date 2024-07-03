@@ -1,0 +1,89 @@
+main{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #a99ac4;
+
+
+    .navbar{
+        padding: 2px 4px;
+        list-style: none;
+        
+    }
+    
+    .navbar-item{
+        display:inline;
+        font-size: 15px;
+        color: black;
+    }
+    
+    .navbar li+li:before{
+        padding: 4px;
+        color: black;
+        content: ">";
+    }
+    
+    .navbar-item a{
+        color: #291025;
+        text-decoration: none;
+    }
+    
+    .navbar-item a:hover{
+        color:  #823a6f;
+    }
+    .estilo-label{
+        padding: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .recuperarClave{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar-item1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+    .estilo-label > input{
+        width: 200px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    button{
+        width: 30%;
+        margin: auto;
+        background-color: #823a6f;
+        color: white;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {background-color: #291025;}
+    p{
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+        a{
+            font-weight: bold;
+            
+            padding-left: 5px;
+        }
+    }
+ }
+    @media (min-width: 361px){
+        main{
+            .estilo-label > input{
+                width: 400px;
+                padding: 5px;
+            }
+        }
+    }
+    
+    @media (min-width: 769px){
+    
+    }
+    
