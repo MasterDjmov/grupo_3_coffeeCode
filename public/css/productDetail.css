@@ -10,7 +10,10 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
+/*
 header{
+    width: 100%;
+    height: 40px;
 
     .container-header{
         display: flex;
@@ -19,15 +22,15 @@ header{
     }
 
     .burger-menu {
-        color: black;
+        color: #823a6f;
         margin-bottom: 5px;
         font-size: 2em;
     }
     
     
     .logo2{
-        width: 80px;
-        margin-top: -10px;
+        width: 55px;
+        margin-top: -14px;
     }
     
     .iconos{
@@ -35,12 +38,14 @@ header{
     }
     
     .iconos > i{
-        color: #000000; 
+        color: #823a6f;; 
         font-size: 1.5em;
     }
     
 
 }
+*/
+
 
 main{
     background-color: #a99ac4;
@@ -58,7 +63,7 @@ main{
     
     .navbar-item{
         display:inline;
-        font-size: 12px;
+        font-size: 15px;
         color: black;
     }
     
@@ -78,28 +83,347 @@ main{
     }
 
     h3{
+        padding-top: 2px;
         padding-left: 20px;
+        padding-bottom: 2px;
     }
 
     .acordeon{
         background-color: #a99ac4;
         color: black;
         cursor: pointer;
-        padding: 20px;
+        padding: 16px;
         width: 100%;
         border: none;
         text-align: left;
         outline: none;
         font-size: 14px;
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);;
+        i{
+            position: relative;
+            color: #291025;
+            right: -220px;
+            top: -15px;
+        }
     }
     .active, .acordeon:hover{
         background-color: #a99ac4;
     }
     .panel{
-        padding: 0px 20px;
+        padding: 20px 20px;
         font-size: 13px;
         display: none;
         overflow: hidden;
     }
+    h5{
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .texto{
+        padding-left: 20px;
+        font-size: 16px;
+    }
+    .parrafo1{
+        color: #823a6f;
+        padding-top: 5px;
+        opacity: 0.7;
+        padding-left: 20px;
+    }
+    h4{
+        padding: 15px;
+    }
+    label{
+        span{
+            padding:20px
+
+        }
+    select{
+        margin-left: 40px;
+        width: 60%;
+        padding:5px;
+        border: 1px solid #000;
+        background-color: #a99ac4;
+        border-radius: 10%;
+        cursor: pointer;   
+    }
+    .botones{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        button{
+            border: 1px solid #000;
+            background-color:  white;
+            font-size: 15px;
+            cursor: pointer;
+            padding: 15px 30px;
+            border-radius: 10%;
+        }
+        button:hover{
+            color: white;
+            background-color: #291025;
+        }
+       
+    }
+    .borrar{
+        border: 1px solid #000;
+        background-color:  #a99ac4;
+        font-size: 10px;
+        cursor: pointer;
+        padding: 15px;
+        position: relative;
+        font-size: 12px;
+        right: -250px;
+        top: -140px;
+        border: none;
+        color:#291025;
+        opacity: 0.5;
+        padding: 1px;
+    }
+    .counter-group{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .container-group-1{
+        display: flex;
+        border: solid 1px #000;
+        width: 30%;
+        border-radius: 10%;
+        justify-content: center;
+    }
+    .counter-group .di{
+        background-color: #a99ac4;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+        .counter-group input {
+            display: inline-block;
+            text-align: center;
+            width: 50%;
+            border: none;
+            background-color: #a99ac4;
+            padding: 5px;
+        }
+        .counter-group input:hover{
+            border-color: #a99ac4;
+        }
+    .counter-group > .carrito{
+        width: 50%;
+        color: #a99ac4;
+        border: 1px solid #000;
+        background-color:  #823a6f;
+        opacity: 0.9;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 15px 30px;
+        border-radius: 10%;
+        
+    }
+    .carrito:hover{
+        color: white;
+        background-color: #291025;
+    }
+    }
+    .descripcion2{
+        background-color: white;
+        padding-top: 20px;
+        h3{
+            color: #823a6f;
+            text-align: center;
+            padding-top: 10px;
+            margin-left: -20px ;
+        }
+        img{
+            display: block;
+            width: 60%;
+            margin-left: 20%;
+            padding:10px;
+        }
+        i{
+            font-size: 3em;
+            color: #823a6f;
+            margin-left: 45%;
+            margin-top: 20px;
+        }
+        h4{
+            text-align: center;
+            color: #823a6f;
+        }
+        .imagen-producto2{
+            width: 110%;
+            margin-left:-20px;
+            margin-bottom: -10px;
+        }
+    }
+    .descripcion3{
+        background-color: #a99ac4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+        .descripcion-bar{
+            
+            border: solid 1px #823a6f;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+            list-style-type: none;
+            
+            .descripcion-bar-item{
+                border: solid 1px #823a6f;
+                opacity: 0.8;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: -10px;
+                p{
+                    display: flex;
+                    justify-content: flex-end;
+                   margin-top: -20px;
+                }
+            }
+        }
+    }
+    .gusto{
+        font-size: 20px;
+        text-align: center;
+        background-color: white;
+        width: 100%;
+    }
+    .otros-productos{
+        background-color: white;
+        padding-bottom: 20px;
+        width: 100%;
+        margin-left: 10px;
+     
+        img{
+            display: block;
+            width: 75%;
+            align-items: center;
+            margin: auto;
+            padding: 20px;
+        }
+        .caja-articulo{
+            border-top: 1px solid #ebebeb;
+            border-spacing: 15px;
+            transition: all 0.5;
+            .descripcion-imagen{visibility: hidden;}
+            button{
+                visibility: hidden;
+                display: block;
+                margin: auto;
+                font-size: 18px;
+                cursor: pointer;
+                padding: 5px 15spx;
+                background-color:  #823a6f;
+                opacity: 0.8;
+                color: white;
+                position: relative;
+                top:-90px;
+                border-radius: 10%;
+            }
+            button:hover{
+                color: white;
+                background-color: #291025;
+            }
+        }
+        .caja-articulo:hover{
+            .descripcion-imagen{
+                font-size: 16px;
+                text-align: center;
+                color: gray;
+                visibility: visible;
+            }
+            button{
+                visibility: visible;
+            }
+            box-shadow: 0px 0px 5px rgb(100, 100, 100);
+        }
+    }
 }
 
+@media (min-width: 361px){
+    main{
+        .caja-producto{
+            width: 100%;
+            display: flex;
+            .producto1{
+                width: 50%;
+                .navbar{
+                    position: relative;
+                    top:-440px;
+                }
+            }
+            .descripcion-producto{
+                width: 50%;
+                padding-top: 5px;
+                .parrafo1{
+                    display: flex;
+                }
+            }
+            .acordeon{
+                width: 80%;
+            }
+            .acordeon i{
+                top: -15px;
+                left: 220px;
+            }
+        }
+        .descripcion2{
+            width: 100%;
+            display: flex;
+            .sabor{
+                width: 50%;
+            }
+            .imagen-producto2{
+                width: 60%;
+                margin: auto;
+            }
+        }
+        .otros-productos{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            .caja-articulo img{
+                width: 300px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 769px){
+    main{
+
+        .caja-producto .producto1 .navbar{
+            position: relative;
+                    top:-570px;
+        }
+        .caja-producto{
+            .descripcion-producto{
+            padding-top: 50px;
+            
+        }
+        .acordeon i{
+            top:  -2px;
+            left: 80px;
+        }
+        .producto1 .imagen-producto1{
+            width: 500px;
+        }
+           }
+        .sabor{
+            padding-top: 80px;
+        }
+        .otros-productos{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            .caja-articulo img{
+                width: 400px;
+            }
+        }
+    }
+    
+}

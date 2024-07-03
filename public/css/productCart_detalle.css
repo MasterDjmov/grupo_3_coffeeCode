@@ -1,0 +1,222 @@
+/*---- para style.css-----*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+ 
+ 
+ 
+ body{
+    font-family: "Roboto", sans-serif;
+ }
+ header{
+   width: 90vw;
+   height: 40%;  
+   background-color:  #f3f3f3;   
+   margin: 0 auto;
+ }
+ header .frase {
+   background-color: #823a6f;
+   width: 100%;
+   font-size: small;
+   height: 30px;
+ }
+ header .container-header{
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+        
+} 
+.burger-menu {
+   color: #291025;  
+   font-size: 1.2em;
+}    
+    
+.logo2{
+   width: 70px;
+   padding-left: 25px;      
+}
+.iconos{        
+   color: #291025;   
+   padding: 5px;
+}
+.iconos > i{
+   color: #291025; 
+   font-size: 1.2em;
+   padding-inline: 4px;
+}   
+ 
+
+ footer {
+   width: 90vw;
+   margin: 0 auto;
+ }
+ /* ---------*/
+ 
+ .cart-panel {
+   
+    height: 100%;
+    width: 100%;
+    max-width: 90vw;
+    background: #a99ac4;
+    padding: 10px;
+    margin: 0 auto;
+   
+ }
+ .titulos {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+ }
+ 
+ 
+ 
+ .cart-body {
+   padding: 0px;
+   
+ }
+ .cart-items {    
+    border-bottom: 1px solid #ddd;
+    
+ }
+ .cart-item {
+    display: flex;
+    align-items: center;     
+    width: 100%;
+ }
+ .cart-item-imagen {
+    flex: 0 0 60px;    
+    width:20%;
+ 
+ }
+ .cart-item-imagen img {
+    width: 90%;
+   
+ }
+ .cart-item-detalle {    
+   padding-right: 5px;
+   width: 40%;
+ }
+ .cart-item-name {
+    margin-bottom: 0.5em;  
+ }
+ .cart-item-descripcion {
+   font-size: 12px;
+ }
+ .container-group-1{   
+   width: 30%;
+   display: flex;    
+   justify-content: center;
+}
+.container-group-1 input{
+   width: 30px;
+   text-align: center;
+   border: none;
+   border-radius: 10%;
+}
+.container-group-1 p{
+   background-color: white;
+   width: 12px;
+
+   margin: 1px;
+   text-align: center;
+   border-radius: 10%;
+   font-size: 12px;
+}
+ 
+ .cart-item-subtotal {
+  padding-bottom: 10px;  
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+ }
+ .cart-item-subtotal p {
+ text-align: center;
+ font-size: 14px;
+ font-weight: bold;
+
+ }
+ .cart-item-delete {
+   flex: 0 0 30px;
+   text-align: right;   
+   width: 10%; 
+   height: 110px;
+   position: relative; 
+
+} 
+.cart-item-delete button{
+width: 30px;
+height: 30px;
+border-radius: 100%;
+font-size: 15px;
+position: absolute;
+top: 7px;
+left: 0px;
+
+}
+
+ .cart-total  {
+  text-align: left;
+  
+
+ }
+.subtotal {
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid #ddd;
+   border-top:  1px solid #ddd;
+   margin-bottom: 10px;
+   margin-top: 10px;
+}
+ .botones {
+   display: flex;
+   justify-content: space-between;
+    margin-top: 15px;
+    width: 100%;
+    padding-bottom: 20px;
+ }
+ .btn-actualizar, .btn{
+   height: 30px;
+   padding: 5px;
+   margin: 5px;
+   font-size: 10px;
+ }
+
+.btn-actualizar {
+    background: #823A6F;
+    color: #fff;
+    opacity: 0,9;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 8px;
+  
+    width: 45%;
+ }
+ .btn {
+   width: 45%;
+   color: black;
+   opacity: 0,9;
+   cursor: pointer;
+   text-decoration: none;
+   text-align: center;
+   background-color: #fff;
+   padding-top: 8px;
+}
+.btn-fin {
+   background: #823A6F;
+   color: #fff;  
+   cursor: pointer;
+   border: none;
+   height: 30px;
+   padding: 5px;
+   margin: 5px;
+   font-size: 10px;
+   width: 95%;
+}
+.envio label {
+   padding-left: 5px;
+   font-size: 10px;
+}
+ 

@@ -9,9 +9,89 @@
 </head>
 <body>
     <h1>COFFECODE LOGIN</h1>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  
-</body>
+    <header>
+        <div class="header-content">
+            <div>
+                <img src="img/logo.svg" alt="Logo del Café" class="logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#productos">PRODUCTOS</a></li>
+                    <li><a href="#informacion">INFORMACIÓN</a></li>
+                    <li class="search-container">
+                        <input type="text" placeholder="¿Qué estás buscando?">
+                        <button>BUSCAR</button>
+                    </li>
+                    <li class="cart-icon">
+                        <a href="/productCart">
+                            <img src="img/carrito.png" alt="Carrito de Compras">
+                        </a>
+                    </li>
+                    <li class="login1">
+                        <a href="/login">
+                            <img src="img/login.png" alt="Login">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="login">
+        <div class="navbar-item1">
+            <ol class= "navbar">
+            <li class="navbar-item"> <a href='/'> Incio</a></li>
+            <li class="navbar-item"> <a href="#"> Mi Cuenta</a></li>
+            <li class="navbar-item"> <a href="#"> Login</a></li>
+            </ol>
+    </div>
+
+     <p>INICIAR SESION</p>
+        <form class="estilo-form" action="/" method="POST">
+            <label class="estilo-label" for="email">
+                E-mail<br>
+            <input type="text" name="email" placeholder="email" required>
+        </label>
+            <label class="estilo-label" for="contraseña">
+                Contraseña<br>
+                <input type="password" name="contraseña" id="pass1" placeholder="Elige tu contraseña" required>
+            </label>
+            <a href="/recuperarClave">¿Olvidaste tu contraseña?</a> 
+            <button class="boton" type="submit">INICIAR SESION</button>
+            <p>¿No tenes una cuenta aun?</p>  <a href="/register">Registrate aqui</a>
+        </form>
+    </main>
+        <footer>
+            <div class="contenedor_footer">
+                <div class="cajasFooter">
+                    <h4>MEDIOS DE PAGO</h4>
+                    <img class="tamañoImg1" src="img/uala.png" alt="Uala">
+                    <img class="tamañoImg1" src="img/mercadopago.png" alt="MercadoPago">
+                    <img class="tamañoImg1" src="img/mastercard.png" alt="MasterCard">
+                    <img class="tamañoImg1" src="img/visa.png" alt="Visa">
+                    <img class="tamañoImg1" src="img/maestro.png" alt="Maestro">
+                    <img class="tamañoImg1" src="img/naranja.png" alt="Naranja">
+                    <img class="tamañoImg1" src="img/pagofacil.png" alt="PagoFacil">
+                    <img class="tamañoImg1" src="img/rapipago.png" alt="RapiPago">
+                    <img class="tamañoImg1" src="img/deposito.png" alt="Deposito">
+                    <img class="tamañoImg1" src="img/efectivo.png" alt="Efectivo">
+                </div>          
+                <div class="cajasFooter">
+                    <h4>MEDIOS DE ENVÍO</h4>
+                    <img class="tamañoImg1" src="img/andreani.png" alt="Andreani">
+                    <img class="tamañoImg1" src="img/correo-argentino.png" alt="CorreoArgentino">
+                    <img class="tamañoImg1" src="img/personalizado.png" alt="Personalizado">
+                </div>    
+                <div class="cajasFooter">
+                    <h4>REDES SOCIALES</h4>
+                    <img class="tamañoImg2" src="img/facebook.png" alt="Facebook">
+                    <img class="tamañoImg2" src="img/instagram.png" alt="Instagram">
+                </div>
+                <div class="cajasFooter">
+                    <h4>CONTACTO</h4>
+                    <p>3825535033</p>
+                    <p>coffecode@gmail.com</p>                            
+                    <p>8 de diciembre, Capital, La Rioja</p>
+                </div>
+        </footer>   
+    </body>
 </html>
