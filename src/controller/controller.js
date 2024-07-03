@@ -12,12 +12,21 @@ exports.ejecutarRutaDeController = (ruta, req, res) => {
         case '/register':
             res.sendFile(path.resolve(__dirname, '../views/register.html'));
             break;
+        case '/recuperarClave':
+            res.sendFile(path.resolve(__dirname, '../views/recuperarClave.html'));
+        break;    
         case '/productCart':
             res.sendFile(path.resolve(__dirname, '../views/productCart.html'));
             break;
-            case '/productDetail':
-                res.sendFile(path.resolve(__dirname, '../views/productDetail.html'));
-                break;
+        case '/productCart_detalle':
+            res.sendFile(path.resolve(__dirname, '../views/productCart_detalle.html'));
+            break;  
+        case '/productCart_facturacion':
+            res.sendFile(path.resolve(__dirname, '../views/productCart_facturacion.html'));
+            break;              
+        case '/productDetail':
+            res.sendFile(path.resolve(__dirname, '../views/productDetail.html'));
+            break;
         default:
             res.status(404).send('Página no encontrada');
     }
