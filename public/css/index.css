@@ -16,7 +16,7 @@
 }
 
 .texto {
-    margin-bottom: 20px;
+    margin-left: 200px;
 }
 
 .articulo article {
@@ -27,12 +27,14 @@
 
 .texto-articulo {
     flex: 1;
-    margin-right: 20px; /* Espacio entre texto e imagen */
+    margin:30px 0px 30px 400px; /* Espacio entre texto e imagen */
+    
 }
 
 .imagen-articulo img {
     width: 200px; /* Ancho de la imagen */
     height: auto;
+    margin:55px 600px 30px 0px;
 }
 
 .contenedor-productos {
