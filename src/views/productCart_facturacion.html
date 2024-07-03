@@ -24,7 +24,7 @@
             <img src="/img/logo.svg" alt="logo de Coffeecode" class="logo2" onclick="location.href='/'">
             <div class="iconos">
                 <i class="fa fa-search"></i>
-                <i class="fa-regular fa-user"></i>
+                <a href="/login"><i class="fa-regular fa-user"></i></a>
                 <i class="fa-solid fa-cart-shopping"></i>                       
             </div>
         </div>
@@ -32,160 +32,149 @@
     </header>
    
     <main class="cart-panel">
-        <form class="datos_factura" action="/" method="get">
-            <h4>DETALLE DE LA FACTURACIÓN</h4>
-            <div class="name-div">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" placeholder="Nombre" class="form-input names-input" required>
-            </div>
-            <div class="name-div">
-                <label for="last-name">Apellido</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Apellido" class="form-input names-input" required>
-            </div>
-            <div class="name-div">
-                <label for="home">Domicilio</label>
-                <input type="text" id="home" name="home" placeholder="Domicilio" class="form-input" required>
-            </div>
-            <div class="name-div">
-                <label for="name">Localidad/Ciudad</label>
-                <input type="text" id="name" name="name" placeholder="Localidad/Ciudad" class="form-input names-input" required>
-            </div>
-            <div class="name-div">
-                <label for="last-name">Provincia/Dpto</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Provincia/Dpto" class="form-input names-input" required>
-            </div>
-            <div class="name-div">
-                <label for="home">Código Postal</label>
-                <input type="text" id="home" name="home" placeholder="Código Postal" class="form-input" required>
-            </div>
-            <div class="name-div">
-                <label for="last-name">Teléfono</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Teléfono" class="form-input names-input" required>
-            </div>
-            <div class="name-div">
-                <label for="home">Correo Electrónico</label>
-                <input type="text"  placeholder="Correo Electrónico" class="form-input" required>
-            </div>
-            <div class="check">              
-                <input type="checkbox" name="checkenvio" >
-                <label for="home">¿Enviar a una dirección diferente?</label>
-            </div>
-            <div class="name-div">
-                <label for="home">Notas del Pedido</label>
-                <textarea type="text" ></textarea>
-            </div>
-      
-    
-            <div class="cart-pedido">
-                <h5>TU PEDIDO</h5>
-                <div class="titulos">        
-                <h5>PRODUCTO</h5>
-                <h5>SUBTOTAL</h5>
-                </div> 
-                <div class="cart-body">
-                    <div class="cart-items">
-                        <div class="cart-item" >
+            <form class="datos_factura" action="/" method="get">
+                <h4>DETALLE DE LA FACTURACIÓN</h4>
+                <div class="name-div">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Nombre" class="form-input names-input" required>
+                </div>
+                <div class="name-div">
+                    <label for="last-name">Apellido</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Apellido" class="form-input names-input" required>
+                </div>
+                <div class="name-div">
+                    <label for="home">Domicilio</label>
+                    <input type="text" id="home" name="home" placeholder="Domicilio" class="form-input" required>
+                </div>
+                <div class="name-div">
+                    <label for="name">Localidad/Ciudad</label>
+                    <input type="text" id="name" name="name" placeholder="Localidad/Ciudad" class="form-input names-input" required>
+                </div>
+                <div class="name-div">
+                    <label for="last-name">Provincia/Dpto</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Provincia/Dpto" class="form-input names-input" required>
+                </div>
+                <div class="name-div">
+                    <label for="home">Código Postal</label>
+                    <input type="text" id="home" name="home" placeholder="Código Postal" class="form-input" required>
+                </div>
+                <div class="name-div">
+                    <label for="last-name">Teléfono</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Teléfono" class="form-input names-input" required>
+                </div>
+                <div class="name-div">
+                    <label for="home">Correo Electrónico</label>
+                    <input type="text"  placeholder="Correo Electrónico" class="form-input" required>
+                </div>
+                <div class="check">              
+                    <input type="checkbox" name="checkenvio" >
+                    <label for="home">¿Enviar a una dirección diferente?</label>
+                </div>
+                <div class="name-div">
+                    <label for="home">Notas del Pedido</label>
+                    <textarea type="text" ></textarea>
+                </div>
+            </form>
+            <form class="datos_factura2" action="/" method="get">        
+                <div class="cart-pedido">
+                    <h5>TU PEDIDO</h5>
+                    <div class="titulos">        
+                        <h5>PRODUCTO</h5>
+                        <h5>SUBTOTAL</h5>
+                    </div> 
+                    <div class="cart-body">
+                        <div class="cart-items">
+                            <div class="cart-item" >                                
+                                <div class="cart-item-detalle">
+                                    <h6 class="cart-item-name">
+                                        BLEND DE LA CASA  X  2
+                                    </h6>                       
                             
-                            <div class="cart-item-detalle">
-                                <h6 class="cart-item-name">
-                                    BLEND DE LA CASA  X  2
-                                </h6>                       
-                        
-                                <p class="cart-item-descripcion">                              
-                                    ELEGÍ TU MOLIENDA: 
-                                    En Grano
-                                </p>
-                                <p class="cart-item-descripcion">
-                                    ELEGÍ EL PESO: 
-                                    250 Gr.                               
-                                </p>
-                            </div>                                        
-                            <div class="container-group-1">
-                                <p>$12,200.00</p>                                                     
-                            </div>                                                     
-                                
-                        </div>
-                        <div class="cart-item-subtotal">     
-                        
-                    </div>    
-                    </div>
-                    <div class="cart-items">
-                        <div class="cart-item" >
-                        
-                            <div class="cart-item-detalle">
-                                <h6 class="cart-item-name">
-                                    BLEND DE LA CASA  X  1
-                                </h6>
-                                <p class="cart-item-descripcion">                              
-                                    ELEGÍ TU MOLIENDA: 
-                                    Molido Filtro
-                                </p>
-                                <p class="cart-item-descripcion">
-                                    ELEGÍ EL PESO: 
-                                1 Kilo.                               
-                                </p>
-                            </div>                                        
-                                                                            
-                            <div class="container-group-1">
-                            <p>$12,200.00</p>                                                     
+                                    <p class="cart-item-descripcion">                              
+                                        ELEGÍ TU MOLIENDA: 
+                                        En Grano
+                                    </p>
+                                    <p class="cart-item-descripcion">
+                                        ELEGÍ EL PESO: 
+                                        250 Gr.                               
+                                    </p>
+                                </div>                                        
+                                <div class="container-group-1">
+                                    <p>$12,200.00</p>                                                     
+                                </div>                                    
                             </div>
+                            <div class="cart-item-subtotal">                            
+                            </div>    
                         </div>
-                        <div class="cart-item-subtotal">     
-                            <p> </p>
+                        <div class="cart-items">
+                            <div class="cart-item" >                            
+                                <div class="cart-item-detalle">
+                                    <h6 class="cart-item-name">
+                                        BLEND DE LA CASA  X  1
+                                    </h6>
+                                    <p class="cart-item-descripcion">                              
+                                        ELEGÍ TU MOLIENDA: 
+                                        Molido Filtro
+                                    </p>
+                                    <p class="cart-item-descripcion">
+                                        ELEGÍ EL PESO: 1 Kilo.                               
+                                    </p>
+                                </div>                                                                                
+                                <div class="container-group-1">
+                                <p>$12,200.00</p>                                                     
+                                </div>
+                            </div>
+                            <div class="cart-item-subtotal">     
+                                <p> </p>
+                            </div>  
+                        </div>
+                        <div class="botones">                    
+                            <a href="/" class="btn"><i class="fa fa-arrow-left"></i>  SEGUIR COMPRANDO</a>
+                            <a href="/productCart_detalle" class="btn-actualizar">ACTUALIZAR CARRITO </a>                   
                         </div>  
                     </div>
-                    <div class="botones">                    
-                        <a href="/" class="btn"><i class="fa fa-arrow-left"></i>  SEGUIR COMPRANDO</a>
-                        <a href="/productCart_detalle" class="btn-actualizar">ACTUALIZAR CARRITO </a>                   
-                    </div>
-                        
-                        <div class="cart-total">
-                            <h5>TOTAL DEL CARRITO: </h5>
-                            
-                        </div>
-                        <div class="subtotal">
-                            <p>Subtotal  </p><span> $128.400,00</span>
-                        </div>
-                        
-                        <label>Envio</label>  
-                        <div class="envio">
-                            <input type="radio" value="1" name="envio" checked> 
-                            <label for="">Envío gratuito a domicilio en compras superiores a $ 40000</label>
-                        </div> 
-                        <div class="envio">
-                            <input type="radio" value="1" name="envio" > 
-                            <label for="">Envío a domicilio (todo el país): $6,500.00</label>
-                        </div> 
-                        <div class="envio">
-                            <input type="radio" value="1" name="envio" > 
-                            <label for="">Retiro por Local (Gratis)</label>
-                        </div> 
-                
-                        <div class="subtotal">
-                            <p>Total  </p><span> $128.400,00</span>
-                        </div>
-                        <div class="pago">
-                            <h3>Medios de Pago</h3>
-                            <img class="tamañoImg1" src="img/uala.png" alt="Uala">
-                            <img class="tamañoImg1" src="img/mercadopago.png" alt="MercadoPago">
-                            <img class="tamañoImg1" src="img/mastercard.png" alt="MasterCard">
-                            <img class="tamañoImg1" src="img/visa.png" alt="Visa">
-                            <img class="tamañoImg1" src="img/maestro.png" alt="Maestro">
-                            <img class="tamañoImg1" src="img/naranja.png" alt="Naranja">
-                            <img class="tamañoImg1" src="img/pagofacil.png" alt="PagoFacil">
-                            <img class="tamañoImg1" src="img/rapipago.png" alt="RapiPago">
-                            <img class="tamañoImg1" src="img/deposito.png" alt="Deposito">
-                            <img class="tamañoImg1" src="img/efectivo.png" alt="Efectivo">
-                        </div> 
-                        
-                        <div class="aceptermino">
-                            <input type="checkbox" name="aceptermino" > 
-                            <label for="">Aceptar Términos y Condiciones</label>
-                        </div>          
-                        <input type="submit" class="btn-fin" value="REALIZAR EL PEDIDO" name="fin_compra">
+                </div>           
+                <div class="cart-total">
+                    <h5>TOTAL DEL CARRITO: </h5>                    
                 </div>
-            </div>
-        </form>    
+                <div class="subtotal">
+                    <p>Subtotal  </p><span> $128.400,00</span>
+                </div>                
+                <label>Envio</label>  
+                <div class="envio">
+                    <input type="radio" value="1" name="envio" checked> 
+                    <label for="">Envío gratuito a domicilio en compras superiores a $ 40000</label>
+                </div> 
+                <div class="envio">
+                    <input type="radio" value="1" name="envio" > 
+                    <label for="">Envío a domicilio (todo el país): $6,500.00</label>
+                </div> 
+                <div class="envio">
+                    <input type="radio" value="1" name="envio" > 
+                    <label for="">Retiro por Local (Gratis)</label>
+                </div>                 
+                <div class="subtotal">
+                    <p>Total  </p><span> $128.400,00</span>
+                </div>
+                <div class="pago">
+                    <h3>Medios de Pago</h3>
+                    <img class="tamañoImg1" src="img/uala.png" alt="Uala">
+                    <img class="tamañoImg1" src="img/mercadopago.png" alt="MercadoPago">
+                    <img class="tamañoImg1" src="img/mastercard.png" alt="MasterCard">
+                    <img class="tamañoImg1" src="img/visa.png" alt="Visa">
+                    <img class="tamañoImg1" src="img/maestro.png" alt="Maestro">
+                    <img class="tamañoImg1" src="img/naranja.png" alt="Naranja">
+                    <img class="tamañoImg1" src="img/pagofacil.png" alt="PagoFacil">
+                    <img class="tamañoImg1" src="img/rapipago.png" alt="RapiPago">
+                    <img class="tamañoImg1" src="img/deposito.png" alt="Deposito">
+                    <img class="tamañoImg1" src="img/efectivo.png" alt="Efectivo">
+                </div>                         
+                <div class="aceptermino">
+                    <input type="checkbox" name="aceptermino" > 
+                    <label for="">Aceptar Términos y Condiciones</label>
+                </div>          
+                <input type="submit" class="btn-fin" value="REALIZAR EL PEDIDO" name="fin_compra">               
+            </form>    
     </main>
     
     <footer>

@@ -69,6 +69,10 @@
    padding: 10px;
    border-bottom: 1px solid #ddd;
  }
+ .datos_factura2 {
+   border:  1px solid #ddd;
+  padding: 5px;
+}
   
  .cart-body {
    padding: 0px;
@@ -100,8 +104,7 @@
    justify-content: center;
 }
 
-.container-group-1 p{
-  
+.container-group-1 p{  
    width: 12px;
    margin: 1px;
    text-align: center;
@@ -120,8 +123,7 @@
  font-weight: bold;
 
  }
-.cart-total  {
-  text-align: left;
+.cart-total  {  
   
  }
 .subtotal {
@@ -197,8 +199,7 @@
    width: 100%;
    height: 50px;
 }
-.cart-pedido {
-   border:  1px solid #ddd;
+.cart-pedido { 
    padding: 10px;
 }
 .pago {
@@ -213,4 +214,26 @@
    margin-top: 10px;
    margin-bottom: 10px;
    font-size: 10px;
+}
+@media(min-width: 361px){
+   .cart-panel{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;     
+   }
+   .datos_factura, .datos_factura2{
+      width: 50%;    
+      padding: 20px; 
+
+   }
+   .datos_factura2 {
+      border:  1px solid #ddd;
+      margin-right: 10px;
+   }
+   .container-group-1 p {
+      width: 100%;   
+      text-align: right;
+      padding-right: 10px;      
+   }
 }
