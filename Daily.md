@@ -33,7 +33,6 @@
 ## Soluciones Propuestas
 - aquí soluciones propuestas
 
-## ------------------------------------------------------------------------------------------------------------
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -50,7 +49,6 @@
 ## Soluciones Propuestas
 - aquí soluciones propuestas
 
-## ------------------------------------------------------------------------------------------------------------
 
 ## Resumen de Tareas
 ### Bustos, Patricia Alejandra:
@@ -84,7 +82,6 @@
 ## Soluciones Propuestas
 - aquí soluciones propuestas
 
-## ------------------------------------------------------------------------------------------------------------
 
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
@@ -101,8 +98,6 @@
 ## Soluciones Propuestas
 - aquí soluciones propuestas
 
-## ------------------------------------------------------------------------------------------------------------
-
 ## Resumen de Tareas
 ### Alvarez, Matias:
 
@@ -118,7 +113,6 @@
 ## Soluciones Propuestas
 - aquí soluciones propuestas
 
-## ------------------------------------------------------------------------------------------------------------
 
 ## Resumen de Tareas
 ### Bustos, Patricia Alejandra:
@@ -153,7 +147,6 @@
 ## Soluciones Propuestas
 - aquí soluciones propuestas
 
-## ------------------------------------------------------------------------------------------------------------
 
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
@@ -170,7 +163,6 @@
 ## Soluciones Propuestas
 - aquí soluciones propuestas
 
-## ------------------------------------------------------------------------------------------------------------
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -187,7 +179,6 @@
 ## Soluciones Propuestas
 - aquí soluciones propuestas
 
-## ------------------------------------------------------------------------------------------------------------
 
 ## Resumen de Tareas
 ### Bustos, Patricia Alejandra:
@@ -221,8 +212,6 @@
 ## Soluciones Propuestas
 - aquí soluciones propuestas
 
-## ------------------------------------------------------------------------------------------------------------
-
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
 
@@ -237,8 +226,6 @@
 
 ## Soluciones Propuestas
 - aquí soluciones propuestas
-
-## ------------------------------------------------------------------------------------------------------------
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -255,7 +242,6 @@
 ## Soluciones Propuestas
 - aquí soluciones propuestas
 
-## ------------------------------------------------------------------------------------------------------------
 
 ## Resumen de Tareas
 ### Bustos, Patricia Alejandra:
