@@ -17,7 +17,6 @@
 ## Soluciones Propuestas
 - aquí soluciones propuestas
 
-## ------------------------------------------------------------------------------------------------------------
 
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
