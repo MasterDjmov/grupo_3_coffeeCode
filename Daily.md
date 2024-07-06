@@ -14,7 +14,7 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 
 
@@ -30,7 +30,7 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 
 
@@ -46,7 +46,7 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 
 
@@ -62,7 +62,7 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 ---
 ## Fecha: 09/07/2024
@@ -79,7 +79,7 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 
 
@@ -95,7 +95,7 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 
 ## Resumen de Tareas
@@ -110,7 +110,7 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 
 
@@ -126,7 +126,7 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 ---
 
@@ -144,7 +144,7 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 
 
@@ -160,7 +160,7 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 
 
@@ -176,7 +176,7 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 
 
@@ -192,7 +192,7 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 ---
 ## Fecha: 16/07/2024
@@ -209,7 +209,7 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 
 ## Resumen de Tareas
@@ -224,7 +224,7 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 
 ## Resumen de Tareas
@@ -239,7 +239,7 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 
 
@@ -255,6 +255,6 @@
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
-## Soluciones Propuestas
+**Soluciones Propuestas**
 - aquí soluciones propuestas
 
