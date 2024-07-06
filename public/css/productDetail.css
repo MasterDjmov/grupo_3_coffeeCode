@@ -221,7 +221,7 @@ main{
         border-radius: 10%;
         
     }
-    .carrito:hover{
+    .carrito:hover, .carrito:focus{
         color: white;
         background-color: #291025;
     }
