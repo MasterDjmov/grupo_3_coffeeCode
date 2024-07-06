@@ -1,4 +1,4 @@
-# Daily dos por Semana
+# DAILY DOS POR SEMANA
 
 ## Fecha: 05/07/2024
 ---
@@ -10,7 +10,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -28,7 +28,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -46,7 +46,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -64,7 +64,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -73,7 +73,7 @@
 ## Soluciones Propuestas
 - aquí soluciones propuestas
 
-## ------------------------------------------------------------------------------------------------------------------------------------------------------
+## -------------------------------------------------------------------------------------------------------------------------------------------
 ## Fecha: 09/07/2024
 ---
 
@@ -84,7 +84,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -102,7 +102,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -120,7 +120,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -138,7 +138,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -147,7 +147,7 @@
 ## Soluciones Propuestas
 - aquí soluciones propuestas
 
-## ------------------------------------------------------------------------------------------------------------------------------------------------------
+## -------------------------------------------------------------------------------------------------------------------------------------------
 ## Fecha: 12/07/2024
 ---
 
@@ -158,7 +158,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -176,7 +176,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -194,7 +194,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -212,7 +212,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -221,7 +221,7 @@
 ## Soluciones Propuestas
 - aquí soluciones propuestas
 
-## ------------------------------------------------------------------------------------------------------------------------------------------------------
+## -------------------------------------------------------------------------------------------------------------------------------------------
 ## Fecha: 16/07/2024
 ---
 
@@ -232,7 +232,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -250,7 +250,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -268,7 +268,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -286,7 +286,7 @@
 **Qué hizo ayer**  
  [Descripción de tareas completadas ayer]       
 
-**impedimentos**         
+**Impedimentos**         
  [Descripción de impedimentos]
 
 **Qué va a hacer hoy**  
@@ -295,4 +295,4 @@
 ## Soluciones Propuestas
 - aquí soluciones propuestas
 
-## ------------------------------------------------------------------------------------------------------------------------------------------------------
+## -------------------------------------------------------------------------------------------------------------------------------------------
