@@ -1,5 +1,6 @@
 const express = require('express');
 const indexRouter = require('./src/routers/indexRouter');
+const userRouter = require('./src/routers/userRouter');
 const app = express();
 
 app.use(express.static('public'));
@@ -14,4 +15,6 @@ app.listen(puerto,(error)=>{
 })
 
 //cargo los manejadores de rutas
+
 app.use('/', indexRouter);
+app.use('/user', userRouter);
