@@ -1,6 +1,9 @@
 const express = require('express');
 const indexRouter = require('./src/routers/indexRouter');
 const userRouter = require('./src/routers/userRouter');
+const productRouter = require('./src/routers/productRouter');
+const adminRouter = require('./src/routers/adminRouter');
+
 const app = express();
 
 app.use(express.static('public'));
@@ -18,3 +21,5 @@ app.listen(puerto,(error)=>{
 
 app.use('/', indexRouter);
 app.use('/user', userRouter);
+app.use('/product', productRouter);
+app.use('/admin', adminRouter);

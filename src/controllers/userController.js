@@ -7,6 +7,9 @@ const userController = {
     },
     register: (req, res) => {
         res.sendFile(path.resolve(__dirname,'../views/users/register.html'));
+    },
+    recuperarClave: (req, res) => {
+        res.sendFile(path.resolve(__dirname,'../views/users/recuperarClave.html'));
     }
 }
 
