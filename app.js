@@ -1,10 +1,8 @@
 const express = require('express');
-const path = require('path');
+const indexRouter = require('./src/routers/indexRouter');
 const app = express();
-app.use(express.static('public'));
 
-// Importar el controlador de rutas
-const { ejecutarRutaDeController } = require('./src/controller/controller');
+app.use(express.static('public'));
 
 const puerto = 3000;
 app.listen(puerto,(error)=>{
@@ -14,16 +12,6 @@ app.listen(puerto,(error)=>{
         console.log("Server iniciado en: "+puerto);
     }
 })
-/*
-app.get('/',(req,res)=>{
-    res.sendFile(path.resolve("./src/views/index.html"));
-})*/
 
-
-
-// Manejar todas las rutas, * es cualquier ruta ej /login
-app.get('*', (req, res) => {
-    const ruta = req.path; //    /login
-    ejecutarRutaDeController(ruta, req, res); // paso la ruta que llego a la función que se encuentra en controller.js
-});
-
+//cargo los manejadores de rutas
+app.use('/', indexRouter);
