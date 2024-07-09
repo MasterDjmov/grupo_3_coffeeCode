@@ -71,12 +71,12 @@ main{
         background-color: #291025;
     }
     
-    .estilo-label{
+    .bloque{
         padding-top: 5px;
         font-weight: bold;
     }
     
-    .estilo-label > input{
+    .bloque > input{
         width: 200px;
         padding: 5px;
     }
@@ -86,16 +86,20 @@ main{
         font-weight: bold;
         a{
             font-weight: bold;
-            
+            color: #823a6f;
             padding-left: 5px;
         }
+        
+    }
+    a:hover{
+        color: #291025;
     }
 }
 
 
 @media (min-width: 361px){
     main{
-        .estilo-label > input{
+        .bloque > input{
             width: 400px;
             padding: 5px;
         }

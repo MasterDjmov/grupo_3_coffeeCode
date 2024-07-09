@@ -26,16 +26,28 @@ main{
         color: #291025;
         text-decoration: none;
     }
+    .boton{
+        width: 30%;
+        margin: auto;
+        background-color: #823a6f;
+        color: white;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    .boton:hover{
+        background-color: #291025;
+    }
     
     .navbar-item a:hover{
         color:  #823a6f;
     }
-    .estilo-label{
+    .bloque{
         padding: 20px;
         font-weight: bold;
         margin-bottom: 20px;
     }
-    .recuperarClave{
+    .estilo-form{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -48,8 +60,8 @@ main{
         align-items: center;
         padding: 10px;
     }
-    .estilo-label > input{
-        width: 200px;
+    .bloque > input{
+        width: 300px;
         padding: 5px;
         margin-bottom: 20px;
     }

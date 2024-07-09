@@ -11,8 +11,8 @@ const productController = {
     productCart_facturacion: (req, res) => {
         res.sendFile(path.resolve(__dirname,'../views/products/productCart_facturacion.html'));
     },
-    productCartDetail: (req, res) => {
-        res.sendFile(path.resolve(__dirname,'../views/products/productCartDetail.html'));
+    productDetail: (req, res) => {
+        res.sendFile(path.resolve(__dirname,'../views/products/productDetail.html'));
     }
     
 }

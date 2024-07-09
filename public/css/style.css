@@ -22,6 +22,7 @@
     width: 150px;
     height: 100px;
     margin: 20px 0px 0px 20px;
+    cursor: pointer;
 }
 
 
@@ -59,6 +60,13 @@ nav {
     font-size: 1rem;
 }
 
+.link-a:hover{
+    color: white;
+    background-color: #000;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
 .search-container {
     display: flex;
     align-items: center;
@@ -83,15 +91,24 @@ nav {
     font-family: Helvetica; 
     font-weight: bold;
 }
+.search-container button:hover{
+    background-color: #a99ac4;
+}
 
 .cart-icon img {
     width: 30px;
     height: 30px;
 }
+.cart-icon img:hover{
+    opacity: 0.7;
+}
 
 .login1 img {
     width: 30px;
     height: 30px;
+}
+.login1 img:hover{
+    opacity: 0.7;
 }
 
 

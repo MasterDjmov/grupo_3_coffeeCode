@@ -22,16 +22,26 @@
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+ [ 
+- Documentacion.
+- Busqueda de información.
+- Creación de retrospectiva.
+- Distribución de roles 
+ ]       
 
 **Impedimentos**         
- [Descripción de impedimentos]
+ [
+- No hubo impedimentos
+ ]
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+ [
+- Correcccion de vistas.
+- Correción de Formularios.
+ ]
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Seguir con capacitación sobre las tares a realizar
 
 
 ## Resumen de Tareas
