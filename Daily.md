@@ -1,6 +1,6 @@
 # DAILY DOS POR SEMANA
 ---
-## Fecha: 05/07/2024
+## Fecha: 06/07/2024
 
 ## Resumen de Tareas
 ### Diaz Caceres, Camila:
@@ -64,17 +64,17 @@
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+ Buscando información sobre las responzabilidades de los roles      
 
 **Impedimentos**         
- [Descripción de impedimentos]
+Sin impedimentos
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+ Creacion del tablero Trello
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
----
+- Seguir practicando y buscando información.
+
 ## Fecha: 09/07/2024
 
 ## Resumen de Tareas
@@ -128,16 +128,16 @@
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+Creacion del tablero Trello     
 
 **Impedimentos**         
- [Descripción de impedimentos]
+sin impedimentos
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+ Organizacion de MVC
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- seguir programando para dar funcionalidad a las vistas
 ---
 
 ## Fecha: 12/07/2024
