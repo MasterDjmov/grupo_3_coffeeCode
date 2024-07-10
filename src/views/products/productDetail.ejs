@@ -48,7 +48,7 @@
     <main>
         <div class="caja-producto">
         <div class="producto1">
-            <img src="/img/imagen_producto.jpg" alt="imagen de prueba" class="imagen-producto1">
+            <img src="<%= cafe.imagen %>" alt="imagen de prueba" class="imagen-producto1">
             <ol class= "navbar">
             <li class="navbar-item"> <a href='/'> Incio</a></li>
             <li class="navbar-item"> <a href="#"> Cafe de especialidad</a></li>
@@ -56,8 +56,8 @@
             </ol>
         </div>
         <div class="descripcion-producto">
-        <h3>Blen de la Casa</h3>
-        <h3>$12.200,00</h3>
+        <h3><%= cafe.nombre %></h3>
+        <h3><%= cafe.precio %></h3>
 
         <button class="acordeon">Llega recién tostado dentro de las 72hs hábiles<i class="fa-solid fa-chevron-down"></i></button>
         <div class="panel">
@@ -84,15 +84,18 @@
             }
         </script>
         <div class="descripcion">
-        <h5>
-            Combina cafés naturales y lavados.
-        </h5>
-        <br>
-        <p class="texto">
-        El café que servimos todos los días en nuestras
-        cafeterías en nuestra provincia. Balanceado y versátil,
-        se adapta a cualquier método y gusto.
-        </p>
+            <h5>
+                <%= cafe.descripcion %>
+            </h5>
+            <h5>
+                Combina cafés naturales y lavados.
+            </h5>
+            <br>
+            <p class="texto">
+            El café que servimos todos los días en nuestras
+            cafeterías en nuestra provincia. Balanceado y versátil,
+            se adapta a cualquier método y gusto.
+            </p>
         </div>
 <br>
         <p style="margin-bottom: 0px; padding-left: 20px;">        
@@ -104,7 +107,7 @@
         </span>
 
         <table class="variaciones" cellspacing="0" role="presentation">
-            <form action="/product/productCart" method="get">
+           
             <label for="opciones">
                 <h4>¿Cómo querés tu café?</h4>
                 <select name="tipo" value="tipo de cafe">
@@ -150,10 +153,10 @@
                     <input type="number" min="1" step="1" value="0" id="counter">
                     <button class="di" onclick="increase()">+</button>
                     </div>
-                    <button class="carrito" type="submit"><strong> Agregar al carrito</strong></button>
+                    <a href="/product/productCart" class="carrito" ><strong> Agregar al carrito</strong></a>
                 </div>
             </label>
-            </form>
+           
         </table>
         </div>
         </div>
