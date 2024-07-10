@@ -8,6 +8,11 @@ const app = express();
 
 app.use(express.static('public'));
 
+//necesario para ejs
+app.set('views',__dirname + '/src/views/');
+app.set('view engine','ejs');
+
+
 const puerto = 3000;
 app.listen(puerto,(error)=>{
     if(error){
