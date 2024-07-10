@@ -1,5 +1,5 @@
 const express = require('express');
-const indexRouter = require('./src/routers/indexRouter');
+const mainRouter = require('./src/routers/mainRouter');
 const userRouter = require('./src/routers/userRouter');
 const productRouter = require('./src/routers/productRouter');
 const adminRouter = require('./src/routers/adminRouter');
@@ -19,7 +19,7 @@ app.listen(puerto,(error)=>{
 
 //cargo los manejadores de rutas
 
-app.use('/', indexRouter);
+app.use('/', mainRouter);
 app.use('/user', userRouter);
 app.use('/product', productRouter);
 app.use('/admin', adminRouter);

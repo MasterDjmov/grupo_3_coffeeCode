@@ -1,10 +1,10 @@
 const express = require('express');
 const path = require('path');
 
-const indexController = {
+const mainController = {
     index: (req, res) => {
         res.sendFile(path.resolve(__dirname,'../views/index.html'));
     }
 }
 
-module.exports = indexController;
+module.exports = mainController;
