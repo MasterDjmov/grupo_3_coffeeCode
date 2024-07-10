@@ -41,6 +41,7 @@ const productController = {
              imagen: "/img/imagen_producto.jpg",
              nombre: "Café Etiopía",
              descripcion: "Café suave y afrutado de Etiopía.",
+             descripcion2: "Café suave y afrutado de Etiopíahhhhhhhhhhhh.",
              cantidad: 6,
              categoria: "café",
              precio: `$${(Math.random() * (50000 - 30000) + 30000).toFixed(2)}`
