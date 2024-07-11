@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-   
-    <title>detalle de producto</title>
+<%- include('../partials/head.ejs') %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <script src="https://kit.fontawesome.com/138f4028c4.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +47,7 @@
             <ol class= "navbar">
             <li class="navbar-item"> <a href='/'> Incio</a></li>
             <li class="navbar-item"> <a href="#"> Cafe de especialidad</a></li>
-            <li class="navbar-item"> <a href="#"> Nombre-producto</a></li>
+            <li class="navbar-item"> <a href="#"> <%= cafe.nombre %></a></li>
             </ol>
         </div>
         <div class="descripcion-producto">
@@ -181,8 +174,8 @@
         <div class="descripcion3">
             <ul class="descripcion-bar">
                 <li class="descripcion-bar-item"><strong>Detalles del producto</strong></li>
-                <li class="descripcion-bar-item"><strong>País<p>Brasil y Colombia</p></strong></li>
-                <li class="descripcion-bar-item"><strong> Productor<p>Varios.</p> </strong></li>
+                <li class="descripcion-bar-item"><strong>País<p><%= cafe.pais %></p></strong></li>
+                <li class="descripcion-bar-item"><strong> Productor<p><%= cafe.productor %></p> </strong></li>
                 <li class="descripcion-bar-item"><strong> Región<p>Varios.</p> </strong></li>
                 <li class="descripcion-bar-item"><strong> Altitud<p>Entre 800 y 1650M</p> </strong></li>
                 <li class="descripcion-bar-item"><strong> Procesamiento<p style="padding-top: 10px;">50% Natural</p><p style="margin-bottom: 10px; position: relative;bottom: 20px;">50% Lavado</p> </strong></li>

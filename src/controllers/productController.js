@@ -25,7 +25,9 @@ const productController = {
              descripcion: "Café de alta calidad de Colombia.",
              cantidad: 6,
              categoria: "café",
-             precio: `$${(Math.random() * (50000 - 30000) + 30000).toFixed(2)}`
+             precio: `$${(Math.random() * (50000 - 30000) + 30000).toFixed(2)}`,
+             pais: "Colombia",
+             productor: "ALIRIO GALINDEZ, FINCA VISTA HERMOSA"
          },
          {
              id: 2,
@@ -34,7 +36,9 @@ const productController = {
              descripcion: "Café robusto y fuerte de Brasil.",
              cantidad: 6,
              categoria: "café",
-             precio: `$${(Math.random() * (50000 - 30000) + 30000).toFixed(2)}`
+             precio: `$${(Math.random() * (50000 - 30000) + 30000).toFixed(2)}`,
+             pais: "Brasil",
+             productor: "FAZENDA SERTAO"
          },
          {
              id: 3,
@@ -44,7 +48,9 @@ const productController = {
              descripcion2: "Café suave y afrutado de Etiopíahhhhhhhhhhhh.",
              cantidad: 6,
              categoria: "café",
-             precio: `$${(Math.random() * (50000 - 30000) + 30000).toFixed(2)}`
+             precio: `$${(Math.random() * (50000 - 30000) + 30000).toFixed(2)}`,
+             pais: "Etiopía",
+             productor: "VARIOS"
          },
          {
              id: 4,
@@ -53,7 +59,9 @@ const productController = {
              descripcion: "Café exótico de Hawai.",
              cantidad: 6,
              categoria: "café",
-             precio: `$${(Math.random() * (50000 - 30000) + 30000).toFixed(2)}`
+             precio: `$${(Math.random() * (50000 - 30000) + 30000).toFixed(2)}`,
+             pais: "Hawai",
+             productor: "VARIOS"
          },
          {
              id: 5,
@@ -62,7 +70,9 @@ const productController = {
              descripcion: "Café con notas especiadas de Sumatra.",
              cantidad: 6,
              categoria: "café",
-             precio: `$${(Math.random() * (50000 - 30000) + 30000).toFixed(2)}`
+             precio: `$${(Math.random() * (50000 - 30000) + 30000).toFixed(2)}`,
+             pais: "Sumatra",
+             productor: "VARIOS"
          },
          {
              id: 6,
@@ -71,7 +81,9 @@ const productController = {
              descripcion: "Café suave y aromático de Jamaica.",
              cantidad: 6,
              categoria: "café",
-             precio: `$${(Math.random() * (50000 - 30000) + 30000).toFixed(2)}`
+             precio: `$${(Math.random() * (50000 - 30000) + 30000).toFixed(2)}`,
+             pais: "Jamaica",
+             productor: "VARIOS"
          },
          {
              id: 7,
@@ -80,7 +92,9 @@ const productController = {
              descripcion: "Café con cuerpo completo de Guatemala.",
              cantidad: 6,
              categoria: "café",
-             precio: `$${(Math.random() * (50000 - 30000) + 30000).toFixed(2)}`
+             precio: `$${(Math.random() * (50000 - 30000) + 30000).toFixed(2)}`,
+             pais: "Guatemala",
+             productor: "IVÁN OVALLE. FINCA EL PEÑÓN"
          }
      ];
 
