@@ -26,5 +26,5 @@ app.listen(puerto,(error)=>{
 
 app.use('/', mainRouter);
 app.use('/user', userRouter);
-app.use('/product', productRouter);
+app.use('/products', productRouter);
 app.use('/admin', adminRouter);
