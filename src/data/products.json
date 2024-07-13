@@ -10,10 +10,16 @@
         "descripcionLarga": "Café de alta calidad de Colombia agregar información.",
         "cantidad": 6,
         "precio": 63536.00,
+        "precio250": 63536.00,
         "unidad":"1kg",
+        "unidad2":"250g",
         "categoria": "Café Especialidad",
         "pais": "Colombia",
-        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA"
+        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA",
+        "region": "Varios",
+        "altitud": "Entre 800 y 1650M",
+        "procesamiento": "50% Natural",
+        "procesamiento2": "50% Lavado"      
     },
     {
         "id":2,
@@ -25,10 +31,16 @@
         "descripcionLarga": "Café de alta calidad de Colombia agregar información.",
         "cantidad": 6,
         "precio": 63536.00,
+        "precio250": 63536.00,
         "unidad":"1kg",
+        "unidad2":"250g",
         "categoria": "Café Especialidad",
         "pais": "Colombia",
-        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA"
+        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA",
+        "region": "Varios",
+        "altitud": "Entre 800 y 1650M",
+        "procesamiento": "50% Natural",
+        "procesamiento2": "50% Lavado"   
     },
     {
         "id":3,
@@ -40,10 +52,16 @@
         "descripcionLarga": "Café de alta calidad de Colombia agregar información.",
         "cantidad": 6,
         "precio": 63536.00,
-        "unidad":"500g",
+        "precio250": 63536.00,
+        "unidad":"1kg",
+        "unidad2":"250g",
         "categoria": "Café Especialidad",
         "pais": "Colombia",
-        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA"
+        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA",
+        "region": "Varios",
+        "altitud": "Entre 800 y 1650M",
+        "procesamiento": "50% Natural",
+        "procesamiento2": "50% Lavado"   
     },
     {
         "id":4,
@@ -55,10 +73,16 @@
         "descripcionLarga": "Café de alta calidad de Colombia agregar información.",
         "cantidad": 6,
         "precio": 63536.00,
-        "unidad":"500g",
+        "precio250": 63536.00,
+        "unidad":"1kg",
+        "unidad2":"250g",
         "categoria": "Café Especialidad",
         "pais": "Colombia",
-        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA"
+        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA",
+        "region": "Varios",
+        "altitud": "Entre 800 y 1650M",
+        "procesamiento": "50% Natural",
+        "procesamiento2": "50% Lavado"   
     },
     {
         "id":5,
@@ -70,10 +94,16 @@
         "descripcionLarga": "Café de alta calidad de Colombia agregar información.",
         "cantidad": 6,
         "precio": 63536.00,
+        "precio250": 63536.00,
         "unidad":"1kg",
+        "unidad2":"250g",
         "categoria": "Café Especialidad",
         "pais": "Colombia",
-        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA"
+        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA",
+        "region": "Varios",
+        "altitud": "Entre 800 y 1650M",
+        "procesamiento": "50% Natural",
+        "procesamiento2": "50% Lavado"   
     },
     {
         "id":6,
@@ -85,10 +115,16 @@
         "descripcionLarga": "Café de alta calidad de Colombia agregar información.",
         "cantidad": 6,
         "precio": 63536.00,
+        "precio250": 63536.00,
         "unidad":"1kg",
+        "unidad2":"250g",
         "categoria": "Café Especialidad",
         "pais": "Colombia",
-        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA"
+        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA",
+        "region": "Varios",
+        "altitud": "Entre 800 y 1650M",
+        "procesamiento": "50% Natural",
+        "procesamiento2": "50% Lavado"   
     },
     {
         "id":7,
@@ -100,10 +136,16 @@
         "descripcionLarga": "Café de alta calidad de Colombia agregar información.",
         "cantidad": 6,
         "precio": 63536.00,
+        "precio250": 63536.00,
         "unidad":"1kg",
+        "unidad2":"250g",
         "categoria": "Café Especialidad",
         "pais": "Colombia",
-        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA"
+        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA",
+        "region": "Varios",
+        "altitud": "Entre 800 y 1650M",
+        "procesamiento": "50% Natural",
+        "procesamiento2": "50% Lavado"   
     },
     {
         "id":8,
@@ -115,10 +157,16 @@
         "descripcionLarga": "Café de alta calidad de Colombia agregar información.",
         "cantidad": 6,
         "precio": 63536.00,
+        "precio250": 63536.00,
         "unidad":"1kg",
+        "unidad2":"250g",
         "categoria": "Café Especialidad",
         "pais": "Colombia",
-        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA"
+        "productor": "ALIRIO GALINDEZ, FINCA VISTA HERMOSA",
+        "region": "Varios",
+        "altitud": "Entre 800 y 1650M",
+        "procesamiento": "50% Natural",
+        "procesamiento2": "50% Lavado"   
     }
    
 ]

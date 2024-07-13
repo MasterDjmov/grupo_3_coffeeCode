@@ -135,7 +135,7 @@ Creacion del tablero Trello
 sin impedimentos
 
 **Qué va a hacer hoy**  
- Organizacion de MVC
+ Organización de MVC
 
 **Soluciones Propuestas**
 - seguir programando para dar funcionalidad a las vistas
@@ -198,16 +198,16 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+ Modifique la sección productos para que se cargue dinamicamente
 
 **Impedimentos**         
- [Descripción de impedimentos]
+ Sin impedimentos
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+ dar funcionalidad a productController
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- seguir programando para dar funcionalidad al carrito de compra.
 ---
 ## Fecha: 16/07/2024
 
