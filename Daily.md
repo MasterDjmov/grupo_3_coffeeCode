@@ -129,7 +129,8 @@ Sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
-Creacion del tablero Trello     
+Creacion del tablero Trello
+revisión del código     
 
 **Impedimentos**         
 sin impedimentos
@@ -198,16 +199,18 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- Modifique la sección productos para que se cargue dinamicamente
-
+ Modifiqué la sección productos para que se cargue dinamicamente
+ Cree products.json
 **Impedimentos**         
  Sin impedimentos
 
 **Qué va a hacer hoy**  
- dar funcionalidad a productController
+ Dar funcionalidad a productController
+ Cambiar el nombre de las rutas
 
 **Soluciones Propuestas**
-- seguir programando para dar funcionalidad al carrito de compra.
+- Seguir programando para dar funcionalidad al carrito de compra.
+- Seguir revisando el código
 ---
 ## Fecha: 16/07/2024
 
