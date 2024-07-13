@@ -97,16 +97,17 @@ Sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+ - Corrección de vistas.       
 
 **Impedimentos**         
- [Descripción de impedimentos]
+ - Errores en las rutas
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+ - Creé los archivos partials.
+ - Modularizando las vistas.
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Lo solucione corrigiendo las rutas de las vistas.
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -162,16 +163,19 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+ - Modifique la vista detalle de producutDetail para que se cargue dinamicamente.   
 
 **Impedimentos**         
- [Descripción de impedimentos]
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+ - Haciendo el codigo para las vistas del admin.
+ - Corrigiendo resoluciones.
+ - Crear la vista info (Quienes somos).
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Ver referencias sobre las vistas del admin.
+- Ver referencias sobre la vista info.
 
 
 ## Resumen de Tareas
