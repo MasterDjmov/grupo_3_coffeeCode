@@ -52,7 +52,7 @@
         </div>
         <div class="descripcion-producto">
         <h3><%= cafe.nombre %></h3>
-        <h3><%= cafe.precio %></h3>
+        <h3>$ <%= cafe.precio %></h3>
 
         <button class="acordeon">Llega recién tostado dentro de las 72hs hábiles<i class="fa-solid fa-chevron-down"></i></button>
         <div class="panel">
@@ -83,7 +83,7 @@
                 
             </h5>
             <h5>
-                <%= cafe.descripcion2 %>
+                <%= cafe.descripcionLarga %>
                 Combina cafés naturales y lavados.
             </h5>
             <br>
@@ -160,16 +160,16 @@
         <div class="descripcion2">
             <div class="sabor">
             <h3>Descripción del sabor</h3>
-            <img src="/img/medidor.jpg" alt="medidor" class="imagen-medidor">
+            <img src="<%= cafe.imagenMedidor %>" alt="medidor" class="imagen-medidor">
             <h3 style="font-size: 15px;">Cuerpo</h3>
-            <img src="/img/medidor1.jpg" alt="medidor" class="imagen-medidor1">
+            <img src="<%= cafe.imagenMedidor %>" alt="medidor" class="imagen-medidor1">
             <h3 style="font-size: 15px;">Acidez</h3>
 
             <i class="fa-solid fa-mug-hot"></i>
             <h3>Recomendamos</h3>
             <h4>Para Espresso o Filtro, con o sin leche</h4>
             </div>
-            <img src="/img/imagen-producto2.jpg" alt="imagen de producto al aire libre" class="imagen-producto2">
+            <img src="<%= cafe.imagenSecundaria %>" alt="imagen de producto al aire libre" class="imagen-producto2">
         </div>
         <div class="descripcion3">
             <ul class="descripcion-bar">
