@@ -44,7 +44,7 @@
     },
     {
         "id":3,
-        "imagen": "/img/imagen_producto.jpg",
+        "imagen": "/img/products/script.png",
         "imagenSecundaria": "/img/imagen-producto2.jpg",
         "imagenMedidor": "/img/medidor1.jpg",
         "nombre": "Café Colombiano",
