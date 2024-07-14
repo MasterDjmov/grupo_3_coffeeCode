@@ -81,16 +81,21 @@ Sin impedimentos
 ### Diaz Caceres, Camila:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+- Organizacion del Trello.
+- Division de tareas.
+- Busqueda de información sobre mi rol (testing).
+- Ver herramientas que me ayuden en el testeo.
+- Distribución de roles, descripcion de cada uno en el trello.   
 
 **Impedimentos**         
- [Descripción de impedimentos]
+Organizarme con mis tiempos disponibles, para cumplir mis responsabilidades con el equipo.
 
 **Qué va a hacer hoy**  
  [Descripción de tareas planeadas para hoy]
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Ver videos para mejorar mi rol y buscar soluciones a problemas que planteo a mis compañeros de equipo.
+
 
 
 ## Resumen de Tareas
