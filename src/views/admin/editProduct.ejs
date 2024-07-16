@@ -36,9 +36,13 @@
     </div>
 </header>
     <main>
+        <h1 style="background-color: chartreuse;"><% if(msg!=""){%>
+            <%= msg %> 
+       <% } %></h1>
     <div class="container">
+       
         <h1>Editar Producto</h1>
-        <form action="/" method="get">
+        <form action="/admin/edit/<%= cafe.id %>" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="productName">Nombre del Producto</label>
                 <input type="text" id="productName" name="productName" value="<%= cafe.nombre %>" required>
