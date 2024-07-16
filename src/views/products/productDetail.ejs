@@ -42,7 +42,12 @@
     </header>
     <main>
         <div class="caja-producto">
+            
         <div class="producto1">
+            <div class="botones-admin">
+                <a href="/admin/edit" >Editar Producto</a>
+                <a href="/admin/register">Registrar Producto</a>   
+            </div>
             <img src="<%= cafe.imagen %>" alt="imagen de prueba" class="imagen-producto1">
             <ol class= "navbar">
             <li class="navbar-item"> <a href='/'> Incio</a></li>
@@ -187,16 +192,16 @@
             
             <form action="/products/cart">
             <article class="caja-articulo">
-            <img src="/img/imagen-producto3.jpg" alt="imagen cafe guatemala">
-            <strong><p class="descripcion-imagen"> Café de Guatemala</p></strong>
+            <img src="/img/products/oracle.png" alt="imagen cafe guatemala">
+            <strong><p class="descripcion-imagen"> Cafe oracle</p></strong>
             <strong> <p class="descripcion-imagen"> $20.000</p> </strong>
             <button>Agregar al carrito</button>
             </article>
         </form>
         <form action="/products/cart">
             <article class="caja-articulo">
-                <img src="/img/imagen-producto4.jpg" alt="imagen cafe Brasil">
-                <strong><p class="descripcion-imagen"> Café de Brasil</p></strong>
+                <img src="/img/products/express.png" alt="imagen cafe Brasil">
+                <strong><p class="descripcion-imagen"> Café express</p></strong>
                 <strong><p class="descripcion-imagen"> $10.800</p> </strong>
                 <button>Agregar al carrito</button>
                 </article>
