@@ -36,40 +36,73 @@
     </div>
 </header>
     <main>
+        <h1 style="background-color: chartreuse;"><% if(msg!=""){%>
+            <%= msg %> 
+       <% } %></h1>
     <div class="container">
+       
         <h1>Editar Producto</h1>
-        <form action="/" method="get">
+        <form action="/admin/edit/<%= cafe.id %>" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="productName">Nombre del Producto</label>
-                <input type="text" id="productName" name="productName" value="Producto Ejemplo" required>
+                <input type="text" id="productName" name="productName" value="<%= cafe.nombre %>" required>
             </div>
             <div class="form-group">
-                <label for="productDescription">Descripción</label>
-                <textarea id="productDescription" name="productDescription" rows="4" required>Descripción del producto</textarea>
+                <label for="productFabricado">Fabricado en</label>
+                <input type="text" id="productFabricado" name="productFabricado" value="<%= cafe.descripcion %>" required>
             </div>
             <div class="form-group">
-                <label for="productPrice">Precio</label>
-                <input type="number" id="productPrice" name="productPrice" step="0.01" value="100.00" required>
+                <label for="productDescription">Descripción</label>              
+                <textarea id="productDescription" name="productDescription" rows="4" required ><%= cafe.descripcionLarga %></textarea>
             </div>
             <div class="form-group">
-                <label for="productImage">Imagen del Producto (URL)</label>
-                <input type="text" id="productImage" name="productImage" value="https://example.com/imagen.jpg" required>
+                <label for="productPrice">Precio (1 Kg)</label>
+                <div style="display: flex;align-items: center; background-color: white; ">
+                     $<input type="number" id="productPrice" name="productPrice" step="0.01" value="<%= cafe.precio %>" required style="border: none;" >
+                </div>
             </div>
             <div class="form-group">
-                <label for="opciones">
-                    Categoría
-                    </label>
-                    <select name="tipo" value="categoría">
-                        <option value="" disabled selected> Elegi tu opción</option>
-                        <option value="café Especialidad" >Café Especialidad</option>
-                        </select>
+                <label for="productPrice250">Precio (250g)</label>
+                <div style="display: flex;align-items: center; background-color: white; ">
+                     $<input type="number" id="productPrice250" name="productPrice250" step="0.01" value="<%= cafe.precio250 %>" required style="border: none;" >
+                </div>
             </div>
             <div class="form-group">
+                <label for="productImage">Cargar Imagen del Producto:</label>
+                <input type="file" id="productImage" name="productImage" accept="image/*">
+                <img width="30%" src="<%= cafe.imagen %>">
+            </div>
+            <div class="form-group">
+                <label for="productor">Productor</label>
+                <input type="text" id="productor" name="productor" value="<%= cafe.productor %>" required>
+            </div>
+            <div class="form-group">
+                <label for="pais">Pais</label>
+                <input type="text" name="pais" id="pais" value="<%= cafe.pais %>"> 
+            </div>
+            <div class="form-group">
+                <label for="region">Región</label>
+                <input type="text" id="region" name="region" value="<%= cafe.region %>" required>
+            </div>
+            <div class="form-group">
+                <label for="altitud">Altitud</label>
+                <input type="text" id="altitud" name="altitud" value="<%= cafe.altitud %>" required>
+            </div>
+            <div class="form-group">
+                <label for="procesamiento">Procesamiento Natural</label>
+                <input type="text" id="procesamiento" name="procesamiento" value="<%= cafe.procesamiento %>" required>
+            </div>
+            <div class="form-group">
+                <label for="procesamiento2">Procesamiento Lavado</label>
+                <input type="text" id="procesamiento2" name="procesamiento2" value="<%= cafe.procesamiento2 %>" required>
+            </div>
+            <!-- <div class="form-group">
                 <label for="colorPicker">Selecciona un color:</label>
-            <input type="color" id="colorPicker" name="colorPicker" value="#ff0000" onchange="updateColor()">
-            <span id="colorDisplay" style="background-color: #ff0000;"></span>
-            </div>
+                <input type="color" id="colorPicker" name="colorPicker" value="#ff0000" onchange="updateColor()">
+                <span id="colorDisplay" style="background-color: #ff0000;"></span>
+            </div> -->
             <div class="form-group">
+                <input type="hidden" name="idproducto" value="<%= cafe.id %>">
                 <button>Guardar Cambios</button>
             </div>
         </form>

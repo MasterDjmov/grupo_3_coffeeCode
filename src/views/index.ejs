@@ -13,6 +13,7 @@
             </div>
             <nav>
                 <ul class="nav-links">
+                    <li><a class="link-a" href="/admin/register"><i class="fas fa-plus-circle"></i> PRODUCTOS</a></li>
                     <li><a class="link-a" href="#productos">PRODUCTOS</a></li>
                     <li><a class="link-a" href="#informacion">INFORMACIÓN</a></li>
                     <li class="search-container">
@@ -56,10 +57,14 @@
                 </div>
             </article>
         </section>
-        
+     
             <div class="contenedor-productos">
                 <% listaProductos.forEach(cafe => { %>
-                    <article class="producto">
+                  
+                    <article class="producto" style="position: relative;">
+                       <a  href="/admin/edit/<%= cafe.id %>" style="position: absolute; right: 33px; color: rgb(119, 161, 106);"> 
+                        <i class="fas fa-edit">edit</i>
+                        </a>
                         <img src="<%= cafe.imagen %>" alt="Producto 1">
                         <h3><%= cafe.nombre %></h3>
                         <p><%= cafe.descripcion %></p>
