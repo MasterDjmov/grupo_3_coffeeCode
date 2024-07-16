@@ -1,18 +1,21 @@
 const express = require('express');
 const path = require('path');
+const productos = require('../data/products.json');
 
 const adminController = {
     editProduct: (req, res) => {
        // res.sendFile(path.resolve(__dirname,'../views/admin/editProduct.html'));
-       res.render('admin/edit');
+       const id =req.params.id;
+       const cafe = productos.find(e=>e.id==id);
+       res.render('admin/editProduct',{'cafe':cafe});
     },
     listProduct: (req, res) => {
        //res.sendFile(path.resolve(__dirname,'../views/admin/listProduct.html'));
-       res.render('admin/list');
+       res.render('admin/listProduct');
     },
     registerProduct: (req, res) => {
         //res.sendFile(path.resolve(__dirname,'../views/admin/registerProduct.html'));
-        res.render('admin/register');
+        res.render('admin/registerProduct');
     }
 }
 
