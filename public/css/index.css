@@ -1,6 +1,5 @@
 /*MAIN*/
 
-
 .contenedor-principal {
     font-family: "Roboto",sans-serif;
     width: 100%;
@@ -19,6 +18,7 @@
     display: flex;
     align-items: center;
     padding: 70px;
+    width: 100%;
 }
 
 .articulo article {
@@ -75,16 +75,18 @@
 }
 
 .producto button {
-    background-color: #823a6f;
+    background-color: #291025;
     color: white;
     border: none;
     padding: 8px 15px;
     cursor: pointer;
     border-radius: 20px;
+    transition: all 0.3s;
 }
 
 .producto button:hover {
-    background-color: #a99ac4;
+    background-color: #823a6f;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
 .lista-articulo{
