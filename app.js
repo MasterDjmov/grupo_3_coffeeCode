@@ -12,6 +12,11 @@ app.use(express.static('public'));
 app.set('views',__dirname + '/src/views/');
 app.set('view engine','ejs');
 
+//activo middleware para recibir post
+app.use(express.json());
+
+ //activo middleware para recibir url encoded
+app.use(express.urlencoded({extended:true}));
 
 const puerto = 3000;
 app.listen(puerto,(error)=>{
