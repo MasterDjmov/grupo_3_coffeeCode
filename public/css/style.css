@@ -35,7 +35,7 @@
     justify-content: space-between;
     padding: 0px 20px 20px 0px;
     background-color: #f3f3f3;
-    border: 2px solid #000;
+    
 }
 
 nav {
@@ -50,12 +50,11 @@ nav {
     align-items: center;
     list-style: none;
     gap: 15px;
-    border: 1px solid #000;
+    
 }
 
 .nav-links li {
-    
-    border: 1px solid #000;
+    padding: 0px;
 }
 
 .nav-links a {
