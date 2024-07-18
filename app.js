@@ -33,3 +33,8 @@ app.use('/', mainRouter);
 app.use('/user', userRouter);
 app.use('/products', productRouter);
 app.use('/admin', adminRouter);
+
+//bloqueo 404
+app.use((req, res) => {
+    res.status(404).render('./errors/404');
+});
