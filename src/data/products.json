@@ -15,8 +15,8 @@
         "unidad2":"250g",
         "categoria": "Café Especialidad",
         "pais": "Argentina",
-        "productor": "FINCA VISTA HERMOSA",
-        "region": "Varios",
+        "productor": "FINCA LAS BREAS",
+        "region": "La Rioja, Chamical",
         "altitud": "Entre 800 y 1650M",
         "procesamiento": "50% Natural",
         "procesamiento2": "50% Lavado"      
@@ -36,11 +36,11 @@
         "unidad2":"250g",
         "categoria": "Café Especialidad",
         "pais": "Brasil",
-        "productor": "FINCA VISTA HERMOSA",
-        "region": "Varios",
-        "altitud": "Entre 800 y 1650M",
-        "procesamiento": "50% Natural",
-        "procesamiento2": "50% Lavado"   
+        "productor": "FAZENDA SERTAO",
+        "region": "MINAS GERAIS",
+        "altitud": "1100 - 1450M",
+        "procesamiento": "NATURAL",
+        "procesamiento2": ""   
     },
     {
         "id":3,
@@ -57,11 +57,11 @@
         "unidad2":"250g",
         "categoria": "Café Especialidad",
         "pais": "Guatemala",
-        "productor": "FINCA VISTA HERMOSA",
-        "region": "Varios",
-        "altitud": "Entre 800 y 1650M",
-        "procesamiento": "50% Natural",
-        "procesamiento2": "50% Lavado"   
+        "productor": "FINCA EL PEÑÓN",
+        "region": "HUEHUETENANGO",
+        "altitud": "1600M",
+        "procesamiento": "NATURAL",
+        "procesamiento2": ""   
     },
     {
         "id":4,
@@ -79,10 +79,10 @@
         "categoria": "Café Especialidad",
         "pais": "Colombia",
         "productor": "FINCA VISTA HERMOSA",
-        "region": "Varios",
-        "altitud": "Entre 800 y 1650M",
-        "procesamiento": "50% Natural",
-        "procesamiento2": "50% Lavado"   
+        "region": "SALADO BLANCO, HUILA",
+        "altitud": "1680M",
+        "procesamiento": "LAVADO CON DOBLE FERMENTACIÓN",
+        "procesamiento2": ""   
     },
     {
         "id":5,
@@ -98,11 +98,11 @@
         "unidad2":"250g",
         "categoria": "Café Especialidad",
         "pais": "Bolivia",
-        "productor": "FINCA VISTA HERMOSA",
-        "region": "Varios",
-        "altitud": "Entre 800 y 1650M",
-        "procesamiento": "50% Natural",
-        "procesamiento2": "50% Lavado"   
+        "productor": "MARCO MEJÍA",
+        "region": "FINCA EL PORVENIR",
+        "altitud": "1700 - 2000M",
+        "procesamiento": "100% Lavado",
+        "procesamiento2": ""   
     },
     {
         "id":6,

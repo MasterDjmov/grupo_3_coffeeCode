@@ -379,6 +379,7 @@ main{
                     position: relative;
                     top: 440px;
                     text-align: center;
+                    z-index: auto;
                 }
                 .navbar{
                     position: relative;
@@ -393,11 +394,12 @@ main{
                 }
             }
             .acordeon{
-                width: 80%;
+                width: 70%;
             }
             .acordeon i{
                 top: -15px;
                 left: 220px;
+                z-index: auto;
             }
         }
         .descripcion2{

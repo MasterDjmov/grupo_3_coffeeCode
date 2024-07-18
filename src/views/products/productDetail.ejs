@@ -176,9 +176,9 @@
                 <li class="descripcion-bar-item"><strong>Detalles del producto</strong></li>
                 <li class="descripcion-bar-item"><strong>País<p><%= cafe.pais %></p></strong></li>
                 <li class="descripcion-bar-item"><strong> Productor<p><%= cafe.productor %></p> </strong></li>
-                <li class="descripcion-bar-item"><strong> Región<p>Varios.</p> </strong></li>
-                <li class="descripcion-bar-item"><strong> Altitud<p>Entre 800 y 1650M</p> </strong></li>
-                <li class="descripcion-bar-item"><strong> Procesamiento<p style="padding-top: 10px;">50% Natural</p><p style="margin-bottom: 10px; position: relative;bottom: 20px;">50% Lavado</p> </strong></li>
+                <li class="descripcion-bar-item"><strong> Región<p><%= cafe.region %></p> </strong></li>
+                <li class="descripcion-bar-item"><strong> Altitud<p><%= cafe.altitud %></p> </strong></li>
+                <li class="descripcion-bar-item"><strong> Procesamiento<p style="padding-top: 10px;"><%= cafe.procesamiento %></p><p style="margin-bottom: 10px; position: relative;bottom: 20px;"><%= cafe.procesamiento2 %></p> </strong></li>
             </ul>
         </div>
 
@@ -188,15 +188,15 @@
             <form action="/products/cart">
             <article class="caja-articulo">
             <img src="/img/products/oracle.png" alt="imagen cafe guatemala">
-            <strong><p class="descripcion-imagen"> Cafe oracle</p></strong>
-            <strong> <p class="descripcion-imagen"> $20.000</p> </strong>
+            <strong><p class="descripcion-imagen"> Oracle</p></strong>
+            <strong> <p class="descripcion-imagen"> $<%= cafe.precio%></p> </strong>
             <button>Agregar al carrito</button>
             </article>
         </form>
         <form action="/products/cart">
             <article class="caja-articulo">
                 <img src="/img/products/express.png" alt="imagen cafe Brasil">
-                <strong><p class="descripcion-imagen"> Café express</p></strong>
+                <strong><p class="descripcion-imagen"> Express</p></strong>
                 <strong><p class="descripcion-imagen"> $10.800</p> </strong>
                 <button>Agregar al carrito</button>
                 </article>

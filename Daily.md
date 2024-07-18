@@ -238,16 +238,17 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+ - Corregir vistas.
+ - Agregando estilos a vistas admin.
 
 **Impedimentos**         
- [Descripción de impedimentos]
+ - Resoluciones en las queris.
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+ - Agregando rol para logearse como cliente.
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Probar varias queris, para acomodar los contenidos.
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
