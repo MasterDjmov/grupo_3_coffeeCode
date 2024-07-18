@@ -87,8 +87,7 @@
     {
         "id":5,
         "imagen": "/img/products/syntaxLatte.png",
-        "imagenSecundaria": "/img/imagen-producto2.jpg",
-        "imagenMedidor": "/img/medidor1.jpg",
+        "imagenSecundaria": "/img/imgsecundaria/syntaxlatte.png",
         "nombre": "SYNTAX LATTE",
         "descripcion": "Fabricado en Bolivia",
         "descripcionLarga": "Café de alta calidad de Bolivia con un perfil de sabor único que destaca su origen. Este café ha sido cuidadosamente cultivado y procesado en las montañas bolivianas para ofrecer una experiencia sensorial excepcional. La combinación de altitudes y métodos de procesamiento confiere a este café un carácter complejo y equilibrado, perfecto para los amantes del café de especialidad que buscan descubrir nuevos sabores.",
