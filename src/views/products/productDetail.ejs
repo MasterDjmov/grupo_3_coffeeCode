@@ -25,9 +25,14 @@
                     </li>
                     <li class="login1">
                         <a href="/user/login">
-                            <img src="/img/login.png" alt="Login">
+                            <% if(user){%>
+                             <img src="/img/perfil/<%= user.imagen %>" alt="Login">
+                             <% } else { %>
+                                <img src="/img/login.png" alt="Login">
+                            <% } %>
                         </a>
                     </li>
+                    <li><a href="/logout"><i class="fas fa-times-circle"></i>salir</a></li>
                 </ul>
             </nav>
         </div>
@@ -148,7 +153,13 @@
                     <input type="number" min="1" step="1" value="0" id="counter">
                     <button class="di" onclick="increase()">+</button>
                     </div>
-                    <a href="/products/cart" class="carrito" ><strong> Agregar al carrito</strong></a>
+                    <% if(user){%>
+                        <a href="/products/cart" class="carrito" ><strong> Agregar al carrito</strong></a>
+                        <h1></h1>
+                        <% }else{%>
+                              <h4 style="background-color: chartreuse; text-align: center;"><%= msg %></h4>
+                       <% } %> 
+                  
                 </div>
             </label>
            
@@ -187,10 +198,15 @@
             
             <form action="/products/cart">
             <article class="caja-articulo">
-            <img src="/img/products/oracle.png" alt="imagen cafe guatemala">
-            <strong><p class="descripcion-imagen"> Oracle</p></strong>
-            <strong> <p class="descripcion-imagen"> $<%= cafe.precio%></p> </strong>
-            <button>Agregar al carrito</button>
+                <img src="/img/products/oracle.png" alt="imagen cafe guatemala">
+                <strong><p class="descripcion-imagen"> Oracle</p></strong>
+                <strong> <p class="descripcion-imagen"> $<%= cafe.precio%></p> </strong>
+                <% if(user){%>
+                <button>Agregar al carrito</button>
+                <h1></h1>
+                <% }else{%>
+                      <h4 style="background-color: chartreuse; text-align: center;"><%= msg %></h4>
+               <% } %> 
             </article>
         </form>
         <form action="/products/cart">
@@ -198,11 +214,11 @@
                 <img src="/img/products/express.png" alt="imagen cafe Brasil">
                 <strong><p class="descripcion-imagen"> Express</p></strong>
                 <strong><p class="descripcion-imagen"> $10.800</p> </strong>
-                <% if(user!=""){%>
+                <% if(user){%>
                     <button>Agregar al carrito</button>
                     <h1></h1>
                     <% }else{%>
-                          <button><%= msg %></button>
+                          <h4 style="background-color: chartreuse; text-align: center;"><%= msg %></h4>
                    <% } %> 
                 </article>
         </form>
