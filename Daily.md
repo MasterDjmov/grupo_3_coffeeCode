@@ -6,16 +6,20 @@
 ### Diaz Caceres, Camila:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+ Planificacion de la reunion.      
 
 **Impedimentos**         
- [Descripción de impedimentos]
+ Establecer horarios que sean compatibles con mis compañeros.
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+Hablar sobre el ultimo sprint, puesta en comun de lo que se hizo y lo que no. Potenciarnos como equipo. Formentar la comunicacion acertivas con mis compas de equipo.
+
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Delegar.
+- Organizarnos.
+- Establecer horarios fijos de reunion.
+- Buscar herramientas, opciones, informacion para proponer mejoras y soluciones a mis compañeros.
 
 
 ## Resumen de Tareas
@@ -153,16 +157,17 @@ sin impedimentos
 ### Diaz Caceres, Camila:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+ Revisar el codigo (errores de sintaxis), comunicarselas a mis compañeros.      
 
 **Impedimentos**         
- [Descripción de impedimentos]
+ Manera de comunicar lo que necesitaba que mejore o se modifique.
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+ Buscar informacion, herramientas para mejorar en mi rol.
+
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Agregue en el trello link de glosario de terminos y herramientas que necesitaba que se modifiquen.
 
 
 ## Resumen de Tareas
@@ -223,16 +228,16 @@ sin impedimentos
 ### Diaz Caceres, Camila:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+ Organizar Trello, mover tarjetas, añadir tareas, añadir html del testing del proyecto, etc.       
 
 **Impedimentos**         
- [Descripción de impedimentos]
+ No tuve impedimientos.
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+ Comunicarme con mis compañeros de equipo y analizar juntos la pagina actual, ver lñas actualizaciones de su trabajo y unificar ideas.
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- complete html del testing con actualizacion de nuevos detalles a modificar del diseño que converse en la reunion con mis compañeros.
 
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
