@@ -177,10 +177,11 @@ main{
             cursor: pointer;
             padding: 15px 30px;
             border-radius: 10%;
+            transition: all 0.2s;
         }
         button:hover{
             color: white;
-            background-color: #291025;
+            background-color: #823a6f;
         }
        
     }
@@ -234,18 +235,20 @@ main{
         color: #a99ac4;
         border: 1px solid #000;
         background-color:  #823a6f;
-        opacity: 0.9;
+        opacity: 0.8;
         font-size: 20px;
         cursor: pointer;
         padding: 15px 30px;
         border-radius: 10%;
         text-decoration: none;
         text-align: center;
+        transition: all 0.2s;
         
     }
     .carrito:hover, .carrito:focus{
         color: white;
-        background-color: #291025;
+        opacity: 1;
+        background-color: #823a6f;
     }
     }
     .descripcion2{
@@ -317,7 +320,7 @@ main{
         background-color: white;
         padding-bottom: 20px;
         width: 100%;
-        margin-left: 10px;
+        
      
         img{
             display: block;

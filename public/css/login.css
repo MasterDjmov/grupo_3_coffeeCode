@@ -50,25 +50,29 @@ main{
         width: 30%;
         margin: auto;
         background-color: #823a6f;
+        opacity: 0.8;
         color: white;
         padding: 5px;
         border: none;
         cursor: pointer;
     }
     .boton:hover{
-        background-color: #291025;
+        opacity: 1;
+        background-color: #823a6f;
     }
     .boton2{
         width: 30%;
         margin: auto;
         background-color: #823a6f;
+        opacity: 0.8;
         color: white;
         padding: 5px;
         border: none;
         cursor: pointer;
     }
     .buton2:hover{
-        background-color: #291025;
+        opacity: 1;
+        background-color: #823a6f;
     }
     
     .bloque{

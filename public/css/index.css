@@ -38,7 +38,9 @@
 .imagen-articulo img {
     width: 200px; /* Ancho de la imagen */
     height: auto;
-    padding-top: 40px;
+    margin-top: 60px;
+    border-radius: 30%;
+    border: 2px solid #000;
 }
 
 .contenedor-productos {
@@ -116,10 +118,10 @@
         .imagen-articulo img{
             width: 200px;
             display: flex;
-            padding-top: 0px;
             position: relative;
-            right: -40px;
-            top: -40px;
+            top: -60px;
+            right: -50px;
+            
         }
 
     }
@@ -136,7 +138,7 @@
         .imagen-articulo img{
             width: 140px;
             display: flex;
-            padding-top: 60px;
+            margin-top: 80px;
         }
 
     }
