@@ -3,4 +3,18 @@
     "email":"admin@admin.com",
     "clave": "admin123",
     "rol":"ADMINISTRADOR"
-}]
+},
+{
+    "id":2,
+    "email": "facudiaz@gmail.com",
+    "clave": "diaz123",
+    "rol": "CLIENTE"
+},
+{
+    "id":3,
+    "email": "patrib@gmail.com",
+    "clave": "bustos123",
+    "rol": "CLIENTE"
+}
+
+]
