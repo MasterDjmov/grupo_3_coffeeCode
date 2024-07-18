@@ -3,7 +3,7 @@
     {
         "id":1,
         "imagen": "/img/products/apiAroma.png",
-        "imagenSecundaria": "/img/imagen-producto2.jpg",
+        "imagenSecundaria": "/img/imgsecundaria/apiAroma.png",
         "imagenMedidor": "/img/medidor1.jpg",
         "nombre": "API AROMA",
         "descripcion": "Fabricado en Argentina",
@@ -24,7 +24,7 @@
     {
         "id":2,
         "imagen": "/img/products/oracle.png",
-        "imagenSecundaria": "/img/imagen-producto2.jpg",
+        "imagenSecundaria": "/img/imgsecundaria/oracle.png",
         "imagenMedidor": "/img/medidor1.jpg",
         "nombre": "ORACLE",
         "descripcion": "Fabricado en Brasil",
@@ -45,7 +45,7 @@
     {
         "id":3,
         "imagen": "/img/products/script.png",
-        "imagenSecundaria": "/img/imagen-producto2.jpg",
+        "imagenSecundaria": "/img/imgsecundaria/script.png",
         "imagenMedidor": "/img/medidor1.jpg",
         "nombre": "SCRIPT",
         "descripcion": "Fabricado en Guatemala",
@@ -66,7 +66,7 @@
     {
         "id":4,
         "imagen": "/img/products/stackLatte.png",
-        "imagenSecundaria": "/img/imagen-producto2.jpg",
+        "imagenSecundaria": "/img/imgsecundaria/stacklatte.png",
         "imagenMedidor": "/img/medidor1.jpg",
         "nombre": "STACK LATTE",
         "descripcion": "Fabricado en Colombia",
@@ -107,7 +107,7 @@
     {
         "id":6,
         "imagen": "/img/products/logic.png",
-        "imagenSecundaria": "/img/imagen-producto2.jpg",
+        "imagenSecundaria": "/img/imgsecundaria/logic.png",
         "imagenMedidor": "/img/medidor1.jpg",
         "nombre": "LOGIC",
         "descripcion": "Fabricado en Ecuador",
@@ -128,7 +128,7 @@
     {
         "id":7,
         "imagen": "/img/products/fullStack.png",
-        "imagenSecundaria": "/img/imagen-producto2.jpg",
+        "imagenSecundaria": "/img/imgsecundaria/fullStack.png",
         "imagenMedidor": "/img/medidor1.jpg",
         "nombre": "FULL STACK",
         "descripcion": "Fabricado en Argentina",
@@ -149,7 +149,7 @@
     {
         "id":8,
         "imagen": "/img/products/express.png",
-        "imagenSecundaria": "/img/imagen-producto2.jpg",
+        "imagenSecundaria": "/img/imgsecundaria/express.png",
         "imagenMedidor": "/img/medidor1.jpg",
         "nombre": "EXPRESS",
         "descripcion": "Fabricado en Brasil",

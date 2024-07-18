@@ -271,11 +271,12 @@ main{
             color: #823a6f;
         }*/
         
-        .imagen-producto2{
-            width: 100%;
-            
-                       
-        }
+        
+    }
+    .imagen-producto2{
+        width: 100%;
+        margin-top: -30px;
+        margin-bottom: -30px;    
     }
     .descripcion3{
         background-color: #a99ac4;
@@ -409,8 +410,12 @@ main{
                 width: 50%;
             }
             .imagen-producto2{
-                width: 60%;
+                width: 100%;
                 margin: auto;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin-top: -30px;
+                margin-bottom: -30px;
             }
         }
         .otros-productos{
