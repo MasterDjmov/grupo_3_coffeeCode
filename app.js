@@ -36,6 +36,14 @@ app.use('/', mainRouter);
 app.use('/user', userRouter);
 app.use('/products', productRouter);
 app.use('/admin', adminRouter);
+app.use('/logout', (req, res) => {
+    req.session.destroy((err) => {
+        if (err) {
+          return res.status(500).send('Error al cerrar la sesión');
+        }
+        res.redirect('/'); // Redirige a la página de inicio o donde prefieras
+    });
+});
 
 //bloqueo 404
 app.use((req, res) => {

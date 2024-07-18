@@ -198,7 +198,12 @@
                 <img src="/img/products/express.png" alt="imagen cafe Brasil">
                 <strong><p class="descripcion-imagen"> Express</p></strong>
                 <strong><p class="descripcion-imagen"> $10.800</p> </strong>
-                <button>Agregar al carrito</button>
+                <% if(user!=""){%>
+                    <button>Agregar al carrito</button>
+                    <h1></h1>
+                    <% }else{%>
+                          <button><%= msg %></button>
+                   <% } %> 
                 </article>
         </form>
         </div>

@@ -25,7 +25,7 @@ const adminController = {
         {
          'cafe':cafe,
          'msg':"Edición Exitosa!!!",
-        'rol':""
+         'rol':""
         });
     },
     // listProduct: (req, res) => {        
