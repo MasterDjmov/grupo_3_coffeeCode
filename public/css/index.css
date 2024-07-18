@@ -108,3 +108,20 @@
 
     }
 }
+
+.error404 {
+    background-size: cover;
+    width: 100%;   
+}
+.volver {
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+   
+}
+.volver a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
