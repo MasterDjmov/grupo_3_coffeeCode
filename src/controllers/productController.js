@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
 const productos = require('../data/products.json');
+const session = require('express-session');
+
 
 const productController = {
     productCart: (req, res) => {

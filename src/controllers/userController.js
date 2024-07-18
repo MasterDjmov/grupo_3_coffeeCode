@@ -1,6 +1,8 @@
 const express = require('express');
 const dbusers = require('../data/user.json');
 const path = require('path');
+const session = require('express-session');
+
 
 const userController = {
     //muestro formulario de login
@@ -10,17 +12,24 @@ const userController = {
       },
       // valido el login
     login: (req, res) => {
-      console.log(req.body.email);
-      let existe = dbusers.find((usuario)=>{
+      //console.log(req.body.email);
+    
+      let user = dbusers.find((usuario)=>{
         return usuario.email==req.body.email && usuario.clave==req.body.clave;
         //console.log(usuario.email, usuario.clave);
       });
-      console.log(existe);
-        if(existe != undefined){
+     // console.log( req.session.user);
+        if(user != undefined){
+          req.session.user = user;
+         console.log(req.session.user);
             res.redirect('/');
         }else{
             const msg="Error! El usuario No Pudo Ser Validado";
-            res.render('users/login',{msg});
+            res.render('users/login',
+              {
+                msg,
+                'rol':"No Log"
+              });
         }
     },
     register: (req, res) => {

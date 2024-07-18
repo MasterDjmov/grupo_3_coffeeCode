@@ -1,20 +1,29 @@
 [{
     "id":1,
+    "nombre":"Alejandra",
+    "apellido":"Arce",
+    "imagen":"avatar1.jpg",
     "email":"admin@admin.com",
     "clave": "admin123",
-    "rol":"ADMINISTRADOR"
+    "categoria":"ADMINISTRADOR"
 },
 {
     "id":2,
+    "nombre":"Facundo",
+    "apellido":"Diaz",
+    "imagen":"avatar.jpg",
     "email": "facudiaz@gmail.com",
     "clave": "diaz123",
-    "rol": "CLIENTE"
+    "categoria": "CLIENTE"
 },
 {
     "id":3,
+    "nombre":"Patricia",
+    "apellido":"Bustos",
+    "imagen":"avatar1.jpg",
     "email": "patrib@gmail.com",
     "clave": "bustos123",
-    "rol": "CLIENTE"
+    "categoria": "CLIENTE"
 }
 
 ]

@@ -3,9 +3,12 @@ const mainRouter = require('./src/routers/mainRouter');
 const userRouter = require('./src/routers/userRouter');
 const productRouter = require('./src/routers/productRouter');
 const adminRouter = require('./src/routers/adminRouter');
+const session = require('express-session');
 
 const app = express();
 
+//Incorporando Sesión en Middleware
+app.use(session({secret:"CoffeCode Clave Secreta"}));
 app.use(express.static('public'));
 
 //necesario para ejs
