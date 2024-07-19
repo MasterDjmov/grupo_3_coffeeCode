@@ -12,16 +12,68 @@
                     <li><% if(user.categoria==="ADMINISTRADOR"){%>
                             <a class="link-a" href="/admin/register" style="display: flex;"><i class="fas fa-plus-circle" style="padding-right: 2px;"></i> PRODUCTOS</a></li>
                    <% } %>
-                    <li><a class="link-a" href="#productos">PRODUCTOS</a></li>
+                    <li><a class="link-a" href="/#productos">PRODUCTOS</a></li>
                     <li><a class="link-a" href="/about">INFORMACIÓN</a></li>
                     <li class="search-container">
                         <input type="text" placeholder="¿Qué estás buscando?">
                         <button>BUSCAR</button>
                     </li>
-                    <li class="cart-icon">
-                        <a href="/products/cart">
-                            <img src="/img/carrito.png" alt="Carrito de Compras">
-                        </a>
+                    <li class="dropdown">
+                        <button style="border: none;" class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/img/carrito.png" alt="Carrito de Compras" width="30px">
+                        </button>
+                        
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: #a99ac4; transform: translateX(0) !important;">
+                            <div class="cart-panel1">
+    
+                                <form action="/products/checkout" method="get" class="cart-form1">
+                                             
+                                       <h2>CARRITO</h2>
+                                    <div class="cart-body1">
+                                            <div class="cart-items1">
+                                                <div class="cart-item1" >
+                                                    <div class="cart-item-imagen1">
+                                                        <img src="/img/imagen_producto.jpg">                           
+                                                    </div>
+                                                    <div class="cart-item-detalle1">
+                                                        <h5 class="cart-item-name1">
+                                                            BLEND DE LA CASA
+                                                        </h5>
+                                                    
+                                                
+                                                        <p class="cart-item-descripcion1">
+                                                        
+                                                            ELEGÍ TU MOLIENDA: 
+                                                            En Grano
+                                                        </p>
+                                                        <p>
+                                                            ELEGÍ EL PESO: 
+                                                            250 Gr.                             
+                                                        
+                                                        </p>
+                                                    </div>
+                                                    <div class="cart-item-delete1">
+                                                        <button type="button">
+                                                        <i class="fa fa-close"></i>
+                                                        </button>
+                                                    </div>                           
+                                                    
+                                                </div>
+                                                <div class="cart-item-subtotal1">
+                                                    <p> 2 × $12,200.00</p>
+                                                </div>
+                                            </div>                    
+                                            <div class="cart-total1">
+                                                <h2>Subtotal: <span>$128.400,00</span></h2>                        
+                                            </div>               
+                                            <div class="botones1">
+                                                <a href="/products/edit" class="btn-ver1">VER CARRITO</a>               
+                                                <input type="submit" class="btn-fin1" value="FINALIZAR LA COMPRA" name="fin_compra">                   
+                                            </div>              
+                                     </div>
+                                </form>
+                            </div>
+                        </div>
                     </li>
                     <li class="login1">
                         <a href="/user/login">

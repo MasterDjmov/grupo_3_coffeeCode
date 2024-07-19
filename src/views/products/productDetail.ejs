@@ -115,7 +115,7 @@
                     <button class="di" onclick="increase()">+</button>
                     </div>
                     <% if(user){%>
-                        <a href="/products/cart" class="carrito" ><strong> Agregar al carrito</strong></a>
+                        <a href="/products/edit" class="carrito" ><strong> Agregar al carrito</strong></a>
                         <h1></h1>
                         <% }else{%>
                               <h4 style="background-color: chartreuse; text-align: center;"><%= msg %></h4>
@@ -157,7 +157,7 @@
         <h4 class="gusto">También podría gustarte</h4>
         <div class="otros-productos">
             
-            <form action="/products/cart">
+            <form action="/products/edit">
             <article class="caja-articulo">
                 <img src="/img/products/oracle.png" alt="imagen cafe guatemala">
                 <strong><p class="descripcion-imagen"> Oracle</p></strong>
@@ -170,7 +170,7 @@
                <% } %> 
             </article>
         </form>
-        <form action="/products/cart">
+        <form action="/products/edit">
             <article class="caja-articulo">
                 <img src="/img/products/express.png" alt="imagen cafe Brasil">
                 <strong><p class="descripcion-imagen"> Express</p></strong>
