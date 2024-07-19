@@ -84,7 +84,9 @@
                             <% } %>
                         </a>
                     </li>
-                    <li><a href="/logout"><i class="fas fa-times-circle"></i>salir</a></li>
+                    <% if(user){%>
+                        <li><a href="/logout"><i class="fas fa-times-circle"></i>salir</a></li>
+                    <% }%>                   
                 </ul>
             </nav>
         </div>
