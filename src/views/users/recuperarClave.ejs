@@ -2,33 +2,7 @@
     <link rel="stylesheet" href="/css/recuperarClave.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div>
-                <img src="/img/logo.svg" alt="Logo del Café" class="logo" onclick="location.href='/'">
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a class="link-a" href="#productos">PRODUCTOS</a></li>
-                    <li><a class="link-a" href="#informacion">INFORMACIÓN</a></li>
-                    <li class="search-container">
-                        <input type="text" placeholder="¿Qué estás buscando?">
-                        <button>BUSCAR</button>
-                    </li>
-                    <li class="cart-icon">
-                        <a href="/product/productCart">
-                            <img src="/img/carrito.png" alt="Carrito de Compras">
-                        </a>
-                    </li>
-                    <li class="login1">
-                        <a href="/user/login">
-                            <img src="/img/login.png" alt="Login">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <%- include('../partials/header.ejs')%>
     <main>
             <div class="navbar-item1">
                 <ol class= "navbar">

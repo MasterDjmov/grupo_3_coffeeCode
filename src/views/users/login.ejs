@@ -2,39 +2,9 @@
     <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
- 
-    <header>
-        <div class="header-content">
-            <div>
-                <img src="/img/logo.svg" alt="Logo del Café" class="logo" onclick="location.href='/'">
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a class="link-a" href="#productos">PRODUCTOS</a></li>
-                    <li><a class="link-a" href="#informacion">INFORMACIÓN</a></li>
-                    <li class="search-container">
-                        <input type="text" placeholder="¿Qué estás buscando?">
-                        <button>BUSCAR</button>
-                    </li>
-                    <li class="cart-icon">
-                        <a href="/products/cart">
-                            <img src="/img/carrito.png" alt="Carrito de Compras">
-                        </a>
-                    </li>
-                    <li class="login1">
-                        <a href="/user/login">
-                            <% if(user){%>
-                             <img src="/img/perfil/<%= user.imagen %>" alt="Login">
-                             <% } else { %>
-                                <img src="/img/login.png" alt="Login">
-                            <% } %>
-                        </a>
-                    </li>
-                    <li><a href="/logout"><i class="fas fa-times-circle"></i>salir</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+
+    <%- include('../partials/header.ejs')%>
+    
     <main class="login">
         <h1 style="background-color: chartreuse; text-align: center;"><% if(msg!=""){%>
             <%= msg %> 

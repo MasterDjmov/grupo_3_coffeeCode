@@ -1,0 +1,39 @@
+<header>
+        <div class="frase">
+            <h5>"UN BUEN CAFÉ PUEDE TRANSFORMAR UN MAL DÍA EN UNA VICTORIA."</h5>
+        </div>
+        <div class="header-content">
+            <div>
+                <a href="/"><img src="/img/logo.svg" alt="Logo del Café" class="logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                  
+                    <li><% if(user.categoria==="ADMINISTRADOR"){%>
+                            <a class="link-a" href="/admin/register" style="display: flex;"><i class="fas fa-plus-circle" style="padding-right: 2px;"></i> PRODUCTOS</a></li>
+                   <% } %>
+                    <li><a class="link-a" href="#productos">PRODUCTOS</a></li>
+                    <li><a class="link-a" href="/about">INFORMACIÓN</a></li>
+                    <li class="search-container">
+                        <input type="text" placeholder="¿Qué estás buscando?">
+                        <button>BUSCAR</button>
+                    </li>
+                    <li class="cart-icon">
+                        <a href="/products/cart">
+                            <img src="/img/carrito.png" alt="Carrito de Compras">
+                        </a>
+                    </li>
+                    <li class="login1">
+                        <a href="/user/login">
+                            <% if(user){%>
+                             <img src="/img/perfil/<%= user.imagen %>" alt="Login">
+                             <% } else { %>
+                                <img src="/img/login.png" alt="Login">
+                            <% } %>
+                        </a>
+                    </li>
+                    <li><a href="/logout"><i class="fas fa-times-circle"></i>salir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
