@@ -74,30 +74,30 @@ main{
         text-align: center;
     }
     
-    .navbar{
+    .navbar2{
         padding: 2px 4px;
         list-style: none;
         
     }
     
-    .navbar-item{
+    .navbar2-item{
         display:inline;
         font-size: 15px;
         color: black;
     }
     
-    .navbar li+li:before{
+    .navbar2 li+li:before{
         padding: 4px;
         color: black;
         content: ">";
     }
     
-    .navbar-item a{
+    .navbar2-item a{
         color: #291025;
         text-decoration: none;
     }
     
-    .navbar-item a:hover{
+    .navbar2-item a:hover{
         color:  #823a6f;
     }
 
@@ -149,7 +149,9 @@ main{
         padding-left: 20px;
     }
     h4{
+        font-weight: bold;
         padding: 15px;
+        margin-bottom: 0px;;
     }
     label{
         span{
@@ -194,7 +196,7 @@ main{
         position: relative;
         font-size: 12px;
         right: -250px;
-        top: -140px;
+        top: -150px;
         border: none;
         color:#291025;
         opacity: 0.5;
@@ -379,13 +381,7 @@ main{
             display: flex;
             .producto1{
                 width: 50%;
-                .botones-admin{
-                    position: relative;
-                    top: 440px;
-                    text-align: center;
-                    z-index: auto;
-                }
-                .navbar{
+                .navbar2{
                     position: relative;
                     top:-440px;
                 }
@@ -435,26 +431,21 @@ main{
 
 @media (min-width: 769px){
     main{
-        .caja-producto .producto1 .botones-admin{
+        .caja-producto .producto1 .navbar2{
             position: relative;
-            top: 570px;
-        }
-        .caja-producto .producto1 .navbar{
-            position: relative;
-                    top:-570px;
+            top: -770px;
         }
         .caja-producto{
             .descripcion-producto{
-            padding-top: 50px;
+            padding-top: 30px;
+            padding-bottom: 20px;
             
         }
         .acordeon i{
             top:  -2px;
             left: 80px;
         }
-        .producto1 .imagen-producto1{
-            width: 500px;
-        }
+        
            }
         .sabor{
             padding-top: 80px;

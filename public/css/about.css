@@ -6,13 +6,23 @@ body {
     background-color: #f9f9f9;
 }
 
+.texto-team{
+    width: 85%;
+    margin: 20px auto;
+    padding: 20px 0px 20px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .container {
     width: 95%;
     margin: 20px auto;
     padding: 20px 0px 20px 20px;
-    background-color: #fff;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
 }
 
 h1 {
@@ -32,7 +42,6 @@ h2 {
 }
 
 .team-member {
-    width: 50%;
     display: flex;
     align-items: center;
     margin: 20px 0px 20px 20px;
@@ -56,6 +65,14 @@ h2 {
     margin: 5px 0;
 }
 
+.team-section{
+    display: flex;
+    flex-direction: column;
+}
 
+.container .imagen-team{
+    margin: auto;
+    object-fit: cover;
+}
 
 
