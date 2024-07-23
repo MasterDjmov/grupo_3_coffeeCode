@@ -112,17 +112,16 @@ main{
         color: black;
         cursor: pointer;
         padding: 16px;
-        width: 100%;
+        width: 90%;
         border: none;
         text-align: left;
         outline: none;
         font-size: 14px;
         box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);;
         i{
-            position: relative;
+            position: sticky;
             color: #291025;
-            right: -220px;
-            top: -15px;
+            margin-left: 20px;
         }
     }
     .active, .acordeon:hover{
@@ -177,7 +176,7 @@ main{
             font-family: Helvetica;
             font-size: 15px;
             cursor: pointer;
-            padding: 15px 30px;
+            padding: 10px 20px;
             border-radius: 10%;
             transition: all 0.2s;
         }
@@ -193,10 +192,7 @@ main{
         font-size: 10px;
         cursor: pointer;
         padding: 15px;
-        position: relative;
         font-size: 12px;
-        right: -250px;
-        top: -150px;
         border: none;
         color:#291025;
         opacity: 0.5;
@@ -329,7 +325,7 @@ main{
             width: 75%;
             align-items: center;
             margin: auto;
-            padding: 20px;
+            padding: 10px;
         }
         .caja-articulo{
             border-top: 1px solid #ebebeb;
@@ -380,26 +376,24 @@ main{
             width: 100%;
             display: flex;
             .producto1{
-                width: 50%;
+                width: 40%;
                 .navbar2{
-                    position: relative;
-                    top:-440px;
+                    position: sticky;
+                    size-adjust: auto;
                 }
             }
             .descripcion-producto{
-                width: 50%;
+                width: 60%;
                 padding-top: 5px;
                 .parrafo1{
                     display: flex;
                 }
             }
             .acordeon{
-                width: 70%;
+                width: 60%;
             }
             .acordeon i{
-                top: -15px;
-                left: 220px;
-                z-index: auto;
+                margin-left: 20px;
             }
         }
         .descripcion2{
@@ -421,9 +415,6 @@ main{
             width: 100%;
             display: flex;
             justify-content: space-around;
-            .caja-articulo img{
-                width: 300px;
-            }
         }
     }
 
@@ -432,11 +423,14 @@ main{
 @media (min-width: 769px){
     main{
         .caja-producto .producto1 .navbar2{
-            position: relative;
-            top: -770px;
+            position: sticky;
         }
         .caja-producto{
+            .producto1{
+                width: 100%;
+            }
             .descripcion-producto{
+                width: 100%;
             padding-top: 30px;
             padding-bottom: 20px;
             
@@ -444,18 +438,16 @@ main{
         .acordeon i{
             top:  -2px;
             left: 80px;
+            position: sticky;
         }
         
            }
-        .sabor{
-            padding-top: 80px;
-        }
         .otros-productos{
             width: 100%;
             display: flex;
             justify-content: space-around;
             .caja-articulo img{
-                width: 400px;
+                width: 70%;
             }
         }
     }

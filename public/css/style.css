@@ -236,3 +236,9 @@ h4 {
     }
 }
 
+@media (max-width: 714px){
+    .frase{
+        
+        display: none;
+    }
+}
