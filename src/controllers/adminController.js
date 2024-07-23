@@ -5,6 +5,7 @@ const session = require('express-session');
 
 
 const adminController = {
+    //formulario con GET
     formEditProduct: (req, res) => {
         
         // res.sendFile(path.resolve(__dirname,'../views/admin/editProduct.html'));
@@ -16,6 +17,7 @@ const adminController = {
             'rol':req.session.categoria
         });
      },
+     //formulario con POST
     editProduct: (req, res) => {
       
        const id =req.params.id;
