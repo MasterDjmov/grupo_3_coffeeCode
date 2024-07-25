@@ -52,7 +52,7 @@ main{
 
     .producto1 > img{
         width: 100%;
-    
+        cursor: zoom-in;
     }
     .botones-admin{
         a{
@@ -345,7 +345,7 @@ main{
                 background-color:  #823a6f;
                 opacity: 0.8;
                 position: relative;
-                top:-100px;
+                top:-130px;
                 border-radius: 2rem;
 
                 
@@ -365,7 +365,7 @@ main{
             button{
                 visibility: visible;
             }
-            box-shadow: 0px 0px 5px rgb(100, 100, 100);
+            box-shadow: 0px 0px 3px rgb(100, 100, 100);
         }
     }
 }

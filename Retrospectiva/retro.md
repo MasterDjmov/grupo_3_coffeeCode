@@ -41,3 +41,25 @@
 ### Dejar de hacer
 - Dejar de posponer las pruebas de integración hasta el final del sprint.
 - Dejar de retrasar las pruebas de aceptación hasta el último día del sprint, lo que afecta la calidad del producto final.
+
+## Retrospectiva Sprint 3-4
+
+### Comenzar a hacer
+- Capacitación en nuevas tecnologías: Organizar sesiones de capacitación para el equipo sobre tecnologías emergentes relevantes.
+- Implementar pruebas automatizadas para nuevas funcionalidades.
+
+### Hacer más
+- Hacer más revisiones de código entre pares.
+- Tiempos de entrega precisos: Seguir entregando tareas y proyectos dentro de los plazos establecidos.
+
+### Continuar haciendo
+- Feedback regular: Mantener la práctica de dar y recibir feedback constructivo regularmente.
+- Mantener el enfoque en la calidad del código.
+
+### Hacer menos
+- Reducir la multitarea para permitir un enfoque más profundo en tareas individuales.
+- Reuniones largas: Acortar la duración de las reuniones para hacerlas más eficientes y centradas en los objetivos.
+
+### Dejar de hacer
+- Tareas que no aportan al objetivo: Eliminar tareas que no contribuyen directamente a los objetivos del sprint o del proyecto.
+- Tareas manuales repetitivas: Eliminar tareas manuales repetitivas mediante la automatización.
