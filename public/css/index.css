@@ -5,6 +5,7 @@
     width: 100%;
     margin: 0 auto;
     background-color: #a99ac4;
+    
 }
 
 .banner img {
@@ -17,7 +18,7 @@
 .articulo {
     display: flex;
     align-items: center;
-    padding: 70px;
+    padding: 0px 40px 40px 40px;
     width: 100%;
 }
 
@@ -28,20 +29,28 @@
 
 .texto-articulo {
     h2{
+        width: 75%;
         font-family: "Helvetica Neue";
         text-align: center;
         font-weight: bold;
         padding-bottom: 50px;
+        padding-top:80px;
+        padding-left: 30px;
         font-size: 40px;
-        background-color: #f3f3f3;
-    
+        
+    }
+}
+
+.descripcion{
+    font-size: 19px;
+    width: 75%;
 }
 
 .imagen-articulo img {
-    width: 200px; /* Ancho de la imagen */
+    width: 650px; /* Ancho de la imagen */
     height: auto;
     margin-top: 60px;
-    border-radius: 30%;
+    border-radius: 3%;
     border: 2px solid #000;
 }
 
@@ -103,8 +112,10 @@
 }
 
 .lista-articulo{
-    padding-left: 100px;
+    width: 750px;
+    padding-left: 30px;
     padding-top: 20px;
+    font-size: 19px;
 }
 
 

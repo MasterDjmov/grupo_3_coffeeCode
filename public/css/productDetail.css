@@ -298,15 +298,24 @@ main{
                 opacity: 0.8;
                 padding-top: 20px;
                 padding-bottom: 20px;
-                padding-left: -10px;
-                font-size: small;
+                padding-left: 20px;
+                font-size: 15PX;
                 p{
+                    
                     display: flex;
                     justify-content: flex-end;
                    margin-top: -20px;
                 }
+
+                .titulodet{
+                    text-align: center;
+                }
             }
         }
+    }
+
+    .titulodet{
+        text-align: center;
     }
     .gusto{
         font-size: 20px;

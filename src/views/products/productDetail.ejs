@@ -118,7 +118,7 @@
                         <a href="/products/edit" class="carrito" ><strong> Agregar al carrito</strong></a>
                       
                         <% }else{%>
-                              <h5 style="background-color: chartreuse; text-align: center;"><%= msg %></h5>
+                              <h5 style="background-color: #ecb35a; text-align: center;"><%= msg %></h5>
                        <% } %> 
                   
                 </div>
@@ -145,7 +145,7 @@
         
         <div class="descripcion3">
             <ul class="descripcion-bar">
-                <li class="descripcion-bar-item"><strong>Detalles del producto</strong></li>
+                <li class="descripcion-bar-item"><strong class="titulodet">DETALLES DEL PRODUCTO</strong></li>
                 <li class="descripcion-bar-item"><strong>País<p><%= cafe.pais %></p></strong></li>
                 <li class="descripcion-bar-item"><strong> Productor<p><%= cafe.productor %></p> </strong></li>
                 <li class="descripcion-bar-item"><strong> Región<p><%= cafe.region %></p> </strong></li>
@@ -154,7 +154,7 @@
             </ul>
         </div>
 
-        <h4 class="gusto">También podría gustarte</h4>
+        <h4 class="gusto">TAMBIÉN PODRÍA GUSTARTE</h4>
         <div class="otros-productos">
             
             <form action="/products/edit">
@@ -166,7 +166,7 @@
                 <button>Agregar al carrito</button>
                 <h1></h1>
                 <% }else{%>
-                      <h4 style="background-color: chartreuse; text-align: center;"><%= msg %></h4>
+                      <h4 style="background-color: #ecb35a; text-align: center;"><%= msg %></h4>
                <% } %> 
             </article>
         </form>
@@ -179,7 +179,7 @@
                     <button>Agregar al carrito</button>
                     <h1></h1>
                     <% }else{%>
-                          <h4 style="background-color: chartreuse; text-align: center;"><%= msg %></h4>
+                          <h4 style="background-color: #ecb35a; text-align: center;"><%= msg %></h4>
                    <% } %> 
                 </article>
         </form>

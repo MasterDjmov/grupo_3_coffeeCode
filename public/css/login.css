@@ -47,7 +47,7 @@ main{
         align-items: center;
     }
     .boton{
-        width: 30%;
+        width: 30px;
         margin: auto;
         background-color: #823a6f;
         opacity: 0.8;
