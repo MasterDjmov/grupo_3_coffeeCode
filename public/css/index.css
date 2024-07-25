@@ -28,11 +28,13 @@
 
 .texto-articulo {
     h2{
+        font-family: "Helvetica Neue";
         text-align: center;
-        
-        padding-bottom: 20px;
-        font-size: 30px;
-    }
+        font-weight: bold;
+        padding-bottom: 50px;
+        font-size: 40px;
+        background-color: #f3f3f3;
+    
 }
 
 .imagen-articulo img {
