@@ -47,7 +47,7 @@
 }
 
 .imagen-articulo img {
-    width: 650px; /* Ancho de la imagen */
+    width: 100%; /* Ancho de la imagen */
     height: auto;
     margin-top: 60px;
     border-radius: 3%;
