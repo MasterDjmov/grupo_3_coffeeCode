@@ -1,5 +1,10 @@
-# DAILY DOS POR SEMANA
+# SPRINT 3
 ---
+
+# DAILY DOS POR SEMANA
+
+---
+
 ## Fecha: 06/07/2024
 
 ## Resumen de Tareas
@@ -298,3 +303,277 @@ sin impedimentos
 **Soluciones Propuestas**
 - Seguir revisando el código y practicando para el siguiente sprint
 
+# SPRINT-4
+
+---
+
+# DAILY DOS POR SEMANA
+
+---
+
+## Fecha: 24/07/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ [Descripción de tareas completadas ayer]       
+
+**Impedimentos**         
+ [Descripción de impedimentos]
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ 
+- 
+     
+
+**Impedimentos**         
+
+- 
+
+
+**Qué va a hacer hoy**  
+
+- 
+ 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -      
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- 
+
+## Fecha: 27/07/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+-   
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- 
+
+
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ -      
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+Creacion del tablero Trello
+revisión del código     
+
+**Impedimentos**         
+sin impedimentos
+
+**Qué va a hacer hoy**  
+ Organización de MVC
+
+**Soluciones Propuestas**
+- 
+---
+
+## Fecha: 31/07/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ [Descripción de tareas completadas ayer]       
+
+**Impedimentos**         
+ [Descripción de impedimentos]
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ -   
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ 
+
+**Impedimentos**         
+ 
+
+**Qué va a hacer hoy**  
+ 
+
+**Soluciones Propuestas**
+- 
+---
+## Fecha: 03/08/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ [Descripción de tareas completadas ayer]       
+
+**Impedimentos**         
+ [Descripción de impedimentos]
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - 
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -
+ -
+**Impedimentos**         
+ -
+
+**Qué va a hacer hoy**  
+ -
+
+
+**Soluciones Propuestas**
+- 
