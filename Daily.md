@@ -334,21 +334,24 @@ sin impedimentos
 
 **Qué hizo ayer**  
  
-- 
+- Busqueda de información.
+- Creación de retrospectiva.
+- Distribución de roles. 
      
 
 **Impedimentos**         
 
-- 
+- Sin impedimentos
 
 
 **Qué va a hacer hoy**  
 
-- 
+- Corrección de Json.
+- Correccion de estilos.
  
 
 **Soluciones Propuestas**
-- 
+- Me comunique con el back-end para definir datos.
 
 
 ## Resumen de Tareas
