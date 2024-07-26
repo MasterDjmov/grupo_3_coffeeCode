@@ -52,7 +52,7 @@ main{
 
     .producto1 > img{
         width: 100%;
-        cursor: zoom-in;
+        
     }
     .botones-admin{
         a{
