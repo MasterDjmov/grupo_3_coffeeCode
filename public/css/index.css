@@ -1,7 +1,9 @@
 /*MAIN*/
 
 .contenedor-principal {
-    font-family: "Roboto",sans-serif;
+    font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     width: 100%;
     margin: 0 auto;
     background-color: #a99ac4;
@@ -18,7 +20,8 @@
 .articulo {
     display: flex;
     align-items: center;
-    padding: 0px 40px 40px 40px;
+    padding: 20px;
+
     width: 100%;
 }
 
@@ -28,13 +31,16 @@
 }
 
 .texto-articulo {
+    width: auto;
     h2{
         width: 75%;
-        font-family: "Helvetica Neue";
+        font-family: "Zain", sans-serif;
+        font-weight: 800;
+        font-style: normal;
         text-align: center;
-        font-weight: bold;
-        padding-bottom: 50px;
-        padding-top:80px;
+        
+        padding-bottom: 25px;
+        padding-top:40px;
         padding-left: 30px;
         font-size: 40px;
         
@@ -42,13 +48,12 @@
 }
 
 .descripcion{
-    font-size: 19px;
-    width: 75%;
+    font-size: 1.4rem;
+    width: auto;
 }
 
 .imagen-articulo img {
-    width: 100%; /* Ancho de la imagen */
-    height: auto;
+    width: 500px; /* Ancho de la imagen */
     margin-top: 60px;
     border-radius: 3%;
     border: 2px solid #000;
@@ -92,6 +97,7 @@
 
 .producto p {
     margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 
 .producto button {
@@ -112,10 +118,10 @@
 }
 
 .lista-articulo{
-    width: 750px;
-    padding-left: 30px;
+    width: auto;
+    padding-left: 60px;
     padding-top: 20px;
-    font-size: 19px;
+    font-size: 1.2rem;
 }
 
 
@@ -124,16 +130,16 @@
         article{
             display: flex;
             flex-direction: column;
+            width: 100%;
         }
         .lista-articulo{
-            margin-left: -70px;
+            width: auto;
+            padding-left: 100px;
         }
         .imagen-articulo img{
-            width: 200px;
             display: flex;
-            position: relative;
-            top: -60px;
-            right: -50px;
+            width: auto;
+            margin: auto;
             
         }
 
@@ -143,15 +149,18 @@
     .articulo{
         article{
             display: flex;
-            
+            flex-direction: column;
         }
         .lista-articulo{
-            margin-left: -70px;
+            width: auto;
+            padding-left: 100px;
         }
         .imagen-articulo img{
-            width: 140px;
+            width: 60%;
             display: flex;
-            margin-top: 80px;
+            align-self: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
 
     }
@@ -170,6 +179,6 @@
 }
 .volver a {
     color: white;
-    font-size: 20px;
+    font-size: 1.2rem;
     text-decoration: none;
 }

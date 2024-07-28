@@ -1,7 +1,9 @@
 main{
     
-        font-family: Helvetica;
-    
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
 
 .navbar{
     padding: 2px 4px;
@@ -35,8 +37,8 @@ main{
 .navbar-item a:hover{
     color:  #823a6f;
 }
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #a99ac4;
     h2{
         text-align: center;
