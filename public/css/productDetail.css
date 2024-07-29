@@ -177,10 +177,11 @@ main{
             cursor: pointer;
             padding: 15px 30px;
             border-radius: 10%;
+            transition: all 0.2s;
         }
         button:hover{
             color: white;
-            background-color: #291025;
+            background-color: #823a6f;
         }
        
     }
@@ -234,50 +235,51 @@ main{
         color: #a99ac4;
         border: 1px solid #000;
         background-color:  #823a6f;
-        opacity: 0.9;
+        opacity: 0.8;
         font-size: 20px;
         cursor: pointer;
         padding: 15px 30px;
         border-radius: 10%;
         text-decoration: none;
         text-align: center;
+        transition: all 0.2s;
         
     }
     .carrito:hover, .carrito:focus{
         color: white;
-        background-color: #291025;
+        opacity: 1;
+        background-color: #823a6f;
     }
     }
     .descripcion2{
         background-color: white;
-        padding-top: 20px;
-        h3{
+        padding: 20px 0px 20px 0px;
+        
+
+        //*h3{
             color: #823a6f;
             text-align: center;
             padding-top: 10px;
             margin-left: -20px ;
         }
-        img{
-            display: block;
-            width: 60%;
-            margin-left: 20%;
-            padding:10px;
-        }
+       
         i{
             font-size: 3em;
             color: #823a6f;
-            margin-left: 45%;
-            margin-top: 20px;
+                     
         }
+
         h4{
             text-align: center;
             color: #823a6f;
-        }
-        .imagen-producto2{
-            width: 100%;
-            margin-left:0px;
-            
-        }
+        }*/
+        
+        
+    }
+    .imagen-producto2{
+        width: 100%;
+        margin-top: -30px;
+        margin-bottom: -30px;    
     }
     .descripcion3{
         background-color: #a99ac4;
@@ -318,7 +320,7 @@ main{
         background-color: white;
         padding-bottom: 20px;
         width: 100%;
-        margin-left: 10px;
+        
      
         img{
             display: block;
@@ -381,6 +383,7 @@ main{
                     position: relative;
                     top: 440px;
                     text-align: center;
+                    z-index: auto;
                 }
                 .navbar{
                     position: relative;
@@ -395,11 +398,12 @@ main{
                 }
             }
             .acordeon{
-                width: 80%;
+                width: 70%;
             }
             .acordeon i{
                 top: -15px;
                 left: 220px;
+                z-index: auto;
             }
         }
         .descripcion2{
@@ -409,8 +413,12 @@ main{
                 width: 50%;
             }
             .imagen-producto2{
-                width: 60%;
+                width: 100%;
                 margin: auto;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin-top: -30px;
+                margin-bottom: -30px;
             }
         }
         .otros-productos{

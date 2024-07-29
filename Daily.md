@@ -209,14 +209,17 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- Modifiqué la sección productos para que se cargue dinamicamente
+ Modifiqué la sección productos para que se cargue dinámicamente
  Cree products.json
+ Mejorar mainController
+
 **Impedimentos**         
  Sin impedimentos
 
 **Qué va a hacer hoy**  
  Dar funcionalidad a productController
  Cambiar el nombre de las rutas
+ Adaptar login para acceso del admin
 
 **Soluciones Propuestas**
 - Seguir programando para dar funcionalidad al carrito de compra.
@@ -243,16 +246,17 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+ - Corregir vistas.
+ - Agregando estilos a vistas admin.
 
 **Impedimentos**         
- [Descripción de impedimentos]
+ - Resoluciones en las querys.
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+ - Agregando rol para loguearse como cliente.
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Probar varias querys, para acomodar los contenidos.
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -274,14 +278,20 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+ Adapte login y controller para dar acceso al admin
+ Cree users.json
+ Cree ruta para la página de información
+ Cree about.ejs 
+ Cree 404.ejs
 
 **Impedimentos**         
- [Descripción de impedimentos]
+ Sin impedimentos
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+ Adaptar las vistas del admin
+ Adaptar el carrito de compras
+
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Seguir revisando el código y practicando para el siguiente sprint
 
