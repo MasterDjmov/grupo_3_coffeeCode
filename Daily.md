@@ -1,5 +1,10 @@
-# DAILY DOS POR SEMANA
+# SPRINT 3
 ---
+
+# DAILY DOS POR SEMANA
+
+---
+
 ## Fecha: 06/07/2024
 
 ## Resumen de Tareas
@@ -52,16 +57,18 @@ Hablar sobre el ultimo sprint, puesta en comun de lo que se hizo y lo que no. Po
 ### Alvarez, Matias:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+- Diseñé la página de inicio en Figma.
+- Revisé la implementación del diseño con el equipo de frontend.
 
 **Impedimentos**         
- [Descripción de impedimentos]
+- Problemas con la integración de fuentes personalizadas.
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+- Solucionar problemas de fuentes personalizadas.
+- Continuar con los prototipos del formulario de contacto en Adobe XD.
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Usar Google Fonts para manejar las fuentes.
 
 
 ## Resumen de Tareas
@@ -122,16 +129,18 @@ Organizarme con mis tiempos disponibles, para cumplir mis responsabilidades con 
 ### Alvarez, Matias:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+- Creé prototipos en Adobe XD para el formulario de contacto.
+- Ajusté elementos visuales en CSS con el equipo de frontend.
 
 **Impedimentos**         
- [Descripción de impedimentos]
+- Dificultades para alinear elementos visuales en CSS.
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+- Continuar con los prototipos de las páginas internas.
+- Mejorar alineaciones y diseño responsivo con el equipo de frontend.
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Ajustar el CSS con el equipo de frontend.
 
 
 ## Resumen de Tareas
@@ -193,16 +202,18 @@ sin impedimentos
 ### Alvarez, Matias:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+- Continué con los prototipos de las páginas internas.
+- Realicé sesiones de revisión de diseño con el equipo de frontend.
 
 **Impedimentos**         
- [Descripción de impedimentos]
+- Algunos elementos visuales no se alinean correctamente en dispositivos móviles.
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+- Finalizar los prototipos de las páginas internas.
+- Implementar ajustes en el diseño responsivo.
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Realizar sesiones de revisión de diseño más frecuentes con el equipo de frontend.
 
 
 ## Resumen de Tareas
@@ -262,16 +273,18 @@ sin impedimentos
 ### Alvarez, Matias:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+- Finalicé los prototipos de las páginas internas.
+- Implementé ajustes en el diseño responsivo.
 
 **Impedimentos**         
- [Descripción de impedimentos]
+- Ninguno.
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+- Revisar y optimizar la experiencia de usuario en todas las páginas.
+- Colaborar con el equipo de frontend para asegurar la implementación correcta de los diseños.
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Continuar colaborando estrechamente con el equipo de frontend.
 
 
 ## Resumen de Tareas
@@ -295,3 +308,280 @@ sin impedimentos
 **Soluciones Propuestas**
 - Seguir revisando el código y practicando para el siguiente sprint
 
+# SPRINT-4
+
+---
+
+# DAILY DOS POR SEMANA
+
+---
+
+## Fecha: 24/07/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ [Descripción de tareas completadas ayer]       
+
+**Impedimentos**         
+ [Descripción de impedimentos]
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ 
+- Busqueda de información.
+- Creación de retrospectiva.
+- Distribución de roles. 
+     
+
+**Impedimentos**         
+
+- Sin impedimentos
+
+
+**Qué va a hacer hoy**  
+
+- Corrección de Json.
+- Correccion de estilos.
+ 
+
+**Soluciones Propuestas**
+- Me comunique con el back-end para definir datos.
+
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -      
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- 
+
+## Fecha: 27/07/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+-   
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- 
+
+
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ -      
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+Creacion del tablero Trello
+revisión del código     
+
+**Impedimentos**         
+sin impedimentos
+
+**Qué va a hacer hoy**  
+ Organización de MVC
+
+**Soluciones Propuestas**
+- 
+---
+
+## Fecha: 31/07/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ [Descripción de tareas completadas ayer]       
+
+**Impedimentos**         
+ [Descripción de impedimentos]
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ -   
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ 
+
+**Impedimentos**         
+ 
+
+**Qué va a hacer hoy**  
+ 
+
+**Soluciones Propuestas**
+- 
+---
+## Fecha: 03/08/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ [Descripción de tareas completadas ayer]       
+
+**Impedimentos**         
+ [Descripción de impedimentos]
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - 
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -
+ -
+**Impedimentos**         
+ -
+
+**Qué va a hacer hoy**  
+ -
+
+
+**Soluciones Propuestas**
+- 

@@ -2,23 +2,7 @@
    <link rel="stylesheet" href="/css/productCart_detalle.css">
 </head>
 <body>
-    <header>
-        <div class="frase">
-            <h4>TU ÉXITO Y TU FELICIDAD DEPENDEN DE TÍ</h4>
-        </div>   
-        <div class="container-header">
-            <div class="burger-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-            <img src="/img/logo.svg" alt="logo de Coffeecode" class="logo2" onclick="location.href='/'">
-            <div class="iconos">
-                <i class="fa fa-search"></i>
-                <a href="/user/login"><i class="fa-regular fa-user"></i></a>
-                <i class="fa-solid fa-cart-shopping"></i>                       
-            </div>
-        </div>
-
-    </header>
+    <%- include('../partials/header.ejs')%>
    
     <main class="cart-panel">
             <div class="cart-body">
@@ -141,6 +125,7 @@
     </main>
     
     <%- include('../partials/footer.ejs') %>
-    
+    <script src="/js/coffecode.js"></script>
+
 </body>
 </html>

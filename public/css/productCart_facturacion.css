@@ -7,10 +7,13 @@
  
  
  body{
-    font-family: "Roboto", sans-serif;
+   font-family: "Zain", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1.2rem;
  }
  header{
-   width: 90vw;
+   
    height: 40%;  
    background-color:  #f3f3f3;   
    margin: 0 auto;
@@ -48,7 +51,7 @@
  
 
  footer {
-   width: 90vw;
+   
    margin: 0 auto;
  }
  /* ---------*/
@@ -57,7 +60,6 @@
    
     height: 100%;
     width: 100%;
-    max-width: 90vw;
     background: #a99ac4;
     padding: 10px;
     margin: 0 auto;
@@ -96,7 +98,7 @@
     margin-bottom: 0.5em;  
  }
  .cart-item-descripcion {
-   font-size: 12px;
+   font-size: 1.2rem;
  }
  .container-group-1{   
    width: 50%;
@@ -109,7 +111,7 @@
    margin: 1px;
    text-align: center;
    border-radius: 10%;
-   font-size: 12px;
+   font-size: 1.2rem;
 }
  
  .cart-item-subtotal {
@@ -119,13 +121,12 @@
  }
  .cart-item-subtotal p {
  text-align: center;
- font-size: 14px;
+ font-size: 1.2rem;
  font-weight: bold;
 
  }
-.cart-total  {  
-  
- }
+/*.cart-total  {  
+ }*/
 .subtotal {
    padding: 10px;
    display: flex;
@@ -136,8 +137,8 @@
    margin-top: 10px;
 }
  .botones {
-   display: flex;
-   justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     margin-top: 15px;
     width: 100%;
     padding-bottom: 20px;
@@ -146,7 +147,7 @@
    height: 30px;
    padding: 5px;
    margin: 5px;
-   font-size: 10px;
+   font-size: 0.8rem;
  }
 
 .btn-actualizar {
@@ -160,14 +161,12 @@
    width: 45%;
 }
 .btn {
-  width: 45%;
-  color: black;
-  opacity: 0,9;
+ 
+  color: black; 
   cursor: pointer;
   text-decoration: none;
   text-align: center;
   background-color: #fff;
-  padding-top: 8px;
 }
 .btn-fin {
    background: #823A6F;
@@ -177,13 +176,13 @@
    height: 30px;
    padding: 5px;
    margin: 5px;
-   font-size: 10px;
+   font-size: 0.7rem;
    width: 95%;
 }
 
 .envio label {
    padding-left: 5px;
-   font-size: 10px;
+   font-size: 1.2rem;
 }
 .name-div label{
    width: 100%;   
@@ -213,7 +212,7 @@
 .aceptermino {
    margin-top: 10px;
    margin-bottom: 10px;
-   font-size: 10px;
+   font-size: 0.8rem;
 }
 @media(min-width: 361px){
    .cart-panel{

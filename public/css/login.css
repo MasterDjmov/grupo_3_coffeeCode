@@ -1,4 +1,9 @@
 main{
+    
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
 
 .navbar{
     padding: 2px 4px;
@@ -32,13 +37,15 @@ main{
 .navbar-item a:hover{
     color:  #823a6f;
 }
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #a99ac4;
     h2{
         text-align: center;
         padding-bottom: 10px;
         color: #291025;
+        font-family: Helvetica;
+        font-weight: bold;
     }
     .estilo-form{
         display: flex;
@@ -47,11 +54,15 @@ main{
         align-items: center;
     }
     .boton{
-        width: 30%;
+        width: 200px;
+        height: 50px;
+        border-radius: 25px;
         margin: auto;
         background-color: #823a6f;
         opacity: 0.8;
         color: white;
+        font-weight: bold;
+        font-size: 15px;
         padding: 5px;
         border: none;
         cursor: pointer;
@@ -75,6 +86,10 @@ main{
         background-color: #823a6f;
     }
     
+    .estilo-label{
+        font-family: Helvetica;
+    }
+
     .bloque{
         padding-top: 5px;
         font-weight: bold;
@@ -95,10 +110,17 @@ main{
         }
         
     }
+
+    a{
+        color:white;
+    }
+
     a:hover{
-        color: #291025;
+        color: #823a6f;
     }
 }
+
+
 
 
 @media (min-width: 361px){

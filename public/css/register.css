@@ -7,6 +7,10 @@ main{
     padding: 20px;
     padding-bottom: 20px;
     background-color: #a99ac4;
+    font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
     h2{
         text-align: center;
         padding-bottom: 10px;
@@ -19,11 +23,15 @@ main{
         align-items: center;
     }
     .boton{
-        width: 30%;
+        width: 200px;
+        height: 50px;
+        border-radius: 25px;
         margin: auto;
         background-color: #823a6f;
         opacity: 0.8;
         color: white;
+        font-weight: bold;
+        font-size: 15px;
         padding: 5px;
         border: none;
         cursor: pointer;
@@ -57,14 +65,20 @@ main{
     p{
         text-align: center;
         padding-top: 20px;
+        font-weight: bold;
         a{
             font-weight: bold;
             
             padding-left: 5px;
         }
-        a:hover{
-            color: #291025;
-        }
+
+    }
+    a{
+        color:white;
+    }
+
+    a:hover{
+        color: #823a6f;
     }
 }
 

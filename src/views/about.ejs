@@ -1,43 +1,62 @@
 <%- include('./partials/head.ejs') %>
     <link rel="stylesheet" href="/css/index.css">
-    
+    <link rel="stylesheet" href="/css/about.css">
 </head>
 <body>
-    <div class="frase">
-        <h5>"TU ÉXITO Y TU FELICIDAD DEPENDEN DE TÍ</h5>
-    </div>
-    <header>
-        <div class="header-content">
-            <div>
-                <img src="img/logo.svg" alt="Logo del Café" class="logo">
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a class="link-a" href="/admin/register"><i class="fas fa-plus-circle"></i> PRODUCTOS</a></li>
-                    <li><a class="link-a" href="#productos">PRODUCTOS</a></li>
-                    <li><a class="link-a" href="/about">INFORMACIÓN</a></li>
-                    <li class="search-container">
-                        <input type="text" placeholder="¿Qué estás buscando?">
-                        <button>BUSCAR</button>
-                    </li>
-                    <li class="cart-icon">
-                        <a href="/products/cart">
-                            <img src="img/carrito.png" alt="Carrito de Compras">
-                        </a>
-                    </li>
-                    <li class="login1">
-                        <a href="/user/login">
-                            <img src="img/login.png" alt="Login">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <%- include('./partials/header.ejs') %>
    <main>
-    <!-- página de información -->
-     <h1>información</h1>
+    <div class="texto-team">
+    <h1>¿QUIÉNES SOMOS?</h1>
+                <p class="justified-text">     Somos <strong> Coffee Code </strong>, una empresa dedicada a la venta de café de especialidad. Nos apasiona el arte del café y trabajamos incansablemente para ofrecer productos de la más alta calidad. Nuestro compromiso con la excelencia se refleja en cada taza que servimos, asegurando que nuestros clientes disfruten de una experiencia cafetera excepcional.</p>
+
+                <p class="justified-text">      En <strong>Coffee Code </strong> , creemos en la importancia de la sostenibilidad y la responsabilidad social. Nos esforzamos por apoyar a los agricultores locales y fomentar prácticas agrícolas éticas y sostenibles. Además, estamos dedicados a la innovación y la creatividad, siempre buscando nuevas maneras de sorprender y deleitar a nuestros clientes con productos únicos y de alta calidad.</p>
+                
+                <p class="justified-text">     Nuestro equipo está formado por profesionales apasionados que combinan sus conocimientos y habilidades para ofrecer la mejor experiencia cafetera a nuestros clientes. Nos enorgullece trabajar en un ambiente colaborativo y dinámico, donde cada miembro del equipo aporta su experiencia y perspectiva para crear algo verdaderamente especial.</p>
+    </div>
+   
+    <div class="container">
+<div class="team-section">
+            <div class="team-member">
+                <img src="img/photos/cami.png" alt="Foto de Camila Diaz Caceres"> 
+                <div class="team-description">
+                    <h2>Díaz Caceres, Camila</h2>
+                    <p><strong>Estudiante de la Lic. y Tec. en Turismo</strong></p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="img/photos/facu.png" alt="Foto de Facundo Diaz Bordon"> 
+                <div class="team-description">
+                    <h2>Díaz Bordon, Facundo</h2>
+                    <p><strong>Estudiante de Licenciatura en Sistemas de Información</strong></p>
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="img/photos/matias.png" alt="Foto de Alvarez Matias"> 
+                <div class="team-description">
+                    <h2>Álvarez, Matías Alejandro</h2>
+                    <p><strong>Licenciado en Diseño y Producción Multimedial</strong></p>
+                    
+                </div>
+            </div>
+
+            <div class="team-member">
+                <img src="img/photos/patri.png" alt="Foto de Patricia Bustos"> 
+                <div class="team-description">
+                    <h2>Bustos, Patricia Alejandra</h2>
+                    <p><strong>Licenciada en Sistemas y Docente</strong></p>
+                </div>
+            
+            </div>
+            </div>
+            <div class="imagen-team">
+                <img src="img/cafedeespecialidad.png" style="border:2px solid #000; width: 100%;" alt="foto-cafe">
+            </div>
+        </div>
    </main>
    <%- include('./partials/footer.ejs') %>
+   <script src="/js/coffecode.js"></script>
+
 </body>
 </html>

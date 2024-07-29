@@ -4,7 +4,7 @@ const userRouter = require('./src/routers/userRouter');
 const productRouter = require('./src/routers/productRouter');
 const adminRouter = require('./src/routers/adminRouter');
 const session = require('express-session');
-
+const methodOverride = require('method-override');
 const app = express();
 
 //Incorporando Sesión en Middleware
@@ -14,6 +14,9 @@ app.use(express.static('public'));
 //necesario para ejs
 app.set('views',__dirname + '/src/views/');
 app.set('view engine','ejs');
+
+//activo el metodo de sobreescritura para usar PUT y DELETE
+app.use(methodOverride('_method'));
 
 //activo middleware para recibir post
 app.use(express.json());
@@ -36,6 +39,14 @@ app.use('/', mainRouter);
 app.use('/user', userRouter);
 app.use('/products', productRouter);
 app.use('/admin', adminRouter);
+app.use('/logout', (req, res) => {
+    req.session.destroy((err) => {
+        if (err) {
+          return res.status(500).send('Error al cerrar la sesión');
+        }
+        res.redirect('/'); // Redirige a la página de inicio o donde prefieras
+    });
+});
 
 //bloqueo 404
 app.use((req, res) => {

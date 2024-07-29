@@ -2,36 +2,8 @@
     <link rel="stylesheet" href="/css/register.css">
 </head>
 <body>
-        <div class="frase">
-            <h4>TU ÉXITO Y TU FELICIDAD DEPENDEN DE TÍ</h4>
-        </div>
-        <header>
-            <div class="header-content">
-                <div class="contenedor-logo">
-                    <img src="/img/logo.svg" alt="Logo del Café" class="logo">
-                </div>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a class="link-a" href="#productos">PRODUCTOS</a></li>
-                        <li><a class="link-a" href="#informacion">INFORMACIÓN</a></li>
-                        <li class="search-container">
-                            <input type="text" placeholder="¿Qué estás buscando?">
-                            <button>BUSCAR</button>
-                        </li>
-                        <li class="cart-icon">
-                            <a href="/product/productDetail">
-                                <img src="/img/carrito.png" alt="Carrito de Compras">
-                            </a>
-                        </li>
-                        <li class="login1">
-                            <a href="/user/login">
-                                <img src="/img/login.png" alt="Login">
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-    </header>
+    <%- include('../partials/header.ejs')%>
+       
     <main>
         <h2> CREA TU CUENTA</h2>
         
@@ -73,6 +45,8 @@
 
     </main>
     <%- include('../partials/footer.ejs') %>
+    <script src="/js/coffecode.js"></script>
   
+
 </body>
 </html>

@@ -2,34 +2,9 @@
     <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
- 
-    <header>
-        <div class="header-content">
-            <div>
-                <img src="/img/logo.svg" alt="Logo del Café" class="logo" onclick="location.href='/'">
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a class="link-a" href="#productos">PRODUCTOS</a></li>
-                    <li><a class="link-a" href="#informacion">INFORMACIÓN</a></li>
-                    <li class="search-container">
-                        <input type="text" placeholder="¿Qué estás buscando?">
-                        <button>BUSCAR</button>
-                    </li>
-                    <li class="cart-icon">
-                        <a href="/products/cart">
-                            <img src="/img/carrito.png" alt="Carrito de Compras">
-                        </a>
-                    </li>
-                    <li class="login1">
-                        <a href="/user/login">
-                            <img src="/img/login.png" alt="Login">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+
+    <%- include('../partials/header.ejs')%>
+    
     <main class="login">
         <h1 style="background-color: chartreuse; text-align: center;"><% if(msg!=""){%>
             <%= msg %> 
@@ -42,11 +17,11 @@
             </ol>
     </div>
 
-     <h2>INICIAR SESION</h2>
+     <h2>INICIAR SESIÓN</h2>
        
         <form class="estilo-form" action="/user/login" method="post">
             <div class="bloque">
-            <label  for="email">E-mail</label>
+            <label  class="estilo-label" for="Email">E-mail</label>
                 <br>
             <input type="text" name="email" placeholder="email" required>
             </div>
@@ -56,11 +31,14 @@
                 <input type="password" name="clave" id="pass1" placeholder="Elige tu contraseña" required>
             </div>
             <a href="/user/clave">¿Olvidaste tu contraseña?</a> 
+            <br/>
             <button type="submit" class="boton">INICIAR SESIÓN</button>
-            <p>¿No tenes una cuenta aun?</p>  <a href="/user/register">Registrate aquí</a>
+            <p>¿No tenes una cuenta aún?</p>  <a href="/user/register">Registrate aquí</a>
         </form>
     </main>
     
     <%- include('../partials/footer.ejs') %>
+    
+
     </body>
 </html>

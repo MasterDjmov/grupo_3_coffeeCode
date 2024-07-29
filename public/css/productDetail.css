@@ -7,7 +7,10 @@
 
 
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
 }
 
 /*
@@ -52,7 +55,7 @@ main{
 
     .producto1 > img{
         width: 100%;
-    
+        
     }
     .botones-admin{
         a{
@@ -74,30 +77,30 @@ main{
         text-align: center;
     }
     
-    .navbar{
+    .navbar2{
         padding: 2px 4px;
         list-style: none;
         
     }
     
-    .navbar-item{
+    .navbar2-item{
         display:inline;
-        font-size: 15px;
+        font-size: 1.2rem;
         color: black;
     }
     
-    .navbar li+li:before{
+    .navbar2 li+li:before{
         padding: 4px;
         color: black;
         content: ">";
     }
     
-    .navbar-item a{
+    .navbar2-item a{
         color: #291025;
         text-decoration: none;
     }
     
-    .navbar-item a:hover{
+    .navbar2-item a:hover{
         color:  #823a6f;
     }
 
@@ -112,17 +115,16 @@ main{
         color: black;
         cursor: pointer;
         padding: 16px;
-        width: 100%;
+        width: 90%;
         border: none;
         text-align: left;
         outline: none;
-        font-size: 14px;
+        font-size: 1.rem;
         box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);;
         i{
-            position: relative;
+            position: sticky;
             color: #291025;
-            right: -220px;
-            top: -15px;
+            margin-left: 20px;
         }
     }
     .active, .acordeon:hover{
@@ -130,7 +132,7 @@ main{
     }
     .panel{
         padding: 20px 20px;
-        font-size: 13px;
+        font-size: 1rem;
         display: none;
         overflow: hidden;
     }
@@ -140,7 +142,7 @@ main{
     }
     .texto{
         padding-left: 20px;
-        font-size: 16px;
+        font-size: 1.2rem;
     }
     .parrafo1{
         color: #823a6f;
@@ -149,7 +151,9 @@ main{
         padding-left: 20px;
     }
     h4{
+        font-weight: bold;
         padding: 15px;
+        margin-bottom: 0px;;
     }
     label{
         span{
@@ -175,7 +179,7 @@ main{
             font-family: Helvetica;
             font-size: 15px;
             cursor: pointer;
-            padding: 15px 30px;
+            padding: 10px 20px;
             border-radius: 10%;
             transition: all 0.2s;
         }
@@ -191,10 +195,7 @@ main{
         font-size: 10px;
         cursor: pointer;
         padding: 15px;
-        position: relative;
         font-size: 12px;
-        right: -250px;
-        top: -140px;
         border: none;
         color:#291025;
         opacity: 0.5;
@@ -216,7 +217,7 @@ main{
     .counter-group .di{
         background-color: #a99ac4;
         border: none;
-        font-size: 20px;
+        font-size: 1.2rem;
         cursor: pointer;
     }
         .counter-group input {
@@ -236,7 +237,7 @@ main{
         border: 1px solid #000;
         background-color:  #823a6f;
         opacity: 0.8;
-        font-size: 20px;
+        font-size: 1.4rem;
         cursor: pointer;
         padding: 15px 30px;
         border-radius: 10%;
@@ -300,18 +301,29 @@ main{
                 opacity: 0.8;
                 padding-top: 20px;
                 padding-bottom: 20px;
-                padding-left: -10px;
-                font-size: small;
+                padding-left: 20px;
+                font-size: 15px;
+                font-weight: bold;
                 p{
+                    font-weight: bold;
                     display: flex;
                     justify-content: flex-end;
                    margin-top: -20px;
+                   padding-right: 10px;
+                }
+
+                .titulodet{
+                    text-align: center;
                 }
             }
         }
     }
+
+    .titulodet{
+        text-align: center;
+    }
     .gusto{
-        font-size: 20px;
+        font-size: 1.4rem;
         text-align: center;
         background-color: white;
         width: 100%;
@@ -327,7 +339,7 @@ main{
             width: 75%;
             align-items: center;
             margin: auto;
-            padding: 20px;
+            padding: 10px;
         }
         .caja-articulo{
             border-top: 1px solid #ebebeb;
@@ -339,15 +351,17 @@ main{
                 display: block;
                 margin: auto;
                 color: white;
-                font-family: Helvetica; 
+                font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-style: normal;
                 font-weight: bold;
-                font-size: 1rem;
+                font-size: 1.2rem;
                 cursor: pointer;
                 padding: 5px 15px;
                 background-color:  #823a6f;
                 opacity: 0.8;
                 position: relative;
-                top:-100px;
+                top:-130px;
                 border-radius: 2rem;
 
                 
@@ -359,7 +373,7 @@ main{
         }
         .caja-articulo:hover{
             .descripcion-imagen{
-                font-size: 16px;
+                font-size: 1.2rem;
                 text-align: center;
                 color: gray;
                 visibility: visible;
@@ -367,7 +381,7 @@ main{
             button{
                 visibility: visible;
             }
-            box-shadow: 0px 0px 5px rgb(100, 100, 100);
+            box-shadow: 0px 0px 3px rgb(100, 100, 100);
         }
     }
 }
@@ -378,32 +392,24 @@ main{
             width: 100%;
             display: flex;
             .producto1{
-                width: 50%;
-                .botones-admin{
-                    position: relative;
-                    top: 440px;
-                    text-align: center;
-                    z-index: auto;
-                }
-                .navbar{
-                    position: relative;
-                    top:-440px;
+                width: 40%;
+                .navbar2{
+                    position: sticky;
+                    size-adjust: auto;
                 }
             }
             .descripcion-producto{
-                width: 50%;
+                width: 60%;
                 padding-top: 5px;
                 .parrafo1{
                     display: flex;
                 }
             }
             .acordeon{
-                width: 70%;
+                width: 60%;
             }
             .acordeon i{
-                top: -15px;
-                left: 220px;
-                z-index: auto;
+                margin-left: 20px;
             }
         }
         .descripcion2{
@@ -425,9 +431,6 @@ main{
             width: 100%;
             display: flex;
             justify-content: space-around;
-            .caja-articulo img{
-                width: 300px;
-            }
         }
     }
 
@@ -435,36 +438,32 @@ main{
 
 @media (min-width: 769px){
     main{
-        .caja-producto .producto1 .botones-admin{
-            position: relative;
-            top: 570px;
-        }
-        .caja-producto .producto1 .navbar{
-            position: relative;
-                    top:-570px;
+        .caja-producto .producto1 .navbar2{
+            position: sticky;
         }
         .caja-producto{
+            .producto1{
+                width: 100%;
+            }
             .descripcion-producto{
-            padding-top: 50px;
+                width: 100%;
+            padding-top: 30px;
+            padding-bottom: 20px;
             
         }
         .acordeon i{
             top:  -2px;
             left: 80px;
+            position: sticky;
         }
-        .producto1 .imagen-producto1{
-            width: 500px;
-        }
+        
            }
-        .sabor{
-            padding-top: 80px;
-        }
         .otros-productos{
             width: 100%;
             display: flex;
             justify-content: space-around;
             .caja-articulo img{
-                width: 400px;
+                width: 70%;
             }
         }
     }

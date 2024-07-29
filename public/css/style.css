@@ -11,11 +11,13 @@
     width: 100%;
     height: auto;
     background-color: #823a6f;
-    font-family: Helvetica; 
+    font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-style: normal;
     text-align: center;
     padding: 7px;
     color: white;
-    font-size: 20px;
+    font-size: 1.2rem;
     h5{
         padding-top: 5px;
     }
@@ -40,8 +42,9 @@
 
 nav {
     margin-left: auto;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
+    font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .nav-links {
@@ -60,9 +63,10 @@ nav {
 .nav-links a {
     text-decoration: none;
     color: #000;
-    font-family: Helvetica; 
-    font-weight: bold;
-    font-size: 1rem;
+    font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+    font-size: 1.2rem;
     transition: all 0.3s;
 }
 
@@ -77,6 +81,7 @@ nav {
 .search-container {
     display: flex;
     
+    
 }
 
 .search-container input {
@@ -84,7 +89,10 @@ nav {
     font-size: 1rem;
     border-radius: 20px;
     text-align: center;
-    font-family: Helvetica; ;
+    font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-style: normal; 
+  font-size: 1.2rem;
 }
 
 .search-container button {
@@ -94,8 +102,10 @@ nav {
     
     border-radius: 20px;
     cursor: pointer;
-    font-family: Helvetica; 
-    font-weight: bold;
+    font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
 }
 .search-container button:hover{
     background-color: #a99ac4;
@@ -176,22 +186,27 @@ nav {
     display: flex;
     color: white;
     background-color: #823a6f;
-    font-family: Helvetica; 
+    font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     padding: 20px;
     width: 100%;
     height: auto;
+    font-size: 1.2rem;
 }
 
 h4 {
-    font-weight: bold;
-    font-family: Helvetica; 
+    font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-style: normal;
     padding: 10px;
+    font-size: 1.4rem;
     
 }
 
 .cajasFooter {
     width: 500px;
-    height: 100px;
+    height: auto;
     text-align: center;
     margin-left: 20px;
     
@@ -206,11 +221,16 @@ h4 {
 .tamanoImg2 {
     width: 20px;
     height: 20px;
-    transition: all 0.5s;
+    
 }
 .cajasFooter{
+    .tamanoImg1:hover{
+        border: 1px solid #823a6f;
+        box-shadow: 0px 0px 2px rgb(0, 0, 0);
+    }
     .tamanoImg2:hover{
-    color: #000;
+        border: 1px solid #823a6f;
+        
 }
 }
 
@@ -231,3 +251,6 @@ h4 {
     }
 }
 
+@media (max-width: 714px){
+    
+}

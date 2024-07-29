@@ -8,10 +8,13 @@
  
  
  body{
-    font-family: "Roboto", sans-serif;
+   font-family: "Zain", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 1.2rem;
  }
  header{
-   width: 90vw;
+   
    height: 40%;  
    background-color:  #f3f3f3;   
    margin: 0 auto;
@@ -19,7 +22,7 @@
  header .frase {
    background-color: #823a6f;
    width: 100%;
-   font-size: small;
+   font-size: 1.2rem;
    height: 30px;
  }
  header .container-header{
@@ -49,7 +52,7 @@
  
 
 footer {
-   width: 90vw;
+   
    margin: 0 auto;
 }
 /* ---------*/
@@ -58,7 +61,7 @@ footer {
 
    height: 100%;
    width: 100%;
-   max-width: 90vw;
+   
    background: #a99ac4;
    padding: 10px;
    margin: 0 auto;
@@ -99,7 +102,7 @@ footer {
    margin-bottom: 0.5em;  
 }
 .cart-item-descripcion {
-   font-size: 12px;
+   font-size: 1.2rem;
 }
 .container-group-1{   
    width: 30%;
@@ -118,7 +121,7 @@ footer {
    margin: 1px;
    text-align: center;
    border-radius: 10%;
-   font-size: 12px;
+   font-size: 1.2rem;
 }
  
 .cart-item-subtotal {
@@ -128,7 +131,7 @@ footer {
 }
 .cart-item-subtotal p {
    text-align: center;
-   font-size: 14px;
+   font-size: 1.2rem;
    font-weight: bold;
 }
 .cart-item-delete {
@@ -142,7 +145,7 @@ footer {
    width: 30px;
    height: 30px;
    border-radius: 100%;
-   font-size: 15px;
+   font-size: 0.8rem;
    position: absolute;
    top: 7px;
    left: 0px;
@@ -170,7 +173,7 @@ footer {
    height: 30px;
    padding: 5px;
    margin: 5px;
-   font-size: 10px;
+   font-size: 0.8rem;
  }
 
 .btn-actualizar {
@@ -201,12 +204,12 @@ footer {
    height: 30px;
    padding: 5px;
    margin: 5px;
-   font-size: 10px;
+   font-size: 0.7rem;
    width: 95%;
 }
 .envio label {
    padding-left: 5px;
-   font-size: 10px;
+   font-size: 1.2rem;
 }
 @media(min-width: 361px){
    .cart-body{

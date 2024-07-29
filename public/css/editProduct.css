@@ -1,7 +1,8 @@
         body {
-            font-family: "Roboto", sans-serif;
-            margin: 20px;
-            padding: 20px;
+            font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.2rem;
             background-color: #f4f4f4;
         }
         main{
@@ -38,17 +39,22 @@
             resize: vertical;
         }
         .form-group button {
-            background-color: #291025;
+            background-color: #823a6f;
+            opacity: 0.8;
             color: white;
             border: none;
             padding: 10px 15px;
             font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
-            margin-left: 250px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+
             
         }
         .form-group button:hover {
+            opacity: 1;
             background-color: #823a6f;
         }
         .form-group input[type="color"] {

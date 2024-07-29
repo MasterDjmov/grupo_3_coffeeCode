@@ -1,87 +1,87 @@
-/*---- para style.css-----*/
-*{
-   margin: 0px;
-   padding: 0px;
-   box-sizing: border-box;
-}
-
-body{
-   font-family: "Roboto", sans-serif;
-}
-header{
-   width: 90vw;
-   height: 40%;  
-   background-color:  #f3f3f3;   
-   margin: 0 auto;
-
-}
-header .frase {
-   background-color: #823a6f;
-   width: 100%;
-   font-size: small;
-   height: 33px;
-   padding-top: 0px;
-}
-
-footer {
-width: 90vw;
-margin: 0 auto;
-}
- /* --------------*/
- 
-.cart-panel {
-
-   height: 100%;
-   width: 100%;
+.dropdown-menu {
+   display: none;
+   background-color: #a99ac4;
+   transform: translateX(0) !important;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+   position: absolute;
+   z-index: 1000;
    max-width: 90vw;
-   background: #a99ac4;
-   padding-top: 30px;
-   margin: 0 auto;
-
+   font-family: "Zain", sans-serif;
 }
-.cart-panel h2 {
+
+.carrito-panel1 {
+  
+   width: 100%;
+  border-radius: 3%;
+  border: 1px solid #000;
+  
+}
+.carrito-form1 {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.carrito-form1 h2 {
+   text-align: center;
+   color: #fff;
+}
+.carrito-body1 {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.carrito-panel1 h2 {
    text-align: center;
 }
- 
- 
-.cart-body {
+  
+.carrito-body1 {
    padding: 1em; 
-
+   margin: 0 auto;
 }
-.cart-items {
+.carrito-items1 {
    margin-bottom: 1em;  
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
 }
-.cart-item {
+.carrito-item1 {
    display: flex;
    align-items: center;
    margin-bottom: 1em;    
    padding-bottom: 1em;
+   justify-content: space-between;
+   padding: 10px;
+   border-radius: 8px;
+   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
-.cart-item-imagen {
+.carrito-item-imagen1 {
    flex: 0 0 60px;
 }
-.cart-item-imagen img {
+.carrito-item-imagen1 img {
    width: 75%;
 }
-.cart-item-detalle {  
+.carrito-item-detalle1 {  
    padding-left: 1em;
    padding-right: 1em;
 }
-.cart-item-name {
+.carrito-item-name1 {
    margin-bottom: 0.5em;
    font-size: 20px;
 }
 
-.cart-item-subtotal {
+.carrito-item-subtotal1 {
    padding-bottom: 10px;  
    border-bottom: 1px solid #ddd;
 }
-.cart-item-subtotal p {
+.carrito-item-subtotal1 p {
 text-align: center;
    font-size: 18px;
    font-weight: bold;
 }
-.cart-item-delete {
+.carrito-item-delete1 {
    flex: 0 0 30px;
    text-align: right;   
    width: 10px; 
@@ -89,7 +89,7 @@ text-align: center;
    position: relative;
 
 } 
-.cart-item-delete button{
+.carrito-item-delete1 button{
    width: 30px;
    height: 30px;
    border-radius: 100%;
@@ -99,50 +99,62 @@ text-align: center;
    left: 0px;
 }
 
-.cart-total  {
+.carrito-total1  {
    text-align: center;
    border-bottom: 1px solid #ddd;
    padding-bottom: 10px;
 }
    
-.botones {
-
+.carrito-botones1 {
+   color: #fff;  
    margin-top: 15px;
-   width: 295px;
+   width: 275px;
    height: 100px;
    padding: 5px;
    margin-left: 9px;
 }
-.btn-ver, .btn-fin {  
-
-border-radius: 5px;
+.carrito-btn-ver1, .carrito-btn-fin1 {  
+   border-radius: 5px;
+     
 }
-.btn-ver {   
+a.carrito-btn-ver1 {   
    text-decoration: none;      
-   padding-left: 100px;
-   padding-right: 100px;
-   padding-top: 6px;
+   padding-left: 60px;
+   padding-right: 60px;
+   padding-top: 8px;
    padding-bottom: 6px;
-   font-size: 10px;
-   background: #823A6F;
-   color: #fff;  
+   font-size: 0.8rem;
+   background-color: #823A6F;
+   color: white;
 
 }
-.btn-fin {
+.carrito-btn-fin1 {
    background: #823A6F;
    color: #fff;
-   opacity: 0,9;
    cursor: pointer;
    border: none;
    height: 30px;
    padding: 5px;
    margin-top: 25px;
-   font-size: 10px;
-   width: 93%;
+   font-size: 0.8rem;
+   width: 70%;
 }
+/* Dropdown Button Styles */
+.dropdown-button {
+   background: none;
+   border: none;
+   cursor: pointer;
+   font-size: 1.2rem;
+   color: #333;
+}
+
+.dropdown-button:hover {
+   color: #555;
+}
+
  
 @media (min-width: 361px){
-   .cart-panel{  
+   .carrito-panel1{  
      
       min-width: 30vw;
       width: 30%;     
@@ -151,26 +163,22 @@ border-radius: 5px;
       align-items: center;
       margin-right: 30px;
    }
-   .cart-items, .cart-item {
+   .carrito-items1, .cart-item1 {
       width: 100%;
    }
-   .cart-item-imagen {
+   .carrito-item-imagen1 {
       width: 20%;
    }
-   .cart-item-detalle{
+   .carrito-item-detalle1 {
       width: 60%;
    }
-   .cart-item-delete {
+   .carrito-item-delete1 {
       width: 10%;
    }
-   footer, header {
-      width: 100vw;
-      margin: 0 auto;
-    }
-    .botones {
+   .carrito-botones1 {
       display: flex;
       justify-content: center;    
       flex-wrap: wrap;     
       margin-left: 39px;
-    }
+   }
 }

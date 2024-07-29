@@ -1,56 +1,19 @@
 <%- include('./partials/head.ejs') %>
-    <link rel="stylesheet" href="/css/index.css">
-    
-</head>
+<link rel="stylesheet" href="/css/index.css">
+
+
 <body>
-    <div class="frase">
-        <h5>"UN BUEN CAFÉ PUEDE TRANSFORMAR UN MAL DÍA EN UNA VICTORIA."</h5>
-    </div>
-    <header>
-        <div class="header-content">
-            <div>
-                <img src="img/logo.svg" alt="Logo del Café" class="logo">
-            </div>
-            <nav>
-                <ul class="nav-links">
-                  
-                    <li><% if(user.categoria==="ADMINISTRADOR"){%>
-                            <a class="link-a" href="/admin/register" style="display: flex;"><i class="fas fa-plus-circle" style="padding-right: 2px;"></i> PRODUCTOS</a></li>
-                   <% } %>
-                    <li><a class="link-a" href="#productos">PRODUCTOS</a></li>
-                    <li><a class="link-a" href="/about">INFORMACIÓN</a></li>
-                    <li class="search-container">
-                        <input type="text" placeholder="¿Qué estás buscando?">
-                        <button>BUSCAR</button>
-                    </li>
-                    <li class="cart-icon">
-                        <a href="/products/cart">
-                            <img src="img/carrito.png" alt="Carrito de Compras">
-                        </a>
-                    </li>
-                    <li class="login1">
-                        <a href="/user/login">
-                            <% if(user.imagen!=""){%>
-                             <img src="img/perfil/<%= user.imagen %>" alt="Login">
-                             <% } else { %>
-                                <img src="img/login.png" alt="Login">
-                            <% } %>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <%- include('./partials/header.ejs')%>
     <main>
     <div class="contenedor-principal">
         <section class="banner">
-            <img src="img/banner.png" alt="Banner">
+            <img src="/img/banner.png" alt="Banner">
         </section>       
         <section class="articulo" id="productos">
             <article>
                 <div class="texto-articulo">
-                    <h2>Café de especialidad</h2>
-                    <p>En <strong>CofeeCode</strong> contamos con una amplia variedad de Cafés, sujeto a disponibilidad por estaciones y países. Nuestros granos son sometidos a un riguroso proceso de tueste en nuestra maquina Loring. Las tres características de nuestro café son:
+                    <h2>CAFÉ DE ESPECIALIDAD</h2>
+                    <p class="descripcion">En <strong>CofeeCode</strong> contamos con una amplia variedad de Cafés, sujeto a disponibilidad por estaciones y países. Nuestros granos son sometidos a un riguroso proceso de tueste en nuestra maquina Loring. Las tres características de nuestro café son:
                     </p>
                     <ol class="lista-articulo">
                     <li> Nuestro café siempre te llega fresco.</li> 
@@ -60,7 +23,7 @@
                     </ol>
                 </div>
                 <div class="imagen-articulo">
-                    <img src="img/cafe1.jpg" alt="Artículo">
+                    <img src="/img/cafe1.jpg" alt="Artículo">
                 </div>
             </article>
         </section>
@@ -78,7 +41,7 @@
                         <h3><%= cafe.nombre %></h3>
                         <p><%= cafe.descripcion %></p>
                         <a href="/products/detail/<%= cafe.id %>">
-                            <button>COMPRAR</button>
+                            <button>Ver Más</button>
                         </a>
                     </article>
                 <% }) %>
@@ -87,5 +50,6 @@
        
     </main>
    <%- include('./partials/footer.ejs') %>
+   <script src="/js/coffecode.js"></script>
 </body>
 </html>
