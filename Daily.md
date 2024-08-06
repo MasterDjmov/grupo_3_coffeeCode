@@ -302,7 +302,7 @@ sin impedimentos
 
 **Qué va a hacer hoy**  
  Adaptar las vistas del admin
- Adaptar el carrito de compras
+ Adaptar vista carrito de compras
 
 
 **Soluciones Propuestas**
@@ -379,16 +379,18 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -      
+ - Modifique users.json
+ - Cree ruta para la página de información
 
 **Impedimentos**         
-- 
+- sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Actualizar products.json
+ - modificar rutas del admin
 
 **Soluciones Propuestas**
-- 
+- Seguir revisando el código y comunicarme con el equipo para unificar criterios
 
 ## Fecha: 27/07/2024
 
@@ -444,18 +446,19 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
-Creacion del tablero Trello
-revisión del código     
+Revisión  del tablero Trello
+revisión del código   
+modifique rutas  
 
 **Impedimentos**         
 sin impedimentos
 
 **Qué va a hacer hoy**  
- Organización de MVC
+ investigar sobre multer, sesión y cookies.
 
 **Soluciones Propuestas**
-- 
----
+- seguir practicando y reuniones con el equipo.
+
 
 ## Fecha: 31/07/2024
 
@@ -511,16 +514,17 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- 
+ revise el código 
+ investigue sobre sesión para el login
 
 **Impedimentos**         
- 
+ sin impedimentos
 
 **Qué va a hacer hoy**  
- 
+  aplique sesión para el login
 
 **Soluciones Propuestas**
-- 
+- seguir practicando y reuniones con el equipo.
 ---
 ## Fecha: 03/08/2024
 
@@ -574,14 +578,15 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -
+ -  aplique sesión para el login
  -
 **Impedimentos**         
- -
+ -sin impedimentos
 
 **Qué va a hacer hoy**  
- -
+ - cree rutas delete y put
+ - cree las funciones en el controller para delete y put
 
 
 **Soluciones Propuestas**
-- 
+- seguir practicando y reuniones con el equipo.
