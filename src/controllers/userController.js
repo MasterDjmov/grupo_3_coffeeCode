@@ -1,5 +1,5 @@
 const express = require('express');
-const dbusers = require('../data/user.json');
+const dbusers = require('../data/users.json');
 const path = require('path');
 const session = require('express-session');
 
