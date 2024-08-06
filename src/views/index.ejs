@@ -61,11 +61,14 @@
                 <% listaProductos.forEach(cafe => { %>
                   
                     <article class="producto" style="position: relative;">
-                        <a  href="/admin/edit/<%= cafe.id %>" style="position: absolute; right: 33px; color: rgb(119, 161, 106);"> 
-                            <% if(user.categoria==="ADMINISTRADOR"){%>
-                                <i class="fas fa-edit">edit</i>
-                            <% } %>   
-                        </a>
+                        <% if(user.categoria==="ADMINISTRADOR"){%>    
+                            <a  href="/admin/edit/<%= cafe.id %>" style="position: absolute; right: 33px; color: rgb(119, 161, 106);" title="Editar"> 
+                                    <i class="fas fa-edit"></i>
+                            </a>
+                            <a  href="/admin/edit/<%= cafe.id %>" style="position: absolute; right: 33px; color: rgb(119, 161, 106);" title="Eliminar"> 
+                                <i class="fas fa-trash"></i>
+                             </a>
+                        <% } %> 
                         <img src="<%= cafe.imagen %>" alt="Producto 1">
                         <h3><%= cafe.nombre %></h3>
                         <p><%= cafe.descripcion %></p>

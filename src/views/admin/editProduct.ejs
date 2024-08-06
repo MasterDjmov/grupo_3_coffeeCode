@@ -11,7 +11,7 @@
     <div class="container">
        
         <h1>Editar Producto</h1>
-        <form action="/admin/edit/<%= cafe.id %>" method="post" enctype="multipart/form-data">
+        <form action="/admin/edit/<%= cafe.id %>?_method=PUT" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="productName">Nombre del Producto</label>
                 <input type="text" id="productName" name="productName" value="<%= cafe.nombre %>" required>
