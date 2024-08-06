@@ -50,7 +50,17 @@ const adminController = {
                 'msg':"Producto Cargado Correctamente!!",
                 'rol':""
             });
-    }
+    },
+    deleteProduct1:(req, res) => {
+        console.log("Se Borro por get El producto N° "+req.params.id);
+        
+        res.redirect('/');
+    },
+    deleteProduct2:(req, res) => {
+        console.log("Se Borro por post El producto N° "+req.params.id);
+        
+        res.redirect('/');
+    },
 }
 
 module.exports = adminController;
