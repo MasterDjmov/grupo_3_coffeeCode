@@ -63,3 +63,25 @@
 ### Dejar de hacer
 - Tareas que no aportan al objetivo: Eliminar tareas que no contribuyen directamente a los objetivos del sprint o del proyecto.
 - Tareas manuales repetitivas: Eliminar tareas manuales repetitivas mediante la automatización.
+
+## Retrospectiva Sprint 4-5
+
+### Comenzar a hacer
+- Planificar reuniones más detalladas: Mejorar la claridad y propósito de las reuniones de planificación.
+- Capacitación sobre base de datos: Para aprender sobre el funcionamiento y caracteristicas sobre base de datos.
+
+### Hacer más
+- Pruebas de usuario: Realizar más pruebas de usuario para obtener feedback directo sobre las funcionalidades desarrolladas.
+- Entrevistas de usuario: Realizar más entrevistas con usuarios para entender mejor sus necesidades y desafíos.
+
+### Continuar haciendo
+- Comunicación diaria en reuniones de stand-up: Mantener las reuniones diarias para asegurar una comunicación efectiva.
+- Code reviews: Continuar realizando revisiones de código para mantener la calidad y compartir conocimientos.
+
+### Hacer menos
+- Reuniones sin agenda: Limitar las reuniones que no tienen una agenda clara y objetivos definidos.
+- Tareas no prioritarias.
+
+### Dejar de hacer
+- Reuniones sin decisiones: Evitar reuniones que no resulten en decisiones claras y accionables.
+- Postergar la documentación: Evitar postergar la documentación de funcionalidades y procesos.
