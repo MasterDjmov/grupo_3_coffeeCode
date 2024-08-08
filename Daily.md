@@ -482,16 +482,17 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- -   
+ - Revisión de codigo
 
 **Impedimentos**         
- - 
+ - sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Corrección de estilos y vistas.
+ - Corrección de medias querys.
 
 **Soluciones Propuestas**
-- 
+- Acordar reuniones con el equipo, para clarificar estilos.
 
 
 ## Resumen de Tareas
@@ -547,16 +548,16 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Correccion de estilos y vistas
 
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Cambio de fuentes y revisión de botones
 
 **Soluciones Propuestas**
-- 
+- Reunion con el equipo para revisar el cambio de fuente.
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -581,7 +582,7 @@ sin impedimentos
  -  aplique sesión para el login
  -
 **Impedimentos**         
- -sin impedimentos
+ - sin impedimentos
 
 **Qué va a hacer hoy**  
  - cree rutas delete y put
