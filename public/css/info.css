@@ -1,0 +1,45 @@
+body {
+    font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.nav2 {
+    text-align: center;
+    padding: 5px;
+    background-color: #f3f3f3;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.nav2 a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.nav2 a:hover {
+    color: #823a6f;
+}
+.container2 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+h1, h2 {
+    padding: 10px;
+    color: #823a6f;
+}
+
+ul{
+    padding-left: 50px;
+}
+
+li{
+    padding-top: 5px;
+    font-weight: 400;
+}

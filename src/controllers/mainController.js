@@ -29,6 +29,20 @@ const mainController = {
             }
 
         );
+    },
+    info: (req, res) => {
+        if(req.session.user){
+            user= req.session.user
+        }else{
+            user="";
+        }
+       
+        res.render('info',
+            {
+                'user':user
+            }
+
+        );
     }
 }
 

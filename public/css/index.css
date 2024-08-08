@@ -182,3 +182,8 @@
     font-size: 1.2rem;
     text-decoration: none;
 }
+
+li{
+    font-weight: bold;
+    padding-right: 50px;
+}
