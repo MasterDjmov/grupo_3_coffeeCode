@@ -81,6 +81,9 @@
 
 .producto:hover{
     box-shadow: 1px 1px 1px gray;
+    img{
+        transform: scale(1.1);
+    }
 }
 
 .producto img {
@@ -91,9 +94,7 @@
     object-fit: cover;
 }
 
-.producto img:hover{
-    transform: scale(1.1);
-}
+
 
 .producto h3 {
     font-size: 1.5rem;
