@@ -46,6 +46,7 @@ const userController = {
     },
     updateProfile: (req, res) => {      
       const msg="";
+      console.log(req.originalFileName);
       res.render('users/edit_profile',{msg});
     }
 }
