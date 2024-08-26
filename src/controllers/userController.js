@@ -40,7 +40,11 @@ const userController = {
        // res.sendFile(path.resolve(__dirname,'../views/users/recuperarClave.html'));
        res.render('users/recuperarClave');
     },
-    editProfile: (req, res) => {      
+    formProfile: (req, res) => {      
+      const msg="";
+      res.render('users/edit_profile',{msg});
+    },
+    updateProfile: (req, res) => {      
       const msg="";
       res.render('users/edit_profile',{msg});
     }
