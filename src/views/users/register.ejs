@@ -5,6 +5,9 @@
     <%- include('../partials/header.ejs')%>
        
     <main>
+        <h1 style="background-color: chartreuse; text-align: center;"><% if(msg!=""){%>
+            <%= msg %> 
+         <% } %></h1>
         <h2> CREA TU CUENTA</h2>
         
         <form action="/user/register" method="post" class="estilo-form">

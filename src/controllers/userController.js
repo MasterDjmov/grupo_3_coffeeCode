@@ -35,7 +35,9 @@ const userController = {
     },
     register: (req, res) => {
         //res.sendFile(path.resolve(__dirname,'../views/users/register.html'));
-        res.render('users/register');
+        res.render('users/register',{
+          msg:""       
+        });
     },
     create: async(req, res) => {
       const msg="";
@@ -45,7 +47,7 @@ const userController = {
          id:crypto.randomUUID(),
          nombre,
          apellido,
-         imagen:'avatar1.jpg',
+         imagen:'avatar-mini2.jpg',
          email,
          clave,
          categoria:"CLIENTE",
@@ -62,7 +64,7 @@ const userController = {
        
        //actualizar el users.json
        await dataUsers.save(info);
-       res.redirect('/user/login');
+       res.render('users/login',{msg:"Registro Exitoso"});;
   },
     recuperarClave: (req, res) => {
        // res.sendFile(path.resolve(__dirname,'../views/users/recuperarClave.html'));
