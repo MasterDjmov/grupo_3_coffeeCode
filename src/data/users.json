@@ -13,19 +13,6 @@
     "codigo_postal": 5300
   },
   {
-    "id": 1,
-    "nombre": "Alejandra Patricia111888",
-    "apellido": "Bustos",
-    "imagen": "cachorro-para-colorir-16.gif-1724723600021.gif",
-    "email": "admin@admin.com",
-    "clave": "admin123",
-    "categoria": "ADMINISTRADOR",
-    "telefono": "3804562365",
-    "pais": "Argentina",
-    "ciudad": "La Rioja",
-    "codigo_postal": "5300"
-  },
-  {
     "id": "2",
     "nombre": "Facundo34555",
     "apellido": "Diaz",
@@ -33,6 +20,19 @@
     "email": "facudiaz@gmail.com",
     "clave": "diaz123",
     "categoria": "CLIENTE",
+    "telefono": "3804562365",
+    "pais": "Argentina",
+    "ciudad": "La Rioja",
+    "codigo_postal": "5300"
+  },
+  {
+    "id": "1",
+    "nombre": "Alejandra Patricia",
+    "apellido": "Bustos",
+    "imagen": "patri.png-1724725270109.png",
+    "email": "admin@admin.com",
+    "clave": "admin123",
+    "categoria": "ADMINISTRADOR",
     "telefono": "3804562365",
     "pais": "Argentina",
     "ciudad": "La Rioja",
