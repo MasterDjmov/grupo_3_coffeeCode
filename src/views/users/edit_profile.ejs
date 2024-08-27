@@ -23,7 +23,7 @@
 			  
                 <div class="col-md-3 col-lg-3 " align="center"> 
 				<div id="load_img">
-					<img class="img-responsive" src="" alt="Logo">
+					<img class="img-responsive" src="/img/perfil/<%=user.imagen%>" alt="Logo">
 					
 				</div>
 				<br>				
@@ -40,30 +40,39 @@
                   <table class="table table-condensed">
                     <tbody>
                       <tr>
-                        <td class='col-md-3'>Nombres y Apellidos:</td>
-                        <td><input type="text" class="form-control input-sm" name="nombre_apellido" value=" " required></td>
+                        <td class='col-md-3'>Apellidos:</td>
+                        <td><input type="text" class="form-control input-sm" name="apellido" value="<%=user.apellido%>" required></td>
+                      </tr>
+                      <tr>
+                        <td class='col-md-3'>Nombres:</td>
+                        <td><input type="text" class="form-control input-sm" name="nombre" value="<%=user.nombre%>" required></td>
                       </tr>
                       <tr>
                         <td>Correo electrónico:</td>
-                        <td><input type="email" class="form-control input-sm" name="correo" value=" " ></td>
+                        <td><input type="email" class="form-control input-sm" name="email" value="<%=user.email%>" ></td>
                       </tr>
 					  <tr>
                         <td>Teléfono:</td>
-                        <td><input type="text" class="form-control input-sm" required name="telefono" value=" "></td>
+                        <td><input type="text" class="form-control input-sm" required name="telefono" value="<%=user.telefono%>"></td>
                       </tr>
 					  <tr>
                         <td>País:</td>
-                        <td><input type="text" class="form-control input-sm" name="pais" value=" " required></td>
+                        <td><input type="text" class="form-control input-sm" name="pais" value="<%=user.pais%>" required></td>
                       </tr>
 					  <tr>
                         <td>Ciudad:</td>
-                        <td><input type="text" class="form-control input-sm" name="ciudad" value=" " required></td>
+                        <td><input type="text" class="form-control input-sm" name="ciudad" value="<%=user.ciudad%>" required></td>
                       </tr>
 					  <tr>
                         <td>Codigo Postal:</td>
-                        <td><input type="text" class="form-control input-sm" name="codigo_postal" value=" "></td>
+                        <td><input type="text" class="form-control input-sm" name="codigo_postal" value="<%=user.codigo_postal%>"></td>
                       </tr>
 					  <tr>
+              <tr>
+                <td>clave:</td>
+                <td><input type="text" class="form-control input-sm" name="clave" value="<%=user.clave%>"></td>
+              </tr>
+    <tr>
                    
                     </tbody>
                   </table>
@@ -74,8 +83,8 @@
               </div>
             </div>
                  <div class="panel-footer text-center" >
-                    
-                     
+                    <input type="hidden" name="id" value="<%=user.id%>">
+                    <input type="hidden" name="categoria" value="<%=user.categoria%>">
                 <button type="submit" class="btn btn-sm btn-success" style="background-color: #823a6f; border: #823a6f;"><i class="glyphicon glyphicon-refresh"></i> Actualizar perfil</button>
 
                        

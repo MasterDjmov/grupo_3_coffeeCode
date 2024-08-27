@@ -2,7 +2,8 @@ const express = require('express');
 const dbusers = require('../data/users.json');
 const path = require('path');
 const session = require('express-session');
-
+const dataUsers = require('../data/datasourceUsers');
+const crypto =require('node:crypto');
 
 const userController = {
     //muestro formulario de login
@@ -21,7 +22,7 @@ const userController = {
      // console.log( req.session.user);
         if(user != undefined){
           req.session.user = user;
-         console.log(req.session.user);
+         
             res.redirect('/');
         }else{
             const msg="Error! El usuario No Pudo Ser Validado";
@@ -40,14 +41,50 @@ const userController = {
        // res.sendFile(path.resolve(__dirname,'../views/users/recuperarClave.html'));
        res.render('users/recuperarClave');
     },
-    formProfile: (req, res) => {      
+    formProfile: (req, res) => {     
+      if(req.session.user){
+        user= req.session.user;
+      }else{
+          user="";
+      }
+    //  const id=req.session.user.id;
+    //  let user = dbusers.find((usuario)=>{
+    //   return usuario.id===id;
+    //   //console.log(usuario.email, usuario.clave);
+    // });
       const msg="";
-      res.render('users/edit_profile',{msg});
+      res.render('users/edit_profile',{msg,user});
     },
-    updateProfile: (req, res) => {      
+    updateProfile: async(req, res) => {      
       const msg="";
-      console.log(req.originalFileName);
-      res.render('users/edit_profile',{msg});
+     const imagen=req.originalFileName;
+      const {id, nombre, apellido, email,telefono, pais, ciudad, codigo_postal,clave, categoria}=req.body;
+      const perfil = {
+        id:id,
+        nombre,
+        apellido,
+        imagen,
+        email,
+        clave,
+        categoria,
+        telefono,
+        pais,
+        ciudad,
+        codigo_postal
+      }
+      //traigo todos los usuarios distinto al mio
+      let users = dbusers.filter((usuario)=>{
+        return usuario.id!=id;
+      })
+     
+      //Leer el JSON
+      const info = await dataUsers.load();
+      //console.log(info);
+      users.push(perfil);
+      
+      //actualizar el users.json
+      await dataUsers.save(users);
+      res.redirect('/user/login');
     }
 }
 

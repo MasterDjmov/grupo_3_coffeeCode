@@ -9,9 +9,16 @@
             <nav>
                 <ul class="nav-links">
                   
-                    <li><% if(user.categoria==="ADMINISTRADOR"){%>
-                            <a class="link-a" href="/admin/create" style="display: flex;"><i class="fas fa-plus-circle" style="padding-right: 2px;"></i> AGREGAR</a></li>
-                   <% } %>
+                    
+                    <% if(user.categoria==="ADMINISTRADOR"){%>
+                        <li>
+                            <a class="link-a" href="/admin/create" style="display: flex;"><i class="fas fa-plus-circle" style="padding-right: 2px;"></i> AGREGAR</a>
+                        </li>
+                        <li>
+                        
+                    <% } %>
+                    <a class="link-a" href="/user/profile" style="display: flex;"><i class="fas fa-plus-circle" style="padding-right:       2px;"></i> Perfil</a>
+                    </li>
                     <li><a class="link-a" href="/#productos">PRODUCTOS</a></li>
                     <li><a class="link-a" href="/about">INFORMACIÓN</a></li>
                     <li class="search-container">
