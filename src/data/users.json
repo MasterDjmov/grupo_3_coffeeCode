@@ -37,5 +37,18 @@
     "pais": "Argentina",
     "ciudad": "La Rioja",
     "codigo_postal": "5300"
+  },
+  {
+    "id": "df3f1e41-4760-47ec-b765-1d9060f5ab05",
+    "nombre": "Mario",
+    "apellido": "Alonso",
+    "imagen": "avatar1.jpg",
+    "email": "alonso@gmail.com",
+    "clave": "admin123",
+    "categoria": "CLIENTE",
+    "telefono": "03804565656",
+    "pais": "Agregar",
+    "ciudad": "Agregar",
+    "codigo_postal": "Agregar"
   }
 ]

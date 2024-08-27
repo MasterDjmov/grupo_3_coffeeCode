@@ -37,6 +37,33 @@ const userController = {
         //res.sendFile(path.resolve(__dirname,'../views/users/register.html'));
         res.render('users/register');
     },
+    create: async(req, res) => {
+      const msg="";
+      const imagen=req.originalFileName;
+       const {nombre, apellido, email,telefono, clave}=req.body;
+       const perfil = {
+         id:crypto.randomUUID(),
+         nombre,
+         apellido,
+         imagen:'avatar1.jpg',
+         email,
+         clave,
+         categoria:"CLIENTE",
+         telefono,
+         pais:"Agregar",
+         ciudad:"Agregar",
+         codigo_postal:"Agregar"
+       }
+        
+       //Leer el JSON
+       const info = await dataUsers.load();
+       //console.log(info);
+       info.push(perfil);
+       
+       //actualizar el users.json
+       await dataUsers.save(info);
+       res.redirect('/user/login');
+  },
     recuperarClave: (req, res) => {
        // res.sendFile(path.resolve(__dirname,'../views/users/recuperarClave.html'));
        res.render('users/recuperarClave');

@@ -7,38 +7,40 @@
     <main>
         <h2> CREA TU CUENTA</h2>
         
-        <form action="/" method="get" class="estilo-form">
+        <form action="/user/register" method="post" class="estilo-form">
             <div class="bloque">
-            <label class="estilo-label" for="nombre">
+                <label class="estilo-label" for="apellido">
+                Apellido<br></label>
+                 <input type="text" name="apellido" placeholder="Apellido" minlength="3" maxlength="40" id="apellido" required>
+            </div>
+            <div class="bloque">
+                <label class="estilo-label" for="nombre">
                 Nombre<br></label>
-            <input type="text" name="nombre" placeholder="Nombre y Apellido" minlength="3" maxlength="40" id="nombre" required>
+                 <input type="text" name="nombre" placeholder="Nombre" minlength="3" maxlength="40" id="nombre" required>
             </div>
-            <div class="bloque">
-            <label class="estilo-label" for="email">
-                E-mail<br></label>
-            <input type="email" name="email" placeholder="E-mail" id="email"  required>
-            </div>
-            <div class="bloque">
-            <label class="estilo-label" for="fecha"><h3 class="texto-formulario">Fecha de nacimiento</h3></label>
-            <input type="date" name="fecha" id="fecha" required>
-            </div>
+                     
             <div class="bloque">
             <label class="estilo-label" for="telefono">
                 Teléfono (opcional)<br></label>
                 <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" minlength="6" maxlength="20">
             </div>
-                <div class="bloque">
-            <label class="estilo-label" for="contraseña">
-                Contraseña<br></label>
-                <input type="password" name="contraseña" id="pass1" placeholder="Elige tu contraseña" required>
-                </div>
-                <div class="bloque">
-            <label class="estilo-label" for="confirmar">
-                Confirmar contraseña<br></label>
+            <div class="bloque">
+                <label class="estilo-label" for="email">
+                    E-mail<br></label>
+                <input type="email" name="email" placeholder="E-mail" id="email"  required>
+            </div>
+            <div class="bloque">
+                <label class="estilo-label" for="contraseña">
+                    Contraseña<br></label>
+                <input type="password" name="clave" id="pass1" placeholder="Elige tu contraseña" required>
+            </div>
+            <!-- <div class="bloque">
+                <label class="estilo-label" for="confirmar">
+                    Confirmar contraseña<br></label>
                 <input type="password" name="confirmar" id="pass2" placeholder="Confirmar tu contraseña" required>
-                </div>
+            </div> -->
             <br>
-            <button class="boton" type="submit">CREAR CUENTA</button>
+            <button class="boton" type="submit" name="btn">CREAR CUENTA</button>
         </form>
         <p>¿Ya tienes una cuenta?<a href="/user/login">Inicia sesión</a></p>
         
