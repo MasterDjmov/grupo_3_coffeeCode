@@ -8,7 +8,7 @@ const methodOverride = require('method-override');
 const app = express();
 
 //Incorporando Sesión en Middleware
-app.use(session({secret:"CoffeCode Clave Secreta"}));
+app.use(session({secret:"CoffeCode Clave Secreta", resave:false, saveUninitialized: true}));
 
 app.use(express.static('public'));
 

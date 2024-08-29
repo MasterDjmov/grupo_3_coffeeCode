@@ -9,7 +9,7 @@ const userController = {
     //muestro formulario de login
     formLogin: (req, res) => {      
         const msg="";
-        res.render('users/login',{msg});
+        res.render('users/login',{msg, user: dbusers.find((usuario) => usuario.email === '1')});
       },
       // valido el login
       login: async (req, res) => {
@@ -91,7 +91,8 @@ const userController = {
        // res.sendFile(path.resolve(__dirname,'../views/users/recuperarClave.html'));
        res.render('users/recuperarClave');
     },
-    formProfile: (req, res) => {     
+    formProfile: (req, res) => {    
+
       if(req.session.user){
         user= req.session.user;
       }else{
@@ -134,7 +135,13 @@ const userController = {
       
       //actualizar el users.json
       await dataUsers.save(users);
-      res.redirect('/user/login');
+      // if (req.session.usuario != null) {
+      //   req.session.usuario = null;
+      //   res.redirect("/user/login");
+      // }
+      //res.redirect('/logout');
+    res.redirect('/user/login');
+    //res.render('users/login',{msg:"Perfil Acualizado Correctamente"})
     }
 }
 

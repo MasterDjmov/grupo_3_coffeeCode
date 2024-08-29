@@ -10,7 +10,7 @@
                 <ul class="nav-links">
                   
                     
-                    <% if(user.categoria==="ADMINISTRADOR"){%>
+                    <% if(user && user.categoria==="ADMINISTRADOR"){%>
                         <li>
                             <a class="link-a" href="/admin/create" style="display: flex;"><i class="fas fa-plus-circle" style="padding-right: 2px;"></i> AGREGAR</a>
                         </li>
