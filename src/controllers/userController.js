@@ -4,7 +4,7 @@ const path = require('path');
 const session = require('express-session');
 const dataUsers = require('../data/datasourceUsers');
 const crypto =require('node:crypto');
-
+const bcrypt = require('bcrypt');
 const userController = {
     //muestro formulario de login
     formLogin: (req, res) => {      
@@ -12,27 +12,41 @@ const userController = {
         res.render('users/login',{msg});
       },
       // valido el login
-    login: (req, res) => {
-      //console.log(req.body.email);
+      login: async (req, res) => {
+        try {
+            // Busca el usuario en la base de datos por su email
+            let user = dbusers.find((usuario) => usuario.email === req.body.email);
     
-      let user = dbusers.find((usuario)=>{
-        return usuario.email==req.body.email && usuario.clave==req.body.clave;
-        //console.log(usuario.email, usuario.clave);
-      });
-     // console.log( req.session.user);
-        if(user != undefined){
-          req.session.user = user;
-         
-            res.redirect('/');
-        }else{
-            const msg="Error! El usuario No Pudo Ser Validado";
-            res.render('users/login',
-              {
-                msg,
-                'rol':"No Log"
-              });
+            if (user) {
+                // Compara la clave ingresada con la clave encriptada almacenada
+                const claveValida = await bcrypt.compare(req.body.clave, user.clave);
+    
+                if (claveValida) {
+                    req.session.user = user;
+                    res.redirect('/');
+                } else {
+                    const msg = "Error! La clave es incorrecta";
+                    res.render('users/login', {
+                        msg,
+                        'rol': "No Log"
+                    });
+                }
+            } else {
+                const msg = "Error! El usuario no fue encontrado";
+                res.render('users/login', {
+                    msg,
+                    'rol': "No Log"
+                });
+            }
+        } catch (err) {
+            console.error("Error en el proceso de login:", err);
+            res.status(500).render('users/login', {
+                msg: "Error en el proceso de login",
+                'rol': "No Log"
+            });
         }
     },
+    
     register: (req, res) => {
         //res.sendFile(path.resolve(__dirname,'../views/users/register.html'));
         res.render('users/register',{
@@ -42,7 +56,14 @@ const userController = {
     create: async(req, res) => {
       const msg="";
       const imagen=req.originalFileName;
-       const {nombre, apellido, email,telefono, clave}=req.body;
+      let {nombre, apellido, email,telefono, clave}=req.body;
+       //encripto clave
+     
+      const compresion = 10;
+      
+       // Encripto la clave
+       clave = await bcrypt.hash(clave, compresion);
+
        const perfil = {
          id:crypto.randomUUID(),
          nombre,

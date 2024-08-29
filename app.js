@@ -9,6 +9,7 @@ const app = express();
 
 //Incorporando Sesión en Middleware
 app.use(session({secret:"CoffeCode Clave Secreta"}));
+
 app.use(express.static('public'));
 
 //necesario para ejs
