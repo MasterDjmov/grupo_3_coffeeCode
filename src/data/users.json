@@ -14,7 +14,7 @@
   },
   {
     "id": "2",
-    "nombre": "Facundo34555",
+    "nombre": "Facundo",
     "apellido": "Diaz",
     "imagen": "facu.png-1724724180933.png",
     "email": "facudiaz@gmail.com",
@@ -27,8 +27,8 @@
   },
   {
     "id": "df3f1e41-4760-47ec-b765-1d9060f5ab05",
-    "nombre": "Mario",
-    "apellido": "Alonso",
+    "nombre": "Marcelo",
+    "apellido": "Perea",
     "imagen": "avatar-mini2.jpg",
     "email": "alonso@gmail.com",
     "clave": "admin123",
@@ -93,7 +93,7 @@
   {
     "id": "8e0ab618-0d9e-4852-ace7-8b276f026fe8",
     "nombre": "Mario",
-    "apellido": "Alonso",
+    "apellido": "Alvares",
     "imagen": "avatar-mini2.jpg",
     "email": "4admin@a4dmin.com",
     "clave": "$2b$10$oLMURgFmbmpzMZYbgnWTJ.aUs/93xmmZdnjGQxm89v1PQcOQmfIqa",
@@ -107,7 +107,7 @@
     "id": "1",
     "nombre": "Alejandra Patricia",
     "apellido": "Bustos",
-    "imagen": "avatar1.jpg-1724953304529.jpg",
+    "imagen": "patri.png-1724725270109.png-1724953987087.png",
     "email": "admin@admin.com",
     "clave": "$2b$10$oLMURgFmbmpzMZYbgnWTJ.aUs/93xmmZdnjGQxm89v1PQcOQmfIqa",
     "categoria": "ADMINISTRADOR",
