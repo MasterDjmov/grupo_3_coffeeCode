@@ -85,3 +85,25 @@
 ### Dejar de hacer
 - Reuniones sin decisiones: Evitar reuniones que no resulten en decisiones claras y accionables.
 - Postergar la documentación: Evitar postergar la documentación de funcionalidades y procesos.
+
+## Retrospectiva Sprint 5-6
+
+### Comenzar a hacer
+- Planificar la Base de datos con el equipo: definir tablas, relaciones y poblar de datos la base de datos para el proyecto.
+- Cambios de roles: se cambiaran roles para practicar las distintas tareas llevadas a cabo en el proyecto.
+
+### Hacer más
+- Retroalimentación continua: Fomentar la cultura de retroalimentación continua para mejorar la colaboración y resolver problemas más rápidamente.
+- Capacitación en nuevas tecnologías: capacitarse en nuevas tecnologias que tengan que ver con bases de datos y que puedan ser utiles para el proyecto.
+
+### Continuar haciendo
+- Promover el aprendizje colaborativo: Continuar fomentando la colaboración interdisciplinaria en todas las fases del desarrollo.
+- Reuniones de stand Up: Seguir haciendo reuniones breves para revisar el progreso del equipo.
+
+### Hacer menos
+- Reuniones síncronas innecesarias: Usar más herramientas de colaboración asíncrona (como documentos compartidos o chats) para reducir la necesidad de reuniones.
+- Reuniones sin planificar: reunirse sin tener en claro el objetivo de la reunión y las tareas a realizar.
+
+### Dejar de hacer
+- Postergar reuniones: Hacer las reuniones en la fecha acordada.
+- No informar el progreso: avisar sobre el progreso logrado de las tareas realizadas en el sprint.
