@@ -21,8 +21,23 @@ Ven y descubre el placer de combinar el arte del café con la pasión por el có
      <blockquote><p style="color:#e74c3c; overflow-wrap: break-word; word-break: break-all;white-space: normal; text-align: justify;"> Licenciada en Sistemas y Docente. Conocimientos: PHP, JavaScript, HTML, CSS, MySQL. Metodología SCRUM(Trello, asana). GitHub. Aptitudes: Análisis y Gestión de datos, Resolución colaborativa de problemas, Comunicación, Trabajo en equipo.</p></blockquote>
 
 
-- **Contreras, Teresita:**
+### Leo Martin Loyola
 
+¡Hola! 👋 me llamo Leo Martin Loyola
+Docente en EPET N2 y Colegio N° 20
+
+<article style="border: 1px solid dashed;">
+  <blockquote>
+    <p style="color: #e74c3c;">
+    Mi especialidad radica en el desarrollo de aplicaciones web utilizando principalmente PHP con Laravel 8/9 y ahora mejorando mis conocimientos en JavaScript, React, Node.js. Manejo bases de datos como MariaDB, MySQL, SQLServer y PostgreSQL. Me encanta trabajar en proyectos desafiantes que me permiten crecer como profesional.
+    </p>
+  </blockquote>
+  <p align="center">
+    <img src="https://img.shields.io/badge/Especialidad-Desarrollador%20Full%20Stack-blueviolet?style=for-the-badge&logo=appveyor" alt="Especialidad">
+    <img src="https://img.shields.io/badge/Lenguaje%20Favorito-JavaScript-yellow?style=for-the-badge&logo=javascript" alt="Lenguaje Favorito">
+    <img src="https://img.shields.io/badge/Framework%20Favorito-React-blue?style=for-the-badge&logo=react" alt="Framework Favorito">
+  </p>
+</article>
 
 ## Inspiraciones:
 
