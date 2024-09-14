@@ -32,6 +32,8 @@
 
 .texto-articulo {
     width: auto;
+    padding: 2rem;
+    text-align: justify;
     h2{
         width: 75%;
         font-family: "Zain", sans-serif;
