@@ -409,6 +409,9 @@ main{
                     display: flex;
                 }
             }
+            .descripcion-producto button{
+                margin-left: 1rem;
+            }
             .acordeon{
                 width: 60%;
             }
