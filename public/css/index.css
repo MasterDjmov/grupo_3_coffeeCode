@@ -82,7 +82,8 @@
 }
 
 .producto:hover{
-    box-shadow: 1px 1px 1px gray;
+    /*box-shadow: 1px 1px 1px gray;*/
+    border:1px solid #a7a5a5;
     img{
         transform: scale(1.1);
     }
