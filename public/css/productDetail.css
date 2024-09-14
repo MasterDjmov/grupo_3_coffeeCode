@@ -83,6 +83,7 @@ main{
     .navbar2{
         padding: 2px 4px;
         list-style: none;
+        margin-left: 1rem;
         
     }
     
@@ -403,6 +404,7 @@ main{
                 .navbar2{
                     position: sticky;
                     size-adjust: auto;
+                    
                 }
             }
             .descripcion-producto{
