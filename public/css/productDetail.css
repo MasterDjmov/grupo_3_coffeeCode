@@ -57,6 +57,9 @@ main{
         width: 100%;
         
     }
+    .descripcion-producto button{
+        margin-left: 1rem;
+    }
     .botones-admin{
         a{
        color: #000;
@@ -414,6 +417,7 @@ main{
             }
             .acordeon{
                 width: 60%;
+                
             }
             .acordeon i{
                 margin-left: 20px;
@@ -457,6 +461,9 @@ main{
             padding-top: 30px;
             padding-bottom: 20px;
             
+        }
+        .descripcion-producto button{
+            margin-left: 1rem;
         }
         .acordeon i{
             top:  -2px;
