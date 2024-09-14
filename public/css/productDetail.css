@@ -151,6 +151,8 @@ main{
     .texto{
         padding-left: 20px;
         font-size: 1.2rem;
+        text-align: justify;
+        width: 95%;
     }
     .parrafo1{
         color: aliceblue;
