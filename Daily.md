@@ -673,24 +673,6 @@ sin impedimentos
 **Soluciones Propuestas**
 - 
 
-## Resumen de Tareas
-### Loyola, Leo Martin:
-
-**Qué hizo ayer**  
- - 
- - 
-
-**Impedimentos**         
- - 
-
-**Qué va a hacer hoy**  
- - 
- - 
-
-
-**Soluciones Propuestas**
-- 
-
 
 ## Fecha: 03/09/2024
 
@@ -746,24 +728,6 @@ sin impedimentos
 **Qué hizo ayer**  
  -  
  - 
-**Impedimentos**         
- - 
-
-**Qué va a hacer hoy**  
- - 
- - 
-
-
-**Soluciones Propuestas**
-- 
-
-## Resumen de Tareas
-### Loyola, Leo Martin:
-
-**Qué hizo ayer**  
- - 
- - 
-
 **Impedimentos**         
  - 
 
@@ -841,23 +805,6 @@ sin impedimentos
 **Soluciones Propuestas**
 - 
 
-## Resumen de Tareas
-### Loyola, Leo Martin:
-
-**Qué hizo ayer**  
- - 
- - 
-
-**Impedimentos**         
- - 
-
-**Qué va a hacer hoy**  
- - 
- - 
-
-
-**Soluciones Propuestas**
-- 
 
 ## Fecha: 10/09/2024
 
@@ -913,24 +860,6 @@ sin impedimentos
 **Qué hizo ayer**  
  -  
  - 
-**Impedimentos**         
- - 
-
-**Qué va a hacer hoy**  
- - 
- - 
-
-
-**Soluciones Propuestas**
-- 
-
-## Resumen de Tareas
-### Loyola, Leo Martin:
-
-**Qué hizo ayer**  
- - 
- - 
-
 **Impedimentos**         
  - 
 
@@ -1008,26 +937,10 @@ sin impedimentos
 **Soluciones Propuestas**
 - 
 
-## Resumen de Tareas
-### Loyola, Leo Martin:
-
-**Qué hizo ayer**  
- - 
- - 
-
-**Impedimentos**         
- - 
-
-**Qué va a hacer hoy**  
- - 
- - 
-
-
-**Soluciones Propuestas**
-- 
-
 
 ## Fecha: 17/09/2024
+
+## SE UNIO AL EQUIPO DE TRABAJO EL COMPAÑERO : Loyola, Leo Martin
 
 ## Resumen de Tareas
 ### Diaz Caceres, Camila:
@@ -1096,19 +1009,18 @@ sin impedimentos
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
- - 
+ - corregí algunas vistas, y detalles que fui encontrando como margenes etc
 
 **Impedimentos**         
- - 
+ - ninguno
 
 **Qué va a hacer hoy**  
- - 
- - 
+ - aplique el sequelize, sequelize-cli y mysql2
+ - aplique la creación de la estructura de sequelize
 
 
 **Soluciones Propuestas**
-- 
+- ninguna, todo en playground
 
 ## Fecha: 19/09/2024
 
@@ -1345,15 +1257,15 @@ sin impedimentos
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - corregí algunas vistas, y detalles que fui encontrando como margenes etc
+ - 
 
 **Impedimentos**         
- - ninguno
+ - 
 
 **Qué va a hacer hoy**  
- - aplique el sequelize, sequelize-cli y mysql2
- - aplique la creación de la estructura de sequelize
+ - 
+ - 
 
 
 **Soluciones Propuestas**
-- ninguna, todo en playground
+- 
