@@ -1345,16 +1345,15 @@ sin impedimentos
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
- - 
+ - corregí algunas vistas, y detalles que fui encontrando como margenes etc
 
 **Impedimentos**         
- - 
+ - ninguno
 
 **Qué va a hacer hoy**  
- - 
- - 
+ - aplique el sequelize, sequelize-cli y mysql2
+ - aplique la creación de la estructura de sequelize
 
 
 **Soluciones Propuestas**
-- 
+- ninguna, todo en playground
