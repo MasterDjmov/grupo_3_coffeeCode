@@ -1,8 +1,8 @@
-{
+module.exports = {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "database_development",
+    "password": "djmov669",
+    "database": "cofeecode",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
@@ -21,3 +21,4 @@
     "dialect": "mysql"
   }
 }
+//aqui deben cambiar el password nada mas
