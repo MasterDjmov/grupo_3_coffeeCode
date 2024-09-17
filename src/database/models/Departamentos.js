@@ -1,0 +1,22 @@
+module.exports = (Sequelize, DataTypes) => {
+    const Departamentos = Sequelize.define('Departamentos', {
+        id_departamento: {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            primaryKey: true
+        },
+        nombre_dpto: {
+            type: DataTypes.STRING(45),
+            allowNull: true
+        },
+        id_provincia: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        }
+    }, {
+        tableName: 'departamentos',
+        timestamps: false
+    });
+
+    return Departamentos;
+};
