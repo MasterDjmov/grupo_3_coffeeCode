@@ -5,6 +5,11 @@ const session = require('express-session');
 const dataUsers = require('../data/datasourceUsers');
 const crypto =require('node:crypto');
 const bcrypt = require('bcrypt');
+
+//agregamos la parte de sequelize
+const db = require('../database/models/index.js');
+const { Association, where } = require('sequelize');
+
 const userController = {
     //muestro formulario de login
     formLogin: (req, res) => {      
