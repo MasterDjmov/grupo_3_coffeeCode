@@ -15,6 +15,11 @@ module.exports = (Sequelize, DataTypes) => {
         tableName: 'unidad_medida',
         timestamps: false
     });
-
+    UnidadesDeMedidas.associate = models => {
+        UnidadesDeMedidas.hasMany(models.Productos, {
+            as: 'productos',
+            foreignKey: 'idunidad_medida'
+        });
+    };
     return UnidadesDeMedidas;
 };
