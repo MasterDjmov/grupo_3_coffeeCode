@@ -28,5 +28,12 @@ module.exports = (Sequelize, DataTypes) => {
         updatedAt: 'updated_at'
     });
 
+    Estados.associate = models => {
+        Estados.hasMany(models.Usuarios, {
+            as: 'usuarios',
+            foreignKey: 'id_estado'
+        });
+    };
+
     return Estados;
 };
