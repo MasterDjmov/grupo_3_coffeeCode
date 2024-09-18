@@ -1,5 +1,5 @@
 module.exports = (Sequelize, DataTypes) => {
-    const Provincia = Sequelize.define('Provincia', {
+    const Provincias = Sequelize.define('Provincias', {
         id_provincia: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
@@ -18,5 +18,12 @@ module.exports = (Sequelize, DataTypes) => {
         timestamps: false
     });
 
-    return Provincia;
+    Provincias.associate = models => {
+        Provincias.hasMany(models.Departamentos, {
+            as: 'departamentos',
+            foreignKey: 'id_provincia'
+        });
+    };
+
+    return Provincias;
 };
