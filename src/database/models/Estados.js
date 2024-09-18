@@ -33,6 +33,11 @@ module.exports = (Sequelize, DataTypes) => {
             as: 'usuarios',
             foreignKey: 'id_estado'
         });
+
+        Estados.hasMany(models.Carritos, {
+            as: 'estados',
+            foreignKey: 'id_estado'
+        });
     };
 
     return Estados;
