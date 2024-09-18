@@ -68,5 +68,12 @@ module.exports = (Sequelize, DataTypes) => {
         updatedAt: 'updated_at'
     });
 
+    Facturas.associate = models => {
+        Facturas.belongsTo(models.Carritos, {
+            as: 'factura_carrito',
+            foreignKey: 'id_carrito'
+        });
+    };
+
     return Facturas;
 };
