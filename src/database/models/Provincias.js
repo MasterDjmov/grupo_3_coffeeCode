@@ -23,6 +23,10 @@ module.exports = (Sequelize, DataTypes) => {
             as: 'departamentos',
             foreignKey: 'id_provincia'
         });
+        Provincias.belongsTo(models.Paises, {
+            as: 'pais',
+            foreignKey: 'id_pais'
+        });
     };
 
     return Provincias;
