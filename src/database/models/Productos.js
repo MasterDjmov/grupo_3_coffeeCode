@@ -87,8 +87,13 @@ module.exports = (Sequelize, DataTypes) => {
         });
 
         Productos.belongsTo(models.TiposCafes, {
-            as: 'tipocafes',
+            as: 'tipocafe',
             foreignKey: 'id_tipo_cafe'
+        });
+
+        Productos.belongsTo(models.UnidadesDeMedidas, {
+            as: 'unidad_de_medida',
+            foreignKey: 'idunidad_medida'
         });
 
     };
