@@ -18,5 +18,11 @@ module.exports = (Sequelize, DataTypes) => {
         timestamps: false
     });
 
+    Productores.associate = models => {
+        Productores.hasMany(models.Productos, {
+            as: 'productos',
+            foreignKey: 'idproductor'
+        });
+    };
     return Productores;
 };
