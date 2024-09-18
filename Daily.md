@@ -1,4 +1,5 @@
 ### Índice
+
 - [# SPRINT 3](#sprint-3)
 - [# DAILY DOS POR SEMANA](#daily-dos-por-semana)
 
@@ -20,8 +21,11 @@
   
   - [## Fecha: 03/08/2024](#fecha-03082024)
   
+
 - [# SPRINT-5](#sprint-5)
 - [# NO SE REALIZARON DAILYS](#no-se-realizaron-dailys)
+
+
 - [# SPRINT-6](#sprint-6)
 - [# DAILY DOS POR SEMANA](#daily-dos-por-semana)
   - [## Fecha: 29/08/2024](#fecha-29082024)
@@ -677,16 +681,18 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Capacitación sobre base de datos en playground y otras paginas o videos.
+ - Realización de la retrospectiva
 
 **Impedimentos**         
- - 
+ - sin impedimentos.
 
 **Qué va a hacer hoy**  
- - 
+ - Definir con el equipo reuniones sincronas y asincronas.
+ - Se rotaran los roles del equipo.
 
 **Soluciones Propuestas**
-- 
+- Ponerse de acuerdo con el equipo.
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -743,16 +749,18 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Capacitacion sobre BD en el playground.
+ - Realizando ejercicios del playground sobre base de datos. 
 
 **Impedimentos**         
- - 
+ - sin impedimentos.
 
 **Qué va a hacer hoy**  
- - 
+ - Diseñar la BD con el equipo de trabajo.
+ - Distribuir las tareas por colores.
 
 **Soluciones Propuestas**
-- 
+- Soluciones en el playground.
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -809,16 +817,18 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Revisar el diagrama de base de datos
+ - Capacitacion de la herramienta de base datos que vamos a utilizar
 
 **Impedimentos**         
- - 
+ - saber que tablas se relacionan.
 
 **Qué va a hacer hoy**  
- - 
+ - Relacionar las tablas con el equipo de trabajo
 
 **Soluciones Propuestas**
-- 
+- crer tablas intermedias.
+- simular un registro de un producto o producto, para saber los campos que tendrian que estar relacionados.
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -875,13 +885,13 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Revision de la BD.
 
 **Impedimentos**         
- - 
+ - sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Armar la estructura de la base de datos con el equipo de trabajo.
 
 **Soluciones Propuestas**
 - 
@@ -941,13 +951,14 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Revision de la estructura de la BD.
+ - Capacitación sobre la herrmaienta a utilizar para la BD.
 
 **Impedimentos**         
- - 
+ - sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Poblar de datos la bd con el equipo de trabajo
 
 **Soluciones Propuestas**
 - 
@@ -1009,13 +1020,14 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Revisión del DER
+ - Revisión de los datos.
 
 **Impedimentos**         
- - 
+ - sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Ver como hacer las asociaciones de las tablas. 
 
 **Soluciones Propuestas**
 - 
