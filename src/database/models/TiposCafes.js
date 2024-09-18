@@ -14,5 +14,11 @@ module.exports = (Sequelize, DataTypes) => {
         timestamps: false
     });
 
+    TiposCafes.associate = models => {
+        TiposCafes.hasMany(models.Productos, {
+            as: 'productos',
+            foreignKey: 'id_tipo_cafe'
+        });
+    };
     return TiposCafes;
 };
