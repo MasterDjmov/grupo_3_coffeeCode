@@ -26,7 +26,12 @@ module.exports = (Sequelize, DataTypes) => {
         Localidades.hasMany(models.Usuarios, {
             as: 'usuarios',
             foreignKey: 'id_localidad'
-        });     
+        });  
+        
+        Localidades.belongsTo(models.Departamentos, {
+            as: 'departamento',
+            foreignKey: 'id_departamento'
+        });   
     };
 
     return Localidades;
