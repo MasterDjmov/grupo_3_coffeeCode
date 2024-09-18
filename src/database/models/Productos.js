@@ -1,5 +1,5 @@
 module.exports = (Sequelize, DataTypes) => {
-    const Producto = Sequelize.define('Producto', {
+    const Productos = Sequelize.define('Productos', {
         id_producto: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
@@ -80,5 +80,12 @@ module.exports = (Sequelize, DataTypes) => {
         updatedAt: 'updated_at'
     });
 
-    return Producto;
+    Productos.associate = models => {
+        Productos.belongsTo(models.Categorias, {
+            as: 'pais',
+            foreignKey: 'id_pais'
+        });
+    };
+
+    return Productos;
 };
