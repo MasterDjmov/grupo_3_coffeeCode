@@ -18,5 +18,12 @@ module.exports = (Sequelize, DataTypes) => {
         timestamps: false
     });
 
+    FormasEnvios.associate = models => {
+        FormasEnvios.hasMany(models.Carritos, {
+            as: 'formas_de_envios',
+            foreignKey: 'id_forma_envio'
+        });
+    };
+
     return FormasEnvios;
 };
