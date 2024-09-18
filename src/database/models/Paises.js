@@ -14,5 +14,12 @@ module.exports = (Sequelize, DataTypes) => {
         timestamps: false
     });
 
+    Paises.associate = models => {
+        Paises.hasMany(models.Provincias, {
+            as: 'provincias',
+            foreignKey: 'id_pais'
+        });
+    };
+    
     return Paises;
 };
