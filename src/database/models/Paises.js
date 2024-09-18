@@ -19,7 +19,12 @@ module.exports = (Sequelize, DataTypes) => {
             as: 'provincias',
             foreignKey: 'id_pais'
         });
+
+        Paises.hasMany(models.Productos, {
+            as: 'productos',
+            foreignKey: 'id_pais'
+        });
     };
-    
+
     return Paises;
 };
