@@ -96,6 +96,11 @@ module.exports = (Sequelize, DataTypes) => {
             foreignKey: 'idunidad_medida'
         });
 
+        Productos.belongsTo(models.Productores, {
+            as: 'productor',
+            foreignKey: 'idproductor'
+        });
+
     };
 
     return Productos;
