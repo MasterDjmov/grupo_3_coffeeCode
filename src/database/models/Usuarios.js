@@ -84,5 +84,26 @@ module.exports = (Sequelize, DataTypes) => {
         updatedAt: 'updated_at'
     });
 
+    Usuarios.associate = models => {
+        Usuarios.belongsTo(models.Roles, {
+            as: 'rol',
+            foreignKey: 'id_rol'
+        });
+
+        Usuarios.belongsTo(models.Estados, {
+            as: 'estado',
+            foreignKey: 'id_estado'
+        });
+
+        Usuarios.belongsTo(models.Localidades, {
+            as: 'localidad',
+            foreignKey: 'id_localidad'
+        });
+        
+        Usuarios.hasMany(models.Carritos, {
+            as: 'carritos',
+            foreignKey: 'id_usuario'
+        });
+    };
     return Usuarios;
 };
