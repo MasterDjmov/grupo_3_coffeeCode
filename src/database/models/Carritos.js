@@ -71,6 +71,11 @@ module.exports = (Sequelize, DataTypes) => {
             as: 'forma_de_envio',
             foreignKey: 'id_forma_envio'
         });
+
+        Carritos.hasMany(models.Facturas, {
+            as: 'facturasCarritos',
+            foreignKey: 'id_carrito'
+        });
     };
     
     return Carritos;
