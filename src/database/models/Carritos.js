@@ -61,6 +61,11 @@ module.exports = (Sequelize, DataTypes) => {
             foreignKey: 'id_carrito',
             otherKey: 'id_producto'
         });
+
+        Carritos.belongsTo(models.MediosDePagos, {
+            as: 'medio_de_pago',
+            foreignKey: 'id_medio_pago'
+        });
     };
     
     return Carritos;
