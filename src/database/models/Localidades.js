@@ -22,5 +22,12 @@ module.exports = (Sequelize, DataTypes) => {
         timestamps: false
     });
 
+    Localidades.associate = models => {
+        Localidades.hasMany(models.Usuarios, {
+            as: 'usuarios',
+            foreignKey: 'id_localidad'
+        });     
+    };
+
     return Localidades;
 };
