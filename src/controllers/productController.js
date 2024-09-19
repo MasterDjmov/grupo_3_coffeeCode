@@ -31,7 +31,7 @@ const productController = {
       })
       .then(function(cafe){
          if(!cafe){
-            return res.status(400).send('Producto no encontrado');
+            return res.status(404).render('errors/404');
          }
          res.render('products/productCart_detalle',{
             'cafe': cafe,
@@ -41,7 +41,7 @@ const productController = {
       })
       .catch(error =>{
          console.error("Error al buscar el procuto", error)
-         res.status(500).send('Error en el servidor');
+         res.status(404).render('errors/404');
       })
     },
     productCart_facturacion: (req, res) => {
@@ -66,7 +66,7 @@ const productController = {
          })
          .then(function(cafe){
             if(!cafe){
-               return res.status(404).send('Producto no encontrado')
+               return res.status(404).render('errors/404');
             }
             res.render('products/productDetail',
              {
@@ -77,7 +77,7 @@ const productController = {
          })
          .catch(error => {
             console.error("Error al buscar el producto:", error);
-            res.status(500).send('Error en el servidor');
+            res.status(404).send('errors/404');
         });
 
     }
