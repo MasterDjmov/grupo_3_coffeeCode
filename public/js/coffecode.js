@@ -24,4 +24,18 @@ document.addEventListener('DOMContentLoaded', function () {
         dropdownMenu.style.top = `${rect.bottom + window.scrollY}px`;
         dropdownMenu.style.left = `${Math.min(rect.left + window.scrollX, window.innerWidth - dropdownMenu.offsetWidth)}px`;
     }
+
+    //codigo para menu acordeon en product detail
+    let elementoAcordeon = document.getElementsByClassName("acordeon");
+            for(let i=0; i<elementoAcordeon.length; i++ ){
+                elementoAcordeon[i].addEventListener("click", function(){
+                    this.classList.toggle("active");
+                    let panel = this.nextElementSibling;
+                    if(panel.style.display == "block"){
+                        panel.style.display = "none";
+                    }else{
+                        panel.style.display = "block"
+                    }
+                });
+            }
 });
