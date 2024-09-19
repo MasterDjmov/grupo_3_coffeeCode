@@ -3,6 +3,10 @@ const path = require('path');
 const productos = require('../data/products.json');
 const session = require('express-session');
 
+//agregamos la parte de sequelize
+const db = require('../database/models/index.js');
+const { Association, where } = require('sequelize');
+
 const mainController = {
     index: (req, res) => {
         //res.sendFile(path.resolve(__dirname,'../views/index.html'));
@@ -24,6 +28,20 @@ const mainController = {
         }
        
         res.render('about',
+            {
+                'user':user
+            }
+
+        );
+    },
+    info: (req, res) => {
+        if(req.session.user){
+            user= req.session.user
+        }else{
+            user="";
+        }
+       
+        res.render('info',
             {
                 'user':user
             }

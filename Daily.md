@@ -1,3 +1,55 @@
+### Índice
+
+- [# SPRINT 3](#sprint-3)
+- [# DAILY DOS POR SEMANA](#daily-dos-por-semana)
+
+  - [## Fecha: 06/07/2024](#fecha-06072024)
+  
+  - [## Fecha: 09/07/2024](#fecha-09072024)
+  
+  - [## Fecha: 12/07/2024](#fecha-12072024)
+  
+  - [## Fecha: 16/07/2024](#fecha-16072024)
+  
+- [# SPRINT-4](#sprint-4)
+- [# DAILY DOS POR SEMANA](#daily-dos-por-semana)
+  - [## Fecha: 24/07/2024](#fecha-24072024)
+  
+  - [## Fecha: 27/07/2024](#fecha-27072024)
+  
+  - [## Fecha: 31/07/2024](#fecha-31072024)
+  
+  - [## Fecha: 03/08/2024](#fecha-03082024)
+  
+
+- [# SPRINT-5](#sprint-5)
+- [# NO SE REALIZARON DAILYS](#no-se-realizaron-dailys)
+
+
+- [# SPRINT-6](#sprint-6)
+- [# DAILY DOS POR SEMANA](#daily-dos-por-semana)
+  - [## Fecha: 29/08/2024](#fecha-29082024)
+  
+  - [## Fecha: 03/09/2024](#fecha-03092024)
+  
+  - [## Fecha: 06/09/2024](#fecha-06092024)
+  
+  - [## Fecha: 10/09/2024](#fecha-10092024)
+  
+  - [## Fecha: 14/09/2024](#fecha-14092024)
+  
+  - [## Fecha: 17/09/2024](#fecha-17092024)
+  - [## SE UNIO AL EQUIPO DE TRABAJO EL COMPAÑERO : Loyola, Leo Martin](#se-unio-al-equipo-de-trabajo-el-compañero--loyola-leo-martin)
+
+  - [## Fecha: 19/09/2024](#fecha-19092024)
+  
+  - [## Fecha: 24/09/2024](#fecha-24092024)
+  
+  - [## Fecha: 26/09/2024](#fecha-26092024)
+
+
+### Contenido
+
 # SPRINT 3
 ---
 
@@ -482,16 +534,17 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- -   
+ - Revisión de codigo
 
 **Impedimentos**         
- - 
+ - sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Corrección de estilos y vistas.
+ - Corrección de medias querys.
 
 **Soluciones Propuestas**
-- 
+- Acordar reuniones con el equipo, para clarificar estilos.
 
 
 ## Resumen de Tareas
@@ -547,6 +600,509 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
+ - Correccion de estilos y vistas
+
+**Impedimentos**         
+ - Sin impedimentos
+
+**Qué va a hacer hoy**  
+ - Cambio de fuentes y revisión de botones
+
+**Soluciones Propuestas**
+- Reunion con el equipo para revisar el cambio de fuente.
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  aplique sesión para el login
+ -
+**Impedimentos**         
+ - sin impedimentos
+
+**Qué va a hacer hoy**  
+ - cree rutas delete y put
+ - cree las funciones en el controller para delete y put
+
+
+**Soluciones Propuestas**
+- seguir practicando y reuniones con el equipo.
+
+# SPRINT-5
+
+---
+
+# NO SE REALIZARON DAILYS
+
+---
+
+# SPRINT-6
+
+---
+
+# DAILY DOS POR SEMANA
+
+---
+
+## Fecha: 29/08/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ [Descripción de tareas completadas ayer]       
+
+**Impedimentos**         
+ [Descripción de impedimentos]
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - Capacitación sobre base de datos en playground y otras paginas o videos.
+ - Realización de la retrospectiva
+
+**Impedimentos**         
+ - sin impedimentos.
+
+**Qué va a hacer hoy**  
+ - Definir con el equipo reuniones sincronas y asincronas.
+ - Se rotaran los roles del equipo.
+
+**Soluciones Propuestas**
+- Ponerse de acuerdo con el equipo.
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  
+ - 
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ - 
+
+
+**Soluciones Propuestas**
+- 
+
+
+## Fecha: 03/09/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ [Descripción de tareas completadas ayer]       
+
+**Impedimentos**         
+ [Descripción de impedimentos]
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - Capacitacion sobre BD en el playground.
+ - Realizando ejercicios del playground sobre base de datos. 
+
+**Impedimentos**         
+ - sin impedimentos.
+
+**Qué va a hacer hoy**  
+ - Diseñar la BD con el equipo de trabajo.
+ - Distribuir las tareas por colores.
+
+**Soluciones Propuestas**
+- Soluciones en el playground.
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  
+ - 
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ - 
+
+
+**Soluciones Propuestas**
+- 
+
+
+## Fecha: 06/09/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ [Descripción de tareas completadas ayer]       
+
+**Impedimentos**         
+ [Descripción de impedimentos]
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - Revisar el diagrama de base de datos
+ - Capacitacion de la herramienta de base datos que vamos a utilizar
+
+**Impedimentos**         
+ - saber que tablas se relacionan.
+
+**Qué va a hacer hoy**  
+ - Relacionar las tablas con el equipo de trabajo
+
+**Soluciones Propuestas**
+- crer tablas intermedias.
+- simular un registro de un producto o producto, para saber los campos que tendrian que estar relacionados.
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  
+ - 
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ - 
+
+
+**Soluciones Propuestas**
+- 
+
+
+## Fecha: 10/09/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ [Descripción de tareas completadas ayer]       
+
+**Impedimentos**         
+ [Descripción de impedimentos]
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - Revision de la BD.
+
+**Impedimentos**         
+ - sin impedimentos
+
+**Qué va a hacer hoy**  
+ - Armar la estructura de la base de datos con el equipo de trabajo.
+
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  
+ - 
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ - 
+
+
+**Soluciones Propuestas**
+- 
+
+
+## Fecha: 14/09/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ [Descripción de tareas completadas ayer]       
+
+**Impedimentos**         
+ [Descripción de impedimentos]
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - Revision de la estructura de la BD.
+ - Capacitación sobre la herrmaienta a utilizar para la BD.
+
+**Impedimentos**         
+ - sin impedimentos
+
+**Qué va a hacer hoy**  
+ - Poblar de datos la bd con el equipo de trabajo
+
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  
+ - 
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ - 
+
+
+**Soluciones Propuestas**
+- 
+
+
+## Fecha: 17/09/2024
+
+## SE UNIO AL EQUIPO DE TRABAJO EL COMPAÑERO : Loyola, Leo Martin
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ [Descripción de tareas completadas ayer]       
+
+**Impedimentos**         
+ [Descripción de impedimentos]
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - Revisión del DER
+ - Revisión de los datos.
+
+**Impedimentos**         
+ - sin impedimentos
+
+**Qué va a hacer hoy**  
+ - Ver como hacer las asociaciones de las tablas. 
+
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  
+ - 
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ - 
+
+
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Loyola, Leo Martin:
+
+**Qué hizo ayer**  
+ - corregí algunas vistas, y detalles que fui encontrando como margenes etc
+
+**Impedimentos**         
+ - ninguno
+
+**Qué va a hacer hoy**  
+ - aplique el sequelize, sequelize-cli y mysql2
+ - aplique la creación de la estructura de sequelize
+
+
+**Soluciones Propuestas**
+- ninguna, todo en playground
+
+## Fecha: 19/09/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ [Descripción de tareas completadas ayer]       
+
+**Impedimentos**         
+ [Descripción de impedimentos]
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
  - 
 
 **Impedimentos**         
@@ -578,15 +1134,198 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  aplique sesión para el login
- -
+ -  
+ - 
 **Impedimentos**         
- -sin impedimentos
+ - 
 
 **Qué va a hacer hoy**  
- - cree rutas delete y put
- - cree las funciones en el controller para delete y put
+ - 
+ - 
 
 
 **Soluciones Propuestas**
-- seguir practicando y reuniones con el equipo.
+- 
+
+## Resumen de Tareas
+### Loyola, Leo Martin:
+
+**Qué hizo ayer**  
+ - 
+ - 
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ - 
+
+
+**Soluciones Propuestas**
+- 
+
+## Fecha: 24/09/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ [Descripción de tareas completadas ayer]       
+
+**Impedimentos**         
+ [Descripción de impedimentos]
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - 
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  
+ - 
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ - 
+
+
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Loyola, Leo Martin:
+
+**Qué hizo ayer**  
+ - 
+ - 
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ - 
+
+
+**Soluciones Propuestas**
+- 
+
+## Fecha: 26/09/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ [Descripción de tareas completadas ayer]       
+
+**Impedimentos**         
+ [Descripción de impedimentos]
+
+**Qué va a hacer hoy**  
+ [Descripción de tareas planeadas para hoy]
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - 
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  
+ - 
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ - 
+
+
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Loyola, Leo Martin:
+
+**Qué hizo ayer**  
+ - 
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ - 
+
+
+**Soluciones Propuestas**
+- 

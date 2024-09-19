@@ -2,7 +2,7 @@
     "id":1,
     "nombre":"Alejandra",
     "apellido":"Arce",
-    "imagen":"avatar1.png",
+    "imagen":"avatar1.jpg",
     "email":"admin@admin.com",
     "clave": "admin123",
     "categoria":"ADMINISTRADOR"
@@ -11,7 +11,7 @@
     "id":2,
     "nombre":"Facundo",
     "apellido":"Diaz",
-    "imagen":"avatar.png",
+    "imagen":"avatar.jpg",
     "email": "facudiaz@gmail.com",
     "clave": "diaz123",
     "categoria": "CLIENTE"
@@ -20,7 +20,7 @@
     "id":3,
     "nombre":"Patricia",
     "apellido":"Bustos",
-    "imagen":"avatar1.png",
+    "imagen":"avatar1.jpg",
     "email": "patrib@gmail.com",
     "clave": "bustos123",
     "categoria": "CLIENTE"

@@ -9,9 +9,16 @@
             <nav>
                 <ul class="nav-links">
                   
-                    <li><% if(user.categoria==="ADMINISTRADOR"){%>
-                            <a class="link-a" href="/admin/create" style="display: flex;"><i class="fas fa-plus-circle" style="padding-right: 2px;"></i> AGREGAR</a></li>
-                   <% } %>
+                    
+                    <% if(user && user.categoria==="ADMINISTRADOR"){%>
+                        <li>
+                            <a class="link-a" href="/admin/create" style="display: flex;"><i class="fas fa-plus-circle" style="padding-right: 2px;"></i> AGREGAR</a>
+                        </li>
+                        <li>
+                        
+                    <% } %>
+                  
+                    </li>
                     <li><a class="link-a" href="/#productos">PRODUCTOS</a></li>
                     <li><a class="link-a" href="/about">INFORMACIÓN</a></li>
                     <li class="search-container">
@@ -78,9 +85,9 @@
                     <li class="login1">
                         <a href="/user/login">
                             <% if(user){%>
-                             <img src="/img/perfil/<%= user.imagen %>" alt="Login">
+                                <a title="Perfil" href="/user/profile"><img src="/img/perfil/<%= user.imagen %>" alt="Login"></a>
                              <% } else { %>
-                                <img src="/img/login.png" alt="Login">
+                                <img src="/img/login.png" alt="Login" title="Login">
                             <% } %>
                         </a>
                     </li>

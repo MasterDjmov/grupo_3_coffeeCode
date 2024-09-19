@@ -8,15 +8,15 @@
             
         <div class="producto1">
             
-            <img src="<%= cafe.imagen %>" alt="imagen de prueba" class="imagen-producto1">
+            <img src="/img/products/<%= cafe.imagen_principal %>" alt="imagen de prueba" class="imagen-producto1">
             <ol class= "navbar2">
             <li class="navbar2-item"> <a href='/'> Incio</a></li>
             <li class="navbar2-item"> <a href="#"> Cafe de especialidad</a></li>
-            <li class="navbar2-item"> <a href="#"> <%= cafe.nombre %></a></li>
+            <li class="navbar2-item"> <a href="#"> <%= cafe.nombre_producto %></a></li>
             </ol>
         </div>
         <div class="descripcion-producto">
-        <h3><%= cafe.nombre %></h3>
+        <h3><%= cafe.nombre_producto %></h3>
         <h3>$ <%= cafe.precio %></h3>
 
         <button class="acordeon">Llega recién tostado dentro de las 72hs hábiles<i class="fa-solid fa-chevron-down"></i></button>
@@ -28,29 +28,15 @@
             </p>
         </div>
 
-        <!--codigo para menu acordeon -->
-        <script>
-            let elementoAcordeon = document.getElementsByClassName("acordeon");
-            for(let i=0; i<elementoAcordeon.length; i++ ){
-                elementoAcordeon[i].addEventListener("click", function(){
-                    this.classList.toggle("active");
-                    let panel = this.nextElementSibling;
-                    if(panel.style.display == "block"){
-                        panel.style.display = "none";
-                    }else{
-                        panel.style.display = "block"
-                    }
-                });
-            }
-        </script>
+        
         <div class="descripcion">
-            <h5><%= cafe.descripcion %>
+            <h5><%= cafe.descripcion_corta %>
                 
             </h5>
-            <h5>
-                <%= cafe.descripcionLarga %>
+            <p class="texto">
+                <%= cafe.descripcion_larga %>
                 Combina cafés naturales y lavados.
-            </h5>
+            <p>
             <br>
             <p class="texto">
             El café que servimos todos los días en nuestras
@@ -60,7 +46,7 @@
         </div>
 <br>
         <p style="margin-bottom: 0px; padding-left: 20px;">        
-            <strong>Envíos a todo el país.</strong>
+            <strong style="color: aliceblue;">ENVÍOS A TODO EL PAÍS.</strong>
         </p>
         <span>
             <strong class="parrafo1">GRATIS EN COMPRAS MAYORES A </strong>
@@ -140,17 +126,17 @@
             <h3>Recomendamos</h3>
             <h4>Para Espresso o Filtro, con o sin leche</h4>
             </div>-->
-            <img src="<%= cafe.imagenSecundaria %>" alt="imagen de producto al aire libre" class="imagen-producto2">
+            <img src="/img/imgsecundaria/<%= cafe.imagen_secundaria %>" alt="imagen de producto al aire libre" class="imagen-producto2">
              </div>
         
         <div class="descripcion3">
             <ul class="descripcion-bar">
                 <li class="descripcion-bar-item"><strong class="titulodet">DETALLES DEL PRODUCTO</strong></li>
-                <li class="descripcion-bar-item"><strong>País<p><%= cafe.pais %></p></strong></li>
-                <li class="descripcion-bar-item"><strong> Productor<p><%= cafe.productor %></p> </strong></li>
+                <li class="descripcion-bar-item"><strong>País<p><%= cafe.pais.nombre_pais %></p></strong></li>
+                <li class="descripcion-bar-item"><strong> Productor<p><%= cafe.productor.nombre_productor %></p> </strong></li>
                 <li class="descripcion-bar-item"><strong> Región<p><%= cafe.region %></p> </strong></li>
                 <li class="descripcion-bar-item"><strong> Altitud<p><%= cafe.altitud %></p> </strong></li>
-                <li class="descripcion-bar-item"><strong> Procesamiento<p style="padding-top: 10px;"><%= cafe.procesamiento %></p><p style="margin-bottom: 10px; position: relative;bottom: 20px;"><%= cafe.procesamiento2 %></p> </strong></li>
+                <li class="descripcion-bar-item"><strong> Procesamiento<p style="padding-top: 10px;"><%= cafe.procesamiento_natural %></p><p style="margin-bottom: 10px; position: relative;bottom: 20px;"><%= cafe.procesamiento_lavado %></p> </strong></li>
             </ul>
         </div>
 

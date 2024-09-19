@@ -2,13 +2,14 @@
 
 .contenedor-principal {
     font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
     width: 100%;
     margin: 0 auto;
     background-color: #a99ac4;
     
 }
+
 
 
 .slider img {
@@ -31,6 +32,8 @@
 
 .texto-articulo {
     width: auto;
+    padding: 2rem;
+    text-align: justify;
     h2{
         width: 75%;
         font-family: "Zain", sans-serif;
@@ -79,14 +82,21 @@
 }
 
 .producto:hover{
-    box-shadow: 1px 1px 1px gray;
+    /*box-shadow: 1px 1px 1px gray;*/
+    border:1px solid #a7a5a5;
+    img{
+        transform: scale(1.1);
+    }
 }
 
 .producto img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
+    transition: 0.5s;
+    object-fit: cover;
 }
+
 
 
 .producto h3 {
@@ -118,7 +128,7 @@
 
 .lista-articulo{
     width: auto;
-    padding-left: 60px;
+    padding-left: 1rem;
     padding-top: 20px;
     font-size: 1.2rem;
 }
@@ -133,7 +143,7 @@
         }
         .lista-articulo{
             width: auto;
-            padding-left: 100px;
+            padding-left: 1rem;
         }
         .imagen-articulo img{
             display: flex;
@@ -152,7 +162,7 @@
         }
         .lista-articulo{
             width: auto;
-            padding-left: 100px;
+            padding-left: 1rem;
         }
         .imagen-articulo img{
             width: 60%;
@@ -180,4 +190,9 @@
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
+}
+
+li{
+    font-weight: bold;
+    padding-right: 5px;
 }

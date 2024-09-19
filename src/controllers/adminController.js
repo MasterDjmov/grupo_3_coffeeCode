@@ -3,6 +3,9 @@ const path = require('path');
 const productos = require('../data/products.json');
 const session = require('express-session');
 
+//agregamos la parte de sequelize
+const db = require('../database/models/index.js');
+const { Association, where } = require('sequelize');
 
 const adminController = {
     //formulario con GET

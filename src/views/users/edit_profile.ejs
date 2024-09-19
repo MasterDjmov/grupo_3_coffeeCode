@@ -1,0 +1,112 @@
+<%- include('../partials/head.ejs') %>
+    <title>Editar perfil</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link rel=icon href='img/vida.png' sizes="32x32" type="image/png">
+  </head>
+  <body style="background-color: #f3f3f3; font-family:'Zain'; font-size: 14px;">
+    <%- include('../partials/header.ejs')%>
+<br>
+	<br>
+
+	<div class="container">
+      <div class="row" >
+      <form action="/user/profile" method="post" id="perfil" enctype="multipart/form-data">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 toppad" >
+   
+   
+          <div class="panel panel-success" ><br>
+              <h2 class="panel-title" style="color: #823a6f;"><center><font size="5"><i class='glyphicon glyphicon-user' style="color: #823a6f; padding-right: 5px ;"></i>PERFIL</font></center></h2>
+
+            <div class="panel-body" >
+              <div class="row" >
+			  
+                <div class="col-md-3 col-lg-3 " align="center"> 
+				<div id="load_img">
+					<img class="img-responsive" src="/img/perfil/<%=user.imagen%>" alt="Logo">
+					
+				</div>
+				<br>				
+					<div class="row">
+  						<div class="col-md-12">
+							<div class="form-group">
+								<input class='filestyle' data-buttonText="Logo" type="file" name="imagefile" id="imagefile" onchange="upload_image();">
+							</div>
+						</div>
+						
+					</div>
+				</div>
+                <div class=" col-md-9 col-lg-9 " style="font-weight: bold;"> 
+                  <table class="table table-condensed">
+                    <tbody>
+                      <tr>
+                        <td class='col-md-3'>Apellidos:</td>
+                        <td><input type="text" class="form-control input-sm" name="apellido" value="<%=user.apellido%>" required></td>
+                      </tr>
+                      <tr>
+                        <td class='col-md-3'>Nombres:</td>
+                        <td><input type="text" class="form-control input-sm" name="nombre" value="<%=user.nombre%>" required></td>
+                      </tr>
+                      <tr>
+                        <td>Correo electrónico:</td>
+                        <td><input type="email" class="form-control input-sm" name="email" value="<%=user.email%>" ></td>
+                      </tr>
+					  <tr>
+                        <td>Teléfono:</td>
+                        <td><input type="text" class="form-control input-sm" required name="telefono" value="<%=user.telefono%>"></td>
+                      </tr>
+					  <tr>
+                        <td>País:</td>
+                        <td><input type="text" class="form-control input-sm" name="pais" value="<%=user.pais%>" required></td>
+                      </tr>
+					  <tr>
+                        <td>Ciudad:</td>
+                        <td><input type="text" class="form-control input-sm" name="ciudad" value="<%=user.ciudad%>" required></td>
+                      </tr>
+					  <tr>
+                        <td>Codigo Postal:</td>
+                        <td><input type="text" class="form-control input-sm" name="codigo_postal" value="<%=user.codigo_postal%>"></td>
+                      </tr>
+					  <tr>
+              <tr>
+                <td>Clave:</td>
+                <td><input type="text" class="form-control input-sm" name="clave" value="<%=user.clave%>"></td>
+              </tr>
+    <tr>
+                   
+                    </tbody>
+                  </table>
+                  
+                  
+                </div>
+				<div class='col-md-12' id="resultados_ajax"></div><!-- Carga los datos ajax -->
+              </div>
+            </div>
+                 <div class="panel-footer text-center" >
+                    <input type="hidden" name="id" value="<%=user.id%>">
+                    <input type="hidden" name="categoria" value="<%=user.categoria%>">
+                <button type="submit" class="btn btn-sm btn-success" style="background-color: #823a6f; border: #823a6f;"><i class="glyphicon glyphicon-refresh"></i> Actualizar perfil</button>
+
+                       
+                       
+                    </div>
+            
+          </div>
+        </div>
+		</form>
+        
+      </div>
+
+	
+	
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+	</script>
+	
+  </body>
+</html>
+<script type="text/javascript" src="js/bootstrap-filestyle.js"> </script>
+<script>
