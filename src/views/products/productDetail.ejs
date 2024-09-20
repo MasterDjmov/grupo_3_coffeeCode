@@ -58,12 +58,10 @@
             <label for="opciones">
                 <h4>¿Cómo querés tu café?</h4>
                 <select name="tipo" value="tipo de cafe">
-                    <option disabled selected> Elegi tu opción</option>
-                    <option value="grano" > En grano</option>
-                    <option value="aeropress"> Molido aeropress</option>
-                    <option value="filtro"> Molido filtro</option>
-                    <option value="francesa"> Modo prensa Francesa</option>
-                    <option value="volturno"> Modo Volturno</option>
+                    <option disabled selected>Elige tu opción</option>
+                    <% tiposCafes.forEach(function(tipoCafe) { %>
+                        <option value="<%= tipoCafe.id_tipo_cafe %>"><%= tipoCafe.nombre_cafe %></option>
+                    <% }) %>
                 </select>
                 <div class="botones">
                     <button type="menu">250Gr.</button>

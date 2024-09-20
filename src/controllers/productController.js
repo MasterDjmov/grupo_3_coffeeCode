@@ -48,40 +48,42 @@ const productController = {
        // res.sendFile(path.resolve(__dirname,'../views/products/productCart_facturacion.html'));
        res.render('products/productCart_facturacion');
     },
-    productDetail: (req, res) => {
-        const id =req.params.id;
-        let user = "";
-
-        if(req.session.user){
-               user= req.session.user
-         } 
-
-         db.Productos.findByPk(id,{
-            include: [
-               {association: 'pais'},
-               {association: 'tipocafe'},
-               {association: 'unidad_de_medida'},
-               {association: 'productor'}
-            ]
-         })
-         .then(function(cafe){
-            if(!cafe){
-               return res.status(404).render('errors/404');
-            }
-            res.render('products/productDetail',
-             {
-                'cafe':cafe,
-                'user':user,
-                 'msg':"Usted debe iniciar Sesión para Agregar al Carrito"
-             });
-         })
-         .catch(error => {
-            console.error("Error al buscar el producto:", error);
-            res.status(404).send('errors/404');
-        });
-
-    }
-    
+    productDetail:  (req, res) => {
+      const id = req.params.id;
+      let user = "";
+  
+      if (req.session.user) {
+          user = req.session.user;
+      }
+  
+      db.Productos.findByPk(id, {
+          include: [
+              { association: 'pais' },
+              { association: 'tipocafe' },
+              { association: 'unidad_de_medida' },
+              { association: 'productor' }
+          ]
+      })
+      .then(function(cafe) {
+          if (!cafe) {
+              return res.status(404).render('errors/404');
+          }
+          
+          return db.TiposCafes.findAll()
+              .then(function(tiposCafes) {
+                  res.render('products/productDetail', {
+                      'cafe': cafe,
+                      'user': user,
+                      'tiposCafes': tiposCafes, 
+                      'msg': "Usted debe iniciar sesión para agregar al carrito"
+                  });
+              });
+      })
+      .catch(error => {
+          console.error("Error al buscar el producto:", error);
+          res.status(404).render('errors/404');
+      });
+   }
 }
 
 module.exports = productController;
