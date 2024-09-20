@@ -9,18 +9,22 @@ const bcrypt = require('bcrypt');
 //agregamos la parte de sequelize
 const db = require('../database/models/index.js');
 const { Association, where } = require('sequelize');
+const { emit } = require('process');
 
 const userController = {
     //muestro formulario de login
     formLogin: (req, res) => {      
-        const msg="";
-        res.render('users/login',{msg, user: dbusers.find((usuario) => usuario.email === '1')});
-      },
+      const msg = "";
+      
+      res.render('users/login', { msg, user:req.session.user || null });
+  },
       // valido el login
       login: async (req, res) => {
         try {
             // Busca el usuario en la base de datos por su email
-            let user = dbusers.find((usuario) => usuario.email === req.body.email);
+            const user = await db.Usuarios.findOne({
+              where: {email:req.body.email}
+            });
     
             if (user) {
                 // Compara la clave ingresada con la clave encriptada almacenada
@@ -54,100 +58,123 @@ const userController = {
     
     register: (req, res) => {
         //res.sendFile(path.resolve(__dirname,'../views/users/register.html'));
+        
         res.render('users/register',{
-          msg:""       
+          msg:"", user: req.session.user || null  
         });
     },
-    create: async(req, res) => {
+    create: async (req, res) => {
       const msg="";
       const imagen=req.originalFileName;
-      let {nombre, apellido, email,telefono, clave}=req.body;
+      let {nombre, apellido, email, telefono, dni, calle, numero, piso, departamento, barrio, cuil_t, clave }=req.body;
        //encripto clave
      
       const compresion = 10;
       
        // Encripto la clave
-       clave = await bcrypt.hash(clave, compresion);
+       const hashedClave = await bcrypt.hash(clave, compresion);
+       try {
+        await db.Usuarios.create({
+          nombre,
+          apellido,
+          email,
+          telefono,
+          dni,                       
+          calle,                     
+          numero,                    
+          piso,                      
+          departamento,              
+          barrio,                    
+          cuil_t,                    
+          clave: hashedClave,         
+          imagen_perfil: 'avatar-mini2.jpg',  
+          id_rol: 2,                 // Rol cliente
+          id_estado: 1,             // Estado activo       
+        });
 
-       const perfil = {
-         id:crypto.randomUUID(),
-         nombre,
-         apellido,
-         imagen:'avatar-mini2.jpg',
-         email,
-         clave,
-         categoria:"CLIENTE",
-         telefono,
-         pais:"Agregar",
-         ciudad:"Agregar",
-         codigo_postal:"Agregar"
-       }
-        
-       //Leer el JSON
-       const info = await dataUsers.load();
-       //console.log(info);
-       info.push(perfil);
-       
-       //actualizar el users.json
-       await dataUsers.save(info);
-       res.render('users/login',{msg:"Registro Exitoso"});;
-  },
+        res.render('users/login', { msg: "Registro Exitoso" });
+    } catch (error) {
+        console.error("Error al crear el usuario:", error);
+        res.status(500).render('users/register', { msg: "Error al crear el usuario" });
+    }
+},
     recuperarClave: (req, res) => {
        // res.sendFile(path.resolve(__dirname,'../views/users/recuperarClave.html'));
        res.render('users/recuperarClave');
     },
-    formProfile: (req, res) => {    
-
-      if(req.session.user){
-        user= req.session.user;
-      }else{
-          user="";
+    formProfile: async (req, res) => {
+      if (req.session.user) {
+          const user = req.session.user;
+  
+          // Obtener información adicional de la base de datos
+          const usuario = await db.Usuarios.findOne({
+              where: { id_usuario: user.id_usuario }, // Asegúrate de usar el ID correcto
+              include: [
+                  {
+                      association: 'localidad' // Usa el alias de la asociación
+                  },
+                  {
+                      association: 'rol' // Usa el alias de la asociación
+                  }
+              ]
+          });
+  
+          res.render('users/edit_profile', {
+              msg: "",
+              user: usuario // Envía el usuario completo con localidad y rol
+          });
+          console.log(usuario);
+      } else {
+          res.redirect('/user/login'); // Redirige si no hay sesión
       }
-    //  const id=req.session.user.id;
-    //  let user = dbusers.find((usuario)=>{
-    //   return usuario.id===id;
-    //   //console.log(usuario.email, usuario.clave);
-    // });
-      const msg="";
-      res.render('users/edit_profile',{msg,user});
-    },
-    updateProfile: async(req, res) => {      
-      const msg="";
-     const imagen=req.originalFileName;
-      const {id, nombre, apellido, email,telefono, pais, ciudad, codigo_postal,clave, categoria}=req.body;
-      const perfil = {
-        id:id,
-        nombre,
-        apellido,
-        imagen,
-        email,
-        clave,
-        categoria,
-        telefono,
-        pais,
-        ciudad,
-        codigo_postal
-      }
-      //traigo todos los usuarios distinto al mio
-      let users = dbusers.filter((usuario)=>{
-        return usuario.id!=id;
-      })
-     
-      //Leer el JSON
-      const info = await dataUsers.load();
-      //console.log(info);
-      users.push(perfil);
+  },
+    updateProfile: async (req, res) => {      
+     const { id_usuario, nombre, dni,apellido, email, telefono, barrio, calle, numero, piso, departamento, 
+      id_localidad, id_estado, cuil_t, clave } = req.body;
       
-      //actualizar el users.json
-      await dataUsers.save(users);
-      // if (req.session.usuario != null) {
-      //   req.session.usuario = null;
-      //   res.redirect("/user/login");
-      // }
-      //res.redirect('/logout');
-    res.redirect('/user/login');
-    //res.render('users/login',{msg:"Perfil Acualizado Correctamente"})
+     
+      try {
+        // Busca el usuario por ID
+        const usuario = await db.Usuarios.findByPk(id_usuario);
+        if (!usuario) {
+            return res.status(404).send("Usuario no encontrado");
+        }
+
+        // Actualiza los campos proporcionados
+        const updatedData = {
+            nombre,
+            apellido,
+            email,
+            dni,
+            telefono,
+            barrio,
+            calle,
+            numero,
+            piso,
+            departamento,
+            id_localidad,
+            id_estado,
+            cuil_t
+        };
+
+        if (req.file) {
+          updatedData.imagen_perfil = req.file.filename;
+      }
+
+        if (clave) {
+            updatedData.clave = await bcrypt.hash(clave, 10);
+        }
+
+        // Actualiza los datos en la base de datos
+        await usuario.update(updatedData);
+
+        
+        res.render('users/login', { msg: "Perfil actualizado correctamente" });
+    } catch (error) {
+        console.error("Error al actualizar el perfil:", error);
+        res.status(500).send("Error al actualizar el perfil");
     }
+  }
 }
 
 module.exports = userController;

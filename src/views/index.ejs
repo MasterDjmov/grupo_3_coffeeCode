@@ -61,21 +61,23 @@
                 <% listaProductos.forEach(cafe => { %>
                   
                     <article class="producto" style="position: relative;">
-                        <% if(user.categoria==="ADMINISTRADOR"){%>    
-                            <a  href="/admin/edit/<%= cafe.id %>" style="position: absolute; right: 55px; color: rgb(119, 161, 106);" title="Editar"> 
-                                    <i class="fas fa-edit"></i>
-                            </a>
-                            <a  href="/admin/delete1/<%= cafe.id %>" style="position: absolute; right: 35px; color: red;" title="Eliminar"> 
-                                <i class="fas fa-trash"></i>
-                             </a>
-                             <!-- <form action="/admin/delete2/<%= cafe.id %>?_method=DELETE" method="post">
+                        <% if(user && user.id_rol===1){%>    
+                            <div class="iconos">
+                            <a href="/admin/edit/<%= cafe.id_producto %>" style="color: green;" class="icono-editar" title="Editar"> 
+                        <i class="fas fa-edit"></i>
+                    </a>
+                    <a href="/admin/delete1/<%= cafe.id_producto %>" class="icono-eliminar" title="Eliminar" style="color: red;"> 
+                        <i class="fas fa-trash"></i>
+                    </a>
+                    </div>
+                             <!-- <form action="/admin/delete2/<%= cafe.id_producto %>?_method=DELETE" method="post">
                                 <button type="submit" name="btn-eliminar"><i class="fas fa-trash" style="color: green;"></i></button>
                              </form> -->
                         <% } %> 
-                        <img src="<%= cafe.imagen %>" alt="Producto 1">
-                        <h3><%= cafe.nombre %></h3>
-                        <p><%= cafe.descripcion %></p>
-                        <a href="/products/detail/<%= cafe.id %>">
+                        <img src="/img/products/<%= cafe.imagen_principal %>" alt="Producto 1">
+                        <h3><%= cafe.nombre_producto %></h3>
+                        <p><%= cafe.descripcion_corta %></p>
+                        <a href="/products/detail/<%= cafe.id_producto %>">
                             <button>VER MÁS</button>
                         </a>
                     </article>

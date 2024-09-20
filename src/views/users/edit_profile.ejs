@@ -23,7 +23,7 @@
 			  
                 <div class="col-md-3 col-lg-3 " align="center"> 
 				<div id="load_img">
-					<img class="img-responsive" src="/img/perfil/<%=user.imagen%>" alt="Logo">
+					<img class="img-responsive" src="/img/perfil/<%=user.imagen_perfil%>" alt="Logo">
 					
 				</div>
 				<br>				
@@ -51,28 +51,55 @@
                         <td>Correo electrónico:</td>
                         <td><input type="email" class="form-control input-sm" name="email" value="<%=user.email%>" ></td>
                       </tr>
-					  <tr>
+                      <tr>
                         <td>Teléfono:</td>
                         <td><input type="text" class="form-control input-sm" required name="telefono" value="<%=user.telefono%>"></td>
                       </tr>
-					  <tr>
-                        <td>País:</td>
-                        <td><input type="text" class="form-control input-sm" name="pais" value="<%=user.pais%>" required></td>
+                      <tr>
+                        <td>DNI(sin puntos):</td>
+                        <td><input type="text" class="form-control input-sm" name="dni" value="<%=user.dni%>"></td>
                       </tr>
-					  <tr>
-                        <td>Ciudad:</td>
-                        <td><input type="text" class="form-control input-sm" name="ciudad" value="<%=user.ciudad%>" required></td>
+                      <tr>
+                        <td>Barrio:</td>
+                        <td><input type="text" class="form-control input-sm" name="barrio" value="<%=user.barrio%>"></td>
                       </tr>
-					  <tr>
-                        <td>Codigo Postal:</td>
-                        <td><input type="text" class="form-control input-sm" name="codigo_postal" value="<%=user.codigo_postal%>"></td>
+                      <tr>
+                        <td>Calle:</td>
+                        <td><input type="text" class="form-control input-sm" name="calle" value="<%=user.calle%>"></td>
                       </tr>
-					  <tr>
-              <tr>
-                <td>Clave:</td>
-                <td><input type="text" class="form-control input-sm" name="clave" value="<%=user.clave%>"></td>
-              </tr>
-    <tr>
+                      <tr>
+                        <td>Número:</td>
+                        <td><input type="text" class="form-control input-sm" name="numero" value="<%=user.numero%>"></td>
+                      </tr>
+                      <tr>
+                        <td>Piso:</td>
+                        <td><input type="text" class="form-control input-sm" name="piso" value="<%=user.piso%>"></td>
+                      </tr>
+                      <tr>
+                        <td>Departamento:</td>
+                        <td><input type="text" class="form-control input-sm" name="departamento" value="<%=user.departamento%>"></td>
+                      </tr>
+                      <tr>
+                        <th>Localidad</th>
+                        <td>
+                          <input type="text" class="form-control" value="<%= user.localidad ? user.localidad.nombre_loc : 'Agregar Localidad' %>">
+
+                        </td>
+                    </tr>
+                      <tr>
+                        <th>Estado</th>
+                        <td>
+                            <input type="text" class="form-control" value="<%= user.rol ? user.rol.nombre_rol : 'No disponible' %>" disabled>
+                        </td>
+                    </tr>
+                      <tr>
+                        <td>CUIL/T:</td>
+                        <td><input type="text" class="form-control input-sm" name="cuil_t" value="<%=user.cuil_t%>"></td>
+                      </tr>
+                      <tr>
+                        <td>Clave:</td>
+                        <td><input type="password" class="form-control input-sm" name="clave" value=""></td>
+                      </tr>
                    
                     </tbody>
                   </table>
@@ -82,14 +109,12 @@
 				<div class='col-md-12' id="resultados_ajax"></div><!-- Carga los datos ajax -->
               </div>
             </div>
-                 <div class="panel-footer text-center" >
-                    <input type="hidden" name="id" value="<%=user.id%>">
-                    <input type="hidden" name="categoria" value="<%=user.categoria%>">
-                <button type="submit" class="btn btn-sm btn-success" style="background-color: #823a6f; border: #823a6f;"><i class="glyphicon glyphicon-refresh"></i> Actualizar perfil</button>
-
-                       
-                       
-                    </div>
+                 <div class="panel-footer text-center">
+            <input type="hidden" name="id_usuario" value="<%=user.id_usuario%>">
+            <button type="submit" class="btn btn-sm btn-success" style="background-color: #823a6f; border: #823a6f;">
+              <i class="glyphicon glyphicon-refresh"></i> Actualizar perfil
+            </button>
+          </div>
             
           </div>
         </div>

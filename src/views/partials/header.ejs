@@ -10,7 +10,7 @@
                 <ul class="nav-links">
                   
                     
-                    <% if(user && user.categoria==="ADMINISTRADOR"){%>
+                    <% if(user && user.id_rol===1){%>
                         <li>
                             <a class="link-a" href="/admin/create" style="display: flex;"><i class="fas fa-plus-circle" style="padding-right: 2px;"></i> AGREGAR</a>
                         </li>
@@ -85,7 +85,7 @@
                     <li class="login1">
                         <a href="/user/login">
                             <% if(user){%>
-                                <a title="Perfil" href="/user/profile"><img src="/img/perfil/<%= user.imagen %>" alt="Login"></a>
+                                <a title="Perfil" href="/user/profile"><img src="/img/perfil/<%= user.imagen_perfil %>" alt="Login"></a>
                              <% } else { %>
                                 <img src="/img/login.png" alt="Login" title="Login">
                             <% } %>

@@ -15,10 +15,14 @@ const mainController = {
         }else{
             user="";
         }
-        res.render('index',{
-            'listaProductos':productos,
-            'user':user
-        });
+        db.Productos.findAll()
+        .then(function(listaProductos){
+
+            res.render('index',{
+                listaProductos,
+                'user':user
+            });
+        })
     },
     about: (req, res) => {
         if(req.session.user){
