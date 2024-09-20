@@ -1151,19 +1151,19 @@ sin impedimentos
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
+ - corregí unos modelos, que tenían una referencia errónea
  - 
 
 **Impedimentos**         
- - 
+ - ninguno
 
 **Qué va a hacer hoy**  
- - 
+ - seguiré mirando el código para encentra posibles fallos, y ver si hace falta mejorar algo en cuanto a sequelize
  - 
 
 
 **Soluciones Propuestas**
-- 
+- ninguna
 
 ## Fecha: 24/09/2024
 
