@@ -106,26 +106,26 @@ const userController = {
       if (req.session.user) {
           const user = req.session.user;
   
-          // Obtener información adicional de la base de datos
+          
           const usuario = await db.Usuarios.findOne({
-              where: { id_usuario: user.id_usuario }, // Asegúrate de usar el ID correcto
+              where: { id_usuario: user.id_usuario }, 
               include: [
                   {
-                      association: 'localidad' // Usa el alias de la asociación
+                      association: 'localidad' 
                   },
                   {
-                      association: 'rol' // Usa el alias de la asociación
+                      association: 'rol' 
                   }
               ]
           });
   
           res.render('users/edit_profile', {
               msg: "",
-              user: usuario // Envía el usuario completo con localidad y rol
+              user: usuario 
           });
           console.log(usuario);
       } else {
-          res.redirect('/user/login'); // Redirige si no hay sesión
+          res.redirect('/user/login'); 
       }
   },
     updateProfile: async (req, res) => {      
@@ -134,13 +134,13 @@ const userController = {
       
      
       try {
-        // Busca el usuario por ID
+        
         const usuario = await db.Usuarios.findByPk(id_usuario);
         if (!usuario) {
             return res.status(404).send("Usuario no encontrado");
         }
 
-        // Actualiza los campos proporcionados
+        // Actualizo los campos
         const updatedData = {
             nombre,
             apellido,
@@ -165,7 +165,7 @@ const userController = {
             updatedData.clave = await bcrypt.hash(clave, 10);
         }
 
-        // Actualiza los datos en la base de datos
+
         await usuario.update(updatedData);
 
         

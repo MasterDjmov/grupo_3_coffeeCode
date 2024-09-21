@@ -11,56 +11,79 @@
         <h1>Agregar Nuevo Producto</h1>
         <form action="/admin/create" method="POST" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="productName">Nombre del Producto:</label>
-                <input type="text" id="productName" name="productName" required>
+                <label for="nombre_producto">Nombre del Producto:</label>
+                <input type="text" id="nombre_producto" name="nombre_producto" required>
             </div>
             <div class="form-group">
-                <label for="productFabricado">Fabricado en</label>
-                <input type="text" id="productFabricado" name="productFabricado" value="" required>
+                <label for="descripcion_corta">Origen:</label>
+                <input type="text" id="descripcion_corta" name="descripcion_corta" value=" " >
             </div>
             <div class="form-group">
-                <label for="productDescription">Descripción del Producto:</label>
-                <textarea id="productDescription" name="productDescription" rows="4" required></textarea>
+                <label for="descripcion_larga">Descripción del Producto:</label>
+                <textarea id="descripcion_larga" name="descripcion_larga" rows="5" ></textarea>
             </div>
             <div class="form-group">
-                <label for="productPrice">Precio (1 Kg)</label>
+                <label for="precio">Precio:</label>
                 <div style="display: flex;align-items: center; background-color: white; ">
-                     $<input type="number" id="productPrice" name="productPrice" step="0.01" value="" required style="border: none;" >
+                     $<input type="number" id="precio" name="precio" step="0.01" value="" required style="border: none;" >
                 </div>
             </div>
             <div class="form-group">
-                <label for="productPrice250">Precio (250g)</label>
+                <label for="cantidad">Cantidad:</label>
                 <div style="display: flex;align-items: center; background-color: white; ">
-                     $<input type="number" id="productPrice250" name="productPrice250" step="0.01" value="" required style="border: none;" >
+                     <input type="number" id="cantidad" name="cantidad" value="" required style="border: none;" >
                 </div>
             </div>
             <div class="form-group">
-                <label for="productImage">Imagen del Producto:</label>
-                <input type="file" id="productImage" name="productImage" accept="image/*">
+                <label for="idunidad_medida">Unidad de Medida:</label>
+                <select id="idunidad_medida" name="idunidad_medida" required>
+                    <option value="" disabled selected>Seleccione una unidad de medida</option>
+                    <% unidades.forEach(function(unidad) { %>
+                        <option value="<%= unidad.id_unidad_medida %>"><%= unidad.nombre_medida %></option>
+                    <% }) %>
+                </select>
             </div>
             <div class="form-group">
-                <label for="productor">Productor</label>
-                <input type="text" id="productor" name="productor" value="" required>
+                <label for="imagen_principal">Imagen del Producto:</label>
+                <input type="file" id="imagen_principal" name="imagen_principal" accept="image/*">
             </div>
             <div class="form-group">
-                <label for="pais">Pais</label>
-                <input type="text" name="pais" id="pais" value=""> 
+                <label for="imagen_secundaria">Imagen Secundaria:</label>
+                <input type="file" id="imagen_secundaria" name="imagen_secundaria" accept="image/*">
             </div>
             <div class="form-group">
-                <label for="region">Región</label>
+                <label for="idproductor">Productor:</label>
+            <select id="idproductor" name="idproductor" required>
+                <option value="" disabled selected>Seleccione un productor</option>
+                <% productores.forEach(function(productor) { %>
+                    <option value="<%= productor.id_productor %>"><%= productor.nombre_productor %></option>
+                <% }) %>
+            </select>
+            <div class="form-group">
+                <label for="id_pais">País:</label>
+                <select id="id_pais" name="id_pais" required>
+                    <option value="" disabled selected>Seleccione un país</option>
+                    <% paises.forEach(function(pais) { %>
+                        <option value="<%= pais.id_pais %>"><%= pais.nombre_pais %></option>
+                    <% }) %>
+                </select>
+            </div>
+            </div>
+            <div class="form-group">
+                <label for="region">Región:</label>
                 <input type="text" id="region" name="region" value="" required>
             </div>
             <div class="form-group">
-                <label for="altitud">Altitud</label>
-                <input type="text" id="altitud" name="altitud" value="" required>
+                <label for="altitud">Altitud:</label>
+                <input type="text" id="altitud" name="altitud" value="">
             </div>
             <div class="form-group">
-                <label for="procesamiento">Procesamiento Natural</label>
-                <input type="text" id="procesamiento" name="procesamiento" value="" required>
+                <label for="procesamiento_lavado">Procesamiento Natural:</label>
+                <input type="text" id="procesamiento_natural" name="procesamiento_natural" value="" required>
             </div>
             <div class="form-group">
-                <label for="procesamiento2">Procesamiento Lavado</label>
-                <input type="text" id="procesamiento2" name="procesamiento2" value="" required>
+                <label for="procesamiento_lavado">Procesamiento Lavado:</label>
+                <input type="text" id="procesamiento_lavado" name="procesamiento_lavado" value="" required>
             </div>
             <button type="submit" class="btn">Agregar Producto</button>
         </form>
