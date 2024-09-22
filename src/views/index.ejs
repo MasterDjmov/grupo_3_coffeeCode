@@ -63,16 +63,16 @@
                     <article class="producto" style="position: relative;">
                         <% if(user && user.id_rol===1){%>    
                             <div class="iconos">
-                            <a href="/admin/edit/<%= cafe.id_producto %>" style="color: green;" class="icono-editar" title="Editar"> 
-                        <i class="fas fa-edit"></i>
-                    </a>
-                    <a href="/admin/delete1/<%= cafe.id_producto %>" class="icono-eliminar" title="Eliminar" style="color: red;"> 
-                        <i class="fas fa-trash"></i>
-                    </a>
+                                <form action="/admin/edit/<%= cafe.id_producto %>" class="icono-editar" title="Editar" method="GET" style="display: inline;">
+                                    <button type="submit" name="editar" style="background: none; border: none; cursor: pointer; color: green;" title="Editar">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                </form>
+                    <form action="/admin/delete2/<%= cafe.id_producto %>?_method=DELETE" method="post" onsubmit="return confirmDelete();" class="icono-eliminar" title="Eliminar">
+                      <button type="submit" name="eliminar" style="background: none; border: none; cursor: pointer; color: red;" ><i class="fas fa-trash" style="color: red;"></i></button>
+                   </form> 
+                    
                     </div>
-                             <!-- <form action="/admin/delete2/<%= cafe.id_producto %>?_method=DELETE" method="post">
-                                <button type="submit" name="btn-eliminar"><i class="fas fa-trash" style="color: green;"></i></button>
-                             </form> -->
                         <% } %> 
                         <img src="/img/products/<%= cafe.imagen_principal %>" alt="Producto 1">
                         <h3><%= cafe.nombre_producto %></h3>
@@ -87,6 +87,7 @@
        
     </main>
    <%- include('./partials/footer.ejs') %>
-   <script src="/js/coffecode.js"></script>
+   <script src="/js/coffecode.js">
+   </script>
 </body>
 </html>

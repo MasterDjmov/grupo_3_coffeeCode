@@ -13,7 +13,7 @@ const adminController = {
         try {
             const id = req.params.id;
             
-            // Buscar el producto por su ID y cargar sus asociaciones
+            
             const cafe = await db.Productos.findByPk(id, {
                 include: [
                     { association: 'pais' },
@@ -27,7 +27,7 @@ const adminController = {
                 return res.status(404).render('errors/404');
             }
 
-            // Obtener todas las opciones para los selects
+            
             const tiposCafes = await db.TiposCafes.findAll();
             const unidadesMedida = await db.UnidadesDeMedidas.findAll();
             const paises = await db.Paises.findAll();
@@ -74,7 +74,7 @@ const adminController = {
                 return res.status(404).render("errors/404", { msg: "Producto no encontrado" });
             }
     
-            // Obtener las unidades de medida para el select
+            
             const unidadesMedida = await db.UnidadesDeMedidas.findAll();
             const productores = await db.Productores.findAll();
             const paises = await db.Paises.findAll();
@@ -95,23 +95,34 @@ const adminController = {
                 altitud
             };
     
+            // Para saber si cargar una nueva imagen o dejar la que ya esta al actualizar
             if (req.file) {
+                console.log("Imagen principal recibida: ", req.file.filename);
                 updatedData.imagen_principal = req.file.filename;
+            } else {
+                updatedData.imagen_principal = cafe.imagen_principal;
             }
     
             if (req.files && req.files.imagen_secundaria) {
+                console.log("Imagen secundaria recibida: ", req.files.imagen_secundaria[0].filename);
                 updatedData.imagen_secundaria = req.files.imagen_secundaria[0].filename;
+            } else {
+                updatedData.imagen_secundaria = cafe.imagen_secundaria;
             }
     
+            //Actualizo
             await cafe.update(updatedData);
-    
+            const updatedCafe = await db.Productos.findByPk(id);
+
             console.log("Producto actualizado correctamente");
-    
-            // Volver a renderizar la vista de edición con los datos del producto
-            res.render('admin/editProduct', { cafe, unidadesMedida, productores,paises ,msg: 'Edición exitosa' });
+
+            res.render('admin/editProduct', { cafe: updatedCafe, unidadesMedida, productores,paises ,msg: 'Edición exitosa' });
         } catch (error) {
             console.error("Error al actualizar el producto:", error);
-            res.status(500).send("Error al actualizar el producto");
+             res.render('admin/editProduct', {
+                msg: "Error al actualizar el producto",
+                rol: "",
+            });
         }
     },
     // listProduct: (req, res) => {        
@@ -119,15 +130,14 @@ const adminController = {
     //    //res.sendFile(path.resolve(__dirname,'../views/admin/listProduct.html'));
     //    res.render('admin/listProduct');
     // },
-    formRegisterProduct: (req, res) => {
+    formRegisterProduct: async (req, res) => {
         if (req.session.user && req.session.user.id_rol === 1) {
-            Promise.all([
-                db.Paises.findAll(),
-                db.TiposCafes.findAll(),
-                db.UnidadesDeMedidas.findAll(),
-                db.Productores.findAll()
-            ])
-            .then(([paises, tiposCafes, unidades, productores]) => {
+            try {
+                const paises = await db.Paises.findAll();
+                const tiposCafes = await db.TiposCafes.findAll();
+                const unidades = await db.UnidadesDeMedidas.findAll();
+                const productores = await db.Productores.findAll();
+    
                 res.render('admin/registerProduct', {
                     paises,
                     tiposCafes,
@@ -136,61 +146,79 @@ const adminController = {
                     msg: "",
                     user: req.session.user 
                 });
-            })
-            .catch(error => console.error(error));
+            } catch (error) {
+                console.error("Error cargar el fomulario:", error);
+                res.status(404).render('errors/404');
+            }
         } else {
-            res.redirect('/login'); // Redirige si no es admin
+            res.redirect('../user/login'); 
         }
     },
     registerProduct: async (req, res) => {
-        const {
-            nombre_producto,
-            descripcion_corta,
-            descripcion_larga,
-            precio,
-            cantidad,
-            id_tipo_cafe,
-            idunidad_medida,
-            id_pais,
-            idproductor,
-            region,
-            procesamiento_natural,
-            procesamiento_lavado,
-            altitud,
-        } = req.body;
-    
-        const imagen_principal = req.file ? req.file.filename : null;
-            const imagen_secundaria = req.files && req.files.imagen_secundaria ? req.files.imagen_secundaria[0].filename : null;
-
-    
         try {
-            await db.Productos.create({
+            const {
                 nombre_producto,
                 descripcion_corta,
                 descripcion_larga,
                 precio,
                 cantidad,
-                id_tipo_cafe,
                 idunidad_medida,
                 id_pais,
                 idproductor,
                 region,
                 procesamiento_natural,
                 procesamiento_lavado,
-                altitud,
-                imagen_principal,
-                imagen_secundaria, 
-            });
+                altitud
+            } = req.body;
+    
+            const nuevoProducto = {
+                nombre_producto,
+                descripcion_corta,
+                descripcion_larga,
+                precio,
+                cantidad,
+                idunidad_medida,
+                id_pais,
+                idproductor,
+                region,
+                procesamiento_natural,
+                procesamiento_lavado,
+                altitud
+            };
+
+            console.log("Datos del nuevo producto:", nuevoProducto);
+            console.log("Datos recibidos:", req.body)
+    
+            if (req.files && req.files.imagen_principal) {
+                nuevoProducto.imagen_principal = req.files.imagen_principal[0].filename;
+            }
+    
+            if (req.files && req.files.imagen_secundaria) {
+                nuevoProducto.imagen_secundaria = req.files.imagen_secundaria[0].filename;
+            }
+    
+            await db.Productos.create(nuevoProducto);
+    
+            console.log("Producto registrado correctamente");
+    
+            const tiposCafes = await db.TiposCafes.findAll();
+            const unidades = await db.UnidadesDeMedidas.findAll();
+            const paises = await db.Paises.findAll();
+            const productores = await db.Productores.findAll();
     
             res.render('admin/registerProduct', {
-                msg: "Producto registrado correctamente",
-                rol: "",
+                msg: "Producto registrado exitosamente",
+                tiposCafes,
+                unidades,
+                paises,
+                productores,
+                rol: req.session.user
             });
         } catch (error) {
             console.error("Error al registrar el producto:", error);
-            res.render('admin/registerProduct', {
+            res.render('admin/registerProduct', {  
                 msg: "Error al registrar el producto",
-                rol: "",
+                rol: req.session.user  
             });
         }
     },
@@ -199,10 +227,19 @@ const adminController = {
         
         res.redirect('/');
     },
-    deleteProduct2:(req, res) => {
-        console.log("Se Borro por post El producto N° "+req.params.id);
-        
-        res.redirect('/');
+    deleteProduct2: (req, res) => {
+        const id = req.params.id;
+    
+        db.Productos.destroy({
+            where: { id_producto: id }
+        })
+        .then(() => {
+            res.redirect('/'); 
+        })
+        .catch(error => {
+            console.error('Error al eliminar el producto:', error);
+            res.status(500).send('Hubo un error al intentar eliminar el producto.');
+        });
     },
 }
 

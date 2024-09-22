@@ -21,7 +21,7 @@ const userController = {
       // valido el login
       login: async (req, res) => {
         try {
-            // Busca el usuario en la base de datos por su email
+            
             const user = await db.Usuarios.findOne({
               where: {email:req.body.email}
             });
@@ -67,11 +67,11 @@ const userController = {
       const msg="";
       const imagen=req.originalFileName;
       let {nombre, apellido, email, telefono, dni, calle, numero, piso, departamento, barrio, cuil_t, clave }=req.body;
-       //encripto clave
+       
      
       const compresion = 10;
       
-       // Encripto la clave
+       
        const hashedClave = await bcrypt.hash(clave, compresion);
        try {
         await db.Usuarios.create({

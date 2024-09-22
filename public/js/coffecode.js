@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     const dropdownButton = document.getElementById('dropdownMenuButton1');
     const dropdownMenu = document.getElementById('dropdownMenu');
+    document.querySelectorAll('.icono-eliminar').forEach(form => {
+        form.onsubmit = confirmDelete;
+    });
+
+    function confirmDelete() {
+        return confirm('¿Estás seguro de que deseas eliminar este producto? Esta acción no se puede deshacer.');
+    }
 
     dropdownButton.addEventListener('click', function () {
         if (dropdownMenu.style.display === 'block') {

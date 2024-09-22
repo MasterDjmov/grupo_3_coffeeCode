@@ -22,7 +22,7 @@
             </div>
             <div class="form-group">
                 <label for="descripcion_larga">Descripción</label>              
-                <textarea id="descripcion_larga" name="descripcion_larga" rows="4" required ><%= cafe.descripcion_larga %></textarea>
+                <textarea id="descripcion_larga" name="descripcion_larga" rows="6" required ><%= cafe.descripcion_larga %></textarea>
             </div>
             <div class="form-group">
                 <label for="precio">Precio</label>
@@ -34,7 +34,7 @@
                 <label for="idunidad_medida">Unidad de Medida:</label>
     <select id="idunidad_medida" name="idunidad_medida">
         <% unidadesMedida.forEach(function(unidad) { %>
-            <option value="<%= unidad.idunidad_medida %>" <%= cafe.idunidad_medida === unidad.idunidad_medida ? 'selected' : '' %>>
+            <option value="<%= unidad.id_unidad_medida %>" <%= cafe.id_unidad_medida === unidad.id_unidad_medida ? 'selected' : '' %>>
                 <%= unidad.nombre_medida %>
             </option>
         <% }); %>
