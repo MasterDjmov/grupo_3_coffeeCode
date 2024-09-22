@@ -1,10 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+    document.addEventListener('click', function (event) {
+        if (!searchResultsContainer.contains(event.target) && event.target !== searchInput) {
+            searchResultsContainer.style.display = 'none';
+        }
+    });
+
+    
     const dropdownButton = document.getElementById('dropdownMenuButton1');
     const dropdownMenu = document.getElementById('dropdownMenu');
+
+
     document.querySelectorAll('.icono-eliminar').forEach(form => {
         form.onsubmit = confirmDelete;
     });
 
+    // Funcion para comfirmar la eliminacion del productor
     function confirmDelete() {
         return confirm('¿Estás seguro de que deseas eliminar este producto? Esta acción no se puede deshacer.');
     }

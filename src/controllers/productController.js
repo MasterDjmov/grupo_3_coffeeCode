@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const productos = require('../data/products.json');
 const session = require('express-session');
+const { Op } = require("sequelize");
 
 //agregamos la parte de sequelize
 const db = require('../database/models/index.js');
@@ -83,6 +84,26 @@ const productController = {
           console.error("Error al buscar el producto:", error);
           res.status(404).render('errors/404');
       });
+   },
+   search: async (req, res) => {
+      try {
+          const key = req.query.query; 
+          const productos = await db.Productos.findAll({
+              where: {
+                  nombre_producto: {
+                      [db.Sequelize.Op.like]: `%${key}%`
+                  }
+              }
+          });
+  
+          res.render('products/searchResults', {
+              productos: productos,
+              key: key 
+          });
+      } catch (error) {
+          console.error("Error al realizar la búsqueda:", error);
+          res.status(404).render('errors/404');
+      }
    }
 }
 

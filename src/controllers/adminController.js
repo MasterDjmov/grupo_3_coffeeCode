@@ -238,7 +238,7 @@ const adminController = {
         })
         .catch(error => {
             console.error('Error al eliminar el producto:', error);
-            res.status(500).send('Hubo un error al intentar eliminar el producto.');
+            res.status(404).render('errors/404');
         });
     },
 }
