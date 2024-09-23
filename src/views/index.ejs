@@ -90,6 +90,23 @@
     </main>
    <%- include('./partials/footer.ejs') %>
    <script src="/js/coffecode.js"></script>
+   <script>
+     // Simplemente asigna el valor de 'log' sin necesidad de convertirlo a JSON
+     var log = "<%= log %>";
+    console.log(log); // Verificar el valor de log en la consola
+
+    if (log==1) {
+        console.log("aceptado")
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Your work has been saved",
+            showConfirmButton: false,
+            timer: 1500
+        });
+    }
+</script>
+
    <script src="/js/alertas.js"></script>
 </body>
 </html>

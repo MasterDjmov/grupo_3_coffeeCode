@@ -9,6 +9,7 @@ const { Association, where } = require('sequelize');
 
 const mainController = {
     index: (req, res) => {
+        const log = req.query.log || 0; 
         //res.sendFile(path.resolve(__dirname,'../views/index.html'));
         if(req.session.user){
             user= req.session.user;
@@ -20,7 +21,8 @@ const mainController = {
 
             res.render('index',{
                 listaProductos,
-                'user':user
+                'user':user,
+                log
             });
         })
     },

@@ -14,9 +14,9 @@ const { emit } = require('process');
 const userController = {
     //muestro formulario de login
     formLogin: (req, res) => {      
-      const msg = "";
+        const msg = "";
       
-      res.render('users/login', { msg, user:req.session.user || null });
+        res.render('users/login', { msg, user:req.session.user || null});
   },
       // valido el login
       login: async (req, res) => {
@@ -32,7 +32,7 @@ const userController = {
     
                 if (claveValida) {
                     req.session.user = user;
-                    res.redirect('/');
+                    res.redirect('/?log=1');
                 } else {
                     const msg = "Error! La clave es incorrecta";
                     res.render('users/login', {
