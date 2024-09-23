@@ -28,7 +28,15 @@ module.exports = (Sequelize, DataTypes) => {
         updated_at: {
             type: DataTypes.DATE,
             allowNull: true
-        }
+        },
+        id_tipo_cafe: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
+        idunidad_medida: {
+            type: DataTypes.INTEGER,
+            allowNull: true
+        },
     }, {
         tableName: 'rel_carrito_productos',
         timestamps: true,
