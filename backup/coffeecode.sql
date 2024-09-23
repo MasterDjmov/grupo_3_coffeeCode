@@ -1,17 +1,17 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : localhost
+ Source Server         : mipc
  Source Server Type    : MySQL
- Source Server Version : 100432 (10.4.32-MariaDB)
+ Source Server Version : 100432
  Source Host           : localhost:3306
- Source Schema         : coffecode
+ Source Schema         : coffeecode
 
  Target Server Type    : MySQL
- Target Server Version : 100432 (10.4.32-MariaDB)
+ Target Server Version : 100432
  File Encoding         : 65001
 
- Date: 23/09/2024 00:23:01
+ Date: 23/09/2024 01:28:38
 */
 
 SET NAMES utf8mb4;
@@ -32,11 +32,11 @@ CREATE TABLE `carrito`  (
   `id_forma_envio` int NULL DEFAULT NULL,
   `carrito_id_carrito` int NOT NULL,
   PRIMARY KEY (`id_carrito`) USING BTREE,
-  INDEX `fk_carrito_usuarios1_idx`(`id_usuario` ASC) USING BTREE,
-  INDEX `fk_carrito_estado1_idx`(`id_estado` ASC) USING BTREE,
-  INDEX `fk_carrito_medio_pagos1_idx`(`id_medio_pago` ASC) USING BTREE,
-  INDEX `fk_carrito_carrito1_idx`(`carrito_id_carrito` ASC) USING BTREE,
-  INDEX `fk_carrito_formas_envios1_idx`(`id_forma_envio` ASC) USING BTREE
+  INDEX `fk_carrito_usuarios1_idx`(`id_usuario`) USING BTREE,
+  INDEX `fk_carrito_estado1_idx`(`id_estado`) USING BTREE,
+  INDEX `fk_carrito_medio_pagos1_idx`(`id_medio_pago`) USING BTREE,
+  INDEX `fk_carrito_carrito1_idx`(`carrito_id_carrito`) USING BTREE,
+  INDEX `fk_carrito_formas_envios1_idx`(`id_forma_envio`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
@@ -53,7 +53,7 @@ CREATE TABLE `departamentos`  (
   `nombre_dpto` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `id_provincia` int NULL DEFAULT NULL,
   PRIMARY KEY (`id_departamento`) USING BTREE,
-  INDEX `fk_departamentos_provincias1_idx`(`id_provincia` ASC) USING BTREE
+  INDEX `fk_departamentos_provincias1_idx`(`id_provincia`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
@@ -124,7 +124,7 @@ CREATE TABLE `facturas`  (
   `alias` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `id_forma_envio` int NULL DEFAULT NULL,
   PRIMARY KEY (`id_factura`) USING BTREE,
-  INDEX `fk_facturas_carrito1_idx`(`id_carrito` ASC) USING BTREE
+  INDEX `fk_facturas_carrito1_idx`(`id_carrito`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
@@ -161,7 +161,7 @@ CREATE TABLE `localidades`  (
   `codigo_postal` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `id_departamento` int NULL DEFAULT NULL,
   PRIMARY KEY (`id_localidad`) USING BTREE,
-  INDEX `fk_localidades_departamentos1_idx`(`id_departamento` ASC) USING BTREE
+  INDEX `fk_localidades_departamentos1_idx`(`id_departamento`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 390 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
@@ -836,10 +836,10 @@ CREATE TABLE `productos`  (
   `imagen_secundaria` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `altitud` varchar(65) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id_producto`) USING BTREE,
-  INDEX `fk_productos_tipos_cafe1_idx`(`id_tipo_cafe` ASC) USING BTREE,
-  INDEX `fk_productos_unidad_medida1_idx`(`idunidad_medida` ASC) USING BTREE,
-  INDEX `fk_productos_productores1_idx`(`idproductor` ASC) USING BTREE,
-  INDEX `fk_productos_paises1_idx`(`id_pais` ASC) USING BTREE
+  INDEX `fk_productos_tipos_cafe1_idx`(`id_tipo_cafe`) USING BTREE,
+  INDEX `fk_productos_unidad_medida1_idx`(`idunidad_medida`) USING BTREE,
+  INDEX `fk_productos_productores1_idx`(`idproductor`) USING BTREE,
+  INDEX `fk_productos_paises1_idx`(`id_pais`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 23 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
@@ -847,12 +847,12 @@ CREATE TABLE `productos`  (
 -- ----------------------------
 INSERT INTO `productos` VALUES (1, 'API AROMA', 'Fabricado en Argentina', ' Café de alta calidad de Argentina con notas de sabor únicas que resaltan su origen. Este café ha sido cuidadosamente cultivado y procesado para ofrecer una experiencia sensorial excepcional. La combinación de altitudes y métodos de procesamiento confiere un perfil complejo y balanceado, ideal para los amantes del café de especialidad.', 59000.00, 100, 1, 1, '2024-09-14 00:08:45', '2024-09-22 00:24:30', 9, 1, 'Cuyo', '50 %', '50 %', 'apiAroma.png', 'apiAroma.png', '800 y 1650');
 INSERT INTO `productos` VALUES (2, 'ORACLE', 'Fabricado en Brasil', 'Café de alta calidad de Brasil con un perfil de sabor robusto y vibrante. Cultivado en las tierras fértiles de Brasil, este café ofrece una combinación de notas frutales y achocolatadas que deleitan el paladar. La cuidadosa selección y los métodos tradicionales de procesamiento aseguran una experiencia rica y aromática, ideal para los amantes del café de especialidad.', 40000.00, 100, 3, 1, '2024-09-22 04:10:06', '2024-09-22 13:39:28', 27, 2, 'Minas Gerais', '100%', '0', 'oracle.png', 'oracle.png', '1100 - 1450');
-INSERT INTO `productos` VALUES (3, 'SCRIPT', 'Fabricado en Guatemala', 'Café de alta calidad de Guatemala, conocido por su perfil de sabor brillante y afrutado. Este café es cultivado en las altitudes de Guatemala, lo que le proporciona un carácter único con notas de cacao y cítricos. El proceso de recolección y secado artesanal asegura una experiencia de taza excepcional, perfecta para aquellos que buscan un café de especialidad con una historia y sabor distintivos.', 45500.00, 100, 4, 250, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 76, 3, 'Huehuetenango', '100%', '0', 'script.png', 'script.png', '1600');
-INSERT INTO `productos` VALUES (4, 'STACK LATTE', 'Fabricado en Colombia', 'Café de alta calidad de Colombia, apreciado por su perfil de sabor suave y balanceado. Cultivado en las montañas colombianas, este café destaca por sus notas de caramelo y frutos secos. El cuidadoso proceso de selección y procesamiento garantiza una taza rica y compleja, ideal para quienes buscan disfrutar de un café de especialidad con una experiencia sensorial inigualable.', 55000.00, 100, 2, 250, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 43, 4, 'Salado Blanco, Huila', '100%', '0', 'stackLatte.png', 'stackLatte.png', '1680');
+INSERT INTO `productos` VALUES (3, 'SCRIPT', 'Fabricado en Guatemala', 'Café de alta calidad de Guatemala, conocido por su perfil de sabor brillante y afrutado. Este café es cultivado en las altitudes de Guatemala, lo que le proporciona un carácter único con notas de cacao y cítricos. El proceso de recolección y secado artesanal asegura una experiencia de taza excepcional, perfecta para aquellos que buscan un café de especialidad con una historia y sabor distintivos.', 45500.00, 100, 4, 2, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 76, 3, 'Huehuetenango', '100%', '0', 'script.png', 'script.png', '1600');
+INSERT INTO `productos` VALUES (4, 'STACK LATTE', 'Fabricado en Colombia', 'Café de alta calidad de Colombia, apreciado por su perfil de sabor suave y balanceado. Cultivado en las montañas colombianas, este café destaca por sus notas de caramelo y frutos secos. El cuidadoso proceso de selección y procesamiento garantiza una taza rica y compleja, ideal para quienes buscan disfrutar de un café de especialidad con una experiencia sensorial inigualable.', 55000.00, 100, 2, 2, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 43, 4, 'Salado Blanco, Huila', '100%', '0', 'stackLatte.png', 'stackLatte.png', '1680');
 INSERT INTO `productos` VALUES (5, 'SYNTAX LATTE', 'Fabricado en Bolivia', 'Café de alta calidad de Bolivia con un perfil de sabor único que destaca su origen. Este café ha sido cuidadosamente cultivado y procesado en las montañas bolivianas para ofrecer una experiencia sensorial excepcional. La combinación de altitudes y métodos de procesamiento confiere a este café un carácter complejo y equilibrado, perfecto para los amantes del café de especialidad que buscan descubrir nuevos sabores.', 53000.00, 100, 5, 1, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 24, 5, 'Finca El Porvenir', '0', '100%', 'syntaxLatte.png', 'syntaxLatte.png', '1700 - 2000');
-INSERT INTO `productos` VALUES (6, 'LOGIC', 'Fabricado en Ecuador', 'Café de alta calidad de Ecuador, conocido por su perfil de sabor excepcional que resalta su origen. Cultivado en las montañas ecuatorianas, este café se distingue por sus notas florales y frutales. El meticuloso proceso de cultivo y procesamiento garantiza una taza aromática y equilibrada, ideal para quienes aprecian los cafés especiales con carácter.', 48000.00, 100, 1, 250, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 53, 4, 'Galápagos', '50 %', '50 %', 'logic.png', 'logic.png', '800 y 1650');
+INSERT INTO `productos` VALUES (6, 'LOGIC', 'Fabricado en Ecuador', 'Café de alta calidad de Ecuador, conocido por su perfil de sabor excepcional que resalta su origen. Cultivado en las montañas ecuatorianas, este café se distingue por sus notas florales y frutales. El meticuloso proceso de cultivo y procesamiento garantiza una taza aromática y equilibrada, ideal para quienes aprecian los cafés especiales con carácter.', 48000.00, 100, 1, 2, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 53, 4, 'Galápagos', '50 %', '50 %', 'logic.png', 'logic.png', '800 y 1650');
 INSERT INTO `productos` VALUES (7, 'FULL STACK', 'Fabricado en Argentina', 'Café de alta calidad fabricado en Argentina, reconocido por su perfil de sabor robusto y profundo que refleja la pasión y tradición del café argentino. Este café es cultivado en las regiones cafetaleras argentinas y se caracteriza por sus notas intensas y equilibradas. El proceso de cultivo y tostado meticuloso asegura una taza rica y satisfactoria, ideal para los conocedores del café.', 60000.00, 100, 3, 1, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 9, 4, 'Noa', '50 %', '50 %', 'fullStack.png', 'fullStack.png', '800 y 1650');
-INSERT INTO `productos` VALUES (8, 'EXPRESS', 'Fabricado en Brasil', 'Café de alta calidad de Brasil, conocido por su perfil de sabor vibrante y dulce que captura la esencia única de las tierras brasileñas. Este café es cultivado en las ricas tierras cafetaleras de Brasil y se distingue por sus notas frutales y chocolateadas. El proceso de cultivo cuidadoso y el tostado artesanal garantizan una taza indulgente y deliciosa, ideal para disfrutar en cualquier momento del día.', 42000.00, 100, 4, 250, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 27, 4, 'Nordeste', '50 %', '50 %', 'express.png', 'express.png', '800 y 1650');
+INSERT INTO `productos` VALUES (8, 'EXPRESS', 'Fabricado en Brasil', 'Café de alta calidad de Brasil, conocido por su perfil de sabor vibrante y dulce que captura la esencia única de las tierras brasileñas. Este café es cultivado en las ricas tierras cafetaleras de Brasil y se distingue por sus notas frutales y chocolateadas. El proceso de cultivo cuidadoso y el tostado artesanal garantizan una taza indulgente y deliciosa, ideal para disfrutar en cualquier momento del día.', 42000.00, 100, 4, 2, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 27, 4, 'Nordeste', '50 %', '50 %', 'express.png', 'express.png', '800 y 1650');
 
 -- ----------------------------
 -- Table structure for provincias
@@ -863,7 +863,7 @@ CREATE TABLE `provincias`  (
   `nombre_provincia` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `id_pais` int NULL DEFAULT NULL,
   PRIMARY KEY (`id_provincia`) USING BTREE,
-  INDEX `fk_provincias_paises1_idx`(`id_pais` ASC) USING BTREE
+  INDEX `fk_provincias_paises1_idx`(`id_pais`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 24 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
@@ -906,8 +906,8 @@ CREATE TABLE `rel_carrito_productos`  (
   `created_at` datetime NULL DEFAULT NULL,
   `updated_at` datetime NULL DEFAULT NULL,
   PRIMARY KEY (`id_rel_carrito_producto`) USING BTREE,
-  INDEX `fk_rel_carrito_productos_productos1_idx`(`id_producto` ASC) USING BTREE,
-  INDEX `fk_rel_carrito_productos_carrito1_idx`(`id_carrito` ASC) USING BTREE
+  INDEX `fk_rel_carrito_productos_productos1_idx`(`id_producto`) USING BTREE,
+  INDEX `fk_rel_carrito_productos_carrito1_idx`(`id_carrito`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
@@ -992,9 +992,9 @@ CREATE TABLE `usuarios`  (
   `cuil_t` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `clave` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id_usuario`) USING BTREE,
-  INDEX `fk_usuarios_roles_idx`(`id_rol` ASC) USING BTREE,
-  INDEX `fk_usuarios_estado1_idx`(`id_estado` ASC) USING BTREE,
-  INDEX `fk_usuarios_localidades1_idx`(`id_localidad` ASC) USING BTREE
+  INDEX `fk_usuarios_roles_idx`(`id_rol`) USING BTREE,
+  INDEX `fk_usuarios_estado1_idx`(`id_estado`) USING BTREE,
+  INDEX `fk_usuarios_localidades1_idx`(`id_localidad`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '					' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
