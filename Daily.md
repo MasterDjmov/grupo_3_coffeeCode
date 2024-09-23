@@ -714,18 +714,17 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Construcción del Tablero en Trello para el Sprint 6.
+
 **Impedimentos**         
- - 
+ - Sin impedimentos.
 
 **Qué va a hacer hoy**  
- - 
- - 
-
+ - Rotación de Roles
+ - Actualizar Retrospectiva.
 
 **Soluciones Propuestas**
-- 
+- Planificar bien las tareas para cumplir con la totalidad del Sprint 6.
 
 
 ## Fecha: 03/09/2024
@@ -782,18 +781,20 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Actualicé el tablero de trello. 
+
 **Impedimentos**         
- - 
+ - sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
+ - Diseñar la base de datos
+ - Definir herramientas para el DER
+ - Construccion de Modulos.
+ - Distribución de tareas por colores
 
 
 **Soluciones Propuestas**
-- 
+- Revisión del código y seguimiento del equipo.
 
 
 ## Fecha: 06/09/2024
@@ -850,18 +851,18 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Planifique los temas de la reunión.  
 **Impedimentos**         
- - 
+ - Sin Impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
-
+ - Revisión de la base de datos
+ - Diseñar las tablas
+ - Relacionar las tablas
+ - realizar el DER
 
 **Soluciones Propuestas**
-- 
+-  Revisión del código y seguimiento del equipo.
 
 
 ## Fecha: 10/09/2024
@@ -916,18 +917,18 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Revisé el tablero
+ -  Revisé Github
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
+ - Revisión de la base de datos
+ - Armado de structure.sql sin datos
 
 
 **Soluciones Propuestas**
-- 
+-  Revisión del código y seguimiento del equipo.
 
 
 ## Fecha: 14/09/2024
@@ -983,18 +984,18 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Asigné nuevas tareas en el tablero
+ 
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
+ -  Revisión de la base de datos
+ -  Poblar las tablas
 
 
 **Soluciones Propuestas**
-- 
+-  Revisión del código y seguimiento del equipo.
 
 
 ## Fecha: 17/09/2024
@@ -1052,18 +1053,19 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Revisé las vistas 
+ -  Revisé el Github.
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
+ - Revisión de la base de datos
+ - Revisión de las vistas.
+ - Asignar tareas para el nuevo integrante del equipo.
 
 
 **Soluciones Propuestas**
-- 
+-  Seguir controlando el código, realizando backup y practicando.
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
@@ -1134,18 +1136,18 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Actulicé trello
+ -
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
+ - Revisión del código
+ - Revisión del Modelo
 
 
 **Soluciones Propuestas**
-- 
+- Seguir controlando el código, realizando backup y practicando.
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
@@ -1217,10 +1219,10 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Planifique tareas
+ -  Actualicé los temas de las reuniones.
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
  - 
@@ -1303,7 +1305,7 @@ sin impedimentos
  -  
  - 
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
  - 
@@ -1311,7 +1313,7 @@ sin impedimentos
 
 
 **Soluciones Propuestas**
-- 
+- Seguir controlando el código, realizando backup y practicando.
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
