@@ -123,7 +123,7 @@ const userController = {
               msg: "",
               user: usuario 
           });
-          console.log(usuario);
+          //console.log(usuario);
       } else {
           res.redirect('/user/login'); 
       }

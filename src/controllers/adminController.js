@@ -186,8 +186,8 @@ const adminController = {
                 altitud
             };
 
-            console.log("Datos del nuevo producto:", nuevoProducto);
-            console.log("Datos recibidos:", req.body)
+            //console.log("Datos del nuevo producto:", nuevoProducto);
+            //console.log("Datos recibidos:", req.body)
     
             if (req.files && req.files.imagen_principal) {
                 nuevoProducto.imagen_principal = req.files.imagen_principal[0].filename;

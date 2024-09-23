@@ -68,9 +68,11 @@
                                         <i class="fas fa-edit"></i>
                                     </button>
                                 </form>
-                    <form action="/admin/delete2/<%= cafe.id_producto %>?_method=DELETE" method="post" onsubmit="return confirmDelete();" class="icono-eliminar" title="Eliminar">
-                      <button type="submit" name="eliminar" style="background: none; border: none; cursor: pointer; color: red;" ><i class="fas fa-trash" style="color: red;"></i></button>
-                   </form> 
+                                <form action="/admin/delete2/<%= cafe.id_producto %>?_method=DELETE" method="post" class="icono-eliminar" title="Eliminar" id="delete-form-<%= cafe.id_producto %>">
+                                    <button type="button" onclick="confirmDelete('<%= cafe.id_producto %>');" style="background: none; border: none; cursor: pointer; color: red;">
+                                        <i class="fas fa-trash" style="color: red;"></i>
+                                    </button>
+                                </form>
                     
                     </div>
                         <% } %> 
@@ -87,7 +89,7 @@
        
     </main>
    <%- include('./partials/footer.ejs') %>
-   <script src="/js/coffecode.js">
-   </script>
+   <script src="/js/coffecode.js"></script>
+   <script src="/js/alertas.js"></script>
 </body>
 </html>
