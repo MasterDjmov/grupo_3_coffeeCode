@@ -1105,16 +1105,18 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Revisión de los modelos
+ - Revisión de las asociaciones entre modelos
+ - Revisando la base de datos y sus campos
 
 **Impedimentos**         
- - 
+ - sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Hacer crud de usuarios y productos con metodos sequelize
 
 **Soluciones Propuestas**
-- 
+- revisar bien el codigo para no cometer de errores en los nombres de cada campo
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
