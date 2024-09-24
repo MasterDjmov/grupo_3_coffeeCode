@@ -99,7 +99,7 @@
                     <button class="di" onclick="increase()">+</button>
                     </div>
                     <% if(user){%>
-                        <a href="/products/edit" class="carrito" ><strong> Agregar al carrito</strong></a>
+                        <a href="/products/edit/<%= cafe.id_producto %>" class="carrito" ><strong> Agregar al carrito</strong></a>
                       
                         <% }else{%>
                               <h5 style="background-color: #ecb35a; text-align: center;"><%= msg %></h5>
