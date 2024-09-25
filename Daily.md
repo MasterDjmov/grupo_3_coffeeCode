@@ -1175,21 +1175,20 @@ sin impedimentos
 ### Diaz Caceres, Camila:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
-
+ - Reunion de equipo por consultas del codigo.
 **Impedimentos**         
- [Descripción de impedimentos]
+ - Error al conectarse a la base.
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+ Resolver la conexion a la bd y completar las vistas necesarias para el proyecto.
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Ver los errores en consola.
 
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
 
-**Qué hizo ayer**  
+**Qué hizo ayer** 
  - 
 
 **Impedimentos**         

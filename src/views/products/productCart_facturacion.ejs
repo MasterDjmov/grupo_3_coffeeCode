@@ -125,7 +125,62 @@
                 <div class="envio">
                     <input type="radio" value="1" name="envio" > 
                     <label for="">Retiro por Local (Gratis)</label>
-                </div>                 
+                </div>       
+                <div class="contenedor"></div>
+<br>
+                <p style="font-size: 18px;">SELECCIONA TU MEDIO DE PAGO</P>
+                    <select Medios de pago="select">
+                        <option Tarjeta de debito="value1">Tarjeta de debito</option>
+                        <option Tarjeta de credito="value2" selected>Tarjeta de credito</option>
+                        <option Transferencia bancaria="value3">Transferencia bancaria</option>
+                        <option Efectivo="value4">Efectivo</option>
+                        <option RapiPago="value5">RapiPago</option>
+                        <option PagoFacil="value6">PagoFacil</option>
+                        <option Deposito="value7">Deposito</option>
+                      </select>   
+
+		<!-- Contenedor Boton Abrir Formulario -->
+		<div class="contenedor-btn">
+			<button class= "btn-fin" id="btn-abrir-formulario">
+				<i class="fas fa-plus">Seleccionar</i>
+			</button>
+		</div>
+
+		<!-- Formulario -->
+		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+			<div class="grupo">
+				<label for="inputNumero">Número Tarjeta</label>
+				<input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+			</div>
+			<div class="grupo">
+				<label for="inputNombre">Nombre completo</label>
+				<input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+			</div>
+			<div class="flexbox">
+				<div class="grupo expira">
+					<label for="selectMes">Expiracion</label>
+					<div class="flexbox">
+						<div class="grupo-select">
+							<select name="mes" id="selectMes">
+								<option disabled selected>Mes</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+						<div class="grupo-select">
+							<select name="year" id="selectYear">
+								<option disabled selected>Año</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="grupo ccv">
+					<label for="inputCCV">CCV</label>
+					<input type="text" id="inputCCV" maxlength="3">
+				</div>
+			</div>
+	</div>       
                 <div class="subtotal">
                     <p>Total  </p><span> $128.400,00</span>
                 </div>
