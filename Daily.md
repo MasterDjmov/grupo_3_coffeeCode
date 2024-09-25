@@ -1227,12 +1227,11 @@ sin impedimentos
  - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
-
+ - Revisión del código
+ - Revisión de la base de datos
 
 **Soluciones Propuestas**
-- 
+- seguir practicando y organizando mejoras al proyecto.
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
@@ -1304,16 +1303,14 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Actualicé el tablero trello
+ -
 **Impedimentos**         
  - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
-
-
+ - revisar los puntos del sprint
+ 
 **Soluciones Propuestas**
 - Seguir controlando el código, realizando backup y practicando.
 
