@@ -1226,30 +1226,29 @@ sin impedimentos
  - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
-
+ - Revisión del código
+ - Revisión de la base de datos
 
 **Soluciones Propuestas**
-- 
+- seguir practicando y organizando mejoras al proyecto.
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
+ - corregimos algunos campos de la base de datos que vimos incoherentes
  - 
 
 **Impedimentos**         
- - 
+ - ningún
 
 **Qué va a hacer hoy**  
- - 
+ - seguir analizando la base de datos para buscar mas fallas o funciones que no cuadren con la lógica del negocio
  - 
 
 
 **Soluciones Propuestas**
-- 
+- analizar las tablas
 
 ## Fecha: 26/09/2024
 
@@ -1303,16 +1302,14 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Actualicé el tablero trello
+ -
 **Impedimentos**         
  - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
-
-
+ - revisar los puntos del sprint
+ 
 **Soluciones Propuestas**
 - Seguir controlando el código, realizando backup y practicando.
 
@@ -1320,15 +1317,16 @@ sin impedimentos
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
+ - agregue los campos de tipo de cafe y de unidades a las tablas de carrito relacional
 
 **Impedimentos**         
- - 
+ - ninguno
 
 **Qué va a hacer hoy**  
- - 
+ - comenzamos con el estudio y aplicación de los JS para validar front y back
  - 
 
 
 **Soluciones Propuestas**
+por ahora ninguna
 - 
