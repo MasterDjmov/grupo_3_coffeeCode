@@ -1,3 +1,18 @@
+# Índice
+
+- [Retrospectiva Sprint 1-2](#retrospectiva-sprint-1-2)
+  
+- [Retrospectiva Sprint 2-3](#retrospectiva-sprint-2-3)
+
+- [Retrospectiva Sprint 3-4](#retrospectiva-sprint-3-4)
+
+- [Retrospectiva Sprint 4-5](#retrospectiva-sprint-4-5)
+
+- [Retrospectiva Sprint 5-6](#retrospectiva-sprint-5-6)
+
+- [Retrospectiva Sprint 6-7](#retrospectiva-sprint-6-7)
+
+
 ## Retrospectiva Sprint 1-2
 
 ### Comenzar a hacer
@@ -106,4 +121,26 @@
 
 ### Dejar de hacer
 - Postergar reuniones: Hacer las reuniones en la fecha acordada.
+- No informar el progreso: avisar sobre el progreso logrado de las tareas realizadas en el sprint.
+
+## Retrospectiva Sprint 6-7
+
+### Comenzar a hacer
+- Organizar las Validaciones: organizar y planificar las validaciones tanto del backend como del fronted con el equipo de trabajo.
+- Testing y Documentación: Más revision del codigo ante posibles errores o mejoras en el proyecto y documentar cada situación.
+
+### Hacer más
+- Retroalimentación continua: Fomentar la cultura de retroalimentación continua para mejorar la colaboración y resolver problemas más rápidamente.
+- Reuniones entre pares: Reunirse entre compañeros de trabajo para resolver las distintas tareas del sprint.
+
+### Continuar haciendo
+- Promover el aprendizje colaborativo: Continuar fomentando la colaboración interdisciplinaria en todas las fases del desarrollo.
+- Rotación de roles: Seguir cambiando de roles para practicar en los distintos ambitos del proyecto.
+
+### Hacer menos
+- Procrastinación de playground: No dejar para despues el material del playground y completar las tareas faltantes, asi estar al dia para resolver las distintas tareas del sprint
+- No cumplir con las fechas limites
+
+### Dejar de hacer
+- Tareas sin fechas limites: Establecer fechas limites para las distintas tareas llevadas a cabo por los integrantes del proyecto.
 - No informar el progreso: avisar sobre el progreso logrado de las tareas realizadas en el sprint.

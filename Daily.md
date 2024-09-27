@@ -49,9 +49,7 @@
 
   - [# SPRINT-7](#sprint-7)
   - [# DAILY DOS POR SEMANA](#daily-dos-por-semana)
-
-    - [## Fecha: 26/09/2024](#fecha-26092024)
-
+  
     - [## Fecha: 01/10/2024](#fecha-01102024)
 
     - [## Fecha: 03/10/2024](#fecha-03102024)
@@ -59,7 +57,7 @@
     - [## Fecha: 08/10/2024](#fecha-08102024)
 
     - [## Fecha: 10/10/2024](#fecha-10102024)
-    
+
 ### Contenido
 
 # SPRINT 3
