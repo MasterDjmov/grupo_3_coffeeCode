@@ -956,13 +956,13 @@ sin impedimentos
  - Capacitación sobre la herrmaienta a utilizar para la BD.
 
 **Impedimentos**         
- - sin impedimentos
+ - sin impedimentos.
 
 **Qué va a hacer hoy**  
- - Poblar de datos la bd con el equipo de trabajo
+ - Poblar de datos la bd con el equipo de trabajo.
 
 **Soluciones Propuestas**
-- 
+- soluciones en playground.
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -1156,15 +1156,13 @@ sin impedimentos
 
 **Qué hizo ayer**  
  - corregí unos modelos, que tenían una referencia errónea
- - 
+ 
 
 **Impedimentos**         
  - ninguno
 
 **Qué va a hacer hoy**  
  - seguiré mirando el código para encentra posibles fallos, y ver si hace falta mejorar algo en cuanto a sequelize
- - 
-
 
 **Soluciones Propuestas**
 - ninguna
@@ -1180,7 +1178,7 @@ sin impedimentos
  - Error al conectarse a la base.
 
 **Qué va a hacer hoy**  
- Resolver la conexion a la bd y completar las vistas necesarias para el proyecto.
+ - Resolver la conexion a la bd y completar las vistas necesarias para el proyecto.
 
 **Soluciones Propuestas**
 - Ver los errores en consola.
@@ -1189,16 +1187,16 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer** 
- - 
+ - Revision de vistas y codigo
 
 **Impedimentos**         
- - 
+ - sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Correccion de estilos en vistas
 
 **Soluciones Propuestas**
-- 
+- ver bien las vistas y agregar el css de acuerdo a cada elemento
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -1271,16 +1269,16 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Colobarar con compañeros del equipo para resolver los distintos problemas.
 
 **Impedimentos**         
- - 
+ - sin impedimentos.
 
 **Qué va a hacer hoy**  
- - 
+ - Testing
 
 **Soluciones Propuestas**
-- 
+- ninguna
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -1303,7 +1301,6 @@ sin impedimentos
 
 **Qué hizo ayer**  
  -  Actualicé el tablero trello
- -
 **Impedimentos**         
  - Sin impedimentos
 
@@ -1323,10 +1320,7 @@ sin impedimentos
  - ninguno
 
 **Qué va a hacer hoy**  
- - comenzamos con el estudio y aplicación de los JS para validar front y back
- - 
-
+ - comenzamos con el estudio y aplicación de los JS para validar front y back 
 
 **Soluciones Propuestas**
-por ahora ninguna
-- 
+- Por ahora ninguna
