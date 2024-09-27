@@ -47,7 +47,19 @@
   
   - [## Fecha: 26/09/2024](#fecha-26092024)
 
+  - [# SPRINT-7](#sprint-7)
+  - [# DAILY DOS POR SEMANA](#daily-dos-por-semana)
 
+    - [## Fecha: 26/09/2024](#fecha-26092024)
+
+    - [## Fecha: 01/10/2024](#fecha-01102024)
+
+    - [## Fecha: 03/10/2024](#fecha-03102024)
+
+    - [## Fecha: 08/10/2024](#fecha-08102024)
+
+    - [## Fecha: 10/10/2024](#fecha-10102024)
+    
 ### Contenido
 
 # SPRINT 3
@@ -1323,4 +1335,390 @@ sin impedimentos
  - comenzamos con el estudio y aplicación de los JS para validar front y back 
 
 **Soluciones Propuestas**
-- Por ahora ninguna
+- Por ahora ninguna.
+
+
+# SPRINT-7
+
+---
+
+# DAILY DOS POR SEMANA
+
+---
+
+## Fecha: 26/09/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ -        
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - Revisión de codigo.
+
+**Impedimentos**         
+ - ninguno
+
+**Qué va a hacer hoy**  
+ - Creación de retrospectiva con el equipo de trabajo.
+ - Agregar el tablero del sprint 7
+ - Organizar las validaciones
+
+**Soluciones Propuestas**
+ - ninguna
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ 
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Loyola, Leo Martin:
+
+**Qué hizo ayer**  
+ - 
+**Impedimentos**         
+ - 
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+ - 
+
+ ## Fecha: 01/10/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ -        
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - 
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+ - 
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ 
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Loyola, Leo Martin:
+
+**Qué hizo ayer**  
+ - 
+**Impedimentos**         
+ - 
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+ - 
+
+ ## Fecha: 03/10/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ -        
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - 
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+ - 
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ 
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Loyola, Leo Martin:
+
+**Qué hizo ayer**  
+ - 
+**Impedimentos**         
+ - 
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+ - 
+
+ ## Fecha: 08/10/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ -        
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - 
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+ - 
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ 
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Loyola, Leo Martin:
+
+**Qué hizo ayer**  
+ - 
+**Impedimentos**         
+ - 
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+ - 
+
+ ## Fecha: 10/10/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ -        
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - 
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+ - 
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+ 
+**Soluciones Propuestas**
+- 
+
+## Resumen de Tareas
+### Loyola, Leo Martin:
+
+**Qué hizo ayer**  
+ - 
+**Impedimentos**         
+ - 
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+ - 
