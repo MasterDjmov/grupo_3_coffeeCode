@@ -13,32 +13,32 @@
         <form action="/user/register" method="post" class="estilo-form" id="registro" autocomplete="off" novalidate="novalidate">
             <div class="bloque">
                 <label class="estilo-label" for="apellido">Apellido<br></label>
-                <input type="text" name="apellido" placeholder="Apellido" minlength="3" maxlength="40" id="apellido">
+                <input type="text" name="apellido" placeholder="Apellido" minlength="3" maxlength="40" id="apellido" required>
                 <div class="error-message" id="apellidoError"></div>
             </div>
             <div class="bloque">
                 <label class="estilo-label" for="nombre">Nombre<br></label>
-                <input type="text" name="nombre" placeholder="Nombre" minlength="3" maxlength="40" id="nombre">
+                <input type="text" name="nombre" placeholder="Nombre" minlength="3" maxlength="40" id="nombre" required>
                 <div class="error-message" id="nombreError"></div>
             </div>
             <div class="bloque">
                 <label class="estilo-label" for="telefono">Teléfono (opcional)<br></label>
-                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" minlength="6" maxlength="20">
+                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" minlength="6" maxlength="20" required>
                 <div class="error-message" id="telefonoError"></div>
             </div>
             <div class="bloque">
                 <label class="estilo-label" for="email">E-mail<br></label>
-                <input type="email" name="email" placeholder="E-mail" id="email">
+                <input type="email" name="email" placeholder="E-mail" id="email" required>
                 <div class="error-message" id="emailError"></div>
             </div>
             <div class="bloque">
                 <label class="estilo-label" for="contraseña">Contraseña<br></label>
-                <input type="password" name="clave" id="pass1" placeholder="Elige tu contraseña">
+                <input type="password" name="clave" id="pass1" placeholder="Elige tu contraseña" required>
                 <div class="error-message" id="pass1Error"></div>
             </div>
             <div class="bloque">
                 <label class="estilo-label" for="contraseña">Repita la Contraseña<br></label>
-                <input type="password" name="clave2" id="pass2" placeholder="Elige tu contraseña">
+                <input type="password" name="clave2" id="pass2" placeholder="Elige tu contraseña" required>
                 <div class="error-message" id="pass2Error"></div>
             </div>
             <button class="boton" type="submit" name="btnRegistrar" id="btnRegistrar">CREAR CUENTA</button>
