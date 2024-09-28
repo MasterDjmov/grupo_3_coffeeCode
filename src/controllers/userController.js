@@ -10,51 +10,74 @@ const bcrypt = require('bcrypt');
 const db = require('../database/models/index.js');
 const { Association, where } = require('sequelize');
 const { emit } = require('process');
+const { error } = require('console');
+const { validationResult } = require('express-validator');
 
 const userController = {
     //muestro formulario de login
     formLogin: (req, res) => {      
         const msg = "";
       
-        res.render('users/login', { msg, user:req.session.user || null});
+        res.render('users/login', {
+            msg, user:req.session.user || null,
+            oldData:null,
+            errors:null
+    });
   },
       // valido el login
       login: async (req, res) => {
-        try {
-            
-            const user = await db.Usuarios.findOne({
-              where: {email:req.body.email}
-            });
-    
-            if (user) {
-                // Compara la clave ingresada con la clave encriptada almacenada
-                const claveValida = await bcrypt.compare(req.body.clave, user.clave);
-    
-                if (claveValida) {
-                    req.session.user = user;
-                    res.redirect('/?log=1');
+        // Verifica si hay errores
+        const errors = validationResult(req);
+        if (errors.isEmpty()) {
+           
+            try {
+                const user = await db.Usuarios.findOne({
+                    where: { email: req.body.email }
+                });
+        
+                if (user) {
+                    // Compara la clave ingresada con la clave encriptada almacenada
+                    const claveValida = await bcrypt.compare(req.body.clave, user.clave);
+        
+                    if (claveValida) {
+                        req.session.user = user;
+                        return res.redirect('/?log=1');
+                    } else {
+                        return res.render('users/login', {
+                            msg: "Error! La clave es incorrecta",
+                            'rol': "No Log",
+                            oldData: req.body
+                        });
+                    }
                 } else {
-                    const msg = "Error! La clave es incorrecta";
-                    res.render('users/login', {
-                        msg,
-                        'rol': "No Log"
+                    return res.render('users/login', {
+                        msg: "Error! El usuario no fue encontrado",
+                        'rol': "No Log",
+                        oldData: req.body
                     });
                 }
-            } else {
-                const msg = "Error! El usuario no fue encontrado";
-                res.render('users/login', {
-                    msg,
-                    'rol': "No Log"
+            } catch (err) {
+                console.error("Error en el proceso de login:", err);
+                return res.status(500).render('users/login', {
+                    msg: "Error en el proceso de login",
+                    'rol': "No Log",
+                    oldData: req.body
                 });
             }
-        } catch (err) {
-            console.error("Error en el proceso de login:", err);
-            res.status(500).render('users/login', {
-                msg: "Error en el proceso de login",
-                'rol': "No Log"
+        }else{
+            const msg = "";
+            //console.log(errors.array())
+            return res.render('users/login', {
+                msg, user:req.session.user || null,
+                errors: errors.mapped(), 
+                oldData: req.body 
             });
         }
+    
+        
+
     },
+    
     
     register: (req, res) => {
         //res.sendFile(path.resolve(__dirname,'../views/users/register.html'));

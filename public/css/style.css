@@ -254,3 +254,12 @@ h4 {
 @media (max-width: 714px){
     
 }
+
+/*para el color de errores*/
+.error{
+    color:white;
+    background-color: red;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
