@@ -23,7 +23,7 @@
           <div class="bloque">
               <label class="estilo-label" for="Email">E-mail</label>
               <br>
-              <input type="text" name="email" placeholder="email" value="<%= oldData ? oldData.email : '' %>">
+              <input type="text" name="email" placeholder="email" value="<%= oldData ? oldData.email : '' %>" required>
               <% if (locals.errors && locals.errors.email) { %>
                   <div class="error"><%= locals.errors.email.msg %></div>
               <% } %>
@@ -32,7 +32,7 @@
           <div class="bloque">
               <label class="estilo-label" for="clave">Contraseña</label>
               <br>
-              <input type="password" name="clave" id="pass1" placeholder="Elige tu contraseña">
+              <input type="password" name="clave" id="pass1" placeholder="Elige tu contraseña" required>
               <% if (locals.errors && locals.errors.clave) { %>
                   <div class="error"><%= locals.errors.clave.msg %></div>
               <% } %>
