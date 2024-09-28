@@ -77,19 +77,37 @@
                       </tr>
                       <tr>
                         <td>Departamento:</td>
-                        <td><input type="text" class="form-control input-sm" name="departamento" value="<%=user.departamento%>"></td>
+                        <td>
+                          <select name="departamento" class="form-control input-sm">
+                            <% Departamentos.forEach(d => { %>
+                              <% if(d.id_departamento === user.departamento){%>
+                              <option value="<%=d.id_departamento%>" selected="selected"><%=d.nombre_dpto  %></option>
+                              <%}else{%>
+                                <option value="<%=d.id_departamento%>"><%=d.nombre_dpto  %></option>
+                               <%} %>
+                            <% }) %>
+                          </select>
+                        </td>
                       </tr>
                       <tr>
                         <th>Localidad</th>
                         <td>
-                          <input type="text" class="form-control" value="<%= user.localidad ? user.localidad.nombre_loc : 'Agregar Localidad' %>">
-
+                          <select name="localidad" class="form-control input-sm">
+                            <% Localidades.forEach(l => { %>
+                              <% if(l.id_localidad === user.id_localidad){%>
+                                <option value="<%=l.id_localidad%>" selected="selected"><%=l.nombre_loc  %></option>
+                              <%}else{%>
+                                <option value="<%=l.id_localidad%>"><%=l.nombre_loc  %></option>
+                               <%} %>
+                              
+                            <% }) %>
+                          </select>
                         </td>
                     </tr>
                       <tr>
                         <th>Estado</th>
                         <td>
-                            <input type="text" class="form-control" value="<%= user.rol ? user.rol.nombre_rol : 'No disponible' %>" disabled>
+                            <input type="text" class="form-control"  value="<%= user.rol ? user.rol.nombre_rol : 'No disponible' %>" disabled>
                         </td>
                     </tr>
                       <tr>
@@ -106,12 +124,13 @@
                   
                   
                 </div>
-				<div class='col-md-12' id="resultados_ajax"></div><!-- Carga los datos ajax -->
+				      <div class='col-md-12' id="resultados_ajax"></div><!-- Carga los datos ajax -->
               </div>
             </div>
                  <div class="panel-footer text-center">
             <input type="hidden" name="id_usuario" value="<%=user.id_usuario%>">
-            <button type="submit" class="btn btn-sm btn-success" style="background-color: #823a6f; border: #823a6f;">
+            <input type="hidden" name="estado" value="1">
+            <button type="submit" class="btn btn-sm btn-success" style="background-color: #823a6f; border: #823a6f;" id="btnActualizarPerfil">
               <i class="glyphicon glyphicon-refresh"></i> Actualizar perfil
             </button>
           </div>
@@ -134,4 +153,6 @@
   </body>
 </html>
 <script type="text/javascript" src="js/bootstrap-filestyle.js"> </script>
+<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+<script src="/js/perfilValidator.js"></script>
 <script>

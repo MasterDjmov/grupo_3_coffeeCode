@@ -155,7 +155,11 @@ const userController = {
       if (req.session.user) {
           const user = req.session.user;
   
-          
+        // Ejecutar las consultas de Departamentos y Localidades simultáneamente
+        const [Departamentos, Localidades] = await Promise.all([
+            db.Departamentos.findAll(),
+            db.Localidades.findAll()
+        ]);
           const usuario = await db.Usuarios.findOne({
               where: { id_usuario: user.id_usuario }, 
               include: [
@@ -170,7 +174,9 @@ const userController = {
   
           res.render('users/edit_profile', {
               msg: "",
-              user: usuario 
+              user: usuario,
+              Departamentos,
+              Localidades
           });
           //console.log(usuario);
       } else {
@@ -179,8 +185,8 @@ const userController = {
   },
     updateProfile: async (req, res) => {      
      const { id_usuario, nombre, dni,apellido, email, telefono, barrio, calle, numero, piso, departamento, 
-      id_localidad, id_estado, cuil_t, clave } = req.body;
-      
+      localidad, id_estado, cuil_t, clave,estado } = req.body;
+      //res.json(req.body)
      
       try {
         
@@ -201,8 +207,8 @@ const userController = {
             numero,
             piso,
             departamento,
-            id_localidad,
-            id_estado,
+            id_localidad:localidad,
+            id_estado:estado,
             cuil_t
         };
 
@@ -218,7 +224,11 @@ const userController = {
         await usuario.update(updatedData);
 
         
-        res.render('users/login', { msg: "Perfil actualizado correctamente" });
+        res.render('users/login', { 
+            msg: "Perfil actualizado correctamente",
+            oldData:null,
+            errors:null
+        });
     } catch (error) {
         console.error("Error al actualizar el perfil:", error);
         res.status(500).send("Error al actualizar el perfil");
