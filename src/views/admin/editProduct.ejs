@@ -11,7 +11,7 @@
     <div class="container">
        
         <h1>Editar Producto</h1>
-        <form action="/admin/edit/<%= cafe.id_producto %>?_method=PUT" method="post" enctype="multipart/form-data">
+        <form action="/admin/edit/<%= cafe.id_producto %>?_method=PUT" method="post" enctype="multipart/form-data" id="form-editar-producto">
             <div class="form-group">
                 <label for="nombre_producto">Nombre del Producto</label>
                 <input type="text" id="nombre_producto" name="nombre_producto" value="<%= cafe.nombre_producto %>" required>
@@ -93,14 +93,15 @@
             </div>
             <div class="form-group">
                 <input type="hidden" name="id_producto" value="<%= cafe.id_producto %>">
-                <button>Guardar Cambios</button>
+                <button type="submit" class="btn" id="btnEditarProducto">Guardar Cambios</button>
             </div>
         </form>
     </div>
     </main>
     <%- include('../partials/footer.ejs') %>
     <script src="/js/coffecode.js"></script>
-    
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="/js/editarProductosValidator.js"></script>
 
 </body>
 </html>
