@@ -115,7 +115,11 @@ const userController = {
           id_estado: 1,             // Estado activo       
         });
 
-        res.render('users/login', { msg: "Registro Exitoso" });
+        res.render('users/login', { 
+            msg: "Registro Exitoso",
+            oldData:null,
+            errors:null 
+        });
     } catch (error) {
         console.error("Error al crear el usuario:", error);
         res.status(500).render('users/register', { msg: "Error al crear el usuario" });
@@ -125,6 +129,28 @@ const userController = {
        // res.sendFile(path.resolve(__dirname,'../views/users/recuperarClave.html'));
        res.render('users/recuperarClave');
     },
+    controlEmail: async (req, res) => {
+        const { email } = req.query;
+      
+        try {
+          const user = await db.Usuarios.findOne(
+            { 
+                where: {
+                     email 
+                    } 
+            });
+          if (user) {
+            console.log("existe el correo")
+            return res.status(409).send('Email ya registrado');
+          }else{
+            console.log("no existe el correo")
+            return res.status(200).send('Email disponible');
+          }
+        } catch (error) {
+            console.error(error);
+            return res.status(500).send('Error del servidor');
+        }
+      },
     formProfile: async (req, res) => {
       if (req.session.user) {
           const user = req.session.user;

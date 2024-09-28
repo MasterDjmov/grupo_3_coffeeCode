@@ -11,4 +11,7 @@ router.post('/register', userController.create);
 router.get('/clave', userController.recuperarClave);
 router.get('/profile', userController.formProfile);
 router.post('/profile', fileProfile.single('imagefile'), userController.updateProfile);
+
+//funcion para controlar si existe el email de un usuario
+router.get('/control_email', userController.controlEmail);
 module.exports = router;
