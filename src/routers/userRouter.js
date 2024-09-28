@@ -6,9 +6,12 @@ const loginValidator = require('../middleware/loginValidator');
 
 router.get('/login', userController.formLogin);
 router.post('/login',loginValidator, userController.login);
+
 router.get('/register', userController.register);
 router.post('/register', userController.create);
+
 router.get('/clave', userController.recuperarClave);
+
 router.get('/profile', userController.formProfile);
 router.post('/profile', fileProfile.single('imagefile'), userController.updateProfile);
 
