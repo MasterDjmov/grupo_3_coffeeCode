@@ -3,12 +3,13 @@ const fileProfile = require('../middleware/fileUploadProfile');
 const express = require('express');
 const router = express.Router();
 const loginValidator = require('../middleware/loginValidator');
+const registerValidator = require('../middleware/registerValidator');
 
 router.get('/login', userController.formLogin);
 router.post('/login',loginValidator, userController.login);
 
 router.get('/register', userController.register);
-router.post('/register', userController.create);
+router.post('/register',registerValidator ,userController.create);
 
 router.get('/clave', userController.recuperarClave);
 

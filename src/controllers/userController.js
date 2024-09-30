@@ -87,44 +87,54 @@ const userController = {
         });
     },
     create: async (req, res) => {
-      const msg="";
-      const imagen=req.originalFileName;
-      let {nombre, apellido, email, telefono, dni, calle, numero, piso, departamento, barrio, cuil_t, clave }=req.body;
-       
-     
-      const compresion = 10;
-      
-       
-       const hashedClave = await bcrypt.hash(clave, compresion);
-       try {
-        await db.Usuarios.create({
-          nombre,
-          apellido,
-          email,
-          telefono,
-          dni,                       
-          calle,                     
-          numero,                    
-          piso,                      
-          departamento,              
-          barrio,                    
-          cuil_t,                    
-          clave: hashedClave,         
-          imagen_perfil: 'avatar-mini2.jpg',  
-          id_rol: 2,                 // Rol cliente
-          id_estado: 1,             // Estado activo       
-        });
-
-        res.render('users/login', { 
-            msg: "Registro Exitoso",
-            oldData:null,
-            errors:null 
-        });
-    } catch (error) {
-        console.error("Error al crear el usuario:", error);
-        res.status(500).render('users/register', { msg: "Error al crear el usuario" });
-    }
-},
+        const errors = validationResult(req);
+        const msg = "";
+    
+        if (!errors.isEmpty()) {
+            return res.render('users/register', {
+                msg,
+                errors: errors.mapped(), 
+                oldData: req.body
+            });
+        }
+    
+        const { nombre, apellido, email, telefono, dni, calle, numero, piso, departamento, barrio, cuil_t, clave } = req.body;
+        const compresion = 10;
+        const hashedClave = await bcrypt.hash(clave, compresion);
+    
+        try {
+            await db.Usuarios.create({
+                nombre,
+                apellido,
+                email,
+                telefono,
+                dni,
+                calle,
+                numero,
+                piso,
+                departamento,
+                barrio,
+                cuil_t,
+                clave: hashedClave,
+                imagen_perfil: 'avatar-mini2.jpg',
+                id_rol: 2, // Rol cliente
+                id_estado: 1, // Estado activo       
+            });
+    
+            res.render('users/login', {
+                msg: "Registro Exitoso",
+                oldData: null,
+                errors: null
+            });
+        } catch (error) {
+            console.error("Error al crear el usuario:", error);
+            res.status(500).render('users/register', {
+                msg: "Error al crear el usuario",
+                oldData: req.body, 
+                errors: {}
+            });
+        }
+    },
     recuperarClave: (req, res) => {
        // res.sendFile(path.resolve(__dirname,'../views/users/recuperarClave.html'));
        res.render('users/recuperarClave');
