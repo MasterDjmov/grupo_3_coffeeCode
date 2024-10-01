@@ -31,7 +31,7 @@
             </div>
             <div class="bloque">
                 <label class="estilo-label" for="telefono">Teléfono (opcional)<br></label>
-                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" minlength="6" maxlength="20" value="<%= locals.oldData ? locals.oldData.telefono : '' %>" required>
+                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" minlength="6" maxlength="20" value="<%= locals.oldData ? locals.oldData.telefono : '' %>" >
                 <div class="error" id="telefonoError">
                     <% if (locals.errors && locals.errors.telefono) { %>
                         <%= locals.errors.telefono.msg %>

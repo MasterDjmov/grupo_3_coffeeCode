@@ -12,78 +12,145 @@
         <form action="/admin/create" method="POST" enctype="multipart/form-data" id="form-crear-producto">
             <div class="form-group">
                 <label for="nombre_producto">Nombre del Producto:</label>
-                <input type="text" id="nombre_producto" name="nombre_producto" required>
+                <input type="text" id="nombre_producto" name="nombre_producto" value="<%= locals.oldData ? locals.oldData.nombre_producto : '' %>" required>
+                <div class="error">
+                <% if (locals.errors && locals.errors.nombre_producto) { %>
+                    <%= locals.errors.nombre_producto.msg %>
+                <% } %>
+                </div>
             </div>
             <div class="form-group">
                 <label for="descripcion_corta">Origen:</label>
-                <input type="text" id="descripcion_corta" name="descripcion_corta">
+                <input type="text" id="descripcion_corta" name="descripcion_corta" value="<%= locals.oldData ? locals.oldData.descripcion_corta : '' %>" required>
+                <div class="error">
+                <% if (locals.errors && locals.errors.descripcion_corta) { %>
+                    <%= locals.errors.descripcion_corta.msg %>
+                <% } %>
+                </div>
             </div>
             <div class="form-group">
                 <label for="descripcion_larga">Descripción del Producto:</label>
-                <textarea id="descripcion_larga" name="descripcion_larga" rows="5"></textarea>
+                <textarea id="descripcion_larga" name="descripcion_larga" rows="5" ><%= locals.oldData ? locals.oldData.descripcion_larga : '' %></textarea>
+                <div class="error">
+                <% if (locals.errors && locals.errors.descripcion_larga) { %>
+                    <%= locals.errors.descripcion_larga.msg %>
+                <% } %>
+                </div>
             </div>
             <div class="form-group">
                 <label for="precio">Precio:</label>
-                <div style="display: flex;align-items: center; background-color: white;">
-                    $<input type="number" id="precio" name="precio" step="0.01" required style="border: none;">
+                <div style="display: flex;">
+                     $<input type="number" id="precio" name="precio" step="0.01" value="" value="<%= locals.oldData ? locals.oldData.precio : '' %>"  style="border: none;" required >
                 </div>
+                <% if (locals.errors && locals.errors.precio) { %>
+                    <span class="error"> <%= locals.errors.precio.msg %> </span>
+                 <% } %>
             </div>
+            
             <div class="form-group">
                 <label for="cantidad">Cantidad:</label>
-                <div style="display: flex;align-items: center; background-color: white;">
-                    <input type="number" id="cantidad" name="cantidad" required style="border: none;">
+                <div >
+                     <input type="number" id="cantidad" name="cantidad" value="<%= locals.oldData ? locals.oldData.cantidad : '' %>"  style="border: none;" required >       
                 </div>
+                <% if (locals.errors && locals.errors.cantidad) { %>
+                            <span class="error"><%= locals.errors.cantidad.msg %></span>
+                            <% } %>
             </div>
             <div class="form-group">
                 <label for="idunidad_medida">Unidad de Medida:</label>
                 <select id="idunidad_medida" name="idunidad_medida" required>
                     <option value="" disabled selected>Seleccione una unidad de medida</option>
                     <% unidades.forEach(function(unidad) { %>
-                    <option value="<%= unidad.id_unidad_medida %>"><%= unidad.nombre_medida %></option>
+                        <option value="<%= unidad.id_unidad_medida %>" <%= locals.oldData && locals.oldData.idunidad_medida == unidad.id_unidad_medida ? 'selected' : '' %>><%= unidad.nombre_medida %></option>
                     <% }) %>
                 </select>
+                <div class="error">
+                    <% if (locals.errors&& locals.errors.idunidad_medida) { %>
+                        <%= locals.errors.idunidad_medida.msg %>
+                        <% } %>
+                 </div>
             </div>
             <div class="form-group">
                 <label for="imagen_principal">Imagen del Producto:</label>
                 <input type="file" id="imagen_principal" name="imagen_principal" accept="image/*">
+                <div class="error">
+                    <% if (locals.fileErrors && locals.fileErrors.imagen_principal) { %>
+                        <%= locals.fileErrors.imagen_principal %>
+                    <% } %>
+                </div>
             </div>
             <div class="form-group">
                 <label for="imagen_secundaria">Imagen Secundaria:</label>
                 <input type="file" id="imagen_secundaria" name="imagen_secundaria" accept="image/*">
+                <div class="error">
+                    <% if (locals.fileErrors && locals.fileErrors.imagen_secundaria) { %>
+                        <%= locals.fileErrors.imagen_secundaria %>
+                    <% } %>
+                </div>
             </div>
             <div class="form-group">
                 <label for="idproductor">Productor:</label>
-                <select id="idproductor" name="idproductor" required>
-                    <option value="" disabled selected>Seleccione un productor</option>
-                    <% productores.forEach(function(productor) { %>
-                    <option value="<%= productor.id_productor %>"><%= productor.nombre_productor %></option>
-                    <% }) %>
-                </select>
+            <select id="idproductor" name="idproductor" required>
+                <option value="" disabled selected>Seleccione un productor</option>
+                <% productores.forEach(function(productor) { %>
+                    <option value="<%= productor.id_productor %>" <%= locals.oldData && locals.oldData.idproductor == productor.id_productor ? 'selected' : '' %>><%= productor.nombre_productor %></option>
+                <% }) %>
+            </select>
+            <div class="error">
+                    <% if (locals.errors&& locals.errors.idproductor) { %>
+                        <%= locals.errors.idproductor.msg %>
+                        <% } %>
+                 </div>
             </div>
             <div class="form-group">
                 <label for="id_pais">País:</label>
                 <select id="id_pais" name="id_pais" required>
                     <option value="" disabled selected>Seleccione un país</option>
                     <% paises.forEach(function(pais) { %>
-                    <option value="<%= pais.id_pais %>"><%= pais.nombre_pais %></option>
+                        <option value="<%= pais.id_pais %>" <%= locals.oldData && locals.oldData.id_pais == pais.id_pais ? 'selected' : '' %> ><%= pais.nombre_pais %></option>
                     <% }) %>
                 </select>
+                <div class="error">
+                    <% if (locals.errors && locals.errors.id_pais) { %>
+                        <%= locals.errors.id_pais.msg %>
+                    <% } %>
+                </div>
+            
             </div>
             <div class="form-group">
                 <label for="region">Región:</label>
-                <input type="text" id="region" name="region">
+                <input type="text" id="region" name="region" value="<%= locals.oldData ? locals.oldData.region : '' %>">
+                <div class="error">
+                    <% if (locals.errors && locals.errors.region) { %>
+                        <%= locals.errors.region.msg %>
+                    <% } %>
+                </div>
+            
             </div>
             <div class="form-group">
                 <label for="altitud">Altitud:</label>
-                <input type="text" id="altitud" name="altitud">
+                <input type="text" id="altitud" name="altitud" value="<%= locals.oldData ? locals.oldData.altitud : '' %>">
+                <% if (locals.errors && locals.errors.altitud) { %>
+                    <%= locals.errors.altitud.msg %>
+                <% } %>
             </div>
             <div class="form-group">
                 <label for="procesamiento_natural">Procesamiento Natural:</label>
-                <input type="text" id="procesamiento_natural" name="procesamiento_natural">
+                <input type="text" id="procesamiento_natural" name="procesamiento_natural" value="<%= locals.oldData ? locals.oldData.procesamiento_natural : '' %>" >
+                <div class="error">
+                    <% if (locals.errors && locals.errors.procesamiento_natural) { %>
+                        <%= locals.errors.procesamiento_natural.msg %>
+                    <% } %>
+                </div>
             </div>
             <div class="form-group">
                 <label for="procesamiento_lavado">Procesamiento Lavado:</label>
-                <input type="text" id="procesamiento_lavado" name="procesamiento_lavado">
+                <input type="text" id="procesamiento_lavado" name="procesamiento_lavado" value="<%= locals.oldData ? locals.oldData.procesamiento_lavado : '' %>" >
+                <div class="error">
+                    <% if (locals.errors && locals.errors.procesamiento_lavado) { %>
+                        <%= locals.errors.procesamiento_lavado.msg %>
+                    <% } %>
+                </div>
             </div>
             <button type="submit" class="btn" id="btnCrearProducto">Agregar Producto</button>
         </form>
