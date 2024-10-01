@@ -5,15 +5,15 @@ const { register } = require("../controllers/userController");
 
 const registerValidator = [
     body('nombre')
-    .notEmpty().withMessage("El Nombre es Obligatorio.")
+    .notEmpty().withMessage("El Nombre es Obligatorio.").bail()
     .isLength({min: 2}).withMessage("El Nombre debe tener al Menos 2 caracteres."),
 
     body('apellido')
-    .notEmpty().withMessage("El Apellido es Obligatorio.")
+    .notEmpty().withMessage("El Apellido es Obligatorio.").bail()
     .isLength({min: 2}).withMessage("El Apellido debe tener al Menos 2 caracteres."),
 
     body('email')
-        .notEmpty().withMessage('El E-mail es Obligatorio.')
+        .notEmpty().withMessage('El E-mail es Obligatorio.').bail()
         .isEmail().withMessage('Debe proporcionar un Email Válido.')
         .custom(async (value) => {
             const user = await db.Usuarios.findOne({ where: { email: value } });
@@ -24,7 +24,7 @@ const registerValidator = [
         }),
 
     body('clave')
-        .notEmpty().withMessage('La contraseña es obligatoria.')
+        .notEmpty().withMessage('La contraseña es obligatoria.').bail()
         .isLength({ min: 8 }).withMessage('La contraseña debe tener al menos 8 caracteres.')
         .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#^()+\-_.:])[A-Za-z\d@$!%*?&#^()+\-_.:]{8,}$/)
         .withMessage('La contraseña debe incluir al menos una letra mayúscula, una minúscula, un número y un carácter especial.'),
