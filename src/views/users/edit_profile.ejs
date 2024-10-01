@@ -49,7 +49,7 @@
                       </tr>
                       <tr>
                         <td>Correo electrónico:</td>
-                        <td><input type="email" class="form-control input-sm" name="email" value="<%=user.email%>" ></td>
+                        <td><input type="email" class="form-control input-sm" name="email" value="<%=user.email%>" required></td>
                       </tr>
                       <tr>
                         <td>Teléfono:</td>
@@ -57,48 +57,66 @@
                       </tr>
                       <tr>
                         <td>DNI(sin puntos):</td>
-                        <td><input type="text" class="form-control input-sm" name="dni" value="<%=user.dni%>"></td>
+                        <td><input type="text" class="form-control input-sm" name="dni" value="<%=user.dni%>" required></td>
                       </tr>
                       <tr>
                         <td>Barrio:</td>
-                        <td><input type="text" class="form-control input-sm" name="barrio" value="<%=user.barrio%>"></td>
+                        <td><input type="text" class="form-control input-sm" name="barrio" value="<%=user.barrio%>" required></td>
                       </tr>
                       <tr>
                         <td>Calle:</td>
-                        <td><input type="text" class="form-control input-sm" name="calle" value="<%=user.calle%>"></td>
+                        <td><input type="text" class="form-control input-sm" name="calle" value="<%=user.calle%>" required></td>
                       </tr>
                       <tr>
                         <td>Número:</td>
-                        <td><input type="text" class="form-control input-sm" name="numero" value="<%=user.numero%>"></td>
+                        <td><input type="text" class="form-control input-sm" name="numero" value="<%=user.numero%>" required></td>
                       </tr>
                       <tr>
                         <td>Piso:</td>
-                        <td><input type="text" class="form-control input-sm" name="piso" value="<%=user.piso%>"></td>
+                        <td><input type="text" class="form-control input-sm" name="piso" value="<%=user.piso%>" required></td>
                       </tr>
                       <tr>
                         <td>Departamento:</td>
-                        <td><input type="text" class="form-control input-sm" name="departamento" value="<%=user.departamento%>"></td>
+                        <td>
+                          <select name="departamento" class="form-control input-sm">
+                            <% Departamentos.forEach(d => { %>
+                              <% if(d.id_departamento === user.departamento){%>
+                              <option value="<%=d.id_departamento%>" selected="selected"><%=d.nombre_dpto  %></option>
+                              <%}else{%>
+                                <option value="<%=d.id_departamento%>"><%=d.nombre_dpto  %></option>
+                               <%} %>
+                            <% }) %>
+                          </select>
+                        </td>
                       </tr>
                       <tr>
                         <th>Localidad</th>
                         <td>
-                          <input type="text" class="form-control" value="<%= user.localidad ? user.localidad.nombre_loc : 'Agregar Localidad' %>">
-
+                          <select name="localidad" class="form-control input-sm">
+                            <% Localidades.forEach(l => { %>
+                              <% if(l.id_localidad === user.id_localidad){%>
+                                <option value="<%=l.id_localidad%>" selected="selected"><%=l.nombre_loc  %></option>
+                              <%}else{%>
+                                <option value="<%=l.id_localidad%>"><%=l.nombre_loc  %></option>
+                               <%} %>
+                              
+                            <% }) %>
+                          </select>
                         </td>
                     </tr>
                       <tr>
                         <th>Estado</th>
                         <td>
-                            <input type="text" class="form-control" value="<%= user.rol ? user.rol.nombre_rol : 'No disponible' %>" disabled>
+                            <input type="text" class="form-control"  value="<%= user.rol ? user.rol.nombre_rol : 'No disponible' %>" disabled>
                         </td>
                     </tr>
                       <tr>
                         <td>CUIL/T:</td>
-                        <td><input type="text" class="form-control input-sm" name="cuil_t" value="<%=user.cuil_t%>"></td>
+                        <td><input type="text" class="form-control input-sm" name="cuil_t" value="<%=user.cuil_t%>" required></td>
                       </tr>
                       <tr>
                         <td>Clave:</td>
-                        <td><input type="password" class="form-control input-sm" name="clave" value=""></td>
+                        <td><input type="password" class="form-control input-sm" name="clave" value="" required></td>
                       </tr>
                    
                     </tbody>
@@ -106,12 +124,13 @@
                   
                   
                 </div>
-				<div class='col-md-12' id="resultados_ajax"></div><!-- Carga los datos ajax -->
+				      <div class='col-md-12' id="resultados_ajax"></div><!-- Carga los datos ajax -->
               </div>
             </div>
                  <div class="panel-footer text-center">
             <input type="hidden" name="id_usuario" value="<%=user.id_usuario%>">
-            <button type="submit" class="btn btn-sm btn-success" style="background-color: #823a6f; border: #823a6f;">
+            <input type="hidden" name="estado" value="1">
+            <button type="submit" class="btn btn-sm btn-success" style="background-color: #823a6f; border: #823a6f;" id="btnActualizarPerfil">
               <i class="glyphicon glyphicon-refresh"></i> Actualizar perfil
             </button>
           </div>
@@ -134,4 +153,6 @@
   </body>
 </html>
 <script type="text/javascript" src="js/bootstrap-filestyle.js"> </script>
+<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+<script src="/js/perfilValidator.js"></script>
 <script>

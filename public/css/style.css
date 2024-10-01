@@ -254,3 +254,27 @@ h4 {
 @media (max-width: 714px){
     
 }
+
+/*para el color de errores*/
+.error{
+    color:white;
+    background-color: red;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.error-message {
+    color: red; 
+    font-size: 14px;
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    white-space: normal; 
+    margin-top: 4px;
+    height: 20px; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.error-message.visible {
+    opacity: 1;
+}

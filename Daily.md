@@ -1414,14 +1414,14 @@ sin impedimentos
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
+ - no hubo actividades, mas que controlar codigo
 **Impedimentos**         
- - 
+ - ninguno
 **Qué va a hacer hoy**  
- - 
+ - comenzar a ver sobre js para efectuar próximamente los cambios en validaciones
 
 **Soluciones Propuestas**
- - 
+ - investigar, leer playground
 
  ## Fecha: 01/10/2024
 

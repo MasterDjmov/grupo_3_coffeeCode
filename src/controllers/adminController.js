@@ -6,6 +6,9 @@ const session = require('express-session');
 //agregamos la parte de sequelize
 const db = require('../database/models/index.js');
 const { Association, where } = require('sequelize');
+const { emit } = require('process');
+const { error } = require('console');
+const { validationResult } = require('express-validator');
 
 const adminController = {
     //formulario con GET
@@ -137,6 +140,12 @@ const adminController = {
                 const tiposCafes = await db.TiposCafes.findAll();
                 const unidades = await db.UnidadesDeMedidas.findAll();
                 const productores = await db.Productores.findAll();
+
+                const oldData = req.session.oldData || {}; 
+                const errors = req.session.errors || {};
+
+                req.session.oldData = null;
+                req.session.errors = null;
     
                 res.render('admin/registerProduct', {
                     paises,
@@ -144,7 +153,9 @@ const adminController = {
                     unidades,
                     productores,
                     msg: "",
-                    user: req.session.user 
+                    user: req.session.user,
+                    oldData,
+                    errors
                 });
             } catch (error) {
                 console.error("Error cargar el fomulario:", error);
@@ -156,6 +167,30 @@ const adminController = {
     },
     registerProduct: async (req, res) => {
         try {
+
+            const errors = validationResult(req);
+        if (!errors.isEmpty() || req.fileValidationErrors) {
+            const tiposCafes = await db.TiposCafes.findAll();
+            const unidades = await db.UnidadesDeMedidas.findAll();
+            const paises = await db.Paises.findAll();
+            const productores = await db.Productores.findAll();
+
+            res.locals.oldData = req.body; 
+            res.locals.errors = errors.mapped();
+            
+            return res.render('admin/registerProduct', {
+                fileErrors: req.fileValidationErrors,
+                tiposCafes,
+                unidades,
+                paises,
+                productores,
+                rol: req.session.user,
+                msg: ""
+            });
+        }
+
+
+
             const {
                 nombre_producto,
                 descripcion_corta,
@@ -205,6 +240,8 @@ const adminController = {
             const unidades = await db.UnidadesDeMedidas.findAll();
             const paises = await db.Paises.findAll();
             const productores = await db.Productores.findAll();
+
+            
     
             res.render('admin/registerProduct', {
                 msg: "Producto registrado exitosamente",
@@ -212,13 +249,15 @@ const adminController = {
                 unidades,
                 paises,
                 productores,
-                rol: req.session.user
+                rol: req.session.user,
+                oldData: {}
             });
         } catch (error) {
             console.error("Error al registrar el producto:", error);
             res.render('admin/registerProduct', {  
                 msg: "Error al registrar el producto",
-                rol: req.session.user  
+                rol: req.session.user,
+                oldData: req.body
             });
         }
     },

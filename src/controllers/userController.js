@@ -10,51 +10,74 @@ const bcrypt = require('bcrypt');
 const db = require('../database/models/index.js');
 const { Association, where } = require('sequelize');
 const { emit } = require('process');
+const { error } = require('console');
+const { validationResult } = require('express-validator');
 
 const userController = {
     //muestro formulario de login
     formLogin: (req, res) => {      
         const msg = "";
       
-        res.render('users/login', { msg, user:req.session.user || null});
+        res.render('users/login', {
+            msg, user:req.session.user || null,
+            oldData:null,
+            errors:null
+    });
   },
       // valido el login
       login: async (req, res) => {
-        try {
-            
-            const user = await db.Usuarios.findOne({
-              where: {email:req.body.email}
-            });
-    
-            if (user) {
-                // Compara la clave ingresada con la clave encriptada almacenada
-                const claveValida = await bcrypt.compare(req.body.clave, user.clave);
-    
-                if (claveValida) {
-                    req.session.user = user;
-                    res.redirect('/?log=1');
+        // Verifica si hay errores
+        const errors = validationResult(req);
+        if (errors.isEmpty()) {
+           
+            try {
+                const user = await db.Usuarios.findOne({
+                    where: { email: req.body.email }
+                });
+        
+                if (user) {
+                    // Compara la clave ingresada con la clave encriptada almacenada
+                    const claveValida = await bcrypt.compare(req.body.clave, user.clave);
+        
+                    if (claveValida) {
+                        req.session.user = user;
+                        return res.redirect('/?log=1');
+                    } else {
+                        return res.render('users/login', {
+                            msg: "Error! La clave es incorrecta",
+                            'rol': "No Log",
+                            oldData: req.body
+                        });
+                    }
                 } else {
-                    const msg = "Error! La clave es incorrecta";
-                    res.render('users/login', {
-                        msg,
-                        'rol': "No Log"
+                    return res.render('users/login', {
+                        msg: "Error! El usuario no fue encontrado",
+                        'rol': "No Log",
+                        oldData: req.body
                     });
                 }
-            } else {
-                const msg = "Error! El usuario no fue encontrado";
-                res.render('users/login', {
-                    msg,
-                    'rol': "No Log"
+            } catch (err) {
+                console.error("Error en el proceso de login:", err);
+                return res.status(500).render('users/login', {
+                    msg: "Error en el proceso de login",
+                    'rol': "No Log",
+                    oldData: req.body
                 });
             }
-        } catch (err) {
-            console.error("Error en el proceso de login:", err);
-            res.status(500).render('users/login', {
-                msg: "Error en el proceso de login",
-                'rol': "No Log"
+        }else{
+            const msg = "";
+            //console.log(errors.array())
+            return res.render('users/login', {
+                msg, user:req.session.user || null,
+                errors: errors.mapped(), 
+                oldData: req.body 
             });
         }
+    
+        
+
     },
+    
     
     register: (req, res) => {
         //res.sendFile(path.resolve(__dirname,'../views/users/register.html'));
@@ -64,49 +87,89 @@ const userController = {
         });
     },
     create: async (req, res) => {
-      const msg="";
-      const imagen=req.originalFileName;
-      let {nombre, apellido, email, telefono, dni, calle, numero, piso, departamento, barrio, cuil_t, clave }=req.body;
-       
-     
-      const compresion = 10;
-      
-       
-       const hashedClave = await bcrypt.hash(clave, compresion);
-       try {
-        await db.Usuarios.create({
-          nombre,
-          apellido,
-          email,
-          telefono,
-          dni,                       
-          calle,                     
-          numero,                    
-          piso,                      
-          departamento,              
-          barrio,                    
-          cuil_t,                    
-          clave: hashedClave,         
-          imagen_perfil: 'avatar-mini2.jpg',  
-          id_rol: 2,                 // Rol cliente
-          id_estado: 1,             // Estado activo       
-        });
-
-        res.render('users/login', { msg: "Registro Exitoso" });
-    } catch (error) {
-        console.error("Error al crear el usuario:", error);
-        res.status(500).render('users/register', { msg: "Error al crear el usuario" });
-    }
-},
+        const errors = validationResult(req);
+        const msg = "";
+    
+        if (!errors.isEmpty()) {
+            return res.render('users/register', {
+                msg,
+                errors: errors.mapped(), 
+                oldData: req.body
+            });
+        }
+    
+        const { nombre, apellido, email, telefono, dni, calle, numero, piso, departamento, barrio, cuil_t, clave } = req.body;
+        const compresion = 10;
+        const hashedClave = await bcrypt.hash(clave, compresion);
+    
+        try {
+            await db.Usuarios.create({
+                nombre,
+                apellido,
+                email,
+                telefono,
+                dni,
+                calle,
+                numero,
+                piso,
+                departamento,
+                barrio,
+                cuil_t,
+                clave: hashedClave,
+                imagen_perfil: 'avatar-mini2.jpg',
+                id_rol: 2, // Rol cliente
+                id_estado: 1, // Estado activo       
+            });
+    
+            res.render('users/login', {
+                msg: "Registro Exitoso",
+                oldData: null,
+                errors: null
+            });
+        } catch (error) {
+            console.error("Error al crear el usuario:", error);
+            res.status(500).render('users/register', {
+                msg: "Error al crear el usuario",
+                oldData: req.body, 
+                errors: {}
+            });
+        }
+    },
     recuperarClave: (req, res) => {
        // res.sendFile(path.resolve(__dirname,'../views/users/recuperarClave.html'));
        res.render('users/recuperarClave');
     },
+    controlEmail: async (req, res) => {
+        const { email } = req.query;
+      
+        try {
+          const user = await db.Usuarios.findOne(
+            { 
+                where: {
+                     email 
+                    } 
+            });
+          if (user) {
+            console.log("existe el correo")
+            return res.status(409).send('Email ya registrado');
+          }else{
+            console.log("no existe el correo")
+            return res.status(200).send('Email disponible');
+          }
+        } catch (error) {
+            console.error(error);
+            return res.status(500).send('Error del servidor');
+        }
+      },
     formProfile: async (req, res) => {
       if (req.session.user) {
           const user = req.session.user;
   
-          
+        // Ejecutar las consultas de Departamentos y Localidades simultáneamente
+        const [Departamentos, Localidades] = await Promise.all([
+            db.Departamentos.findAll(),
+            db.Localidades.findAll()
+        ]);
           const usuario = await db.Usuarios.findOne({
               where: { id_usuario: user.id_usuario }, 
               include: [
@@ -121,7 +184,9 @@ const userController = {
   
           res.render('users/edit_profile', {
               msg: "",
-              user: usuario 
+              user: usuario,
+              Departamentos,
+              Localidades
           });
           //console.log(usuario);
       } else {
@@ -130,8 +195,8 @@ const userController = {
   },
     updateProfile: async (req, res) => {      
      const { id_usuario, nombre, dni,apellido, email, telefono, barrio, calle, numero, piso, departamento, 
-      id_localidad, id_estado, cuil_t, clave } = req.body;
-      
+      localidad, id_estado, cuil_t, clave,estado } = req.body;
+      //res.json(req.body)
      
       try {
         
@@ -152,8 +217,8 @@ const userController = {
             numero,
             piso,
             departamento,
-            id_localidad,
-            id_estado,
+            id_localidad:localidad,
+            id_estado:estado,
             cuil_t
         };
 
@@ -169,7 +234,11 @@ const userController = {
         await usuario.update(updatedData);
 
         
-        res.render('users/login', { msg: "Perfil actualizado correctamente" });
+        res.render('users/login', { 
+            msg: "Perfil actualizado correctamente",
+            oldData:null,
+            errors:null
+        });
     } catch (error) {
         console.error("Error al actualizar el perfil:", error);
         res.status(500).send("Error al actualizar el perfil");

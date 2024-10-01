@@ -19,22 +19,33 @@
 
      <h2>INICIAR SESIÓN</h2>
        
-        <form class="estilo-form" action="/user/login" method="post">
-            <div class="bloque">
-            <label  class="estilo-label" for="Email">E-mail</label>
-                <br>
-            <input type="text" name="email" placeholder="email" required>
-            </div>
-            <div class="bloque">
-            <label class="estilo-label" for="clave"> Contraseña</label>
-               <br>
-                <input type="password" name="clave" id="pass1" placeholder="Elige tu contraseña" required>
-            </div>
-            <a href="/user/clave">¿Olvidaste tu contraseña?</a> 
-            <br/>
-            <button type="submit" class="boton">INICIAR SESIÓN</button>
-            <p>¿No tenes una cuenta aún?</p>  <a href="/user/register">Registrate aquí</a>
-        </form>
+      <form class="estilo-form" action="/user/login" method="post">
+          <div class="bloque">
+              <label class="estilo-label" for="Email">E-mail</label>
+              <br>
+              <input type="text" name="email" placeholder="email" value="<%= oldData ? oldData.email : '' %>" required>
+              <% if (locals.errors && locals.errors.email) { %>
+                  <div class="error"><%= locals.errors.email.msg %></div>
+              <% } %>
+          </div>
+        
+          <div class="bloque">
+              <label class="estilo-label" for="clave">Contraseña</label>
+              <br>
+              <input type="password" name="clave" id="pass1" placeholder="Elige tu contraseña" required>
+              <% if (locals.errors && locals.errors.clave) { %>
+                  <div class="error"><%= locals.errors.clave.msg %></div>
+              <% } %>
+          </div>
+        
+          <a href="/user/clave">¿Olvidaste tu contraseña?</a>
+          <br/>
+          <button type="submit" class="boton">INICIAR SESIÓN</button>
+          <p>¿No tenes una cuenta aún?</p>
+          <a href="/user/register">Registrate aquí</a>
+      </form>
+  
+  
         <br>
         <div class="container">
             <a href="#">
