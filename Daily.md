@@ -1442,16 +1442,18 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Validaciones por backend registro de usuario.
+ - Validaciones por backend Creación de producto.
 
 **Impedimentos**         
- - 
+ - ninguno
 
 **Qué va a hacer hoy**  
- - 
+ - Revision de codigo.
+ - Revision de estilos.
 
 **Soluciones Propuestas**
- - 
+ - ver como mejorar los estilos en las vistas de los formularios
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
