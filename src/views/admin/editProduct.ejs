@@ -14,36 +14,53 @@
         <form action="/admin/edit/<%= cafe.id_producto %>?_method=PUT" method="post" enctype="multipart/form-data" id="form-editar-producto">
             <div class="form-group">
                 <label for="nombre_producto">Nombre del Producto</label>
-                <input type="text" id="nombre_producto" name="nombre_producto" value="<%= cafe.nombre_producto %>" required>
+                <input type="text" id="nombre_producto" name="nombre_producto" value="<%= oldData.nombre_producto || cafe.nombre_producto %>"    >
+                <% if (errors.nombre_producto) { %>
+                    <div class="error"><%= errors.nombre_producto.msg %></div>
+                <% } %>
             </div>
             <div class="form-group">
                 <label for="descripcion_corta">Fabricado en</label>
-                <input type="text" id="descripcion_corta" name="descripcion_corta" value="<%= cafe.descripcion_corta %>" required>
+                <input type="text" id="descripcion_corta" name="descripcion_corta" value="<%= oldData.descripcion_corta || cafe.descripcion_corta %>" >
+                <% if (errors.descripcion_corta) { %>
+                    <div class="error"><%= errors.descripcion_corta.msg %></div>
+                <% } %>
             </div>
             <div class="form-group">
                 <label for="descripcion_larga">Descripción</label>              
-                <textarea id="descripcion_larga" name="descripcion_larga" rows="6" required ><%= cafe.descripcion_larga %></textarea>
+                <textarea id="descripcion_larga" name="descripcion_larga" rows="6"     ><%= oldData.descripcion_larga || cafe.descripcion_larga %></textarea>
+                <% if(errors.descripcion_larga) {%>
+                    <div class="error"><%= errors.descripcion_larga.msg %></div>
+                    <% } %>
             </div>
             <div class="form-group">
                 <label for="precio">Precio</label>
                 <div style="display: flex;align-items: center; background-color: white; ">
-                     $<input type="number" id="precio" name="precio" step="0.01" value="<%= cafe.precio %>" required style="border: none;" >
+                     $<input type="number" id="precio" name="precio" step="0.01" value="<%= oldData.precio || cafe.precio %>"     style="border: none;" >
+                     <% if (errors.precio) { %>
+                        <div class="error"><%= errors.precio.msg %></div>
+                    <% } %>
                 </div>
             </div>
             <div class="form-group">
                 <label for="idunidad_medida">Unidad de Medida:</label>
     <select id="idunidad_medida" name="idunidad_medida">
         <% unidadesMedida.forEach(function(unidad) { %>
-            <option value="<%= unidad.id_unidad_medida %>" <%= cafe.id_unidad_medida === unidad.id_unidad_medida ? 'selected' : '' %>>
+            <option value="<%= unidad.id_unidad_medida %>" <%= (oldData.idunidad_medida == unidad.id_unidad_medida || cafe.idunidad_medida == unidad.id_unidad_medida) ? 'selected' : '' %>>
                 <%= unidad.nombre_medida %>
             </option>
         <% }); %>
     </select>
+    <% if (errors.idunidad_medida) { %>
+        <div class="error"><%= errors.idunidad_medida.msg %></div>
+    <% } %>
             </div>
             <div class="form-group">
                 <label for="cantidad">Cantidad disponible:</label>
-    <input type="number" id="cantidad" name="cantidad" value="<%= cafe.cantidad %>">
-
+    <input type="number" id="cantidad" name="cantidad" value="<%= oldData.cantidad || cafe.cantidad %>">
+    <% if (errors.cantidad) { %>
+        <div class="error"><%= errors.cantidad.msg %></div>
+    <% } %>
             </div>
             <div class="form-group">
                 <label for="imagen_principal">Cargar Imagen del Producto:</label>
@@ -59,37 +76,55 @@
                 <label for="idproductor">Productor:</label>
     <select id="idproductor" name="idproductor">
         <% productores.forEach(function(productor) { %>
-            <option value="<%= productor.id_productor %>" <%= cafe.id_productor === productor.id_productor ? 'selected' : '' %>>
+            <option value="<%= productor.id_productor %>" <%= (oldData.idproductor == productor.id || cafe.idproductor == productor.id) ? 'selected' : '' %>>
                 <%= productor.nombre_productor %>
             </option>
         <% }); %>
     </select>
+    <% if (errors.idproductor) { %>
+        <div class="error"><%= errors.idproductor.msg %></div>
+    <% } %>
             </div>
             <div class="form-group">
                 <label for="id_pais">País:</label>
                 <select id="id_pais" name="id_pais">
                     <% paises.forEach(function(pais) { %>
-                        <option value="<%= pais.id_pais %>" <%= cafe.id_pais === pais.id_pais ? 'selected' : '' %>>
+                        <option value="<%= pais.id_pais %>" <%= (oldData.id_pais == pais.id || cafe.id_pais == pais.id) ? 'selected' : '' %>>
                             <%= pais.nombre_pais %>
                         </option>
                     <% }); %>
-                </select> 
+                </select>
+                <% if (errors.id_pais) { %>
+                    <div class="error"><%= errors.id_pais.msg %></div>
+                <% } %> 
             </div>
             <div class="form-group">
                 <label for="region">Región</label>
-                <input type="text" id="region" name="region" value="<%= cafe.region %>" >
+                <input type="text" id="region" name="region" value="<%= oldData.region || cafe.region %>" >
+                <% if (errors.region) { %>
+                    <div class="error"><%= errors.region.msg %></div>
+                <% } %>
             </div>
             <div class="form-group">
                 <label for="altitud">Altitud</label>
-                <input type="text" id="altitud" name="altitud" value="<%= cafe.altitud %>" >
+                <input type="text" id="altitud" name="altitud" value="<%= oldData.altitud || cafe.altitud %>" >
+                <% if (errors.altitud) { %>
+                    <div class="error"><%= errors.altitud.msg %></div>
+                <% } %>
             </div>
             <div class="form-group">
                 <label for="procesamiento_natural">Procesamiento Natural</label>
-                <input type="text" id="procesamiento_natural" name="procesamiento_natural" value="<%= cafe.procesamiento_natural %>" >
+                <input type="text" id="procesamiento_natural" name="procesamiento_natural" value="<%= oldData.procesamiento_natural ||cafe.procesamiento_natural %>" >
+                <% if(errors.procesamiento_natural) { %>
+                    <div class="error"> <%= errors.procesamiento_natural.msg %></div>
+                    <% } %>
             </div>
             <div class="form-group">
                 <label for="procesamiento_lavado">Procesamiento Lavado</label>
-                <input type="text" id="procesamiento_lavado" name="procesamiento_lavado" value="<%= cafe.procesamiento_lavado %>" >
+                <input type="text" id="procesamiento_lavado" name="procesamiento_lavado" value="<%= oldData.procesamiento_lavado || cafe.procesamiento_lavado %>" >
+                <% if(errors.procesamiento_lavado) {%>
+                    <div class="error"> <%= errors.procesamiento_lavado %></div>
+                    <% } %>
             </div>
             <div class="form-group">
                 <input type="hidden" name="id_producto" value="<%= cafe.id_producto %>">
