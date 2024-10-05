@@ -106,11 +106,18 @@ main{
         cursor: pointer;
         padding: 5px;
         right: 30px;
+        color: #000;
+        opacity: 0.7;
+        transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
     }
     #pass-icon-delete {
         right: 10px;
     }
-    
+    #pass-ojo-abierto:hover, #pass-ojo-cerrado:hover, #pass-icon-delete:hover{
+        color: #823a6f; 
+        transform: scale(1.2);
+        opacity: 1;
+    }
     
     .bloque > input{
         width: 200px;
