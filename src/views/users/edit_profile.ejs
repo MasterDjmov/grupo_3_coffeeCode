@@ -116,7 +116,12 @@
                       </tr>
                       <tr>
                         <td>Clave:</td>
-                        <td><input type="password" class="form-control input-sm" name="clave" value="" required></td>
+                        <td>
+                          <input type="password" class="form-control input-sm" id="pass1" name="clave" value="" required>
+                          <i id="pass-ojo-abierto" onclick="cambiarPassword()" class="fa-regular fa-eye" style="color: #000000; margin: 5px; cursor: pointer;" title="Ver contraseña"></i>
+                          <i id="pass-ojo-cerrado" onclick="cambiarPassword()" class="fa-regular fa-eye-slash" style="color: #000000; display: none; margin: 5px; cursor: pointer;" title="Ocultar Contraseña"></i>
+                          <i id="pass-icon-delete" onclick="borrar()" class="fa-regular fa-trash-can" title="Borrar contraseña" style="color: #000000; width: 30px; margin: 5px; cursor: pointer;"></i>
+                        </td>
                       </tr>
                    
                     </tbody>
@@ -152,6 +157,7 @@
 	
   </body>
 </html>
+<script src="/js/cambiarPassword.js"></script>
 <script type="text/javascript" src="js/bootstrap-filestyle.js"> </script>
 <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
 <script src="/js/perfilValidator.js"></script>

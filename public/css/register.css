@@ -63,6 +63,33 @@ main{
         width: 200px;
         padding: 5px;
     }
+
+    .bloque{
+        padding-top: 5px;
+        font-weight: bold;
+        position: relative;
+    }
+    .password {
+        width: 100%; 
+        padding-right: 60px; 
+        box-sizing: border-box;
+    }
+    #pass-ojo-abierto, #pass-ojo-cerrado, #pass-icon-delete {
+        position: absolute;
+         cursor: pointer;
+         padding: 5px;
+         right: 30px;
+     }
+     #pass-icon-delete {
+         right: 10px;
+     }
+     #pass-ojo-abierto1, #pass-ojo-cerrado1 {
+        position: absolute;
+        cursor: pointer;
+        padding: 5px;
+        right: 30px;
+    }
+     
     p{
         text-align: center;
         padding-top: 20px;

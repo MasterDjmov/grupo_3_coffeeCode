@@ -49,7 +49,11 @@
             </div>
             <div class="bloque">
                 <label class="estilo-label" for="contraseña">Contraseña<br></label>
-                <input type="password" name="clave" id="pass1" placeholder="Elige tu contraseña"      >
+                <input type="password" name="clave" id="pass1" class="password" placeholder="Elige tu contraseña">
+                <i id="pass-ojo-abierto" onclick="cambiarPassword()" class="fa-regular fa-eye" style="color: #000000;" title="Ver contraseña"></i>
+                <i id="pass-ojo-cerrado" onclick="cambiarPassword()" class="fa-regular fa-eye-slash" style="color: #000000; display: none;" title="Ocultar Contraseña"></i>
+                <i id="pass-icon-delete" onclick="borrar()" class="fa-regular fa-trash-can" title="Borrar contraseña" style="color: #000000;"></i>
+                
                 <div class="error" id="pass1Error">
                     <% if (locals.errors && locals.errors.clave) { %>
                         <%= locals.errors.clave.msg %>
@@ -58,7 +62,10 @@
             </div>
             <div class="bloque">
                 <label class="estilo-label" for="contraseña">Repita la Contraseña<br></label>
-                <input type="password" name="clave2" id="pass2" placeholder="Elige tu contraseña"      >
+                <input type="password" name="clave2" class="password" id="pass2" placeholder="Repite tu contraseña">
+                <i id="pass-ojo-abierto1" onclick="cambiarPassword2()" class="fa-regular fa-eye" style="color: #000000;" title="Ver contraseña"></i>
+                <i id="pass-ojo-cerrado1" onclick="cambiarPassword2()" class="fa-regular fa-eye-slash" style="color: #000000; display: none;" title="Ocultar Contraseña"></i>
+                <i id="pass-icon-delete" onclick="borrar2()" class="fa-regular fa-trash-can" title="Borra contraseña" style="color: #000000;"></i>
                 <div class="error" id="pass2Error"></div>
             </div>
             <button class="boton" type="submit" name="btnRegistrar" id="btnRegistrar">CREAR CUENTA</button>
@@ -69,6 +76,7 @@
 
     </main>
     <%- include('../partials/footer.ejs') %>
+    <script src="/js/cambiarPassword.js"></script>
     <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="/js/registerValidate.js"></script>
     <script src="/js/coffecode.js"></script>

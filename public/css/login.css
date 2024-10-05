@@ -1,7 +1,7 @@
 main{
     
     font-family: "Zain", sans-serif;
-    font-weight: 800;
+    font-weight: 400;
     font-style: normal;
     font-size: 1.2rem;
 
@@ -88,18 +88,39 @@ main{
     }
     
     .estilo-label{
-        font-family: Helvetica;
+        font-family: "Zain", sans-serif;
     }
 
     .bloque{
         padding-top: 5px;
         font-weight: bold;
+        position: relative;
     }
+    .password {
+        width: 100%; 
+        padding-right: 60px; 
+        box-sizing: border-box;
+    }
+    #pass-ojo-abierto, #pass-ojo-cerrado, #pass-icon-delete {
+       position: absolute;
+        cursor: pointer;
+        padding: 5px;
+        right: 30px;
+    }
+    #pass-icon-delete {
+        right: 10px;
+    }
+    
     
     .bloque > input{
         width: 200px;
         padding: 5px;
+        
     }
+
+
+    
+
     p{
         text-align: center;
         padding: 20px;
