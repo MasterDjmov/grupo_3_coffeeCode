@@ -1491,14 +1491,14 @@ sin impedimentos
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
+ - no hubo actividades, mas que controlar codigo
 **Impedimentos**         
- - 
+ - ninguno
 **Qué va a hacer hoy**  
- - 
+ - comenzar a ver el playground sobre REACT y sus componentes, suena interesante
 
 **Soluciones Propuestas**
- - 
+ - investigar, leer playground sobre REACT
 
  ## Fecha: 03/10/2024
 
@@ -1566,15 +1566,14 @@ sin impedimentos
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
+ - no hubo actividades por ahora, las tareas de validacion terminaron
 **Impedimentos**         
- - 
+ - ninguno
 **Qué va a hacer hoy**  
- - 
+ - Seguimos viendo lo de React y como funciona, también como usar VITE
 
 **Soluciones Propuestas**
- - 
-
+ - investigar, leer playground
  ## Fecha: 08/10/2024
 
 ## Resumen de Tareas

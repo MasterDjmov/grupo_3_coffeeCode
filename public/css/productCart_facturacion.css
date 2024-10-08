@@ -55,8 +55,7 @@
  }
  /* ---------*/
  
- .cart-panel {
-   
+ .cart-panel1 {
     height: 100%;
     width: 100%;
     background: #a99ac4;
@@ -64,6 +63,7 @@
     margin: 0 auto;
     font-size: 18px;
     font-family:"Zain", sans-serif;
+    border: 1px solid red;
  }
  .titulos {
    display: flex;
@@ -145,10 +145,12 @@
 }
 .btn-actualizar {
     display: inline-block;      
-    padding: 10px 20px;         
+    padding-top: 5px;    
+    padding-bottom: 20px;     
     background-color: #823A6F;  
     color: white;             
-    opacity: 0,9;
+    opacity: 0.9;
+    width: 20%;
     cursor: pointer;
     text-align: center;        
     text-decoration: none;      
@@ -156,6 +158,8 @@
     font-size: 16px;           
     font-weight: bold;         
     transition: background-color 0.3s ease; 
+    border: 1px solid white
+    ;
 }
 
 .btn-actualizar:hover {
@@ -185,7 +189,14 @@
    font-size: 0.7rem;
    width: 95%;
 }
+input {
+   margin-left: auto;
+   width: 80%;
 
+}
+#inputCCV {
+   width: 20%;
+}
 .envio label {
    padding-left: 5px;
    font-size: 1.2rem;

@@ -3,7 +3,7 @@
 </head>
 <body>
    <%- include('../partials/header.ejs')%>
-   <main class="cart-panel">
+   <main class="cart-panel1">
       <div style="border:1px solid white;">
          <p style="font-size: 18px;">SELECCIONA MEDIO DE PAGO</P>
          <select Medios de pago="select">
@@ -33,28 +33,20 @@
                         <select name="mes" id="selectMes">
                            <option disabled selected>Mes</option>
                         </select>
-                        <i class="fas fa-angle-down"></i>
-                     </div>
-                     <div class="grupo-select">
                         <select name="year" id="selectYear">
                            <option disabled selected>Año</option>
                         </select>
-                        <i class="fas fa-angle-down"></i>
+                           <label for="inputCCV">CCV</label>
+                           <input type="text" id="inputCCV" maxlength="3">
                      </div>
                   </div>
                </div>
-               <button type="reset">Cancelar</button>
-               <button type="submit">Enviar</button>
-               <div class="grupo ccv">
-                  <label for="inputCCV">CCV</label>
-                  <input type="text" id="inputCCV" maxlength="3">
-               </div>
-            </div>
+            <button type="reset">Cancelar</button>
+            <button type="submit">Enviar</button>
       </div>
-      </form>         
-      </form>       
-         <label>ENVIO</label>  
+      <form action="medios-de-envio" method="get" class="envio">    
          <div class="envio">
+            <label>ENVIO</label>  
             <div style="border:1px solid white;">
                <p style="font-size: 18px;">SELECCIONA MEDIO DE ENVIO</P>
                <select Medios de envio="select">
@@ -64,19 +56,19 @@
                   <option value="3">Correo Argentino</option>
                </select>
             </div>
-            </div>
-            <br
-        <a href="/products/edit" class="btn-actualizar">FINALIZAR COMPRA</a>                   
-     </div>
-      <br>      <div class="cart-total">
+         </div>
+         <br>    
+      <div class="cart-total">
          <h5>TOTAL DEL CARRITO: </h5>
          <div class="subtotal">
             <p>Subtotal</p>
             <span> $128.400,00</span>
          </div>
+         <br>
+         <a class="btn-actualizar" href="/products/edit" >FINALIZAR COMPRA</a>                   
+      </div>
    </main>
    <%- include('../partials/footer.ejs') %>
    <script src="/js/coffecode.js"></script>
-
 </body>
 </html>
