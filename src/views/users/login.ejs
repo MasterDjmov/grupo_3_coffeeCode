@@ -19,28 +19,31 @@
 
      <h2>INICIAR SESIÓN</h2>
        
-      <form class="estilo-form" action="/user/login" method="post">
+      <form  class="estilo-form" action="/user/login" id="login" method="post">
           <div class="bloque">
               <label class="estilo-label" for="Email">E-mail</label>
               <br>
-              <input type="text" name="email" placeholder="email" value="<%= oldData ? oldData.email : '' %>" required>
+              <input type="text" name="email" id="email" placeholder="email" value="<%= oldData ? oldData.email : '' %>"       >
               <% if (locals.errors && locals.errors.email) { %>
-                  <div class="error"><%= locals.errors.email.msg %></div>
+                  <div class="error" id="emailError"><%= locals.errors.email.msg %></div>
               <% } %>
           </div>
         
           <div class="bloque">
               <label class="estilo-label" for="clave">Contraseña</label>
               <br>
-              <input type="password" name="clave" id="pass1" placeholder="Elige tu contraseña" required>
-              <% if (locals.errors && locals.errors.clave) { %>
-                  <div class="error"><%= locals.errors.clave.msg %></div>
-              <% } %>
+                <input type="password" name="clave" id="pass1" class="password" placeholder="Elige tu contraseña">
+                <i id="pass-ojo-abierto" onclick="cambiarPassword()" class="fa-regular fa-eye"  title="Ver contraseña"></i>
+                <i id="pass-ojo-cerrado" onclick="cambiarPassword()" class="fa-regular fa-eye-slash" style=" display: none;" title="Ocultar Contraseña"></i>
+                <i id="pass-icon-delete" onclick="borrar()" class="fa-regular fa-trash-can" title="Borrar Contraseña" ></i>
+                <% if (locals.errors && locals.errors.clave) { %>
+                    <div class="error" id="pass1"><%= locals.errors.clave.msg %></div>
+                <% } %>
           </div>
         
           <a href="/user/clave">¿Olvidaste tu contraseña?</a>
-          <br/>
-          <button type="submit" class="boton">INICIAR SESIÓN</button>
+          <br>
+          <button type="submit" class="boton" id="btnlogin">INICIAR SESIÓN</button>
           <p>¿No tenes una cuenta aún?</p>
           <a href="/user/register">Registrate aquí</a>
       </form>
@@ -64,7 +67,10 @@
     </main>
     
     <%- include('../partials/footer.ejs') %>
-    
+    <script src="/js/cambiarPassword.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="/js/loginValidate.js"></script>
+    <script src="/js/coffecode.js"></script>
 
     </body>
 </html>

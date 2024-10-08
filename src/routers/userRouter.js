@@ -18,4 +18,5 @@ router.post('/profile', fileProfile.single('imagefile'), userController.updatePr
 
 //funcion para controlar si existe el email de un usuario
 router.get('/control_email', userController.controlEmail);
+
 module.exports = router;

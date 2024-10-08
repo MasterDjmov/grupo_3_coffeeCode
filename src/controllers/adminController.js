@@ -44,7 +44,9 @@ const adminController = {
                 paises,
                 productores,
                 msg: "",
-                rol: req.session.user 
+                rol: req.session.user,
+                errors: {},
+                oldData: {}
             });
         } catch (error) {
             console.error("Error al cargar el producto:", error);
@@ -67,6 +69,39 @@ const adminController = {
             procesamiento_lavado,
             altitud
         } = req.body;
+
+        const errors = validationResult(req);
+
+        if (!errors.isEmpty()) {
+            // Si hay errores, obtenemos nuevamente los datos del producto y las listas de opciones
+            const id = req.params.id;
+            const cafe = await db.Productos.findByPk(id, {
+                include: [
+                    { association: 'pais' },
+                    { association: 'tipocafe' },
+                    { association: 'unidad_de_medida' },
+                    { association: 'productor' }
+                ]
+            });
+    
+            const tiposCafes = await db.TiposCafes.findAll();
+            const unidadesMedida = await db.UnidadesDeMedidas.findAll();
+            const paises = await db.Paises.findAll();
+            const productores = await db.Productores.findAll();
+    
+            
+            return res.render('admin/editProduct', {
+                cafe,
+                tiposCafes,
+                unidadesMedida,
+                paises,
+                productores,
+                errors: errors.mapped(),  
+                oldData: req.body,          
+                msg: "",                    
+                rol: req.session.user
+            });
+        }
     
         try {
             const id = req.params.id;
@@ -119,12 +154,14 @@ const adminController = {
 
             console.log("Producto actualizado correctamente");
 
-            res.render('admin/editProduct', { cafe: updatedCafe, unidadesMedida, productores,paises ,msg: 'Edición exitosa' });
+            res.render('admin/editProduct', { cafe: updatedCafe, unidadesMedida, productores,paises ,msg: 'Edición exitosa', errors: {}, oldData: {} });
         } catch (error) {
             console.error("Error al actualizar el producto:", error);
              res.render('admin/editProduct', {
                 msg: "Error al actualizar el producto",
                 rol: "",
+                errors: {},
+                oldData: req.body
             });
         }
     },

@@ -28,7 +28,11 @@ const fileFilter = (req, file, cb) => {
     if (mimetype && extname) {
         return cb(null, true);
     }
-    cb(new Error('Solo se permiten archivos de imagen (jpeg, jpg, png, gif)'));
+    if (!req.fileValidationErrors) {
+        req.fileValidationErrors = {};
+    }
+    req.fileValidationErrors[file.fieldname] = 'Solo se permiten archivos de imagen (jpeg, jpg, png, gif)';
+    cb(null, false);
 };
 
 
