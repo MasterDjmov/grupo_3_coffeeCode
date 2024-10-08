@@ -1398,15 +1398,17 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
+ -  Revisión de los temas del sprint
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Crear la retrospectiva
+ - Armado del tablero 
+ - División de roles.
  
 **Soluciones Propuestas**
-- 
+- Seguir practicando
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
