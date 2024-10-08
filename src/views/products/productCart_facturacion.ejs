@@ -16,7 +16,7 @@
             <option value="6">Transferencia</option>
          </select>
          <!-- Formulario -->
-         <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+         <form action="medios-de-pago" method="get" id="formulario-tarjeta" class="formulario-tarjeta">
             <div class="grupo">
                <label for="inputNumero">Número Tarjeta</label>
                <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
@@ -43,6 +43,8 @@
                      </div>
                   </div>
                </div>
+               <button type="reset">Cancelar</button>
+               <button type="submit">Enviar</button>
                <div class="grupo ccv">
                   <label for="inputCCV">CCV</label>
                   <input type="text" id="inputCCV" maxlength="3">
@@ -50,48 +52,29 @@
             </div>
       </div>
       </form>         
-      </form>
-      <div style="border:1px solid white;">
-         <p style="font-size: 18px;">SELECCIONA MEDIO DE ENVIO</P>
-         <select Medios de envio="select">
-            <option value="0">seleccione</option>
-            <option value="1">A domicilio</option>
-            <option value="2">Andreani</option>
-            <option value="3">Correo Argentino</option>
-         </select>
-         <div class="botones">                    
-            <a href="/" class="btn"><i class="fa fa-arrow-left"></i>  SEGUIR COMPRANDO</a>
-            <a href="/products/edit" class="btn-actualizar">ACTUALIZAR CARRITO </a>                   
-         </div>
-      </div>
-      </div>           
-      <div class="cart-total">
-         <h5>TOTAL DEL CARRITO: </h5>
-         <div class="subtotal">
-            <p>Subtotal  </p>
-            <span> $128.400,00</span>
-         </div>
-         <label>Envio</label>  
+      </form>       
+         <label>ENVIO</label>  
          <div class="envio">
-            <input type="radio" value="1" name="envio" checked> 
-            <label for="">Envío gratuito a domicilio en compras superiores a $ 40000</label>
-         </div>
-      </div>
-      <div class="envio">
-         <input type="radio" value="1" name="envio" > 
-         <label for="">Envío a domicilio (todo el país): $6,500.00</label>
-      </div>
-      <div class="envio">
-         <input type="radio" value="1" name="envio" > 
-         <label for="">Retiro por Local (Gratis)</label>
-      </div>
-      <div class="contenedor"></div>
-      <div class="botones">                    
+            <div style="border:1px solid white;">
+               <p style="font-size: 18px;">SELECCIONA MEDIO DE ENVIO</P>
+               <select Medios de envio="select">
+                  <option value="0">seleccione</option>
+                  <option value="1">A domicilio</option>
+                  <option value="2">Andreani</option>
+                  <option value="3">Correo Argentino</option>
+               </select>
+            </div>
+            </div>
+            <br
         <a href="/products/edit" class="btn-actualizar">FINALIZAR COMPRA</a>                   
      </div>
-      <br>
+      <br>      <div class="cart-total">
+         <h5>TOTAL DEL CARRITO: </h5>
+         <div class="subtotal">
+            <p>Subtotal</p>
+            <span> $128.400,00</span>
+         </div>
    </main>
-
    <%- include('../partials/footer.ejs') %>
    <script src="/js/coffecode.js"></script>
 

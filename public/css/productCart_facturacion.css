@@ -4,8 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
  }
- 
- 
+
  body{
    font-family: "Zain", sans-serif;
    font-weight: 400;
@@ -63,19 +62,15 @@
     background: #a99ac4;
     padding: 10px;
     margin: 0 auto;
-   
+    font-size: 18px;
+    font-family:"Zain", sans-serif;
  }
  .titulos {
    display: flex;
    justify-content: space-between;
    padding: 10px;
    border-bottom: 1px solid #ddd;
- }
- .datos_factura2 {
-   border:  1px solid #ddd;
-  padding: 5px;
-}
-  
+ }  
  .cart-body {
    padding: 0px;
    
@@ -105,7 +100,6 @@
    display: flex;    
    justify-content: center;
 }
-
 .container-group-1 p{  
    width: 12px;
    margin: 1px;
@@ -139,27 +133,39 @@
  .botones {
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 17px;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
  }
  .btn-actualizar, .btn{
    height: 30px;
-  
+   font-family: "Zain", sans-serif;
    margin: 5px;
    font-size: 0.8rem;
- }
-
-.btn-actualizar {
-   background: #823A6F;
-   color: #fff;
-   opacity: 0,9;
-   cursor: pointer;
-   text-decoration: none;
-   text-align: center;
-   padding-top: 8px; 
-   width: 45%;
 }
+.btn-actualizar {
+    display: inline-block;      
+    padding: 10px 20px;         
+    background-color: #823A6F;  
+    color: white;             
+    opacity: 0,9;
+    cursor: pointer;
+    text-align: center;        
+    text-decoration: none;      
+    border-radius: 5px;         
+    font-size: 16px;           
+    font-weight: bold;         
+    transition: background-color 0.3s ease; 
+}
+
+.btn-actualizar:hover {
+    background-color:#a99ac4; 
+}
+
+.btn-actualizar:active {
+    background-color: #a99ac4;  
+}
+
 .btn {
  
   color: black; 
@@ -214,21 +220,13 @@
    margin-bottom: 10px;
    font-size: 0.8rem;
 }
+
 @media(min-width: 361px){
    .cart-panel{
       width: 100%;
       display: flex;
       justify-content: space-between;
       gap: 10px;     
-   }
-   .datos_factura, .datos_factura2{
-      width: 50%;    
-      padding: 20px; 
-
-   }
-   .datos_factura2 {
-      border:  1px solid #ddd;
-      margin-right: 10px;
    }
    .container-group-1 p {
       width: 100%;   
