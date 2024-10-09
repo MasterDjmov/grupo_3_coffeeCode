@@ -1477,15 +1477,17 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
+ - Organización de las reuniones
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Revisión de Código (formularios)
+ - Testing de validaciones.
+ - Revisión de Vistas
  
 **Soluciones Propuestas**
-- 
+- Seguir programando y revisando el playground
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
@@ -1552,15 +1554,17 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
+ -  Actualizar Tablero Trello
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Validación productos
+ - Controlar rutas
+ - Revisión vistas
  
 **Soluciones Propuestas**
-- 
+- Seguir Revisando las Vistas
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
@@ -1626,15 +1630,16 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
+ -  Revisión vistas
 **Impedimentos**         
- - 
+ - sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Validación login de usuario(backend)
+ - Revisar Vistas carrito
  
 **Soluciones Propuestas**
-- 
+- seguir practicando React para implementar en el proyecto
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
@@ -1701,15 +1706,21 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
+ - Actualizar las tareas en Trello
+ - Actualizar los temas de las reuniones
+ - Controlar el avance del equipo
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Revisar los puntos del Sprint
+ - Revisar el Tablero de Trello
+ - Controlar las Tareas
+ - Analizar Mejoras
+ - Completar dayli
  
 **Soluciones Propuestas**
-- 
+- seguir revisando todo el código y aprendiendo React para aplicar al proyecto
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
