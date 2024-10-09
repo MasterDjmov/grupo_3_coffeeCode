@@ -27,7 +27,7 @@
                             <button type="submit">BUSCAR</button>
                         </form>
                     </li>
-                    
+                    <% if(user){%>   
                     <li class="dropdown">
                         <button  class="dropdown-button" id="dropdownMenuButton1">
                             <img src="/img/carrito.png" alt="Carrito de Compras" width="30px">
@@ -75,16 +75,19 @@
                                             </div>                    
                                             <div class="carrito-total1">
                                                 <h4>Subtotal: <span>$128.400,00</span></h4>                        
-                                            </div>               
+                                            </div>       
+                                              
                                             <div class="carrito-botones1">
-                                                <a href="/products/edit" class="carrito-btn-ver1">VER CARRITO</a>               
+                                                <!-- <a href="/products/edit/<%= user.id_producto %>" class="carrito-btn-ver1">VER CARRITO</a>                -->
                                                 <input type="submit" class="carrito-btn-fin1" value="FINALIZAR LA COMPRA" name="fin_compra">                   
-                                            </div>              
+                                            </div> 
+                                                   
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </li>
+                    <% }%>    
                     <li class="login1">
                         <a href="/user/login">
                             <% if(user){%>

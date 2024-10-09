@@ -37,7 +37,7 @@ const productController = {
          res.render('products/productCart_detalle',{
             'cafe': cafe,
             'user': user,
-            'msg': 'Usted debe iniciar session para Agregar al Carrito' 
+            'msg': 'Usted debe iniciar session para Agregar al Carrito'            
          });
       })
       .catch(error =>{
