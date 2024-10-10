@@ -11,7 +11,7 @@
  Target Server Version : 100432
  File Encoding         : 65001
 
- Date: 23/09/2024 02:57:34
+ Date: 09/10/2024 23:37:40
 */
 
 SET NAMES utf8mb4;
@@ -1011,7 +1011,7 @@ CREATE TABLE `usuarios`  (
   CONSTRAINT `fk_usuarios_estado1` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuarios_localidades1` FOREIGN KEY (`id_localidad`) REFERENCES `localidades` (`id_localidad`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuarios_roles` FOREIGN KEY (`id_rol`) REFERENCES `roles` (`id_rol`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '					' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 15 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '					' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of usuarios
@@ -1027,5 +1027,8 @@ INSERT INTO `usuarios` VALUES (8, 'Javier', 'Bustos', '3804568978', '40265896', 
 INSERT INTO `usuarios` VALUES (9, 'Alejandro', 'Fernández', '3804444223', '32156965', 'alefernandez@gmail.com', 'avatar-mini2.jpg', 'PAIMÁN', 'SANTA FÉ', 655, '0', '0', '2024-09-20 07:22:05', '2024-09-20 07:22:05', 38, 1, 2, '53321569654', '$2b$10$HFJXP7PH89qB5XHyfexWyu7xy1gIdCLKfGDtnz8GRoV1t9jfoRY86');
 INSERT INTO `usuarios` VALUES (10, 'Cecilia', 'Bordón', '3804385507', '25638956', 'ceciliabordon@gmail.com', 'avatar-mini2.jpg', 'ALBERDI', 'URQUIZA', 229, '0', '0', '2024-09-20 07:28:11', '2024-09-20 07:28:11', 38, 1, 2, '52563895623', '$2b$10$X3SEPwcC3qBxCrCSDvqVieOLh9WdbzLRXOJyZu7Sp2UtR.GLd5XnC');
 INSERT INTO `usuarios` VALUES (11, 'Matías', 'Álvarez', '3825535033', '37492767', 'matiasalvarez@gmail.com', 'avatarempresa.jpg', 'MACROCENTROCENTRO', '8 DE DICIEMBRE', 515, '0', '0', '2024-09-13 23:52:10', '2024-09-13 23:52:13', 38, 1, 3, '20374927672', '$10$mloK1rqTbjRMuCS5j8bjyuMDH3r9AjwZnIopxl');
+INSERT INTO `usuarios` VALUES (12, 'Mario', 'Alonso', '03804565656', '27161335', 'admin3@admin.com', 'avatar1.jpg', 'Parque sud', 'Las Heras', 1586, '0', '1', '2024-09-24 00:02:48', '2024-10-10 02:26:48', 1, 1, 1, '27271613356', '$2b$10$abhttYlebWjDBqKzoclOXuNcpWfpYBNx0cGFc7OcAUtBoRN3JyBn2');
+INSERT INTO `usuarios` VALUES (13, 'Mario', 'Alan', '03804565656', NULL, 'admin33@admin.com', 'avatar-mini2.jpg', NULL, NULL, NULL, NULL, NULL, '2024-09-25 00:14:44', '2024-09-25 00:14:44', NULL, 1, 2, NULL, '$2b$10$43xAD.eSueSaAtI7851Yi.FRGmbb/QepAk1e.4ylrT/zKjZ/EAsLa');
+INSERT INTO `usuarios` VALUES (14, 'Amalia', 'Mercado', '2365656565', NULL, 'amaliamercado@gmail.com', 'avatar-mini2.jpg', NULL, NULL, NULL, NULL, NULL, '2024-10-10 02:22:12', '2024-10-10 02:22:12', NULL, 1, 2, NULL, '$2b$10$mV1pfLS24gaD33r8.EhKwu5OpI4qUIH9alWkbbQdjbPu517iZhLgC');
 
 SET FOREIGN_KEY_CHECKS = 1;
