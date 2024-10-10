@@ -35,40 +35,44 @@
                         
                         <div class="dropdown-menu" id="dropdownMenu">
                             <div class="carrito-panel1">
-    
+                                <% if(carrito && carrito.length > 0){%>   
+                                   
                                 <form action="/products/checkout" method="get" class="carrito-form1">
                                              
                                        <h2>CARRITO</h2>
                                     <div class="carrito-body1">
                                             <div class="carrito-items1">
-                                                <div class="carrito-item1" >
-                                                    <div class="carrito-item-imagen1">
-                                                        <img src="/img/imagen_producto.jpg">                           
-                                                    </div>
-                                                    <div class="carrito-item-detalle1">
-                                                        <h5 class="carrito-item-name1">
-                                                            BLEND DE LA CASA
-                                                        </h5>
-                                                    
-                                                
-                                                        <p class="carrito-item-descripcion1">
+                                                <% carrito.forEach(item => { %>
+                                                    <div class="carrito-item1" >
+                                                        <div class="carrito-item-imagen1">
+                                                            <img src="/img/products/<%= item.cafe.imagen_principal %>">                           
+                                                        </div>
+                                                        <div class="carrito-item-detalle1">
+                                                            <h5 class="carrito-item-name1">
+                                                                <%= item.nombre_producto %>
+                                                            </h5>
                                                         
-                                                            ELEGÍ TU MOLIENDA: 
-                                                            En Grano
-                                                        </p>
-                                                        <p class="carrito-item-descripcion1">
-                                                            ELEGÍ EL PESO: 
-                                                            250 Gr.                             
-                                                        
-                                                        </p>
-                                                    </div>
-                                                    <div class="carrito-item-delete1">
-                                                        <button type="button">
-                                                        <i class="fa fa-close"></i>
-                                                        </button>
-                                                    </div>                           
                                                     
-                                                </div>
+                                                            <p class="carrito-item-descripcion1">
+                                                            
+                                                                ELEGÍ TU MOLIENDA: 
+                                                                <%= item.id_tipo_cafe %>
+                                                            </p>
+                                                            <p class="carrito-item-descripcion1">
+                                                                ELEGÍ EL PESO: 
+                                                                <%= item.idunidad_medida %>                            
+                                                            
+                                                            </p>
+                                                        </div>
+                                                        <div class="carrito-item-delete1">
+                                                            <button type="button">
+                                                            <i class="fa fa-close"></i>
+                                                            </button>
+                                                        </div>                           
+                                                        
+                                                    </div>
+                                                <% }) %>
+                                               
                                                 <div class="carrito-item-subtotal1">
                                                     <p> 2 × $12,200.00</p>
                                                 </div>
@@ -78,8 +82,8 @@
                                             </div>       
                                               
                                             <div class="carrito-botones1">
-                                                <!-- <a href="/products/edit/<%= user.id_producto %>" class="carrito-btn-ver1">VER CARRITO</a>                -->
-                                                <input type="submit" class="carrito-btn-fin1" value="FINALIZAR LA COMPRA" name="fin_compra">                   
+                                               <a href="/products/edit/1" class="carrito-btn-ver1">VER CARRITO</a>               
+                                               <input type="submit" class="carrito-btn-fin1" value="FINALIZAR LA COMPRA" name="fin_compra">                   
                                             </div> 
                                                    
                                     </div>
@@ -87,7 +91,10 @@
                             </div>
                         </div>
                     </li>
+                    <% } else { %>
+                        <h2>CARRITO VACIO</h2>
                     <% }%>    
+                    <% } %>
                     <li class="login1">
                         <a href="/user/login">
                             <% if(user){%>

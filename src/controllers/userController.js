@@ -41,6 +41,7 @@ const userController = {
         
                     if (claveValida) {
                         req.session.user = user;
+                        req.session.carrito = [];
                         return res.redirect('/?log=1');
                     } else {
                         return res.render('users/login', {

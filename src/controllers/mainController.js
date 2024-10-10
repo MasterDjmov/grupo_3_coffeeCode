@@ -16,13 +16,22 @@ const mainController = {
         }else{
             user="";
         }
+
+        if(req.session.carrito){
+            carrito= req.session.carrito;
+        }else{
+            carrito=null;
+        }
+
         db.Productos.findAll()
         .then(function(listaProductos){
-
+            console.log(carrito);    
             res.render('index',{
                 listaProductos,
                 'user':user,
-                log
+                log,
+                productos:null,
+                carrito
             });
         })
     },
@@ -32,10 +41,16 @@ const mainController = {
         }else{
             user="";
         }
-       
+        if(req.session.carrito){
+            carrito= req.session.carrito;
+        }else{
+            carrito=null;
+        }
+        
         res.render('about',
             {
-                'user':user
+                'user':user,
+                carrito
             }
 
         );
@@ -46,10 +61,15 @@ const mainController = {
         }else{
             user="";
         }
-       
+        if(req.session.carrito){
+            carrito= req.session.carrito;
+        }else{
+            carrito=null;
+        }
         res.render('info',
             {
-                'user':user
+                'user':user,
+                carrito
             }
 
         );
