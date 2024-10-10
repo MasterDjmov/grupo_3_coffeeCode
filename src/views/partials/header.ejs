@@ -54,14 +54,10 @@
                                                         
                                                     
                                                             <p class="carrito-item-descripcion1">
-                                                            
-                                                                ELEGÍ TU MOLIENDA: 
-                                                                <%= item.cafe.id_tipo_cafe %>
+                                                                Tipo: <%= item.cafe.id_tipo_cafe %>
                                                             </p>
                                                             <p class="carrito-item-descripcion1">
-                                                                ELEGÍ EL PESO: 
-                                                                <%= item.cafe.idunidad_medida %>                            
-                                                            
+                                                              Peso: <%= item.cafe.idunidad_medida %>                                                            
                                                             </p>
                                                         </div>
                                                         <div class="carrito-item-delete1">
@@ -77,7 +73,7 @@
                                                   
                                             </div>                    
                                             <div class="carrito-total1">
-                                                <h3>Subtotal: <span>$128.400,00</span></h3>                        
+                                                <p>Subtotal: <span>$128.400,00</span></p>                        
                                             </div>       
                                               
                                             <div class="carrito-botones1">
@@ -87,12 +83,13 @@
                                              
                                     </div>
                                 </form>
+                                <% } else { %>
+                                    <h3 class="msg-vacio">CARRITO VACIO</h3>
+                                <% }%>   
                             </div>
                         </div>
                     </li>
-                    <% } else { %>
-                        <h3 class="msg-vacio">CARRITO VACIO</h3>
-                    <% }%>    
+                     
                     <% } %>
                     <li class="login1">
                         <a href="/user/login">

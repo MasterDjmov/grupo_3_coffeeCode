@@ -5,160 +5,148 @@
 	<link rel=icon href='img/vida.png' sizes="32x32" type="image/png">
   </head>
   <body style="background-color: #f3f3f3; font-family:'Zain'; font-size: 14px;">
-    <%- include('../partials/header.ejs')%>
-<br>
-	<br>
+    <%- include('../partials/header.ejs',{carrito})%>
+      <br>
+        <br>
 
-	<div class="container">
+    <div class="container">
       <div class="row" >
-      <form action="/user/profile" method="post" id="perfil" enctype="multipart/form-data">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 toppad" >
-   
-   
-          <div class="panel panel-success" ><br>
-              <h2 class="panel-title" style="color: #823a6f;"><center><font size="5"><i class='glyphicon glyphicon-user' style="color: #823a6f; padding-right: 5px ;"></i>PERFIL</font></center></h2>
+         <form action="/user/profile" method="post" id="perfil" enctype="multipart/form-data">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 toppad" >
+           
+              <div class="panel panel-success" ><br>
+                  <h2 class="panel-title" style="color: #823a6f;"><center><font size="5"><i class='glyphicon glyphicon-user' style="color: #823a6f; padding-right: 5px ;"></i>PERFIL</font></center></h2>
 
-            <div class="panel-body" >
-              <div class="row" >
-			  
-                <div class="col-md-3 col-lg-3 " align="center"> 
-				<div id="load_img">
-					<img class="img-responsive" src="/img/perfil/<%=user.imagen_perfil%>" alt="Logo">
-					
-				</div>
-				<br>				
-					<div class="row">
-  						<div class="col-md-12">
-							<div class="form-group">
-								<input class='filestyle' data-buttonText="Logo" type="file" name="imagefile" id="imagefile" onchange="upload_image();">
-							</div>
-						</div>
-						
-					</div>
-				</div>
-                <div class=" col-md-9 col-lg-9 " style="font-weight: bold;"> 
-                  <table class="table table-condensed">
-                    <tbody>
-                      <tr>
-                        <td class='col-md-3'>Apellidos:</td>
-                        <td><input type="text" class="form-control input-sm" name="apellido" value="<%=user.apellido%>" required></td>
-                      </tr>
-                      <tr>
-                        <td class='col-md-3'>Nombres:</td>
-                        <td><input type="text" class="form-control input-sm" name="nombre" value="<%=user.nombre%>" required></td>
-                      </tr>
-                      <tr>
-                        <td>Correo electrónico:</td>
-                        <td><input type="email" class="form-control input-sm" name="email" value="<%=user.email%>" required></td>
-                      </tr>
-                      <tr>
-                        <td>Teléfono:</td>
-                        <td><input type="text" class="form-control input-sm" required name="telefono" value="<%=user.telefono%>"></td>
-                      </tr>
-                      <tr>
-                        <td>DNI(sin puntos):</td>
-                        <td><input type="text" class="form-control input-sm" name="dni" value="<%=user.dni%>" required></td>
-                      </tr>
-                      <tr>
-                        <td>Barrio:</td>
-                        <td><input type="text" class="form-control input-sm" name="barrio" value="<%=user.barrio%>" required></td>
-                      </tr>
-                      <tr>
-                        <td>Calle:</td>
-                        <td><input type="text" class="form-control input-sm" name="calle" value="<%=user.calle%>" required></td>
-                      </tr>
-                      <tr>
-                        <td>Número:</td>
-                        <td><input type="text" class="form-control input-sm" name="numero" value="<%=user.numero%>" required></td>
-                      </tr>
-                      <tr>
-                        <td>Piso:</td>
-                        <td><input type="text" class="form-control input-sm" name="piso" value="<%=user.piso%>" required></td>
-                      </tr>
-                      <tr>
-                        <td>Departamento:</td>
-                        <td>
-                          <select name="departamento" class="form-control input-sm">
-                            <% Departamentos.forEach(d => { %>
-                              <% if(d.id_departamento === user.departamento){%>
-                              <option value="<%=d.id_departamento%>" selected="selected"><%=d.nombre_dpto  %></option>
-                              <%}else{%>
-                                <option value="<%=d.id_departamento%>"><%=d.nombre_dpto  %></option>
-                               <%} %>
-                            <% }) %>
-                          </select>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Localidad</th>
-                        <td>
-                          <select name="localidad" class="form-control input-sm">
-                            <% Localidades.forEach(l => { %>
-                              <% if(l.id_localidad === user.id_localidad){%>
-                                <option value="<%=l.id_localidad%>" selected="selected"><%=l.nombre_loc  %></option>
-                              <%}else{%>
-                                <option value="<%=l.id_localidad%>"><%=l.nombre_loc  %></option>
-                               <%} %>
-                              
-                            <% }) %>
-                          </select>
-                        </td>
-                    </tr>
-                      <tr>
-                        <th>Estado</th>
-                        <td>
-                            <input type="text" class="form-control"  value="<%= user.rol ? user.rol.nombre_rol : 'No disponible' %>" disabled>
-                        </td>
-                    </tr>
-                      <tr>
-                        <td>CUIL/T:</td>
-                        <td><input type="text" class="form-control input-sm" name="cuil_t" value="<%=user.cuil_t%>" required></td>
-                      </tr>
-                      <tr>
-                        <td>Clave:</td>
-                        <td>
-                          <input type="password" class="form-control input-sm" id="pass1" name="clave" value="" required>
-                          <i id="pass-ojo-abierto" onclick="cambiarPassword()" class="fa-regular fa-eye" style="color: #000000; margin: 5px; cursor: pointer;" title="Ver contraseña"></i>
-                          <i id="pass-ojo-cerrado" onclick="cambiarPassword()" class="fa-regular fa-eye-slash" style="color: #000000; display: none; margin: 5px; cursor: pointer;" title="Ocultar Contraseña"></i>
-                          <i id="pass-icon-delete" onclick="borrar()" class="fa-regular fa-trash-can" title="Borrar contraseña" style="color: #000000; width: 30px; margin: 5px; cursor: pointer;"></i>
-                        </td>
-                      </tr>
-                   
-                    </tbody>
-                  </table>
-                  
-                  
+                <div class="panel-body" >
+                  <div class="row" >            
+                    <div class="col-md-3 col-lg-3 " align="center"> 
+                      <div id="load_img">
+                        <img class="img-responsive" src="/img/perfil/<%=user.imagen_perfil%>" alt="Logo">
+              
+                      </div>
+                                   <br>				
+                        <div class="row">
+                           <div class="col-md-12">
+                               <div class="form-group">
+                                  <input class='filestyle' data-buttonText="Logo" type="file" name="imagefile" id="imagefile" onchange="upload_image();">
+                               </div>
+                             </div>
+                           </div>
+                      </div>
+                    <div class=" col-md-9 col-lg-9 " style="font-weight: bold;"> 
+                      <table class="table table-condensed">
+                        <tbody>
+                          <tr>
+                            <td class='col-md-3'>Apellidos:</td>
+                            <td><input type="text" class="form-control input-sm" name="apellido" value="<%=user.apellido%>" required></td>
+                          </tr>
+                          <tr>
+                            <td class='col-md-3'>Nombres:</td>
+                            <td><input type="text" class="form-control input-sm" name="nombre" value="<%=user.nombre%>" required></td>
+                          </tr>
+                          <tr>
+                            <td>Correo electrónico:</td>
+                            <td><input type="email" class="form-control input-sm" name="email" value="<%=user.email%>" required></td>
+                          </tr>
+                          <tr>
+                            <td>Teléfono:</td>
+                            <td><input type="text" class="form-control input-sm" required name="telefono" value="<%=user.telefono%>"></td>
+                          </tr>
+                          <tr>
+                            <td>DNI(sin puntos):</td>
+                            <td><input type="text" class="form-control input-sm" name="dni" value="<%=user.dni%>" required></td>
+                          </tr>
+                          <tr>
+                            <td>Barrio:</td>
+                            <td><input type="text" class="form-control input-sm" name="barrio" value="<%=user.barrio%>" required></td>
+                          </tr>
+                          <tr>
+                            <td>Calle:</td>
+                            <td><input type="text" class="form-control input-sm" name="calle" value="<%=user.calle%>" required></td>
+                          </tr>
+                          <tr>
+                            <td>Número:</td>
+                            <td><input type="text" class="form-control input-sm" name="numero" value="<%=user.numero%>" required></td>
+                          </tr>
+                          <tr>
+                            <td>Piso:</td>
+                            <td><input type="text" class="form-control input-sm" name="piso" value="<%=user.piso%>" required></td>
+                          </tr>
+                          <tr>
+                            <td>Departamento:</td>
+                            <td>
+                              <select name="departamento" class="form-control input-sm">
+                                <% Departamentos.forEach(d => { %>
+                                  <% if(d.id_departamento === user.departamento){%>
+                                  <option value="<%=d.id_departamento%>" selected="selected"><%=d.nombre_dpto  %></option>
+                                  <%}else{%>
+                                    <option value="<%=d.id_departamento%>"><%=d.nombre_dpto  %></option>
+                                  <%} %>
+                                <% }) %>
+                              </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Localidad</th>
+                            <td>
+                              <select name="localidad" class="form-control input-sm">
+                                <% Localidades.forEach(l => { %>
+                                  <% if(l.id_localidad === user.id_localidad){%>
+                                    <option value="<%=l.id_localidad%>" selected="selected"><%=l.nombre_loc  %></option>
+                                  <%}else{%>
+                                    <option value="<%=l.id_localidad%>"><%=l.nombre_loc  %></option>
+                                  <%} %>
+                                  
+                                <% }) %>
+                              </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Estado</th>
+                            <td>
+                                <input type="text" class="form-control"  value="<%= user.rol ? user.rol.nombre_rol : 'No disponible' %>" disabled>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>CUIL/T:</td>
+                            <td><input type="text" class="form-control input-sm" name="cuil_t" value="<%=user.cuil_t%>" required></td>
+                          </tr>
+                          <tr>
+                            <td>Clave:</td>
+                            <td>
+                              <input type="password" class="form-control input-sm" id="pass1" name="clave" value="" required>
+                              <i id="pass-ojo-abierto" onclick="cambiarPassword()" class="fa-regular fa-eye" style="color: #000000; margin: 5px; cursor: pointer;" title="Ver contraseña"></i>
+                              <i id="pass-ojo-cerrado" onclick="cambiarPassword()" class="fa-regular fa-eye-slash" style="color: #000000; display: none; margin: 5px; cursor: pointer;" title="Ocultar Contraseña"></i>
+                              <i id="pass-icon-delete" onclick="borrar()" class="fa-regular fa-trash-can" title="Borrar contraseña" style="color: #000000; width: 30px; margin: 5px; cursor: pointer;"></i>
+                            </td>
+                          </tr>                      
+                        </tbody>
+                      </table>                      
+                    </div>
+                    <div class='col-md-12' id="resultados_ajax"></div><!-- Carga los datos ajax -->
+                  </div>
                 </div>
-				      <div class='col-md-12' id="resultados_ajax"></div><!-- Carga los datos ajax -->
+                <div class="panel-footer text-center">
+                  <input type="hidden" name="id_usuario" value="<%=user.id_usuario%>">
+                  <input type="hidden" name="estado" value="1">
+                  <button type="submit" class="btn btn-sm btn-success" style="background-color: #823a6f; border: #823a6f;" id="btnActualizarPerfil">
+                    <i class="glyphicon glyphicon-refresh"></i> Actualizar perfil
+                  </button>
+                </div>                
               </div>
             </div>
-                 <div class="panel-footer text-center">
-            <input type="hidden" name="id_usuario" value="<%=user.id_usuario%>">
-            <input type="hidden" name="estado" value="1">
-            <button type="submit" class="btn btn-sm btn-success" style="background-color: #823a6f; border: #823a6f;" id="btnActualizarPerfil">
-              <i class="glyphicon glyphicon-refresh"></i> Actualizar perfil
-            </button>
-          </div>
-            
-          </div>
-        </div>
-		</form>
-        
-      </div>
-
-	
-	
+      </form>            
+    </div>
 	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
-	</script>
-	
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+    </script>
+	  <script src="/js/coffecode.js"></script>
+    <script src="/js/cambiarPassword.js"></script>
+    <script type="text/javascript" src="js/bootstrap-filestyle.js"> </script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="/js/perfilValidator.js"></script>
   </body>
 </html>
-<script src="/js/cambiarPassword.js"></script>
-<script type="text/javascript" src="js/bootstrap-filestyle.js"> </script>
-<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-<script src="/js/perfilValidator.js"></script>
-<script>
