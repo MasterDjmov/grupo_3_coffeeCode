@@ -22,7 +22,9 @@
         padding-top: 5px;
     }
 }
-
+main{
+    width: 97%;
+}
 .logo {
     width: 150px;
     height: 100px;
@@ -150,11 +152,10 @@ nav {
         flex-direction: column;
         gap: 10px;
         width: 100%;
+        margin-top: 30px;
     }
 
-    .nav-links li {
-        margin-right: 0;
-    }
+  
 
     .search-container {
         flex-direction: column;
