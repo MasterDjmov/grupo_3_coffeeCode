@@ -1645,14 +1645,14 @@ sin impedimentos
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
+ - tuve una semana complicada con el trabajo, pero igualmente intente ver REACT
 **Impedimentos**         
- - 
+ - ninguno
 **Qué va a hacer hoy**  
- - 
+ - Seguimos viendo lo de React y como funciona, ver sobre el flujo o circuito de REACT
 
 **Soluciones Propuestas**
- - 
+ - investigar, leer playground
 
  ## Fecha: 10/10/2024
 
@@ -1726,11 +1726,11 @@ sin impedimentos
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
+ - estuve investigando y leyendo en playground sobre el flujo de los componentes
 **Impedimentos**         
- - 
+ - ninguno
 **Qué va a hacer hoy**  
- - 
+ - ponerme al dia con playground, con el grupo 3 y ver que puedo ir viendo del sprint8
 
 **Soluciones Propuestas**
- - 
+ - investigar, leer playground
