@@ -1100,16 +1100,16 @@ sin impedimentos
 ### Diaz Caceres, Camila:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+ ponerme al dia con contenidos del playground.      
 
 **Impedimentos**         
- [Descripción de impedimentos]
+ tirmpo.
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+ ponerlos en practica en el proyecto.
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+ no propongo soluciones alternativas.
 
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
@@ -1264,16 +1264,16 @@ sin impedimentos
 ### Diaz Caceres, Camila:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
+Revise el codigo para mejorar las vistas.       
 
 **Impedimentos**         
- [Descripción de impedimentos]
+ No hubieron impedimentos.
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+ Seguir corrigiendo el codigo.
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- no propongo soluciones.
 
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
@@ -1350,16 +1350,16 @@ sin impedimentos
 ### Diaz Caceres, Camila:
 
 **Qué hizo ayer**  
- -        
+ -   Revise mis tareas en trello.     
 
 **Impedimentos**         
- - 
+ - ninguno.
 
 **Qué va a hacer hoy**  
- - 
+ - Realizar una de las tareas. vistas responsive.
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- ver css y actualizarlo.
 
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
@@ -1508,16 +1508,16 @@ sin impedimentos
 ### Diaz Caceres, Camila:
 
 **Qué hizo ayer**  
- -        
+ -  Vi clases de flexbox.      
 
 **Impedimentos**         
- - 
+ - ninguno.
 
 **Qué va a hacer hoy**  
- - 
+ - aplicar las clases vistas al codigo.
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- seguir practicando.
 
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
@@ -1584,16 +1584,16 @@ sin impedimentos
 ### Diaz Caceres, Camila:
 
 **Qué hizo ayer**  
- -        
+ - Practique css.    
 
 **Impedimentos**         
- - 
+ - Frustacion porque no me salia.
 
 **Qué va a hacer hoy**  
- - 
+ - Seguir practicando, hasta lograr las vistas que buscamos.
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Ver mas videos y seguir practicando.
 
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
@@ -1660,16 +1660,16 @@ sin impedimentos
 ### Diaz Caceres, Camila:
 
 **Qué hizo ayer**  
- -        
+ - Reunion de equipo para que me ayuden a revisar el codigo.
 
 **Impedimentos**         
- - 
+ - Distintas disponibilidades horarias del equipo.
 
 **Qué va a hacer hoy**  
- - 
+ - Subir modificaciones del ejs y css de facturacion.        
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Seguir consultando al equipo, que siempre me dan contencion y claridad.
 
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
