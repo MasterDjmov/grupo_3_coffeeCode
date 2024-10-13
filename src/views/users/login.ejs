@@ -17,13 +17,13 @@
             </ol>
     </div>
 
-     <h2>INICIAR SESIÓN</h2>
+     <h2>Inicia Sesión<i class="fa-solid fa-user-large" style="color:#823a6f; padding-left: 5px"></i></h2>
        
       <form  class="estilo-form" action="/user/login" id="login" method="post">
           <div class="bloque">
               <label class="estilo-label" for="Email">E-mail</label>
               <br>
-              <input type="text" name="email" id="email" placeholder="email" value="<%= oldData ? oldData.email : '' %>"       >
+              <input type="text" name="email" id="email" placeholder="Ingresa tu Email" value="<%= oldData ? oldData.email : '' %>"       >
               <% if (locals.errors && locals.errors.email) { %>
                   <div class="error" id="emailError"><%= locals.errors.email.msg %></div>
               <% } %>

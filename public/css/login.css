@@ -1,9 +1,10 @@
 main{
-    
+    margin: 0 auto;
     font-family: "Zain", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.2rem;
+    width: 100%;
 
 .navbar{
     padding: 2px 4px;
@@ -90,6 +91,9 @@ main{
     .estilo-label{
         font-family: "Zain", sans-serif;
     }
+    input{
+        font: inherit;
+    }
 
     .bloque{
         padding-top: 5px;
@@ -104,7 +108,7 @@ main{
     #pass-ojo-abierto, #pass-ojo-cerrado, #pass-icon-delete {
        position: absolute;
         cursor: pointer;
-        padding: 5px;
+        padding: 10px;
         right: 30px;
         color: #000;
         opacity: 0.7;
@@ -216,8 +220,18 @@ main{
     main{
         .bloque > input{
             width: 400px;
-            padding: 5px;
+            border-radius: 6px;
+            font-size: 14px;
+            padding: 0px 15px;
+            height: 40px;
+            border: 2px solid #000;
+            color: #000;
+            outline: none;
+            transition: all 0.3s;
         }
+    }
+    .bloque > input:focus{
+        border: 2px solid #823a6f;
     }
 }
 
