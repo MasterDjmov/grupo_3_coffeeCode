@@ -1523,16 +1523,16 @@ Revise el codigo para mejorar las vistas.
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - No hubo actividades, por mi parte termine las validaciones.
 
 **Impedimentos**         
- - 
+ - ninguno.
 
 **Qué va a hacer hoy**  
- - 
+ - Revisar el código ante posibles errores.
 
 **Soluciones Propuestas**
- - 
+ - probar el funcionamiento correcto de la página web.
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -1599,16 +1599,16 @@ Revise el codigo para mejorar las vistas.
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Capacitarme sobre react y su funcionamiento
 
 **Impedimentos**         
- - 
+ - Ninguno
 
 **Qué va a hacer hoy**  
- - 
+ - Hacer los ejercicios de playground
 
 **Soluciones Propuestas**
- - 
+ - Todo en playground.
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -1675,16 +1675,18 @@ Revise el codigo para mejorar las vistas.
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Revisar el código
+ - Ver como mejorar los diseños de los formularios
 
 **Impedimentos**         
- - 
+ - ninguno  
 
 **Qué va a hacer hoy**  
- - 
+ - Ver las consignas del nuevo sprint.
+ - Capacitarse en playground sobre apis y react.
 
 **Soluciones Propuestas**
- - 
+ - en playground
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
