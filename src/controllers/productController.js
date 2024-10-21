@@ -12,10 +12,28 @@ const { error } = require('console');
 const productController = {
     productCart: (req, res) => {
        // res.sendFile(path.resolve(__dirname,'../views/products/productCart.html'));
-       res.render('products/productCart');
+       const id = req.params.id;
+       let user = "";
+       if(req.session.carrito){
+        carrito= req.session.carrito;
+        }else{
+            carrito=null;
+        }
+       if(req.session.user){
+          user = req.session.user;
+       }
+       res.render('products/productCart',{
+        'cafe': cafe,
+        'user': user,
+         carrito
+         });
     },
     productCart_detalle: (req, res) => {
-
+        if(req.session.carrito){
+            carrito= req.session.carrito;
+        }else{
+            carrito=null;
+        }
       const id = req.params.id;
       let user = "";
 
@@ -34,10 +52,13 @@ const productController = {
          if(!cafe){
             return res.status(404).render('errors/404');
          }
+         carrito.push({cafe})
+ *
          res.render('products/productCart_detalle',{
             'cafe': cafe,
             'user': user,
-            'msg': 'Usted debe iniciar session para Agregar al Carrito' 
+            'msg': 'Usted debe iniciar session para Agregar al Carrito',
+            carrito            
          });
       })
       .catch(error =>{
@@ -56,7 +77,11 @@ const productController = {
       if (req.session.user) {
           user = req.session.user;
       }
-  
+      if(req.session.carrito){
+            carrito= req.session.carrito;
+        }else{
+            carrito=null;
+        }
       db.Productos.findByPk(id, {
           include: [
               { association: 'pais' },
@@ -76,7 +101,8 @@ const productController = {
                       'cafe': cafe,
                       'user': user,
                       'tiposCafes': tiposCafes, 
-                      'msg': "Usted debe iniciar sesión para agregar al carrito"
+                      'msg': "Usted debe iniciar sesión para agregar al carrito",
+                      carrito
                   });
               });
       })
@@ -95,10 +121,15 @@ const productController = {
                   }
               }
           });
-  
+          if(req.session.carrito){
+            carrito= req.session.carrito;
+            }else{
+                carrito=null;
+            }
           res.render('products/searchResults', {
               productos: productos,
-              key: key 
+              key: key,
+              carrito
           });
       } catch (error) {
           console.error("Error al realizar la búsqueda:", error);

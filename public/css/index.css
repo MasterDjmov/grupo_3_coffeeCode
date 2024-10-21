@@ -1,13 +1,16 @@
 /*MAIN*/
-
+*{
+    margin: 0 auto;
+    padding: 0;
+}
 .contenedor-principal {
     font-family: "Zain", sans-serif;
     font-weight: 400;
     font-style: normal;
     width: 100%;
-    margin: 0 auto;
+   
     background-color: #a99ac4;
-    
+     
 }
 
 
@@ -40,12 +43,14 @@
         font-weight: 800;
         font-style: normal;
         text-align: center;
-        
+        padding: 6px;
+       
+       /* 
         padding-bottom: 25px;
         padding-top:40px;
         padding-left: 30px;
         font-size: 40px;
-        
+        */
     }
 }
 
@@ -164,9 +169,11 @@
 }
 @media (max-width: 768px){
     .articulo{
+        padding: 0px;
         article{
             display: flex;
             flex-direction: column;
+       
         }
         .lista-articulo{
             width: auto;

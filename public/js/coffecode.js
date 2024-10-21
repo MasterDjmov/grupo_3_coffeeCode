@@ -39,8 +39,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function adjustDropdownPosition() {
         const rect = dropdownButton.getBoundingClientRect();
-        dropdownMenu.style.top = `${rect.bottom + window.scrollY}px`;
-        dropdownMenu.style.left = `${Math.min(rect.left + window.scrollX, window.innerWidth - dropdownMenu.offsetWidth)}px`;
+       // dropdownMenu.style.top = `${rect.bottom + window.scrollY}px`;
+        //dropdownMenu.style.left = `${Math.min(rect.left + window.scrollX+100, window.innerWidth - dropdownMenu.offsetWidth)}px`;
+        dropdownMenu.style.right =`20px`;
+        dropdownMenu.style.top =`127px`;
     }
 
     //codigo para menu acordeon en product detail

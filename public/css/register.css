@@ -11,6 +11,8 @@ main{
   font-weight: 400;
   font-style: normal;
   font-size: 1.2rem;
+  margin: 0 auto;
+  width: 100%;
     h2{
         text-align: center;
         padding-bottom: 10px;
@@ -35,6 +37,7 @@ main{
         padding: 5px;
         border: none;
         cursor: pointer;
+        margin-top: 20px;
     }
     .boton:hover{
         opacity: 1;
@@ -62,6 +65,50 @@ main{
         width: 200px;
         padding: 5px;
     }
+
+    .bloque{
+        padding-top: 5px;
+        font-weight: bold;
+        position: relative;
+    }
+    .password {
+        width: 100%; 
+        padding-right: 60px; 
+        box-sizing: border-box;
+    }
+    #pass-ojo-abierto, #pass-ojo-cerrado, #pass-icon-delete {
+        position: absolute;
+         cursor: pointer;
+         padding: 10px;
+         right: 30px;
+         opacity: 0.7;
+        transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+     }
+     #pass-icon-delete {
+         right: 10px;
+     }
+     #pass-ojo-abierto1, #pass-ojo-cerrado1 {
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        right: 30px;
+        opacity: 0.7;
+        transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+    }
+    #pass-ojo-abierto:hover, #pass-ojo-cerrado:hover, #pass-icon-delete:hover{
+        color: #823a6f; 
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    #pass-ojo-abierto1:hover, #pass-ojo-cerrado1:hover {
+        color: #823a6f; 
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    input{
+        font: inherit;
+    }
+     
     p{
         text-align: center;
         padding-top: 20px;
@@ -87,7 +134,17 @@ main{
     main{
         .bloque > input{
             width: 400px;
-            padding: 5px;
+            border-radius: 6px;
+            font-size: 14px;
+            padding: 0px 15px;
+            height: 40px;
+            border: 2px solid #000;
+            color: #000;
+            outline: none;
+            transition: all 0.3s;
+        }
+        .bloque > input:focus{
+            border: 2px solid #823a6f;
         }
     }
 }

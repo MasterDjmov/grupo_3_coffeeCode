@@ -1,157 +1,74 @@
 <%- include('../partials/head.ejs') %>
-    <link rel="stylesheet" href="/css/productCart_facturacion.css">
+<link rel="stylesheet" href="/css/productCart_facturacion.css">
 </head>
 <body>
-    <%- include('../partials/header.ejs')%>
-   
-    <main class="cart-panel">
-            <form class="datos_factura" action="/" method="get">
-                <h4>DETALLE DE LA FACTURACIÓN</h4>
-                <div class="name-div">
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" placeholder="Nombre" class="form-input names-input" required>
-                </div>
-                <div class="name-div">
-                    <label for="last-name">Apellido</label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Apellido" class="form-input names-input" required>
-                </div>
-                <div class="name-div">
-                    <label for="home">Domicilio</label>
-                    <input type="text" id="home" name="home" placeholder="Domicilio" class="form-input" required>
-                </div>
-                <div class="name-div">
-                    <label for="name">Localidad/Ciudad</label>
-                    <input type="text" id="name" name="name" placeholder="Localidad/Ciudad" class="form-input names-input" required>
-                </div>
-                <div class="name-div">
-                    <label for="last-name">Provincia/Dpto</label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Provincia/Dpto" class="form-input names-input" required>
-                </div>
-                <div class="name-div">
-                    <label for="home">Código Postal</label>
-                    <input type="text" id="home" name="home" placeholder="Código Postal" class="form-input" required>
-                </div>
-                <div class="name-div">
-                    <label for="last-name">Teléfono</label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Teléfono" class="form-input names-input" required>
-                </div>
-                <div class="name-div">
-                    <label for="home">Correo Electrónico</label>
-                    <input type="text"  placeholder="Correo Electrónico" class="form-input" required>
-                </div>
-                <div class="check">              
-                    <input type="checkbox" name="checkenvio" >
-                    <label for="home">¿Enviar a una dirección diferente?</label>
-                </div>
-                <div class="name-div">
-                    <label for="home">Notas del Pedido</label>
-                    <textarea type="text" ></textarea>
-                </div>
-            </form>
-            <form class="datos_factura2" action="/" method="get">        
-                <div class="cart-pedido">
-                    <h5>TU PEDIDO</h5>
-                    <div class="titulos">        
-                        <h5>PRODUCTO</h5>
-                        <h5>SUBTOTAL</h5>
-                    </div> 
-                    <div class="cart-body">
-                        <div class="cart-items">
-                            <div class="cart-item" >                                
-                                <div class="cart-item-detalle">
-                                    <h6 class="cart-item-name">
-                                        BLEND DE LA CASA  X  2
-                                    </h6>                       
-                            
-                                    <p class="cart-item-descripcion">                              
-                                        ELEGÍ TU MOLIENDA: 
-                                        En Grano
-                                    </p>
-                                    <p class="cart-item-descripcion">
-                                        ELEGÍ EL PESO: 
-                                        250 Gr.                               
-                                    </p>
-                                </div>                                        
-                                <div class="container-group-1">
-                                    <p>$12,200.00</p>                                                     
-                                </div>                                    
-                            </div>
-                            <div class="cart-item-subtotal">                            
-                            </div>    
-                        </div>
-                        <div class="cart-items">
-                            <div class="cart-item" >                            
-                                <div class="cart-item-detalle">
-                                    <h6 class="cart-item-name">
-                                        BLEND DE LA CASA  X  1
-                                    </h6>
-                                    <p class="cart-item-descripcion">                              
-                                        ELEGÍ TU MOLIENDA: 
-                                        Molido Filtro
-                                    </p>
-                                    <p class="cart-item-descripcion">
-                                        ELEGÍ EL PESO: 1 Kilo.                               
-                                    </p>
-                                </div>                                                                                
-                                <div class="container-group-1">
-                                <p>$12,200.00</p>                                                     
-                                </div>
-                            </div>
-                            <div class="cart-item-subtotal">     
-                                <p> </p>
-                            </div>  
-                        </div>
-                        <div class="botones">                    
-                            <a href="/" class="btn"><i class="fa fa-arrow-left"></i>  SEGUIR COMPRANDO</a>
-                            <a href="/products/edit" class="btn-actualizar">ACTUALIZAR CARRITO </a>                   
-                        </div>  
-                    </div>
-                </div>           
-                <div class="cart-total">
-                    <h5>TOTAL DEL CARRITO: </h5>                    
-                </div>
-                <div class="subtotal">
-                    <p>Subtotal  </p><span> $128.400,00</span>
-                </div>                
-                <label>Envio</label>  
-                <div class="envio">
-                    <input type="radio" value="1" name="envio" checked> 
-                    <label for="">Envío gratuito a domicilio en compras superiores a $ 40000</label>
-                </div> 
-                <div class="envio">
-                    <input type="radio" value="1" name="envio" > 
-                    <label for="">Envío a domicilio (todo el país): $6,500.00</label>
-                </div> 
-                <div class="envio">
-                    <input type="radio" value="1" name="envio" > 
-                    <label for="">Retiro por Local (Gratis)</label>
-                </div>                 
-                <div class="subtotal">
-                    <p>Total  </p><span> $128.400,00</span>
-                </div>
-                <div class="pago">
-                    <h3>Medios de Pago</h3>
-                    <img class="tamanoImg1" src="/img/uala.png" alt="Uala">
-                    <img class="tamanoImg1" src="/img/mercadopago.png" alt="MercadoPago">
-                    <img class="tamanoImg1" src="/img/mastercard.png" alt="MasterCard">
-                    <img class="tamanoImg1" src="/img/visa.png" alt="Visa">
-                    <img class="tamanoImg1" src="/img/maestro.png" alt="Maestro">
-                    <img class="tamanoImg1" src="/img/naranja.png" alt="Naranja">
-                    <img class="tamanoImg1" src="/img/pagofacil.png" alt="PagoFacil">
-                    <img class="tamanoImg1" src="/img/rapipago.png" alt="RapiPago">
-                    <img class="tamanoImg1" src="/img/deposito.png" alt="Deposito">
-                    <img class="tamanoImg1" src="/img/efectivo.png" alt="Efectivo">
-                </div>                         
-                <div class="aceptermino">
-                    <input type="checkbox" name="aceptermino" > 
-                    <label for="">Aceptar Términos y Condiciones</label>
-                </div>          
-                <input type="submit" class="btn-fin" value="REALIZAR EL PEDIDO" name="fin_compra">               
-            </form>    
-    </main>
-
-    <%- include('../partials/footer.ejs') %>
-    <script src="/js/coffecode.js"></script>
-
+   <%- include('../partials/header.ejs') %>
+   <main class="cart-panel1">
+      <div style="border:1px solid white;">
+         <p style="font-size: 18px;">SELECCIONA MEDIO DE PAGO</P>
+         <select Medios de pago="select">
+            <option value="0">seleccione</option>
+            <option value="1">Efectivo</option>
+            <option value="2">Tarjeta de credito</option>
+            <option value="3">Tarjeta de debito</option>
+            <option value="4">RapiPago</option>
+            <option value="5">PagoFacil</option>
+            <option value="6">Transferencia</option>
+         </select>
+         <!-- Formulario -->
+         <form action="medios-de-pago" method="get" id="formulario-tarjeta" class="formulario-tarjeta">
+            <div class="grupo">
+               <label for="inputNumero">Número Tarjeta</label>
+               <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+            </div>
+            <div class="grupo">
+               <label for="inputNombre">Nombre completo</label>
+               <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+            </div>
+            <div class="flexbox">
+               <div class="grupo expira">
+                  <label for="selectMes">Expiracion</label>
+                  <div class="flexbox">
+                     <div class="grupo-select">
+                        <select name="mes" id="selectMes">
+                           <option disabled selected>Mes</option>
+                        </select>
+                        <select name="year" id="selectYear">
+                           <option disabled selected>Año</option>
+                        </select>
+                           <label for="inputCCV">CCV</label>
+                           <input type="text" id="inputCCV" maxlength="3">
+                     </div>
+                  </div>
+               </div>
+            <button type="reset">Cancelar</button>
+            <button type="submit">Enviar</button>
+      </div>
+      <form action="medios-de-envio" method="get" class="envio">    
+         <div class="envio">
+            <label>ENVIO</label>  
+            <div style="border:1px solid white;">
+               <p style="font-size: 18px;">SELECCIONA MEDIO DE ENVIO</P>
+               <select Medios de envio="select">
+                  <option value="0">seleccione</option>
+                  <option value="1">A domicilio</option>
+                  <option value="2">Andreani</option>
+                  <option value="3">Correo Argentino</option>
+               </select>
+            </div>
+         </div>
+         <br>    
+      <div class="cart-total">
+         <h5>TOTAL DEL CARRITO: </h5>
+         <div class="subtotal">
+            <p>Subtotal</p>
+            <span> $128.400,00</span>
+         </div>
+         <br>
+         <a class="btn-actualizar" href="/products/checkout" >FINALIZAR COMPRA</a>                   
+      </div>
+   </main>
+   <%- include('../partials/footer.ejs') %>
+   <script src="/js/coffecode.js"></script>
 </body>
 </html>

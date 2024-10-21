@@ -2,7 +2,7 @@
    <link rel="stylesheet" href="/css/productCart_detalle.css">
 </head>
 <body>
-    <%- include('../partials/header.ejs')%>
+    <%- include('../partials/header.ejs',{carrito})%>
    
     <main class="cart-panel">
             <div class="cart-body">
@@ -11,6 +11,7 @@
                         <h5>PRODUCTO</h5>
                         <h5>CANTIDAD</h5>
                     </div> 
+                    <% carrito.forEach(item => { %>
                     <div class="cart-body1">
                             <div class="cart-items">
                                 <div class="cart-item" >
@@ -20,21 +21,21 @@
                                         </button>
                                     </div>      
                                     <div class="cart-item-imagen">
-                                    <img src="/img/imagen_producto.jpg">                           
+                                    <img src="/img/products/<%= item.cafe.imagen_principal %>">                           
                                     </div>
                                     <div class="cart-item-detalle">
                                         <h6 class="cart-item-name">
-                                            BLEND DE LA CASA
+                                            <%= item.cafe.nombre_producto %>
                                         </h6>
                                     
                                 
                                         <p class="cart-item-descripcion">                              
                                             ELEGÍ TU MOLIENDA: 
-                                            En Grano
+                                            <%= item.cafe.id_tipo_cafe %>
                                         </p>
                                         <p class="cart-item-descripcion">
                                             ELEGÍ EL PESO: 
-                                            250 Gr.                               
+                                            <%= item.cafe.idunidad_medida %>                                
                                         </p>
                                     </div>                                        
                                                                                     
@@ -45,51 +46,18 @@
                                     </div>
                                 </div>
                                 <div class="cart-item-subtotal">     
-                                    <p> 2 × $12,200.00</p>
+                                    <p>$ <%= item.cafe.precio %>   </p>
                                 </div>   
                             </div>
-                            <div class="cart-items">
-                                <div class="cart-item" >
-                                    <div class="cart-item-delete">
-                                        <button type="button">
-                                        <i class="fa fa-close"></i>
-                                        </button>
-                                    </div>      
-                                    <div class="cart-item-imagen">
-                                    <img src="/img/imagen-producto3.jpg">                           
-                                    </div>
-                                    <div class="cart-item-detalle">
-                                        <h6 class="cart-item-name">
-                                            BLEND DE LA CASA
-                                        </h6>
-                                    
-                                
-                                        <p class="cart-item-descripcion">                              
-                                            ELEGÍ TU MOLIENDA: 
-                                            Molido Filtro
-                                        </p>
-                                        <p class="cart-item-descripcion">
-                                            ELEGÍ EL PESO: 
-                                        1 Kilo.                               
-                                        </p>
-                                    </div>                                        
-                                                                                    
-                                        <div class="container-group-1">
-                                            <p>-</p>
-                                            <input type="text"  value="1" >
-                                            <p>+</p>                          
-                                    </div>
-                                </div>
-                                <div class="cart-item-subtotal">     
-                                    <p> 2 × $12,200.00</p>
-                                </div>   
-                            </div>
+                          
                             <div class="botones">                    
                                 <a href="/" class="btn"><i class="fa fa-arrow-left"></i>  SEGUIR COMPRANDO</a>
-                            <a href="/products/edit" class="btn-actualizar">ACTUALIZAR CARRITO </a>                  
+                            <a href="/products/edit/1" class="btn-actualizar">ACTUALIZAR CARRITO </a>                  
                             </div>
                     </div>   
                 </form>
+               
+                <%})%>    
                 <form action="/products/checkout" method="get" class="cart-form">     
                     <div class="finalizar_compra">
                         

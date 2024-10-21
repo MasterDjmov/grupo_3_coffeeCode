@@ -22,7 +22,9 @@
         padding-top: 5px;
     }
 }
-
+main{
+    width: 97%;
+}
 .logo {
     width: 150px;
     height: 100px;
@@ -150,11 +152,10 @@ nav {
         flex-direction: column;
         gap: 10px;
         width: 100%;
+        margin-top: 30px;
     }
 
-    .nav-links li {
-        margin-right: 0;
-    }
+  
 
     .search-container {
         flex-direction: column;
@@ -253,4 +254,21 @@ h4 {
 
 @media (max-width: 714px){
     
+}
+
+/*para el color de errores*/
+.error{
+    color:white;
+    background-color: red;
+    display: block;
+    width: 100%;
+    text-align: center;
+    
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+    height: 30px; /* Reservar espacio para el mensaje de error */
+    margin-top: 5px;
+    display: block; 
 }

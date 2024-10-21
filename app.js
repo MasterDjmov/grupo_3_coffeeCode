@@ -1,8 +1,11 @@
 const express = require('express');
+const cors = require('cors');
 const mainRouter = require('./src/routers/mainRouter');
 const userRouter = require('./src/routers/userRouter');
 const productRouter = require('./src/routers/productRouter');
 const adminRouter = require('./src/routers/adminRouter');
+const apiUserRouter = require('./src/routers/api/users.js')
+
 const session = require('express-session');
 const methodOverride = require('method-override');
 const app = express();
@@ -34,12 +37,21 @@ app.listen(puerto,(error)=>{
     }
 })
 
+// Habilitar CORS para todas las rutas
+app.use(cors());
+
+// O permitir solo ciertos orígenes
+app.use(cors({
+  origin: 'http://localhost:5173'
+}));
+
 //cargo los manejadores de rutas
 
 app.use('/', mainRouter);
 app.use('/user', userRouter);
 app.use('/products', productRouter);
 app.use('/admin', adminRouter);
+app.use('/api/users', apiUserRouter)
 app.use('/logout', (req, res) => {
     req.session.destroy((err) => {
         if (err) {

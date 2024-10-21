@@ -17,24 +17,38 @@
             </ol>
     </div>
 
-     <h2>INICIAR SESIÓN</h2>
+     <h2>Inicia Sesión<i class="fa-solid fa-user-large" style="color:#823a6f; padding-left: 5px"></i></h2>
        
-        <form class="estilo-form" action="/user/login" method="post">
-            <div class="bloque">
-            <label  class="estilo-label" for="Email">E-mail</label>
-                <br>
-            <input type="text" name="email" placeholder="email" required>
-            </div>
-            <div class="bloque">
-            <label class="estilo-label" for="clave"> Contraseña</label>
-               <br>
-                <input type="password" name="clave" id="pass1" placeholder="Elige tu contraseña" required>
-            </div>
-            <a href="/user/clave">¿Olvidaste tu contraseña?</a> 
-            <br/>
-            <button type="submit" class="boton">INICIAR SESIÓN</button>
-            <p>¿No tenes una cuenta aún?</p>  <a href="/user/register">Registrate aquí</a>
-        </form>
+      <form  class="estilo-form" action="/user/login" id="login" method="post">
+          <div class="bloque">
+              <label class="estilo-label" for="Email">E-mail</label>
+              <br>
+              <input type="text" name="email" id="email" placeholder="Ingresa tu Email" value="<%= oldData ? oldData.email : '' %>"       >
+              <% if (locals.errors && locals.errors.email) { %>
+                  <div class="error" id="emailError"><%= locals.errors.email.msg %></div>
+              <% } %>
+          </div>
+        
+          <div class="bloque">
+              <label class="estilo-label" for="clave">Contraseña</label>
+              <br>
+                <input type="password" name="clave" id="pass1" class="password" placeholder="Elige tu contraseña">
+                <i id="pass-ojo-abierto" onclick="cambiarPassword()" class="fa-regular fa-eye"  title="Ver contraseña"></i>
+                <i id="pass-ojo-cerrado" onclick="cambiarPassword()" class="fa-regular fa-eye-slash" style=" display: none;" title="Ocultar Contraseña"></i>
+                <i id="pass-icon-delete" onclick="borrar()" class="fa-regular fa-trash-can" title="Borrar Contraseña" ></i>
+                <% if (locals.errors && locals.errors.clave) { %>
+                    <div class="error" id="pass1"><%= locals.errors.clave.msg %></div>
+                <% } %>
+          </div>
+        
+          <a href="/user/clave">¿Olvidaste tu contraseña?</a>
+          <br>
+          <button type="submit" class="boton" id="btnlogin">INICIAR SESIÓN</button>
+          <p>¿No tenes una cuenta aún?</p>
+          <a href="/user/register">Registrate aquí</a>
+      </form>
+  
+  
         <br>
         <div class="container">
             <a href="#">
@@ -53,7 +67,10 @@
     </main>
     
     <%- include('../partials/footer.ejs') %>
-    
+    <script src="/js/cambiarPassword.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="/js/loginValidate.js"></script>
+    <script src="/js/coffecode.js"></script>
 
     </body>
 </html>

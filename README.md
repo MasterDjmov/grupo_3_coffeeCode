@@ -114,3 +114,7 @@ Para diseñar el Sitio Web CoffeCode nos inspiramos en varias características c
 **Sprint 5:** [Tablero Sprint 5](https://trello.com/b/oeMed95u/sprint-5)
 
 **Sprint 6:** [Tablero Sprint 6](https://trello.com/b/cSThc3dH/sprint-6)
+
+**Sprint 7:** [Tablero Sprint 7](https://trello.com/b/BwTSZz1Q/sprint-7)
+
+**Sprint 8:** [Tablero Sprint 8](https://trello.com/b/GQx2B4gw/sprint-8)

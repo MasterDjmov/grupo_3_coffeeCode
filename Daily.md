@@ -47,6 +47,16 @@
   
   - [## Fecha: 26/09/2024](#fecha-26092024)
 
+  - [# SPRINT-7](#sprint-7)
+  - [# DAILY DOS POR SEMANA](#daily-dos-por-semana)
+  
+    - [## Fecha: 01/10/2024](#fecha-01102024)
+
+    - [## Fecha: 03/10/2024](#fecha-03102024)
+
+    - [## Fecha: 08/10/2024](#fecha-08102024)
+
+    - [## Fecha: 10/10/2024](#fecha-10102024)
 
 ### Contenido
 
@@ -714,18 +724,17 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Construcción del Tablero en Trello para el Sprint 6.
+
 **Impedimentos**         
- - 
+ - Sin impedimentos.
 
 **Qué va a hacer hoy**  
- - 
- - 
-
+ - Rotación de Roles
+ - Actualizar Retrospectiva.
 
 **Soluciones Propuestas**
-- 
+- Planificar bien las tareas para cumplir con la totalidad del Sprint 6.
 
 
 ## Fecha: 03/09/2024
@@ -782,18 +791,20 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Actualicé el tablero de trello. 
+
 **Impedimentos**         
- - 
+ - sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
+ - Diseñar la base de datos
+ - Definir herramientas para el DER
+ - Construccion de Modulos.
+ - Distribución de tareas por colores
 
 
 **Soluciones Propuestas**
-- 
+- Revisión del código y seguimiento del equipo.
 
 
 ## Fecha: 06/09/2024
@@ -850,18 +861,18 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Planifique los temas de la reunión.  
 **Impedimentos**         
- - 
+ - Sin Impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
-
+ - Revisión de la base de datos
+ - Diseñar las tablas
+ - Relacionar las tablas
+ - realizar el DER
 
 **Soluciones Propuestas**
-- 
+-  Revisión del código y seguimiento del equipo.
 
 
 ## Fecha: 10/09/2024
@@ -916,18 +927,18 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Revisé el tablero
+ -  Revisé Github
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
+ - Revisión de la base de datos
+ - Armado de structure.sql sin datos
 
 
 **Soluciones Propuestas**
-- 
+-  Revisión del código y seguimiento del equipo.
 
 
 ## Fecha: 14/09/2024
@@ -955,13 +966,13 @@ sin impedimentos
  - Capacitación sobre la herrmaienta a utilizar para la BD.
 
 **Impedimentos**         
- - sin impedimentos
+ - sin impedimentos.
 
 **Qué va a hacer hoy**  
- - Poblar de datos la bd con el equipo de trabajo
+ - Poblar de datos la bd con el equipo de trabajo.
 
 **Soluciones Propuestas**
-- 
+- soluciones en playground.
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -983,18 +994,18 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Asigné nuevas tareas en el tablero
+ 
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
+ -  Revisión de la base de datos
+ -  Poblar las tablas
 
 
 **Soluciones Propuestas**
-- 
+-  Revisión del código y seguimiento del equipo.
 
 
 ## Fecha: 17/09/2024
@@ -1052,18 +1063,19 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Revisé las vistas 
+ -  Revisé el Github.
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
+ - Revisión de la base de datos
+ - Revisión de las vistas.
+ - Asignar tareas para el nuevo integrante del equipo.
 
 
 **Soluciones Propuestas**
-- 
+-  Seguir controlando el código, realizando backup y practicando.
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
@@ -1103,16 +1115,18 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Revisión de los modelos
+ - Revisión de las asociaciones entre modelos
+ - Revisando la base de datos y sus campos
 
 **Impedimentos**         
- - 
+ - sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Hacer crud de usuarios y productos con metodos sequelize
 
 **Soluciones Propuestas**
-- 
+- revisar bien el codigo para no cometer de errores en los nombres de cada campo
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -1134,33 +1148,31 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Actulicé trello
+ -
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
+ - Revisión del código
+ - Revisión del Modelo
 
 
 **Soluciones Propuestas**
-- 
+- Seguir controlando el código, realizando backup y practicando.
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
  - corregí unos modelos, que tenían una referencia errónea
- - 
+ 
 
 **Impedimentos**         
  - ninguno
 
 **Qué va a hacer hoy**  
  - seguiré mirando el código para encentra posibles fallos, y ver si hace falta mejorar algo en cuanto a sequelize
- - 
-
 
 **Soluciones Propuestas**
 - ninguna
@@ -1171,31 +1183,30 @@ sin impedimentos
 ### Diaz Caceres, Camila:
 
 **Qué hizo ayer**  
- [Descripción de tareas completadas ayer]       
-
+ - Reunion de equipo por consultas del codigo.
 **Impedimentos**         
- [Descripción de impedimentos]
+ - Error al conectarse a la base.
 
 **Qué va a hacer hoy**  
- [Descripción de tareas planeadas para hoy]
+ - Resolver la conexion a la bd y completar las vistas necesarias para el proyecto.
 
 **Soluciones Propuestas**
-- aquí soluciones propuestas
+- Ver los errores en consola.
 
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
 
-**Qué hizo ayer**  
- - 
+**Qué hizo ayer** 
+ - Revision de vistas y codigo
 
 **Impedimentos**         
- - 
+ - sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Correccion de estilos en vistas
 
 **Soluciones Propuestas**
-- 
+- ver bien las vistas y agregar el css de acuerdo a cada elemento
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -1217,36 +1228,35 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Planifique tareas
+ -  Actualicé los temas de las reuniones.
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
-
+ - Revisión del código
+ - Revisión de la base de datos
 
 **Soluciones Propuestas**
-- 
+- seguir practicando y organizando mejoras al proyecto.
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
+ - corregimos algunos campos de la base de datos que vimos incoherentes
  - 
 
 **Impedimentos**         
- - 
+ - ningún
 
 **Qué va a hacer hoy**  
- - 
+ - seguir analizando la base de datos para buscar mas fallas o funciones que no cuadren con la lógica del negocio
  - 
 
 
 **Soluciones Propuestas**
-- 
+- analizar las tablas
 
 ## Fecha: 26/09/2024
 
@@ -1269,16 +1279,16 @@ sin impedimentos
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Colobarar con compañeros del equipo para resolver los distintos problemas.
 
 **Impedimentos**         
- - 
+ - sin impedimentos.
 
 **Qué va a hacer hoy**  
- - 
+ - Testing
 
 **Soluciones Propuestas**
-- 
+- ninguna
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -1300,32 +1310,429 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- -  
- - 
+ -  Actualicé el tablero trello
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
- - 
-
-
+ - revisar los puntos del sprint
+ 
 **Soluciones Propuestas**
-- 
+- Seguir controlando el código, realizando backup y practicando.
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
+ - agregue los campos de tipo de cafe y de unidades a las tablas de carrito relacional
+
+**Impedimentos**         
+ - ninguno
+
+**Qué va a hacer hoy**  
+ - comenzamos con el estudio y aplicación de los JS para validar front y back 
+
+**Soluciones Propuestas**
+- Por ahora ninguna.
+
+
+# SPRINT-7
+
+---
+
+# DAILY DOS POR SEMANA
+
+---
+
+## Fecha: 26/09/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ -        
 
 **Impedimentos**         
  - 
 
 **Qué va a hacer hoy**  
  - 
- - 
 
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - Revisión de codigo.
+
+**Impedimentos**         
+ - ninguno
+
+**Qué va a hacer hoy**  
+ - Creación de retrospectiva con el equipo de trabajo.
+ - Agregar el tablero del sprint 7
+ - Organizar las validaciones
+
+**Soluciones Propuestas**
+ - ninguna
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
 
 **Soluciones Propuestas**
 - 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  Revisión de los temas del sprint
+**Impedimentos**         
+ - Sin impedimentos
+
+**Qué va a hacer hoy**  
+ - Crear la retrospectiva
+ - Armado del tablero 
+ - División de roles.
+ 
+**Soluciones Propuestas**
+- Seguir practicando
+
+## Resumen de Tareas
+### Loyola, Leo Martin:
+
+**Qué hizo ayer**  
+ - no hubo actividades, mas que controlar codigo
+**Impedimentos**         
+ - ninguno
+**Qué va a hacer hoy**  
+ - comenzar a ver sobre js para efectuar próximamente los cambios en validaciones
+
+**Soluciones Propuestas**
+ - investigar, leer playground
+
+ ## Fecha: 01/10/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ -        
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - Validaciones por backend registro de usuario.
+ - Validaciones por backend Creación de producto.
+
+**Impedimentos**         
+ - ninguno
+
+**Qué va a hacer hoy**  
+ - Revision de codigo.
+ - Revision de estilos.
+
+**Soluciones Propuestas**
+ - ver como mejorar los estilos en las vistas de los formularios
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ - Organización de las reuniones
+**Impedimentos**         
+ - Sin impedimentos
+
+**Qué va a hacer hoy**  
+ - Revisión de Código (formularios)
+ - Testing de validaciones.
+ - Revisión de Vistas
+ 
+**Soluciones Propuestas**
+- Seguir programando y revisando el playground
+
+## Resumen de Tareas
+### Loyola, Leo Martin:
+
+**Qué hizo ayer**  
+ - no hubo actividades, mas que controlar codigo
+**Impedimentos**         
+ - ninguno
+**Qué va a hacer hoy**  
+ - comenzar a ver el playground sobre REACT y sus componentes, suena interesante
+
+**Soluciones Propuestas**
+ - investigar, leer playground sobre REACT
+
+ ## Fecha: 03/10/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ -        
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - No hubo actividades, por mi parte termine las validaciones.
+
+**Impedimentos**         
+ - ninguno.
+
+**Qué va a hacer hoy**  
+ - Revisar el código ante posibles errores.
+
+**Soluciones Propuestas**
+ - probar el funcionamiento correcto de la página web.
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  Actualizar Tablero Trello
+**Impedimentos**         
+ - Sin impedimentos
+
+**Qué va a hacer hoy**  
+ - Validación productos
+ - Controlar rutas
+ - Revisión vistas
+ 
+**Soluciones Propuestas**
+- Seguir Revisando las Vistas
+
+## Resumen de Tareas
+### Loyola, Leo Martin:
+
+**Qué hizo ayer**  
+ - no hubo actividades por ahora, las tareas de validacion terminaron
+**Impedimentos**         
+ - ninguno
+**Qué va a hacer hoy**  
+ - Seguimos viendo lo de React y como funciona, también como usar VITE
+
+**Soluciones Propuestas**
+ - investigar, leer playground
+ ## Fecha: 08/10/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ -        
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - Capacitarme sobre react y su funcionamiento
+
+**Impedimentos**         
+ - Ninguno
+
+**Qué va a hacer hoy**  
+ - Hacer los ejercicios de playground
+
+**Soluciones Propuestas**
+ - Todo en playground.
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ -  Revisión vistas
+**Impedimentos**         
+ - sin impedimentos
+
+**Qué va a hacer hoy**  
+ - Validación login de usuario(backend)
+ - Revisar Vistas carrito
+ 
+**Soluciones Propuestas**
+- seguir practicando React para implementar en el proyecto
+
+## Resumen de Tareas
+### Loyola, Leo Martin:
+
+**Qué hizo ayer**  
+ - tuve una semana complicada con el trabajo, pero igualmente intente ver REACT
+**Impedimentos**         
+ - ninguno
+**Qué va a hacer hoy**  
+ - Seguimos viendo lo de React y como funciona, ver sobre el flujo o circuito de REACT
+
+**Soluciones Propuestas**
+ - investigar, leer playground
+
+ ## Fecha: 10/10/2024
+
+## Resumen de Tareas
+### Diaz Caceres, Camila:
+
+**Qué hizo ayer**  
+ -        
+
+**Impedimentos**         
+ - 
+
+**Qué va a hacer hoy**  
+ - 
+
+**Soluciones Propuestas**
+- aquí soluciones propuestas
+
+## Resumen de Tareas
+### Diaz Bordon, Facundo:
+
+**Qué hizo ayer**  
+ - Revisar el código
+ - Ver como mejorar los diseños de los formularios
+
+**Impedimentos**         
+ - ninguno  
+
+**Qué va a hacer hoy**  
+ - Ver las consignas del nuevo sprint.
+ - Capacitarse en playground sobre apis y react.
+
+**Soluciones Propuestas**
+ - en playground
+
+## Resumen de Tareas
+### Alvarez, Matias:
+
+**Qué hizo ayer**  
+- 
+
+**Impedimentos**         
+- 
+
+**Qué va a hacer hoy**  
+- 
+
+**Soluciones Propuestas**
+- 
+
+
+## Resumen de Tareas
+### Bustos, Patricia Alejandra:
+
+**Qué hizo ayer**  
+ - Actualizar las tareas en Trello
+ - Actualizar los temas de las reuniones
+ - Controlar el avance del equipo
+**Impedimentos**         
+ - Sin impedimentos
+
+**Qué va a hacer hoy**  
+ - Revisar los puntos del Sprint
+ - Revisar el Tablero de Trello
+ - Controlar las Tareas
+ - Analizar Mejoras
+ - Completar dayli
+ 
+**Soluciones Propuestas**
+- seguir revisando todo el código y aprendiendo React para aplicar al proyecto
+
+## Resumen de Tareas
+### Loyola, Leo Martin:
+
+**Qué hizo ayer**  
+ - estuve investigando y leyendo en playground sobre el flujo de los componentes
+**Impedimentos**         
+ - ninguno
+**Qué va a hacer hoy**  
+ - ponerme al dia con playground, con el grupo 3 y ver que puedo ir viendo del sprint8
+
+**Soluciones Propuestas**
+ - investigar, leer playground

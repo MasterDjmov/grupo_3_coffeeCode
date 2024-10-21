@@ -27,7 +27,7 @@
                             <button type="submit">BUSCAR</button>
                         </form>
                     </li>
-                    
+                    <% if(user){%>   
                     <li class="dropdown">
                         <button  class="dropdown-button" id="dropdownMenuButton1">
                             <img src="/img/carrito.png" alt="Carrito de Compras" width="30px">
@@ -35,56 +35,62 @@
                         
                         <div class="dropdown-menu" id="dropdownMenu">
                             <div class="carrito-panel1">
-    
+                                <% if(carrito && carrito.length > 0){%>   
+                                   
                                 <form action="/products/checkout" method="get" class="carrito-form1">
                                              
-                                       <h2>CARRITO</h2>
+                                       <h3>CARRITO</h3>
                                     <div class="carrito-body1">
                                             <div class="carrito-items1">
-                                                <div class="carrito-item1" >
-                                                    <div class="carrito-item-imagen1">
-                                                        <img src="/img/imagen_producto.jpg">                           
-                                                    </div>
-                                                    <div class="carrito-item-detalle1">
-                                                        <h5 class="carrito-item-name1">
-                                                            BLEND DE LA CASA
-                                                        </h5>
-                                                    
-                                                
-                                                        <p class="carrito-item-descripcion1">
+                                                <% carrito.forEach(item => { %>
+                                                    <div class="carrito-item1" >
+                                                        <div class="carrito-item-imagen1">
+                                                            <img src="/img/products/<%= item.cafe.imagen_principal %>">                           
+                                                        </div>
+                                                        <div class="carrito-item-detalle1">
+                                                            <h5 class="carrito-item-name1">
+                                                                <%= item.cafe.nombre_producto %>
+                                                            </h5>
                                                         
-                                                            ELEGÍ TU MOLIENDA: 
-                                                            En Grano
-                                                        </p>
-                                                        <p class="carrito-item-descripcion1">
-                                                            ELEGÍ EL PESO: 
-                                                            250 Gr.                             
-                                                        
-                                                        </p>
-                                                    </div>
-                                                    <div class="carrito-item-delete1">
-                                                        <button type="button">
-                                                        <i class="fa fa-close"></i>
-                                                        </button>
-                                                    </div>                           
                                                     
-                                                </div>
-                                                <div class="carrito-item-subtotal1">
-                                                    <p> 2 × $12,200.00</p>
-                                                </div>
+                                                            <p class="carrito-item-descripcion1">
+                                                                Tipo: <%= item.cafe.id_tipo_cafe %>
+                                                            </p>
+                                                            <p class="carrito-item-descripcion1">
+                                                              Peso: <%= item.cafe.idunidad_medida %>                                                            
+                                                            </p>
+                                                        </div>
+                                                        <div class="carrito-item-delete1">
+                                                            <button type="button">
+                                                            <i class="fa fa-close"></i>
+                                                            </button>
+                                                        </div>  
+                                                           <div class="carrito-item-subtotal1">
+                                                            <p>$ <%= item.cafe.precio %></p>
+                                                        </div>                                           
+                                                    </div>   
+                                                    <% }) %>                                              
+                                                  
                                             </div>                    
                                             <div class="carrito-total1">
-                                                <h4>Subtotal: <span>$128.400,00</span></h4>                        
-                                            </div>               
+                                                <p>Subtotal: <span>$128.400,00</span></p>                        
+                                            </div>       
+                                              
                                             <div class="carrito-botones1">
-                                                <a href="/products/edit" class="carrito-btn-ver1">VER CARRITO</a>               
-                                                <input type="submit" class="carrito-btn-fin1" value="FINALIZAR LA COMPRA" name="fin_compra">                   
-                                            </div>              
+                                               <a href="/products/edit/1" class="carrito-btn-ver1">VER CARRITO</a>               
+                                               <input type="submit" class="carrito-btn-fin1" value="FINALIZAR LA COMPRA" name="fin_compra">                   
+                                            </div> 
+                                             
                                     </div>
                                 </form>
+                                <% } else { %>
+                                    <h3 class="msg-vacio">CARRITO VACIO</h3>
+                                <% }%>   
                             </div>
                         </div>
                     </li>
+                     
+                    <% } %>
                     <li class="login1">
                         <a href="/user/login">
                             <% if(user){%>

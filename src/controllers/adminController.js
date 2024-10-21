@@ -6,6 +6,9 @@ const session = require('express-session');
 //agregamos la parte de sequelize
 const db = require('../database/models/index.js');
 const { Association, where } = require('sequelize');
+const { emit } = require('process');
+const { error } = require('console');
+const { validationResult } = require('express-validator');
 
 const adminController = {
     //formulario con GET
@@ -41,7 +44,9 @@ const adminController = {
                 paises,
                 productores,
                 msg: "",
-                rol: req.session.user 
+                rol: req.session.user,
+                errors: {},
+                oldData: {}
             });
         } catch (error) {
             console.error("Error al cargar el producto:", error);
@@ -64,6 +69,39 @@ const adminController = {
             procesamiento_lavado,
             altitud
         } = req.body;
+
+        const errors = validationResult(req);
+
+        if (!errors.isEmpty()) {
+            // Si hay errores, obtenemos nuevamente los datos del producto y las listas de opciones
+            const id = req.params.id;
+            const cafe = await db.Productos.findByPk(id, {
+                include: [
+                    { association: 'pais' },
+                    { association: 'tipocafe' },
+                    { association: 'unidad_de_medida' },
+                    { association: 'productor' }
+                ]
+            });
+    
+            const tiposCafes = await db.TiposCafes.findAll();
+            const unidadesMedida = await db.UnidadesDeMedidas.findAll();
+            const paises = await db.Paises.findAll();
+            const productores = await db.Productores.findAll();
+    
+            
+            return res.render('admin/editProduct', {
+                cafe,
+                tiposCafes,
+                unidadesMedida,
+                paises,
+                productores,
+                errors: errors.mapped(),  
+                oldData: req.body,          
+                msg: "",                    
+                rol: req.session.user
+            });
+        }
     
         try {
             const id = req.params.id;
@@ -116,12 +154,14 @@ const adminController = {
 
             console.log("Producto actualizado correctamente");
 
-            res.render('admin/editProduct', { cafe: updatedCafe, unidadesMedida, productores,paises ,msg: 'Edición exitosa' });
+            res.render('admin/editProduct', { cafe: updatedCafe, unidadesMedida, productores,paises ,msg: 'Edición exitosa', errors: {}, oldData: {} });
         } catch (error) {
             console.error("Error al actualizar el producto:", error);
              res.render('admin/editProduct', {
                 msg: "Error al actualizar el producto",
                 rol: "",
+                errors: {},
+                oldData: req.body
             });
         }
     },
@@ -137,6 +177,12 @@ const adminController = {
                 const tiposCafes = await db.TiposCafes.findAll();
                 const unidades = await db.UnidadesDeMedidas.findAll();
                 const productores = await db.Productores.findAll();
+
+                const oldData = req.session.oldData || {}; 
+                const errors = req.session.errors || {};
+
+                req.session.oldData = null;
+                req.session.errors = null;
     
                 res.render('admin/registerProduct', {
                     paises,
@@ -144,7 +190,9 @@ const adminController = {
                     unidades,
                     productores,
                     msg: "",
-                    user: req.session.user 
+                    user: req.session.user,
+                    oldData,
+                    errors
                 });
             } catch (error) {
                 console.error("Error cargar el fomulario:", error);
@@ -156,6 +204,30 @@ const adminController = {
     },
     registerProduct: async (req, res) => {
         try {
+
+            const errors = validationResult(req);
+        if (!errors.isEmpty() || req.fileValidationErrors) {
+            const tiposCafes = await db.TiposCafes.findAll();
+            const unidades = await db.UnidadesDeMedidas.findAll();
+            const paises = await db.Paises.findAll();
+            const productores = await db.Productores.findAll();
+
+            res.locals.oldData = req.body; 
+            res.locals.errors = errors.mapped();
+            
+            return res.render('admin/registerProduct', {
+                fileErrors: req.fileValidationErrors,
+                tiposCafes,
+                unidades,
+                paises,
+                productores,
+                rol: req.session.user,
+                msg: ""
+            });
+        }
+
+
+
             const {
                 nombre_producto,
                 descripcion_corta,
@@ -205,6 +277,8 @@ const adminController = {
             const unidades = await db.UnidadesDeMedidas.findAll();
             const paises = await db.Paises.findAll();
             const productores = await db.Productores.findAll();
+
+            
     
             res.render('admin/registerProduct', {
                 msg: "Producto registrado exitosamente",
@@ -212,13 +286,15 @@ const adminController = {
                 unidades,
                 paises,
                 productores,
-                rol: req.session.user
+                rol: req.session.user,
+                oldData: {}
             });
         } catch (error) {
             console.error("Error al registrar el producto:", error);
             res.render('admin/registerProduct', {  
                 msg: "Error al registrar el producto",
-                rol: req.session.user  
+                rol: req.session.user,
+                oldData: req.body
             });
         }
     },
