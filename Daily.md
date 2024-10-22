@@ -1538,16 +1538,16 @@ sin impedimentos
 ### Alvarez, Matias:
 
 **Qué hizo ayer**  
-- 
+- Comenzó la corrección de la retrospectiva y discutió con el equipo sobre los puntos clave a mejorar.
 
 **Impedimentos**         
-- 
+- Ninguno.
 
 **Qué va a hacer hoy**  
-- 
+- Continuar con la corrección final de la retrospectiva y asistir al equipo de front-end en la implementación de cambios menores.
 
 **Soluciones Propuestas**
-- 
+- No aplica.
 
 
 ## Resumen de Tareas
@@ -1578,6 +1578,7 @@ sin impedimentos
 
 **Soluciones Propuestas**
  - investigar, leer playground
+
  ## Fecha: 08/10/2024
 
 ## Resumen de Tareas
@@ -1614,16 +1615,16 @@ sin impedimentos
 ### Alvarez, Matias:
 
 **Qué hizo ayer**  
-- 
+- Finalizó la revisión inicial de la retrospectiva y ayudó en la planificación del front-end.
 
 **Impedimentos**         
-- 
+- Algunos puntos de la retrospectiva no están del todo claros.
 
 **Qué va a hacer hoy**  
-- 
+- Resolver los puntos pendientes de la retrospectiva y ayudar con la integración en el front-end.
 
 **Soluciones Propuestas**
-- 
+- Revisar los puntos no claros con el equipo para asegurar consistencia.
 
 
 ## Resumen de Tareas
@@ -1692,16 +1693,16 @@ sin impedimentos
 ### Alvarez, Matias:
 
 **Qué hizo ayer**  
-- 
+- Ajustó los detalles de la retrospectiva y participó en las pruebas del front-end.
 
 **Impedimentos**         
-- 
+- Falta de tiempo para realizar una prueba completa en el front-end.
 
 **Qué va a hacer hoy**  
-- 
+- Completar la corrección de la retrospectiva y colaborar con el equipo de front-end en la depuración.
 
 **Soluciones Propuestas**
-- 
+- Programar tiempo adicional para pruebas completas del front-end.
 
 
 ## Resumen de Tareas
