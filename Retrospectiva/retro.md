@@ -144,3 +144,29 @@
 ### Dejar de hacer
 - Tareas sin fechas limites: Establecer fechas limites para las distintas tareas llevadas a cabo por los integrantes del proyecto.
 - No informar el progreso: avisar sobre el progreso logrado de las tareas realizadas en el sprint.
+
+## Retrospectiva Sprint 7-8
+
+### Comenzar a hacer
+
+- Documentación clara y constante: Comenzar a documentar cada paso con más detalle para agilizar futuros proyectos y colaboraciones.
+- Mayor enfoque en la planificación inicial: Asegurarnos de que todos los miembros del equipo comprendan el alcance de las tareas desde el inicio para evitar malentendidos.
+
+### Hacer más
+
+- Revisión de código conjunta: Aumentar la frecuencia de las revisiones de código entre los miembros del equipo para garantizar que todo esté alineado con los estándares del proyecto.
+- Pruebas en el entorno final: Realizar más pruebas en el entorno real para prevenir posibles problemas en producción.
+
+### Continuar haciendo
+
+- Colaboración activa entre el equipo: Mantener la comunicación constante y efectiva que ha permitido avanzar sin retrasos significativos.
+- Implementación ágil de tareas: Seguir con el ritmo de desarrollo de cada sprint, clave para llegar a esta etapa sin inconvenientes.
+
+### Hacer menos
+
+- Refactorización continua: Reducir el tiempo dedicado a la refactorización no esencial para concentrarnos en tareas más críticas.
+- No cumplir con las fechas limites
+
+### Dejar de hacer
+
+- Comenzar tareas sin planificación detallada: Evitar iniciar trabajos sin una planificación completa para prevenir retrasos en futuros proyectos.
