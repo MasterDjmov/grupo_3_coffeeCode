@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const mainRouter = require('./src/routers/mainRouter');
 const userRouter = require('./src/routers/userRouter');
 const productRouter = require('./src/routers/productRouter');
@@ -35,6 +36,14 @@ app.listen(puerto,(error)=>{
         console.log("Server iniciado en: "+puerto);
     }
 })
+
+// Habilitar CORS para todas las rutas
+app.use(cors());
+
+// O permitir solo ciertos orígenes
+app.use(cors({
+  origin: 'http://localhost:5173'
+}));
 
 //cargo los manejadores de rutas
 

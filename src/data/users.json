@@ -11,7 +11,7 @@
     "id":2,
     "nombre":"Facundo",
     "apellido":"Diaz",
-    "imagen":"avatar.jpg",
+    "imagen":"avatar.png",
     "email": "facudiaz@gmail.com",
     "clave": "diaz123",
     "categoria": "CLIENTE"
@@ -20,9 +20,19 @@
     "id":3,
     "nombre":"Patricia",
     "apellido":"Bustos",
-    "imagen":"avatar1.jpg",
+    "imagen":"avatar1.png",
     "email": "patrib@gmail.com",
     "clave": "bustos123",
+    "categoria": "CLIENTE"
+},
+
+{
+    "id":4,
+    "nombre":"Matias",
+    "apellido":"Alvarez",
+    "imagen":"avatar2.png",
+    "email": "matias123t1@gmail.com",
+    "clave": "Cebl37492767@",
     "categoria": "CLIENTE"
 }
 
