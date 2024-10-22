@@ -26,4 +26,14 @@
     "categoria": "CLIENTE"
 }
 
+{
+    "id":4,
+    "nombre":"Matias",
+    "apellido":"Alvarez",
+    "imagen":"avatar3.jpg",
+    "email": "matias123t1@gmail.com",
+    "clave": "Cebl37492767@",
+    "categoria": "CLIENTE"
+}
+
 ]
