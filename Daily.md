@@ -1979,16 +1979,16 @@ Revise el codigo para mejorar las vistas.
 ### Diaz Caceres, Camila:
 
 **Qué hizo ayer**  
- - 
+ - Revise trello, tareas propias y de mis compañeros, revise repositorio github porque no se subian mis cambios.
 
 **Impedimentos**         
- - 
+ - Encontrar el error de porque no se subian mis cambios.
 
 **Qué va a hacer hoy**  
- -         
+ - Solucionar errores.         
 
 **Soluciones Propuestas**
-- 
+- Consultar a mis compañeros:revisar el codigo y errores juntos.
 
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
