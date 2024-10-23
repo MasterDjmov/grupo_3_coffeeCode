@@ -1827,16 +1827,16 @@ Revise el codigo para mejorar las vistas.
 ### Diaz Caceres, Camila:
 
 **Qué hizo ayer**  
- - 
+ - Estudie como realizar el nuevo read me para el dashboard.
 
 **Impedimentos**         
- - 
+ - No saber que informacion poner.
 
 **Qué va a hacer hoy**  
- -         
+ - Seguir estudiando y trabajando en el read me.         
 
 **Soluciones Propuestas**
-- 
+- Consultar al profesor sobre la informacion y a mis compañeros de equipo.
 
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
