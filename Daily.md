@@ -1903,16 +1903,16 @@ Revise el codigo para mejorar las vistas.
 ### Diaz Caceres, Camila:
 
 **Qué hizo ayer**  
- - 
+ - Completar playground.
 
 **Impedimentos**         
- - 
+ - Tiempo.
 
 **Qué va a hacer hoy**  
- -         
+ - Revisar vistas y codigo.         
 
 **Soluciones Propuestas**
-- 
+- Ninguna.
 
 ## Resumen de Tareas
 ### Diaz Bordon, Facundo:
