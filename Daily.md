@@ -1766,17 +1766,19 @@ Revise el codigo para mejorar las vistas.
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Ver las consignas del sprint 8 a realizar.
+ - Revisar el código
  
 
 **Impedimentos**         
- -   
+ - ninguno.
 
 **Qué va a hacer hoy**  
- - 
+ - Ver el Trello.
+ - Capacitacion sobre React.
  
 **Soluciones Propuestas**
- - 
+ - En el playground
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -1842,17 +1844,19 @@ Revise el codigo para mejorar las vistas.
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Realizacion de API para Usuarios.
+ - Revision de formularios y sus estilos.
  
 
 **Impedimentos**         
- -   
+ - Ninguno.
 
 **Qué va a hacer hoy**  
- - 
+ - Revision de errores en en codigo de la API.
+ - Creación de repositorio para el dashboard.
  
 **Soluciones Propuestas**
- - 
+ - Ver bien las consignas del playground
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -1918,17 +1922,18 @@ Revise el codigo para mejorar las vistas.
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Ver como realizar el diseño del dashboard.
  
 
 **Impedimentos**         
- -   
+ -   Ninguno.
 
 **Qué va a hacer hoy**  
- - 
+ - Realizar el diseño para el dashboard.
+ - Aplicar SPA al diseño
  
 **Soluciones Propuestas**
- - 
+ - En el playground y en las documentaciones sobre React.
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
@@ -1994,17 +1999,18 @@ Revise el codigo para mejorar las vistas.
 ### Diaz Bordon, Facundo:
 
 **Qué hizo ayer**  
- - 
+ - Haciendo la llamada a la API de usuarios en el dashboard.
+ - Mostrar el total de usuarios en el pagina principal.
  
 
 **Impedimentos**         
- -   
+ -   Sin problemas.
 
 **Qué va a hacer hoy**  
- - 
+ - Explicar el diseño y sus funcionalidades al equipo de trabajo.
  
 **Soluciones Propuestas**
- - 
+ - En el playground.
 
 ## Resumen de Tareas
 ### Alvarez, Matias:
