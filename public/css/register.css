@@ -24,7 +24,7 @@ main{
     .estilo-form{
         display: flex;
         flex-direction: column;
-        padding-right: 70px;
+        padding-right: 100px;
         align-items: flex-end;
     }
     .boton{
@@ -82,7 +82,7 @@ main{
         position: absolute;
          cursor: pointer;
          color:#823a6f;
-         padding: 10px 100px;
+         padding: 10px 120px;
          right: 30px;
          
         transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
@@ -94,7 +94,7 @@ main{
         position: absolute;
         cursor: pointer;
         color:#823a6f;
-        padding: 10px 100px;
+        padding: 10px 120px;
         right: 30px;
         
         
@@ -132,7 +132,7 @@ main{
     }
 
     a:hover{
-        color: #823a6f;
+        color: #efb145;
     }
 }
 
