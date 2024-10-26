@@ -15,13 +15,14 @@
             <li class="navbar-item"> <a href="#"> Mi Cuenta</a></li>
             <li class="navbar-item"> <a href="#"> Login</a></li>
             </ol>
+            <h2>INICIA SESIÓN<i class="fa-solid fa-user-large" style="color:#efb145; padding-left: 5px"></i></h2>
     </div>
 
-     <h2>Inicia Sesión<i class="fa-solid fa-user-large" style="color:#823a6f; padding-left: 5px"></i></h2>
+    
        
       <form  class="estilo-form" action="/user/login" id="login" method="post">
           <div class="bloque">
-              <label class="estilo-label" for="Email">E-mail</label>
+              <label class="estilo-label" for="Email">E-MAIL</label>
               <br>
               <input type="text" name="email" id="email" placeholder="Ingresa tu Email" value="<%= oldData ? oldData.email : '' %>"       >
               <% if (locals.errors && locals.errors.email) { %>
@@ -30,7 +31,7 @@
           </div>
         
           <div class="bloque">
-              <label class="estilo-label" for="clave">Contraseña</label>
+              <label class="estilo-label" for="clave">CONTRASEÑA</label>
               <br>
                 <input type="password" name="clave" id="pass1" class="password" placeholder="Elige tu contraseña">
                 <i id="pass-ojo-abierto" onclick="cambiarPassword()" class="fa-regular fa-eye"  title="Ver contraseña"></i>
@@ -45,7 +46,7 @@
           <br>
           <button type="submit" class="boton" id="btnlogin">INICIAR SESIÓN</button>
           <p>¿No tenes una cuenta aún?</p>
-          <a href="/user/register">Registrate aquí</a>
+          <button class="boton_registrate" href="/user/register">REGISTRATE AQUÍ</a></button>
       </form>
   
   
@@ -58,7 +59,7 @@
                     <img src="https://developers.google.com/identity/images/g-logo.png">
                   </div>
                   <span class="text-container">
-                    <span>Ingresa con Google</span>
+                    <span>INGRESA CON GOOGLE</span>
                   </span>
                 </div>
               </div>
