@@ -4,17 +4,11 @@
 <body>
     <%- include('../partials/header.ejs')%>
     <main>
-            <div class="navbar-item1">
-                <ol class= "navbar">
-                <li class="navbar-item"> <a href='/'> Incio</a></li>
-                <li class="navbar-item"> <a href="#"> Mi Cuenta</a></li>
-                <li class="navbar-item"> <a href="#"> Cambiar contraseña</a></li>
-                </ol>
-          </div>
+            
         <h2>CAMBIAR CONTRASEÑA</h2>
             <form action="/" method="get" class="estilo-form">
                 <div class="bloque">
-                <label for="email">Recupera tu contraseña<br></label>
+                <label class="estilo-label" for="email">RECUPERA TU CONTRASEÑA<br></label>
                 <input type="text" name="email" placeholder="Ingresa tu email" required><br>
                 </div>
                 <button class="boton" type="submit" value="Enviar">Enviar email</button>

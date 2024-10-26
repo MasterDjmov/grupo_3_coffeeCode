@@ -9,7 +9,6 @@ main{
     background-image: url('../img/fondo_formulario2.png');
     background-size: cover; /* para que la imagen ocupe todo el fondo */
     background-position: center; /* para centrar la imagen */
-
     font-family: "Zain", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -31,7 +30,7 @@ main{
         width: 200px;
         height: 50px;
         border-radius: 25px;
-        margin: auto;
+        
         background-color: #efb145;
         color: white;
         font-weight: bold;
@@ -43,7 +42,8 @@ main{
     }
     .boton:hover{
         opacity: 1;
-        background-color: #a99ac4;
+        color: #efb145;
+        background-color: #fff;
     }
     .boton2{
         width: 30%;
@@ -82,20 +82,20 @@ main{
         position: absolute;
          cursor: pointer;
          color:#823a6f;
-         padding: 10px 120px;
-         right: 30px;
+         padding: 10px ;
+         right: 145px;
          
         transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
      }
      #pass-icon-delete {
-         right: 10px;
+         right: 120px;
      }
      #pass-ojo-abierto1, #pass-ojo-cerrado1 {
         position: absolute;
         cursor: pointer;
         color:#823a6f;
-        padding: 10px 120px;
-        right: 30px;
+        padding: 10px;
+        right: 145px;
         
         
     }
@@ -104,14 +104,10 @@ main{
         transform: scale(1.2);
         
     }
-    #pass-ojo-cerrado1:hover 
         
         
-        
-    
     input{
         font: inherit;
-        
     }
      
     p{
@@ -139,6 +135,10 @@ main{
 .estilo-label{
     color:white;
 }
+
+.just-validate-error-label{
+    color: #efb145 !important;
+}    
 
 
 @media (min-width: 361px){

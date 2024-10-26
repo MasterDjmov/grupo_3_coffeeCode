@@ -6,16 +6,23 @@ main{
   font-weight: 800;
   font-style: normal;
   font-size: 1.2rem;
+  width: 100%;
+  background-image: url('../img/fondo_login.png');
+    background-size: cover; 
+    background-position: center; 
     h2{
         text-align: center;
-        padding-bottom: 10px;
-        color: #291025;
+        margin-bottom: 10px;
+        color: #fff;
     }
 
     .navbar{
         padding: 2px 4px;
         list-style: none;
         
+    }
+    .estilo-label{
+        padding: 15px;
     }
     
     .navbar-item{
@@ -75,10 +82,20 @@ main{
         padding: 10px;
     }
     .bloque > input{
+        margin-top: 5px;
         width: 300px;
-        padding: 5px;
-        margin-bottom: 10px;
-    }
+        border-radius: 6px;
+            font-size: 14px;
+            padding: 0px 15px;
+            height: 40px;
+            border: 2px solid #000;
+            color: #000;
+            outline: none;
+            transition: all 0.3s;
+            }
+             .bloque > input:focus{
+            border: 2px solid #823a6f;
+        }
     button{
         width: 30%;
         margin: auto;
@@ -99,13 +116,30 @@ main{
             padding-left: 5px;
         }
     }
+    label {
+        color: #fff;
+    }
+    input {
+        font: inherit;
+    }
  }
     @media (min-width: 361px){
         main{
             .estilo-label > input{
                 width: 400px;
-                padding: 5px;
+            border-radius: 6px;
+            font-size: 14px;
+            padding: 0px 15px;
+            height: 40px;
+            border: 2px solid #000;
+            color: #000;
+            outline: none;
+            transition: all 0.3s;
             }
+             .bloque > input:focus{
+            border: 2px solid #823a6f;
+        }
+
         }
     }
     

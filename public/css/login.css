@@ -10,6 +10,10 @@ main{
     background-position: center; /* para centrar la imagen */
 }
 
+h2{
+    margin-top: 20px;
+}
+
 .navbar{
     padding: 2px 4px;
     list-style: none;
@@ -231,20 +235,16 @@ main{
       }
 
       .boton_registrate{
-        background-color: white;
-        color: black;
+        color: #fff;
         font-weight: bold;
-        width: 150px;
+        width: 130px;
         height: 40px;
-        border-radius: 100px;
-
+        
       }
 
       .boton_registrate :hover{
-        background-color: white;
-        color: #823a6f;
         
-
+        color: #823a6f;
       }
 
 
