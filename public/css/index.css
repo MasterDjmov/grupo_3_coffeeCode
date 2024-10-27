@@ -8,16 +8,38 @@
     font-weight: 400;
     font-style: normal;
     width: 100%;   
-    background-color: #a99ac4;
+    
+    background-image: url('../img/fondo_lila.png');
+    background-size: cover; 
+    background-position: center; 
      
 }
 
-
+.slider{
+   color: white;
+}
 
 .slider img {
     width: 100%;
     height: auto;
 }
+/* Cambia el color de los puntos a blanco */
+.contenedor-principal .slick-dots li button:before {
+    color: white !important;
+    opacity: 0.75; /* Ajusta la opacidad para un blanco más sutil */
+}
+
+/* Cambia el color del punto activo a blanco completo */
+.contenedor-principal .slick-dots li.slick-active button:before {
+    color: white !important;
+    opacity: 1; /* Punto activo en blanco completo */
+}
+
+/* Si los puntos aún no cambian, forzamos con la clase completa */
+.contenedor-principal .slick-dots {
+    color: white !important;
+}
+
 .articulo {
     display: flex;
     
@@ -38,6 +60,7 @@
 }
 
 .texto-articulo h2 {
+    color: #efb146;
     font-size: 50px;
     font-family: "Zain", sans-serif;
     font-weight: 800;
@@ -48,20 +71,21 @@
 .descripcion {
     font-size: 25px;
     width: 700px;
-    font-weight: bold;
+    text-indent: 30px;
     line-height: 0.8;
     text-align: justify;
 }
  
 .lista-articulo{
     font-size: 8px;
-    line-height: 0.8;
+    line-height: 0.9;
+    font-weight: 300px;
     text-align: justify;
 }
 
 .contenedor_boton {
     margin-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-left: 270px;
     align-items: center;
 }
@@ -71,11 +95,16 @@
     height: 50px;
     font-size: 15px;
     font-weight: bold;
-    background-color: #823a6f;
+    background-color: #efb146;
     color: white;
     border-radius: 100px;
     border: none;
     cursor: pointer; 
+}
+
+.video_cafe:hover{
+    background-color: #a99ac4;
+    color: white;
 }
 
 .video-articulo {

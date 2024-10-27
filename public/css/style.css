@@ -12,30 +12,31 @@
     height: auto;
     background-color: #823a6f;
     font-family: "Zain", sans-serif;
-  font-weight: 800;
-  font-style: normal;
+    font-weight: 800;
+    font-style: normal;
     text-align: center;
     padding: 7px;
     color: white;
-    font-size: 1.2rem;
+    font-size: 25px;
     h5{
         padding-top: 5px;
     }
 }
 main{
-    width: 97%;
+    width: 100%;
 }
 .logo {
-    width: 150px;
+    width: 450px;
     height: 100px;
-    margin: 20px 0px 0px 10px;
+    padding: 20px 300px 0px 0px;
     cursor: pointer;
+    
 }
 
 
 .header-content {
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: space-between;
     padding: 0px 20px 20px 0px;
     background-color: #f3f3f3;
@@ -44,6 +45,7 @@ main{
 
 nav {
     margin-left: auto;
+    padding-top:40px ;    
     font-family: "Zain", sans-serif;
   font-weight: 800;
   font-style: normal;

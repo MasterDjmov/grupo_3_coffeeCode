@@ -6,8 +6,8 @@ main{
     font-size: 1.2rem;
     width: 100%;
     background-image: url('../img/fondo_login.png');
-    background-size: cover; /* para que la imagen ocupe todo el fondo */
-    background-position: center; /* para centrar la imagen */
+    background-size: cover; 
+    background-position: center; 
 }
 
 h2{
