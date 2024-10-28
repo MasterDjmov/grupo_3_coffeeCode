@@ -155,7 +155,7 @@ h3{
 }
 
 /* Media queries para pantallas más grandes */
-@media (min-width: 361px) {
+@media (min-width: 600px) {
    .dropdown-menu {
       margin-top: 0;
       max-width: 280px; /* Ancho limitado en pantallas más grandes */

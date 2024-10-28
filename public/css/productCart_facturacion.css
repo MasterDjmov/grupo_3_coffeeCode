@@ -235,7 +235,7 @@ input {
    font-size: 0.8rem;
 }
 
-@media(min-width: 361px){
+@media(min-width: 600px){
    .cart-panel{
       width: 100%;
       display: flex;
