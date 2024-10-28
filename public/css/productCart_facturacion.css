@@ -63,7 +63,7 @@
     margin: 0 auto;
     font-size: 18px;
     font-family:"Zain", sans-serif;
-    border: 1px solid red;
+    border: 1px solid #a99ac4;
  }
  .titulos {
    display: flex;
@@ -90,7 +90,7 @@
    width: 50%;
  }
  .cart-item-name {
-    margin-bottom: 0.5em;  
+    margin-bottom: 0px;  
  }
  .cart-item-descripcion {
    font-size: 1.2rem;
@@ -144,7 +144,8 @@
    font-size: 0.8rem;
 }
 .btn-actualizar {
-    display: inline-block;      
+    display: flex;
+    justify-content: center;      
     padding-top: 5px;    
     padding-bottom: 20px;     
     background-color: #823A6F;  
@@ -155,7 +156,7 @@
     text-align: center;        
     text-decoration: none;      
     border-radius: 5px;         
-    font-size: 16px;           
+    font-size: 14px;           
     font-weight: bold;         
     transition: background-color 0.3s ease; 
     border: 1px solid white
@@ -236,6 +237,7 @@ input {
    .cart-panel{
       width: 100%;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       gap: 10px;     
    }
