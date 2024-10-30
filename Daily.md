@@ -1815,13 +1815,14 @@ Revise el codigo para mejorar las vistas.
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
+ - estuve investigando y leyendo en playground sobre el flujo de los componentes
 **Impedimentos**         
- - 
+ - ninguno
 **Qué va a hacer hoy**  
- - 
+ - ponerme al dia con playground
 
 **Soluciones Propuestas**
+ - investigar, leer playground
  - 
   ## Fecha: 15/10/2024
 
@@ -1893,13 +1894,14 @@ Revise el codigo para mejorar las vistas.
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
+ - estuve investigando sobre react
 **Impedimentos**         
- - 
+ - ninguno
 **Qué va a hacer hoy**  
- - 
+ - ponerme al dia con playground
 
 **Soluciones Propuestas**
+ - investigar, leer playground
  - 
   ## Fecha: 17/10/2024
 
@@ -1970,13 +1972,14 @@ Revise el codigo para mejorar las vistas.
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
+ - estuve investigando sobre react y sobre los hook que no me quedaba claro
 **Impedimentos**         
- - 
+ - ninguno
 **Qué va a hacer hoy**  
- - 
+ - ponerme al dia con playground sobre hook
 
 **Soluciones Propuestas**
+ - investigar, leer playground
  - 
   ## Fecha: 22/10/2024
 
@@ -2047,13 +2050,14 @@ Revise el codigo para mejorar las vistas.
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
+ - nada nuevo
 **Impedimentos**         
- - 
+ - ninguno
 **Qué va a hacer hoy**  
- - 
+ - por ahora solo ir observando detalles
 
 **Soluciones Propuestas**
+ - dejar lo mas completo playground
  - 
   ## Fecha: 24/10/2024
 
@@ -2123,11 +2127,13 @@ Revise el codigo para mejorar las vistas.
 ### Loyola, Leo Martin:
 
 **Qué hizo ayer**  
- - 
+ - nada nuevo
 **Impedimentos**         
- - 
+ - ninguno
 **Qué va a hacer hoy**  
- - 
+ - por ahora solo ir observando detalles
 
 **Soluciones Propuestas**
+ - dejar lo mas completo playground
+ - 
  - 
