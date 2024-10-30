@@ -26,11 +26,9 @@ main{
     width: 100%;
 }
 .logo {
-    width: 450px;
     height: 100px;
-    padding: 20px 300px 0px 0px;
     cursor: pointer;
-    
+    margin-top: 20px;   
 }
 
 
@@ -141,7 +139,7 @@ nav {
     }
 
     .logo {
-        margin: 0 auto;
+        margin: auto;
     }
 
     nav {
