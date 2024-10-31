@@ -8,6 +8,7 @@ main{
     background-image: url('../img/fondo_login.png');
     background-size: cover; 
     background-position: center; 
+    min-height: 90vh;
 }
 
 h2{
@@ -120,20 +121,20 @@ h2{
     }
     .password {
         width: 100%; 
-        padding-right: 60px; 
+        padding-right: 70px; 
         box-sizing: border-box;
     }
     #pass-ojo-abierto, #pass-ojo-cerrado, #pass-icon-delete {
        position: absolute;
         cursor: pointer;
         padding: 10px;
-        right: 30px;
+        right: 40px;
         color: #000;
         opacity: 0.7;
         transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
     }
     #pass-icon-delete {
-        right: 10px;
+        right: 15px;
     }
     #pass-ojo-abierto:hover, #pass-ojo-cerrado:hover, #pass-icon-delete:hover{
         color: #823a6f; 
@@ -142,13 +143,19 @@ h2{
     }
     
     .bloque > input{
-        width: 200px;
-        padding: 5px;
-        
+        width: 250px;
+        border-radius: 6px;
+            font-size: 14px;
+            padding: 0px 15px;
+            height: 40px;
+            border: 2px solid #000;
+            color: #000;
+            outline: none;
+            transition: all 0.3s;
     }
-
-
-    
+    .bloque > input:focus{
+        border: 2px solid #823a6f;
+    }
 
     p{
         text-align: center;
@@ -285,8 +292,11 @@ h2{
 
 @media (min-width: 361px){
     main{
+        .password {
+            padding-right: 90px; 
+        }
         .bloque > input{
-            width: 400px;
+            width: 250px;
             border-radius: 6px;
             font-size: 14px;
             padding: 0px 15px;
@@ -296,6 +306,16 @@ h2{
             outline: none;
             transition: all 0.3s;
         }
+        .bloque > input:focus{
+            border: 2px solid #823a6f;
+        }
+
+        #pass-ojo-abierto, #pass-ojo-cerrado, #pass-icon-delete, #pass-ojo-abierto1, #pass-ojo-cerrado1 {
+            right: 45px;
+        }
+        #pass-icon-delete {
+            right: 20px;
+        }
     }
     .bloque > input:focus{
         border: 2px solid #823a6f;
@@ -303,5 +323,19 @@ h2{
 }
 
 @media (min-width: 769px){
-
+    main{
+    
+        .bloque > input{
+            width: 400px;
+        }
+        .password {
+            padding-right: 130px;
+        }
+        #pass-ojo-abierto, #pass-ojo-cerrado, #pass-icon-delete, #pass-ojo-abierto1, #pass-ojo-cerrado1 {
+            right: 50px;
+        }
+        #pass-icon-delete {
+            right: 25px;
+        }
+    }
 }

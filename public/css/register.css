@@ -9,6 +9,7 @@ main{
     background-image: url('../img/fondo_formulario2.png');
     background-size: cover; /* para que la imagen ocupe todo el fondo */
     background-position: center; /* para centrar la imagen */
+    min-height: 90vh;
     font-family: "Zain", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -23,14 +24,12 @@ main{
     .estilo-form{
         display: flex;
         flex-direction: column;
-        padding-right: 100px;
-        align-items: flex-end;
+        align-items: center;
     }
     .boton{
         width: 200px;
         height: 50px;
         border-radius: 25px;
-        
         background-color: #efb145;
         color: white;
         font-weight: bold;
@@ -59,23 +58,30 @@ main{
     }
     
     .bloque{
+        position: relative;
         padding-top: 5px;
         font-weight: bold;
     }
     
     .bloque > input{
-        width: 200px;
-        padding: 5px;
+        width: 250px;
+        border-radius: 6px;
+            font-size: 14px;
+            padding: 0px 15px;
+            height: 40px;
+            border: 2px solid #000;
+            color: #000;
+            outline: none;
+            transition: all 0.3s;
+    }
+    .bloque > input:focus{
+        border: 2px solid #823a6f;
     }
 
-    .bloque{
-        padding-top: 5px;
-        font-weight: bold;
-        
-    }
+    
     .password {
         width: 100%; 
-        padding-right: 60px; 
+        padding-right: 70px; 
         box-sizing: border-box;
     }
     #pass-ojo-abierto, #pass-ojo-cerrado, #pass-icon-delete {
@@ -83,26 +89,24 @@ main{
          cursor: pointer;
          color:#823a6f;
          padding: 10px ;
-         right: 145px;
+         right: 40px;
          
         transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
      }
      #pass-icon-delete {
-         right: 120px;
+         right: 15px;
      }
      #pass-ojo-abierto1, #pass-ojo-cerrado1 {
         position: absolute;
         cursor: pointer;
         color:#823a6f;
         padding: 10px;
-        right: 145px;
-        
-        
+        right: 40px;
     }
+    
     #pass-ojo-abierto:hover, #pass-ojo-cerrado:hover, #pass-icon-delete:hover, #pass-ojo-abierto1:hover, #pass-ojo-cerrado1:hover{
         color: #efb145;
         transform: scale(1.2);
-        
     }
         
         
@@ -143,8 +147,11 @@ main{
 
 @media (min-width: 361px){
     main{
+        .password {
+            padding-right: 90px; 
+        }
         .bloque > input{
-            width: 400px;
+            width: 250px;
             border-radius: 6px;
             font-size: 14px;
             padding: 0px 15px;
@@ -157,9 +164,33 @@ main{
         .bloque > input:focus{
             border: 2px solid #823a6f;
         }
+
+        #pass-ojo-abierto, #pass-ojo-cerrado, #pass-icon-delete, #pass-ojo-abierto1, #pass-ojo-cerrado1 {
+            right: 45px;
+        }
+        #pass-icon-delete {
+            right: 20px;
+        }
     }
 }
 
 @media (min-width: 769px){
-
+    main{
+        .estilo-form{
+            padding-right: 100px;
+            align-items: flex-end;
+        }
+        .bloque > input{
+            width: 400px;
+        }
+        .password {
+            padding-right: 130px;
+        }
+        #pass-ojo-abierto, #pass-ojo-cerrado, #pass-icon-delete, #pass-ojo-abierto1, #pass-ojo-cerrado1 {
+            right: 50px;
+        }
+        #pass-icon-delete {
+            right: 25px;
+        }
+    }
 }

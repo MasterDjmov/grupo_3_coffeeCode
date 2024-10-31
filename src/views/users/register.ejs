@@ -11,8 +11,8 @@
         
         
         <form action="/user/register" method="post" class="estilo-form" id="registro" autocomplete="off" novalidate="novalidate">
+            <h2> CREA TU CUENTA<i class="fa-regular fa-id-card" style="color: #efb145; padding-left: 5px;"></i></h2>
             <div class="bloque">
-                <h2> CREA TU CUENTA<i class="fa-regular fa-id-card" style="color: #efb145; padding-left: 5px;"></i></h2>
                 <label class="estilo-label" for="apellido">APELLIDO<br></label>
                 <input type="text" name="apellido" placeholder="Ingresa tu apellido" minlength="3" maxlength="40" id="apellido" value="<%= locals.oldData ? locals.oldData.apellido : '' %>"      >
                 <div class="error" id="apellidoError">
