@@ -1,5 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const validation = new JustValidate('#login');
+    const validation = new JustValidate('#login', {
+        validateOnInput: true,  
+    });
+
+    const inputEmail = document.querySelector('input[name="email"]');
+    const inputPassword = document.querySelector('input[name="clave"]');
+
+    inputEmail.focus();
+
+    inputEmail.addEventListener('input', () => validation.revalidateField('input[name="email"]'));
+    inputPassword.addEventListener('input', () => validation.revalidateField('input[name="clave"]'));
+
+    let debounceTimer;
+    const debounceFetch = (callback, delay) => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(callback, delay);
+    };
 
     validation
         .addField('input[name="email"]', [
@@ -12,12 +28,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 errorMessage: 'Por favor, ingresa un correo electrónico válido',
             },
             {
-                
                 validator: (value) => {
-                    return fetch(`/user/control_email?email=${value}`)
-                        .then(response => {
-                            return response.status === 200;
-                        });
+                    return new Promise((resolve) => {
+                        debounceFetch(() => {
+                            fetch(`/user/control_email?email=${value}`)
+                                .then(response => resolve(response.status === 200))
+                                .catch(() => resolve(false));
+                        }, 500);  
+                    });
                 },
                 errorMessage: 'El email no está registrado',
             },
@@ -30,13 +48,5 @@ document.addEventListener('DOMContentLoaded', function () {
         ])
         .onSuccess((event) => {
             event.target.submit();
-        })
-        .onError((fields) => {
-            fields.forEach(field => {
-              const errorField = document.querySelector(`#${field.id}Error`);
-              if (errorField) {
-                errorField.innerText = field.errorMessage;
-              }
-            });
-          });
+        });
 });

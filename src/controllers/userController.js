@@ -142,24 +142,29 @@ const userController = {
     },
     controlEmail: async (req, res) => {
         const { email } = req.query;
-      
+    
+        
+        if (!email) {
+            return res.status(400).json({ message: 'Email es obligatorio' });
+        }
+    
         try {
-          const user = await db.Usuarios.findOne(
-            { 
+            const user = await db.Usuarios.findOne({
                 where: {
-                     email 
-                    } 
+                    email
+                }
             });
-          if (user) {
-            console.log("existe el correo")
-            return res.status(409).send('Email ya registrado');
-          }else{
-            console.log("no existe el correo")
-            return res.status(200).send('Email disponible');
-          }
+            
+            if (user) {
+                console.log("existe el correo");
+                return res.status(409).json({ message: 'Email ya registrado' });
+            } else {
+                console.log("no existe el correo");
+                return res.status(404).send(); 
+            }
         } catch (error) {
             console.error(error);
-            return res.status(500).send('Error del servidor');
+            return res.status(500).json({ message: 'Error del servidor' });
         }
       },
     formProfile: async (req, res) => {

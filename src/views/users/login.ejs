@@ -34,7 +34,7 @@
                 <i id="pass-ojo-cerrado" onclick="cambiarPassword()" class="fa-regular fa-eye-slash" style=" display: none;" title="Ocultar Contraseña"></i>
                 <i id="pass-icon-delete" onclick="borrar()" class="fa-regular fa-trash-can" title="Borrar Contraseña" ></i>
                 <% if (locals.errors && locals.errors.clave) { %>
-                    <div class="error" id="pass1"><%= locals.errors.clave.msg %></div>
+                    <div class="error" id="pass1Error"><%= locals.errors.clave.msg %></div>
                 <% } %>
           </div>
         
