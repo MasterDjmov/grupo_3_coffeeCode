@@ -288,6 +288,11 @@ li{
     }
 }
 @media (max-width: 768px){
+    .header-content{
+        padding: 0px;
+        margin: 0px;
+        width: 95%;
+    }
     .articulo{
         article{
             display: flex;
@@ -307,5 +312,6 @@ li{
         }
 
     }
+    
 }
 

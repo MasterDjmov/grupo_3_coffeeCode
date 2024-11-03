@@ -135,12 +135,10 @@ nav {
     .header-content {
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+       
     }
 
-    .logo {
-        margin: auto;
-    }
+   
 
     nav {
         margin-left: 0;
