@@ -226,7 +226,7 @@ li{
 
 
 
-@media (max-width: 325px){
+@media (min-width: 320px){
     .articulo{
         article{
             display: flex;
@@ -256,9 +256,12 @@ li{
     .descripcion{
         width: 90vw; /*90% de la vista*/
     }
+    .header-content {
+        padding: 0px;
+    }
 }
 
-@media (max-width: 382px){
+@media (min-width: 375px){
     .articulo{
         article{
             display: flex;
@@ -281,23 +284,28 @@ li{
         text-align: center;
     }
     .descripcion{
-        width: 90vw; /*90% de la vista*/
+        width: 90vw; 
     }
     .video-articulo{
         width: 91vw;
     }
 }
-@media (max-width: 768px){
+
+
+@media (min-width: 768px){
     .header-content{
         padding: 0px;
         margin: 0px;
-        width: 95%;
+        width: 100%;
     }
     .articulo{
+        padding: 0px;
+        padding-right: 2rem;
+        padding-left: 1.5rem;
+        padding-bottom: 1.5rem;
         article{
             display: flex;
             flex-direction: column;
-       
         }
         .lista-articulo{
             width: auto;
@@ -312,6 +320,29 @@ li{
         }
 
     }
-    
+    .texto-articulo{
+      
+    }
+    .texto-articulo h2{
+        text-align: center;
+        font-size: 32px;
+    }
+    .descripcion{
+        width: 82vw;
+    }
+    .video-articulo{
+        width: 84vw;
+        margin: 0;
+    }
+    .contenedor_boton{
+        width: 88vw;
+        margin: 0px;
+        text-align: center;
+        padding: 1.5rem 1rem;
+    }
+    .contenedor-productos{
+        width: 87%;
+        margin: 0px;
+    }
 }
 
