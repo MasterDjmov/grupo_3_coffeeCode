@@ -98,7 +98,7 @@ h2 {
 /* Media Query para pantallas más grandes */
 @media (min-width: 768px) {
     .container {
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
     }
 
@@ -108,7 +108,7 @@ h2 {
     }
 
     .imagen-team {
-        width: 100%;
+        width: 95%;
         margin-left: 20px;
         
 
@@ -123,5 +123,14 @@ h2 {
     .justified-text {
         max-width: 80%;
         margin: auto;
+    }
+}
+
+@media (min-width: 1438px) {
+    .imagen-team {
+        width: 57%;
+        margin: 0 auto;
+        
+
     }
 }
