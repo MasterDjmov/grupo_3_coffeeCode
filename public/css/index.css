@@ -60,18 +60,18 @@
 
 .texto-articulo h2 {
     color: #efb146;
-    font-size: 27px;
+    font-size: 24px;
     font-family: "Zain", sans-serif;
     font-weight: 800;
     font-style: normal;
-    padding: 6px;
+    padding: auto;
     word-wrap: break-word;
     overflow: hidden;
 
 }
 
 .descripcion {
-    font-size: 25px;
+    font-size: 20px;
     width: 700px;
     text-indent: 30px;
     line-height: 0.8;
