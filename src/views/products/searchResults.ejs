@@ -3,10 +3,18 @@
 <style>
     body{
     font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.2rem;
-}
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    
+    }
+    .logo-not-found{
+        width: 50%;
+        background-color: rgba(255, 255, 2555, 0.2);
+    }
+    .contenedor-productos{
+        padding: 3rem;
+    }
 </style>
 </head>
 <body>
@@ -27,7 +35,7 @@
             </article>
         <% }) %>
     <% } else { %>
-        <p>No se encontraron productos que coincidan con tu búsqueda.</p>
+        <img src="/img/product-not-found.png" class="logo-not-found">
     <% } %>
 </div>
     </main>
