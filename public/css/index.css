@@ -226,7 +226,7 @@ li{
 
 
 
-@media (min-width: 320px){
+@media (min-width: 318px){
     .articulo{
         article{
             display: flex;
@@ -258,6 +258,12 @@ li{
     }
     .header-content {
         padding: 0px;
+    }
+    .contenedor_boton{
+        width: 88vw;
+        margin: 0px;
+        text-align: center;
+        padding: 1.5rem 1rem;
     }
 }
 
@@ -292,7 +298,7 @@ li{
 }
 
 
-@media (min-width: 768px){
+@media (min-width: 765px){
     .header-content{
         padding: 0px;
         margin: 0px;
@@ -328,10 +334,10 @@ li{
         font-size: 32px;
     }
     .descripcion{
-        width: 82vw;
+        width: 92vw;
     }
     .video-articulo{
-        width: 84vw;
+        width: 92vw;
         margin: 0;
     }
     .contenedor_boton{
@@ -340,9 +346,34 @@ li{
         text-align: center;
         padding: 1.5rem 1rem;
     }
-    .contenedor-productos{
-        width: 87%;
-        margin: 0px;
-    }
+
 }
 
+@media (min-width: 1438px){
+    
+    .articulo article{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .logo{
+        margin-bottom: 1rem;
+    }
+    .articulo_izquierdo{
+        width: 50%;
+        padding-left: 1.5rem;
+        .descripcion{
+            width: 100%;
+        }
+        .contenedor_boton{
+            width: 100%;
+        }
+    }
+    .articulo_derecho{
+        width: 50%;
+        iframe{
+            height: 95%;
+        }
+    }
+}
