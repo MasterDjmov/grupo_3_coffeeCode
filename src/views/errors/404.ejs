@@ -1,11 +1,42 @@
 <%- include('../partials/head.ejs') %>
 <link rel="stylesheet" href="/css/index.css">
-
+<style>
+    body{
+        background-color:#963872;
+        position: relative;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .error404 {
+        background-size: cover;
+        width: 100%;   
+    }
+    .container a {
+        position: absolute;
+        top: 3rem; 
+        left: calc(50% - 10px); 
+        transform: translate(-50%, -50%);
+        font-family: Zain, sans-serif;
+        font-weight: bold;
+        padding: 5px 10px; 
+        text-align: center;
+        text-decoration: none;
+        font-size: 45px;
+        color: aliceblue;
+        border-radius: 4px; 
+    }
+</style>
 </head>
 <body>
-    <img class="error404" src="/img/errors/error404.png" />
-    <div class="volver">
-        <a href="/" style="font-family: Zain, sans-serif; font-weight: bold;"> VOLVER A LA PÁGINA PRINCIPAL </a>
+    <div class="container">
+        <a href="/" style="font-family: Zain, sans-serif; font-weight: bold;">
+            <i class="fas fa-arrow-left"></i> VOLVER A LA PÁGINA PRINCIPAL
+        </a>
+        <img class="error404" src="/img/errors/error404.png" />
     </div>
+   
 </body>
 </html>
