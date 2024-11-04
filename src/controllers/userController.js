@@ -169,6 +169,12 @@ const userController = {
         }
       },
     formProfile: async (req, res) => {
+
+        mensaje="";
+        if(req.session.mensajeActualizado=="OK"){
+            mensaje="Su Perfil se actualizo de forma correcta";
+            delete req.session.mensajeActualizado;
+        }
       if (req.session.user) {
           const user = req.session.user;
   
@@ -193,7 +199,8 @@ const userController = {
               msg: "",
               user: usuario,
               Departamentos,
-              Localidades
+              Localidades,
+              mensaje
           });
           //console.log(usuario);
       } else {
@@ -240,12 +247,18 @@ const userController = {
 
         await usuario.update(updatedData);
 
-        
+        const user = await db.Usuarios.findOne({
+            where: { email: updatedData.email }
+        });
+        req.session.user = user;
+        req.session.mensajeActualizado ="OK";
+        res.redirect('/user/profile');
+        /*
         res.render('users/login', { 
             msg: "Perfil actualizado correctamente",
             oldData:null,
             errors:null
-        });
+        });*/
     } catch (error) {
         console.error("Error al actualizar el perfil:", error);
         res.status(500).send("Error al actualizar el perfil");

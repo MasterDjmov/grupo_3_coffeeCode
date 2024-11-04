@@ -13,8 +13,11 @@
       <div class="row" >
          <form action="/user/profile" method="post" id="perfil" enctype="multipart/form-data">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 toppad" >
-           
+              <h1 style="background-color: chartreuse; text-align: center;"><% if(mensaje!=""){%>
+                <%= mensaje %> 
+              <% } %></h1>
               <div class="panel panel-success" ><br>
+                
                   <h2 class="panel-title" style="color: #823a6f;"><center><font size="5"><i class='glyphicon glyphicon-user' style="color: #823a6f; padding-right: 5px ;"></i>PERFIL</font></center></h2>
 
                 <div class="panel-body" >
