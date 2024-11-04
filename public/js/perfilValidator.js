@@ -11,7 +11,7 @@ validator
             value: {
                 files: {
                     extensions: ['jpeg', 'jpg', 'png'],
-                    maxSize: 200000, // tamaño máximo en bytes
+                    maxSize: 1000000, // tamaño máximo en bytes
                     minSize: 10000, // tamaño mínimo en bytes
                     types: ['image/jpeg', 'image/jpg', 'image/png'],
                 },
