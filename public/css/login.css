@@ -196,7 +196,9 @@ h2{
         font-weight: bold;
          /* Alinea a la izquierda */
     }
-    
+    .boton_registrate:hover {
+        color: #823a6f;
+    }
     .container {
         margin-left: auto; /* Alinea el botón de Google a la derecha */
     }
