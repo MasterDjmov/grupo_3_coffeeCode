@@ -176,6 +176,7 @@ main{
 
 @media (min-width: 769px){
     main{
+        background-attachment:fixed;
         .estilo-form{
             padding-right: 100px;
             align-items: flex-end;
