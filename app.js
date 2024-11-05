@@ -42,7 +42,7 @@ app.use(cors());
 
 // O permitir solo ciertos orígenes
 app.use(cors({
-  origin: 'http://localhost:5173'
+  origin: ['http://localhost:5173', 'http://localhost:5174']
 }));
 
 //cargo los manejadores de rutas
