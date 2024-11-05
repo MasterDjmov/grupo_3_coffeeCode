@@ -5,6 +5,7 @@ const userRouter = require('./src/routers/userRouter');
 const productRouter = require('./src/routers/productRouter');
 const adminRouter = require('./src/routers/adminRouter');
 const apiUserRouter = require('./src/routers/api/users.js')
+const apiProductsRouter = require('./src/routers/api/products.js')
 
 const session = require('express-session');
 const methodOverride = require('method-override');
@@ -52,6 +53,7 @@ app.use('/user', userRouter);
 app.use('/products', productRouter);
 app.use('/admin', adminRouter);
 app.use('/api/users', apiUserRouter)
+app.use('/api/products', apiProductsRouter)
 app.use('/logout', (req, res) => {
     req.session.destroy((err) => {
         if (err) {
