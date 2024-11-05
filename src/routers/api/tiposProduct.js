@@ -6,4 +6,3 @@ const router = express.Router();
 router.get('/', tiposProductApiController.lista); 
 
 module.exports = router;
-
