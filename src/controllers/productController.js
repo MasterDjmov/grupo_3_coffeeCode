@@ -31,64 +31,56 @@ const productController = {
             carrito
         });
     },
-    productCart_detalle: (req, res) => {
-        // if(req.session.carrito){
-        //     carrito= req.session.carrito;
-        // }else{
-        //     carrito=null;
-        // }
-        const id = req.params.id;
-        let user = req.session.user || "";
-
-        // Inicializar el carrito en la sesión solo si no existe
-        if (!req.session.carrito) {
-            req.session.carrito = [];
+    productCart_agregar: (req, res) => {
+        if(req.session.carrito){
+            carrito= req.session.carrito;
+        }else{
+            carrito=null;
         }
+      const id = req.params.id;
+      let user = "";
 
-        let carrito = req.session.carrito;
+      if(req.session.user){
+         user = req.session.user;
+      }
+      db.Productos.findByPk(id,{
+         include: [
+            {association: 'pais'},
+            {association: 'tipocafe'},
+            {association: 'unidad_de_medida'},
+            {association: 'productor'}
+         ]
+      })
+      .then(function(cafe){
+         if(!cafe){
+            return res.status(404).render('errors/404');
+         }
+         carrito.push({cafe})
+ *       res.redirect('/products/edit'); 
+      })
+      .catch(error =>{
+         console.error("Error al buscar el procuto", error)
+         res.status(404).render('errors/404');
+      })
+    },
+    productCart_detalle: (req, res) => {
+        if(req.session.carrito){
+            carrito= req.session.carrito;
+        }else{
+            carrito=null;
+        }
+     
+      let user = "";
 
-        // if (req.session.user) {
-        //     user = req.session.user;
-        // }
-        db.Productos.findByPk(id, {
-            include: [
-                { association: 'pais' },
-                { association: 'tipocafe' },
-                { association: 'unidad_de_medida' },
-                { association: 'productor' }
-            ]
-        })
-            .then(function (cafe) {
-                if (!cafe) {
-                    return res.status(404).render('errors/404');
-                }
-
-                // Verificar si el producto ya está en el carrito
-                const productoEnCarrito = carrito.find(item => item.cafe && item.cafe.id === cafe.id);
-
-
-                if (!productoEnCarrito) {
-                    // Solo agregar al carrito si no está ya en él
-                    carrito.push({ cafe });
-                    req.session.carrito = carrito; // Actualiza el carrito en la sesión
-                }
-
-
-                // Verificar el contenido del carrito en cada solicitud
-                console.log("Carrito actualizado:", req.session.carrito);
-
-
-                res.render('products/productCart_detalle', {
-                    'cafe': cafe,
-                    'user': user,
-                    'msg': 'Usted debe iniciar session para Agregar al Carrito',
-                    carrito
-                });
-            })
-            .catch(error => {
-                console.error("Error al buscar el procuto", error)
-                res.status(404).render('errors/404');
-            })
+      if(req.session.user){
+         user = req.session.user;
+      }
+      console.log(carrito.length)
+         res.render('products/productCart_detalle',{
+            'user': user,           
+            'msg': 'Usted debe iniciar session para Agregar al Carrito',
+            carrito            
+         });
     },
 
 
