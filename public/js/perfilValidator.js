@@ -84,10 +84,8 @@ validator
         },
     ])
     .addField('input[name="clave"]', [
-        {
-            rule: 'required',
-            errorMessage: 'El campo Clave es obligatorio.',
-        },
+        { rule: 'minLength', value: 8, errorMessage: 'Debe tener al menos 8 caracteres'},
+        { rule: 'strongPassword', errorMessage: 'Por ejemplo: Abcd@1234'}
     ])
     .onSuccess((event) => {
         // Aquí puedes enviar el formulario
