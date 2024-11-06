@@ -56,7 +56,7 @@ const productController = {
  *
          res.render('products/productCart_detalle',{
             'cafe': cafe,
-            'user': user,
+            'user': user,           
             'msg': 'Usted debe iniciar session para Agregar al Carrito',
             carrito            
          });

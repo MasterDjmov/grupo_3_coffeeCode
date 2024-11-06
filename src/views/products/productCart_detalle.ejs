@@ -1,99 +1,101 @@
-<%- include('../partials/head.ejs') %>    
-   <link rel="stylesheet" href="/css/productCart_detalle.css">
-</head>
-<body>
-    <%- include('../partials/header.ejs',{carrito})%>
-   
-    <main class="cart-panel">
-            <div class="cart-body">
-                <form action="/" method="get" class="cart-form borde-derecho">
-                    <div class="titulos">        
-                        <h5>PRODUCTO</h5>
-                        <h5>CANTIDAD</h5>
-                    </div> 
-                    <% carrito.forEach(item => { %>
-                    <div class="cart-body1">
-                            <div class="cart-items">
-                                <div class="cart-item" >
-                                    <div class="cart-item-delete">
-                                        <button type="button">
-                                        <i class="fa fa-close"></i>
-                                        </button>
-                                    </div>      
-                                    <div class="cart-item-imagen">
-                                    <img src="/img/products/<%= item.cafe.imagen_principal %>">                           
-                                    </div>
-                                    <div class="cart-item-detalle">
-                                        <h6 class="cart-item-name">
-                                            <%= item.cafe.nombre_producto %>
-                                        </h6>
-                                    
-                                
-                                        <p class="cart-item-descripcion">                              
-                                            ELEGÍ TU MOLIENDA: 
-                                            <%= item.cafe.id_tipo_cafe %>
-                                        </p>
-                                        <p class="cart-item-descripcion">
-                                            ELEGÍ EL PESO: 
-                                            <%= item.cafe.idunidad_medida %>                                
-                                        </p>
-                                    </div>                                        
-                                                                                    
+<%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/productCart_detalle.css">
+    </head>
+
+    <body>
+        <%- include('../partials/header.ejs',{carrito})%>
+
+            <main class="cart-panel">
+                <div class="cart-body">
+                    <form action="/" method="get" class="cart-form borde-derecho">
+                        <div class="titulos">
+                            <h5>PRODUCTO</h5>
+                            <h5>CANTIDAD</h5>
+                        </div>
+                        <% carrito.forEach(item=> { %>
+                            <div class="cart-body1">
+                                <div class="cart-items">
+                                    <div class="cart-item">
+                                        <div class="cart-item-delete">
+                                            <button type="button">
+                                                <i class="fa fa-close"></i>
+                                            </button>
+                                        </div>
+                                        <div class="cart-item-imagen">
+                                            <img src="/img/products/<%= item.cafe.imagen_principal %>">
+                                        </div>
+                                        <div class="cart-item-detalle">
+                                            <h6 class="cart-item-name">
+                                                <%= item.cafe.nombre_producto %>
+                                            </h6>
+
+
+                                            <p class="cart-item-descripcion">
+                                                ELEGÍ TU MOLIENDA:
+                                                <%= item.cafe.tipocafe.nombre_cafe %>
+                                            </p>
+                                            <p class="cart-item-descripcion">
+                                                ELEGÍ EL PESO:
+                                                <%= item.cafe.idunidad_medida %>
+                                            </p>
+                                        </div>
+
                                         <div class="container-group-1">
                                             <p>-</p>
-                                            <input type="text"  value="1" >
-                                            <p>+</p>                          
+                                            <input type="text" value="1">
+                                            <p>+</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item-subtotal">
+                                        <p>$ <%= item.cafe.precio %>
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="cart-item-subtotal">     
-                                    <p>$ <%= item.cafe.precio %>   </p>
-                                </div>   
+                                 
                             </div>
+                         <%})%>
+                        <div class="botones">
+                            <a href="/" class="btn"><i class="fa fa-arrow-left"></i> SEGUIR COMPRANDO</a>
                           
-                            <div class="botones">                    
-                                <a href="/" class="btn"><i class="fa fa-arrow-left"></i>  SEGUIR COMPRANDO</a>
-                            <a href="/products/edit/1" class="btn-actualizar">ACTUALIZAR CARRITO </a>                  
-                            </div>
-                    </div>   
-                </form>
-               
-                <%})%>    
-                <form action="/products/checkout" method="get" class="cart-form">     
-                    <div class="finalizar_compra">
+                        </div>
+                           
                         
-                        <div class="cart-total titulos">
-                            <h5>TOTAL DEL CARRITO: </h5>                        
-                        </div>
-                        <div class="subtotal">
-                            <p>Subtotal  </p><span> $128.400,00</span>
-                        </div>
-                        
-                        <label>Envio</label>  
-                        <div class="envio">
-                            <input type="radio" value="1" name="envio" checked> 
-                            <label for="">Envío gratuito a domicilio en compras superiores a $ 40000</label>
-                        </div> 
-                        <div class="envio">
-                            <input type="radio" value="1" name="envio" > 
-                            <label for="">Envío a domicilio (todo el país): $6,500.00</label>
-                        </div> 
-                        <div class="envio">
-                            <input type="radio" value="1" name="envio" > 
-                            <label for="">Retiro por Local (Gratis)</label>
-                        </div> 
-                
-                        <div class="subtotal">
-                            <p>Total  </p><span> $128.400,00</span>
-                        </div>
-                        <input type="submit" class="btn-fin" value="FINALIZAR LA COMPRA" name="fin_compra">
-                    </div>
-                </form>    
-            </div>    
-        </form>
-    </main>
-    
-    <%- include('../partials/footer.ejs') %>
-    <script src="/js/coffecode.js"></script>
+                    </form>
 
-</body>
+                    <form action="/products/checkout" method="get" class="cart-form">
+                        <div class="finalizar_compra">
+                            <div class="cart-total titulos">
+                                <h5>TOTAL DEL CARRITO: </h5>
+                            </div>
+                            <div class="subtotal">
+                                 <p>Subtotal </p><span> $128.400,00</span>
+                            </div>
+
+                            <label>Envio</label>
+                            <div class="envio">
+                                <input type="radio" value="1" name="envio" checked>
+                                <label for="">Envío gratuito a domicilio en compras superiores a $ 40000</label>
+                            </div>
+                            <div class="envio">
+                                <input type="radio" value="1" name="envio">
+                                <label for="">Envío a domicilio (todo el país): $6,500.00</label>
+                            </div>
+                            <div class="envio">
+                                <input type="radio" value="1" name="envio">
+                                <label for="">Retiro por Local (Gratis)</label>
+                            </div>
+
+                            <div class="subtotal">
+                                <p>Total </p><span> $128.400,00</span>
+                            </div>
+                                <input type="submit" class="btn-fin" value="FINALIZAR LA COMPRA" name="fin_compra">
+                        </div>
+                    </form>
+                </div>
+               
+            </main>
+
+            <%- include('../partials/footer.ejs') %>
+                <script src="/js/coffecode.js"></script>
+    </body>
 </html>
