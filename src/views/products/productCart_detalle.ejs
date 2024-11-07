@@ -148,6 +148,8 @@
                         const totalElement = document.querySelector('.total-value');
                         if (totalElement) {
                             totalElement.textContent = `$${totalValue.toFixed(2)}`;
+                            localStorage.setItem('totalValue', totalValue);
+
                         }
                     }
                     // Agregar eventos a los botones de sumar y restar

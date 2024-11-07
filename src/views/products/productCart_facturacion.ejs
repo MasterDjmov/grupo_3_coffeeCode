@@ -64,7 +64,7 @@
                   <h5>TOTAL DEL CARRITO: </h5>
                   <div class="subtotal">
                      <p>Subtotal</p>
-                     <span> $128.400,00</span>
+                     <span class="total"> $128.400,00</span>
                   </div>
                   <br>
                <a class="btn-actualizar" href="/products/checkout" >FINALIZAR COMPRA</a>                   
@@ -75,5 +75,17 @@
    </main>
    <%- include('../partials/footer.ejs') %>
    <script src="/js/coffecode.js"></script>
+   <script>
+      document.addEventListener('DOMContentLoaded', function() {
+         const totalAPagar = localStorage.getItem('totalValue');
+         if (totalAPagar) {
+            const mostrarTotal = document.querySelector('.total');
+            if (mostrarTotal) {
+                mostrarTotal.textContent = `$${parseFloat(totalAPagar).toFixed(2)}`;
+            }
+         }
+      });
+   </script>
+   
 </body>
 </html>
