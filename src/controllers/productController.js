@@ -59,7 +59,7 @@ const productController = {
  *       res.redirect('/products/edit'); 
       })
       .catch(error =>{
-         console.error("Error al buscar el procuto", error)
+         console.error("Error al buscar el producto", error)
          res.status(404).render('errors/404');
       })
     },

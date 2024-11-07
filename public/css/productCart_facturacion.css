@@ -64,7 +64,9 @@
     font-size: 18px;
     font-family:"Zain", sans-serif;
     border: 1px solid #a99ac4;
+    
  }
+
  .titulos {
    display: flex;
    justify-content: space-between;

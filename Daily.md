@@ -577,7 +577,7 @@ sin impedimentos
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- revise el código 
+ Revise el código 
  investigue sobre sesión para el login
 
 **Impedimentos**         
@@ -1800,16 +1800,17 @@ Revise el codigo para mejorar las vistas.
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- - 
+ - Armado del tablero del sprint 8
 
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - División de roles para el sprint 8
+ - Organización de las reuniones
  
 **Soluciones Propuestas**
-- 
+- seguir practicando y revisando el código
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
@@ -1879,16 +1880,16 @@ Revise el codigo para mejorar las vistas.
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- - 
+ - investigue sobre React
 
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - comenzar a investigar sobre el dashboard
  
 **Soluciones Propuestas**
-- 
+- seguir aprendiendo y practicando React
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
@@ -1957,16 +1958,16 @@ Revise el codigo para mejorar las vistas.
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- - 
-
+ - Practicando creación de API
 **Impedimentos**         
- - 
+ - sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Actualizar el tablero de trello
+ - organizar las próximas reuniones
  
 **Soluciones Propuestas**
-- 
+- seguir aprendiendo y practicando el uso de API
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
@@ -2035,16 +2036,17 @@ Revise el codigo para mejorar las vistas.
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- - 
+ - Realice practicas con  React
 
 **Impedimentos**         
- - 
+ - Sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - crear la api de productos
+ - llamar la api de productos en React
  
 **Soluciones Propuestas**
-- 
+- seguir estudiando y revisando el código
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
@@ -2112,16 +2114,19 @@ Revise el codigo para mejorar las vistas.
 ### Bustos, Patricia Alejandra:
 
 **Qué hizo ayer**  
- - 
-
+ - Revisar los puntos del Sprint
+ - Revisar el Tablero de Trello
+ - Controlar las Tareas
 **Impedimentos**         
- - 
+ - sin impedimentos
 
 **Qué va a hacer hoy**  
- - 
+ - Revisar dashboard
+ - traer totales
+ - traer lista de productos
  
 **Soluciones Propuestas**
-- 
+- Analizar Mejoras
 
 ## Resumen de Tareas
 ### Loyola, Leo Martin:
