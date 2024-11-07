@@ -1,243 +1,36 @@
-/*---- para style.css-----*/
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
- }
-
- body{
-   font-family: "Zain", sans-serif;
-   font-weight: 400;
-   font-style: normal;
-   font-size: 1.2rem;
- }
- header{
-   
-   height: 40%;  
-   background-color:  #f3f3f3;   
-   margin: 0 auto;
- }
- header .frase {
-   background-color: #823a6f;
+.cart-panel1 {
+   height: 100%;
    width: 100%;
-   font-size: small;
-   height: 30px;
- }
- header .container-header{
-   display: flex;
-   justify-content: space-between;
+   background: #a99ac4;
    padding: 10px;
-        
-} 
-.burger-menu {
-   color: #291025;  
-   font-size: 1.2em;
-}    
-    
-.logo2{
-   width: 70px;
-   padding-left: 25px;      
-}
-.iconos{        
-   color: #291025;   
-   padding: 5px;
-}
-.iconos > i{
-   color: #291025; 
-   font-size: 1.2em;
-   padding-inline: 4px;
-}   
- 
-
- footer {
-   
    margin: 0 auto;
- }
- /* ---------*/
- 
- .cart-panel1 {
-    height: 100%;
-    width: 100%;
-    background: #a99ac4;
-    padding: 10px;
-    margin: 0 auto;
-    font-size: 18px;
-    font-family:"Zain", sans-serif;
-    border: 1px solid #a99ac4;
-    
- }
-
- .titulos {
-   display: flex;
-   justify-content: space-between;
-   padding: 10px;
-   border-bottom: 1px solid #ddd;
- }  
- .cart-body {
-   padding: 0px;
+   font-size: 18px;
+   font-family:"Zain", sans-serif;
+   border: 1px solid #a99ac4;
    
- }
- .cart-items {    
-    border-bottom: 1px solid #ddd;
-    
- }
- .cart-item {
-    display: flex;
-    align-items: center;     
-    width: 100%;
- }
- 
- .cart-item-detalle {    
-   padding-right: 5px;
-   width: 50%;
- }
- .cart-item-name {
-    margin-bottom: 0px;  
- }
- .cart-item-descripcion {
-   font-size: 1.2rem;
- }
- .container-group-1{   
-   width: 50%;
-   display: flex;    
-   justify-content: center;
 }
-.container-group-1 p{  
-   width: 12px;
-   margin: 1px;
+.flexbox {
+   display: flex;
+   gap: 10px; 
+   align-items: center; 
+}
+
+.form-group {
+   flex: 1; 
+}
+
+#cvv{
+   display: flex; 
+   align-items: 
+   center; gap: 10px;
+}
+.botonera {
    text-align: center;
-   border-radius: 10%;
-   font-size: 1.2rem;
-}
- 
- .cart-item-subtotal {
-  padding-bottom: 10px;  
-  width: 100%;
-  border-bottom: 1px solid #ddd;
- }
- .cart-item-subtotal p {
- text-align: center;
- font-size: 1.2rem;
- font-weight: bold;
-
- }
-/*.cart-total  {  
- }*/
-.subtotal {
-   padding: 10px;
-   display: flex;
-   justify-content: space-between;
-   border-bottom: 1px solid #ddd;
-   border-top:  1px solid #ddd;
-   margin-bottom: 10px;
-   margin-top: 10px;
-}
- .botones {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 17px;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 25px;
- }
- .btn-actualizar, .btn{
-   height: 30px;
-   font-family: "Zain", sans-serif;
-   font-size: 14px;
-   margin: 5px;
-   font-size: 0.8rem;
-}
-.btn-actualizar {
-    display: flex;
-    justify-content: center;      
-    padding-top: 5px;    
-    padding-bottom: 20px;     
-    background-color: #823A6F;  
-    color: white;             
-    opacity: 0.9;
-    width: -10%;
-    cursor: pointer;
-    text-align: center;        
-    text-decoration: none;      
-    border-radius: 5px;         
-    font-size: 14px;           
-    font-weight: bold;         
-    transition: background-color 0.3s ease; 
-    border: 1px solid white
-    ;
-}
-
-.btn-actualizar:hover {
-    background-color:#a99ac4; 
-}
-
-.btn-actualizar:active {
-    background-color: #a99ac4;  
-}
-
-.btn {
- 
-  color: black; 
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  background-color: #fff;
-}
-.btn-fin {
-   background: #823A6F;
-   color: #fff;  
-   cursor: pointer;
-   border: none;
-   height: 30px;
-   padding: 5px;
-   margin: 5px;
-   font-size: 0.7rem;
-   width: 95%;
-}
-input {
-   margin-left: auto;
-   width: 80%;
-
-}
-#inputCCV {
-   width: 20%;
-}
-.envio label {
-   padding-left: 5px;
-   font-size: 1.2rem;
-}
-.name-div label{
-   width: 100%;   
-}
-.name-div input{
-   width: 100%;   
-}
-.check {
-   margin-top: 10px;
-   margin-bottom: 10px;
-}
-.name-div textarea{
-   width: 100%;
-   height: 50px;
-}
-.cart-pedido { 
-   padding: 10px;
-}
-.pago {
-   width: 80%;
    margin: 0 auto;
-   padding: 2px;
-}
-.pago h3 {
-   padding-bottom: 4px;
-}
-.aceptermino {
-   margin-top: 10px;
-   margin-bottom: 10px;
-   font-size: 0.8rem;
+   width: 60%;
 }
 
-@media(min-width: 600px){
+@media(min-width: 318px){
    .cart-panel{
       width: 100%;
       display: flex;
@@ -249,5 +42,66 @@ input {
       width: 100%;   
       text-align: right;
       padding-right: 10px;      
+   }
+   .flexbox-botones{
+      flex-direction: column;
+   }
+   .flexbox-botones input,.flexbox-botones select{
+      width: 100%;
+      height: 35px;
+   }
+   .metodoEnvio select{
+      width: 95%;
+      height: 35px;
+   }
+   .botonera {
+      text-align: center;
+      margin: 0 auto;
+      width: 80%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+   }
+   .cart-total a{
+      width: 95%;
+   }
+}
+
+@media(min-width: 750px){
+   .cart-total{
+      width: 60%;
+   }
+   .cart-total a{
+      width: 95%;
+   }
+}
+
+@media(min-width: 1024px){
+   .cart-total{
+      width: 60%;
+   }
+   .cart-total a{
+      width: 95%;
+   }
+   .flexbox-botones{
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+   }
+   .flexbox-botones select{
+      width: 120px;
+      height: 35px;
+   }
+   .flexbox-botones input{
+      width: 120px;
+      height: 35px;
+   }
+   .envio{
+      width: 60%;
+   }
+   .formulario-tarjeta{
+      width: 60%;
+   }
+   .botonera button{
+      width: 5rem;
    }
 }
