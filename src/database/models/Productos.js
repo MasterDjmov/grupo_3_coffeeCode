@@ -72,6 +72,10 @@ module.exports = (Sequelize, DataTypes) => {
         altitud: {
             type: DataTypes.STRING(65),
             allowNull: true
+        },
+        cantidad_seleccionada: {
+            type: DataTypes.INTEGER,
+            allowNull: true
         }
     }, {
         tableName: 'productos',

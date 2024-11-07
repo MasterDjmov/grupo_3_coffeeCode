@@ -38,17 +38,17 @@
                                                 ELEGÍ EL PESO:
                                                 <%= item.cafe.unidad_de_medida.nombre_medida %>
                                             </p>
+                                            <p>Precio Unitario: <b>$<%= item.cafe.precio %></b></p>
                                         </div>
 
                                         <div class="container-group-1">
-                                            <p>-</p>
-                                            <input type="text" value="1">
-                                            <p>+</p>
+                                            <button type="button" class="btn-restar">-</button>
+                                            <input type="number" min="1" value="<%= item.cafe.cantidad_seleccionada%>" data-precio="<%= item.cafe.precio %>" data-id="<%= item.cafe.id_producto %>" class="cantidad">
+                                            <button type="button" class="btn-sumar">+</button>
                                         </div>
                                     </div>
                                     <div class="cart-item-subtotal">
-                                        <p>$ <%= item.cafe.precio %>
-                                        </p>
+                                        <p>Subtotal: <span class="subtotal-info">$<%= (item.cafe.precio * item.cafe.cantidad_seleccionada).toFixed(2) %></span></p>
                                     </div>
                                 </div>
                                  
@@ -68,25 +68,22 @@
                                 <h5>TOTAL DEL CARRITO: </h5>
                             </div>
                             <div class="subtotal">
-                                 <p>Subtotal </p><span> $128.400,00</span>
+                                <p>Subtotal </p><b>$<span style="margin-left: 5px;" class="subtotal-value">0</span></b>
+
                             </div>
 
                             <label>Envio</label>
                             <div class="envio">
-                                <input type="radio" value="1" name="envio" checked>
-                                <label for="">Envío gratuito a domicilio en compras superiores a $ 40000</label>
-                            </div>
-                            <div class="envio">
-                                <input type="radio" value="1" name="envio">
+                                <input type="radio" value="6500" name="envio" checked="checked">
                                 <label for="">Envío a domicilio (todo el país): $6,500.00</label>
                             </div>
                             <div class="envio">
-                                <input type="radio" value="1" name="envio">
+                                <input type="radio" value="0" name="envio">
                                 <label for="">Retiro por Local (Gratis)</label>
                             </div>
 
-                            <div class="subtotal">
-                                <p>Total </p><span> $128.400,00</span>
+                            <div class="total">
+                                <p>Total $ <b><span class="total-value">0</span></b></p>
                             </div>
                                 <input type="submit" class="btn-fin" value="FINALIZAR LA COMPRA" name="fin_compra">
                         </div>
@@ -96,6 +93,87 @@
             </main>
 
             <%- include('../partials/footer.ejs') %>
-                <script src="/js/coffecode.js"></script>
+            <script src="/js/coffecode.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    actualizarTotalesDeCompra();
+                   
+                    function updateQuantity(button, esVerdadero) {
+                        const input = button.parentElement.querySelector('.cantidad');
+                        let valorActual = parseInt(input.value);
+                        const precio = parseFloat(input.dataset.precio); // Capturamos el valor del precio del data-precio
+                        const subtotal = button.closest('.cart-items').querySelector('.subtotal-info');
+                    
+                        // Calcula la nueva cantidad
+                        if (esVerdadero) {
+                            valorActual += 1;
+                        } else {
+                            valorActual = valorActual > 1 ? valorActual - 1 : 1; // Mínimo de 1
+                            
+                        }
+                    
+                        input.value = valorActual; // Actualiza el valor del input
+                        if (subtotal) {
+                            subtotal.textContent = `$${(valorActual * precio).toFixed(2)}`;
+                        }
+                        actualizarTotalesDeCompra();
+                    }
+                    
+                    function actualizarTotalesDeCompra() {
+                        // Calcula el subtotal de todos los subtotales de las cart
+                        const subtotalInfo = document.querySelectorAll('.subtotal-info');
+                        let subtotales = 0;
+
+                        //mientras recorremos sacamos los simbolos de $, y . para poder calcular bien los valores 
+                        subtotalInfo.forEach(subtotal => {
+                            const subtotalParcial = parseFloat(subtotal.textContent.replace('$', '').replace(',', ''));
+                            subtotales += isNaN(subtotalParcial) ? 0 : subtotalParcial;
+                        });
+
+                        // Actualiza el elemento del subtotal
+                        const subtotalElemento = document.querySelector('.subtotal-value');
+                        if (subtotalElemento) {
+                            subtotalElemento.textContent = `${subtotales.toFixed(2)}`;
+                        }
+
+                        // Agrega el costo de envío si hay uno seleccionado
+                        let totalValue = subtotales; // Comienza con el valor del subtotal
+                        const selectedEnvio = document.querySelector('input[name="envio"]:checked');
+                        if (selectedEnvio) {
+                            const envioCost = parseFloat(selectedEnvio.value); 
+                            totalValue += isNaN(envioCost) ? 0 : envioCost;
+                        }
+
+                        // Actualiza el elemento del total
+                        const totalElement = document.querySelector('.total-value');
+                        if (totalElement) {
+                            totalElement.textContent = `$${totalValue.toFixed(2)}`;
+                        }
+                    }
+                    // Agregar eventos a los botones de sumar y restar
+                    const sumarButtons = document.querySelectorAll('.btn-sumar');
+                    const restarButtons = document.querySelectorAll('.btn-restar');
+                    
+                    sumarButtons.forEach(button => {
+                        button.addEventListener('click', function() {
+                            updateQuantity(button, true);
+                        });
+                    });
+                    
+                    restarButtons.forEach(button => {
+                        button.addEventListener('click', function() {
+                            updateQuantity(button, false);
+                        });
+                    });
+
+                    const envioRadios = document.querySelectorAll('input[name="envio"]');
+                    envioRadios.forEach(radio => {
+                        radio.addEventListener('change', actualizarTotalesDeCompra);
+                    });
+                });
+                
+            </script>
+            
+            
     </body>
 </html>

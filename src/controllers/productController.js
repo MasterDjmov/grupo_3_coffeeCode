@@ -38,6 +38,7 @@ const productController = {
             carrito=null;
         }
       const id = req.params.id;
+      const cantidad = req.params.cantidad;
       let user = "";
 
       if(req.session.user){
@@ -55,6 +56,7 @@ const productController = {
          if(!cafe){
             return res.status(404).render('errors/404');
          }
+         cafe.cantidad_seleccionada = cantidad;
          carrito.push({cafe})
  *       res.redirect('/products/edit'); 
       })
@@ -75,7 +77,6 @@ const productController = {
       if(req.session.user){
          user = req.session.user;
       }
-      console.log(carrito.length)
          res.render('products/productCart_detalle',{
             'user': user,           
             'msg': 'Usted debe iniciar session para Agregar al Carrito',

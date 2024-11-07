@@ -69,28 +69,7 @@
                 </div>
                 <button class="borrar" type="reset">LIMPIAR</button>
 
-                <script>
-    
-                    function $(id)
-                    {
-                        return document.getElementById(id);
-                    }
-            
-                    function increase()
-                    {
-                        $('counter').value = parseInt($('counter').value) + 1;
-                    }
-            
-                    function decrease()
-                    {
-                        var counterValue = parseInt($('counter').value);
-                        var newCounterValue = (counterValue)
-                            ? counterValue - 1
-                            : 0;
-            
-                        $('counter').value = newCounterValue;
-                    }
-                </script>
+               
                 
                  <div class="counter-group">
                     <div class="container-group-1">
@@ -174,6 +153,55 @@
     </main>
     <%- include('../partials/footer.ejs') %>
     <script src="/js/coffecode.js"></script>
+    <script>
+    
+        function $(id)
+        {
+            return document.getElementById(id);
+        }
+        function actualizarHref() {
+            controlaEstado();
+            // Actualiza el valor del href cuando cambia el contador
+            let counterValue = $('counter').value;
+            let link = document.querySelector('.carrito');
+            if (link) {
+                link.href = `/products/add/<%= cafe.id_producto %>/` + counterValue;
+            }
+        }
+        function increase()
+        {
+            $('counter').value = parseInt($('counter').value) + 1;
+            actualizarHref();
+            
+        }
 
+        function decrease()
+        {
+            let counterValue = parseInt($('counter').value);
+            let newCounterValue = (counterValue)
+                ? counterValue - 1
+                : 0;
+
+            $('counter').value = newCounterValue;
+            actualizarHref();
+        }
+
+        function controlaEstado() {
+            let counterValue = $('counter').value;
+            let link = document.querySelector('.carrito');
+            if (link) {
+                if (!counterValue || parseInt(counterValue) <= 0) {
+                    link.classList.add('disabled');
+                    link.style.pointerEvents = 'none'; 
+                    link.style.opacity = '0.5'; 
+                } else {
+                    link.classList.remove('disabled');
+                    link.style.pointerEvents = 'auto';
+                    link.style.opacity = '1';
+                }
+            }
+        }
+        controlaEstado();
+    </script>
 </body>
 </html>

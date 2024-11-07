@@ -3,15 +3,15 @@
 
  Source Server         : mipc
  Source Server Type    : MySQL
- Source Server Version : 100432
+ Source Server Version : 110502
  Source Host           : localhost:3306
  Source Schema         : coffeecode
 
  Target Server Type    : MySQL
- Target Server Version : 100432
+ Target Server Version : 110502
  File Encoding         : 65001
 
- Date: 09/10/2024 23:37:40
+ Date: 07/11/2024 11:32:53
 */
 
 SET NAMES utf8mb4;
@@ -39,7 +39,7 @@ CREATE TABLE `carrito`  (
   CONSTRAINT `fk_carrito_formas_envios1` FOREIGN KEY (`id_forma_envio`) REFERENCES `formas_envios` (`id_forma_envio`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_carrito_medio_pagos1` FOREIGN KEY (`id_medio_pago`) REFERENCES `medio_pagos` (`id_medio_pago`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_carrito_usuarios1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of carrito
@@ -52,12 +52,12 @@ INSERT INTO `carrito` VALUES (1, 2, 4, '2024-09-14 00:14:06', '2024-09-14 00:14:
 DROP TABLE IF EXISTS `departamentos`;
 CREATE TABLE `departamentos`  (
   `id_departamento` int NOT NULL AUTO_INCREMENT,
-  `nombre_dpto` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `nombre_dpto` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   `id_provincia` int NULL DEFAULT NULL,
   PRIMARY KEY (`id_departamento`) USING BTREE,
   INDEX `fk_departamentos_provincias1_idx`(`id_provincia`) USING BTREE,
   CONSTRAINT `fk_departamentos_provincias1` FOREIGN KEY (`id_provincia`) REFERENCES `provincias` (`id_provincia`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of departamentos
@@ -87,12 +87,12 @@ INSERT INTO `departamentos` VALUES (18, 'ROSARIO V. PEÑALOZA', 11);
 DROP TABLE IF EXISTS `estado`;
 CREATE TABLE `estado`  (
   `id_estado` int NOT NULL AUTO_INCREMENT,
-  `nombre_estado` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `descripcion` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `nombre_estado` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `descripcion` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   `created_at` datetime NULL DEFAULT NULL,
   `updated_at` datetime NULL DEFAULT NULL,
   PRIMARY KEY (`id_estado`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of estado
@@ -115,20 +115,20 @@ CREATE TABLE `facturas`  (
   `id_carrito` int NULL DEFAULT NULL,
   `created_at` datetime NULL DEFAULT NULL,
   `updated_at` datetime NULL DEFAULT NULL,
-  `titular_tarjeta` varchar(65) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `dni_titular` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `numero_tarjeta` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `titular_tarjeta` varchar(65) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `dni_titular` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `numero_tarjeta` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   `vencimiento_tarjeta` date NULL DEFAULT NULL,
-  `codigo_tarjeta` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `codigo_rapipago` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `codigo_pago_facil` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `cbu` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `cvu` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `alias` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `codigo_tarjeta` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `codigo_rapipago` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `codigo_pago_facil` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `cbu` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `cvu` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `alias` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id_factura`) USING BTREE,
   INDEX `fk_facturas_carrito1_idx`(`id_carrito`) USING BTREE,
   CONSTRAINT `fk_facturas_carrito1` FOREIGN KEY (`id_carrito`) REFERENCES `carrito` (`id_carrito`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of facturas
@@ -141,10 +141,10 @@ INSERT INTO `facturas` VALUES (1, 1, '2024-09-14 00:23:35', '2024-09-14 00:23:39
 DROP TABLE IF EXISTS `formas_envios`;
 CREATE TABLE `formas_envios`  (
   `id_forma_envio` int NOT NULL AUTO_INCREMENT,
-  `nombre_envio` varchar(65) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `nombre_envio` varchar(65) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   `monto_envio` decimal(10, 2) NULL DEFAULT NULL,
   PRIMARY KEY (`id_forma_envio`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of formas_envios
@@ -160,13 +160,13 @@ INSERT INTO `formas_envios` VALUES (4, 'RETIRO EN TIENDA', 0.00);
 DROP TABLE IF EXISTS `localidades`;
 CREATE TABLE `localidades`  (
   `id_localidad` int NOT NULL AUTO_INCREMENT,
-  `nombre_loc` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `codigo_postal` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `nombre_loc` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `codigo_postal` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   `id_departamento` int NULL DEFAULT NULL,
   PRIMARY KEY (`id_localidad`) USING BTREE,
   INDEX `fk_localidades_departamentos1_idx`(`id_departamento`) USING BTREE,
   CONSTRAINT `fk_localidades_departamentos1` FOREIGN KEY (`id_departamento`) REFERENCES `departamentos` (`id_departamento`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 390 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 390 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of localidades
@@ -567,9 +567,9 @@ INSERT INTO `localidades` VALUES (389, 'JAGUE', '5367', 16);
 DROP TABLE IF EXISTS `medio_pagos`;
 CREATE TABLE `medio_pagos`  (
   `id_medio_pago` int NOT NULL AUTO_INCREMENT,
-  `nombre_pago` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `nombre_pago` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id_medio_pago`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of medio_pagos
@@ -587,9 +587,9 @@ INSERT INTO `medio_pagos` VALUES (6, 'EFECTIVO');
 DROP TABLE IF EXISTS `paises`;
 CREATE TABLE `paises`  (
   `id_pais` int NOT NULL AUTO_INCREMENT,
-  `nombre_pais` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `nombre_pais` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id_pais`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 202 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 202 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of paises
@@ -802,10 +802,10 @@ INSERT INTO `paises` VALUES (201, 'ZIMBABUE');
 DROP TABLE IF EXISTS `productores`;
 CREATE TABLE `productores`  (
   `id_productor` int NOT NULL AUTO_INCREMENT,
-  `nombre_productor` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `nombre_productor` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   `id_usuario` int NULL DEFAULT NULL,
   PRIMARY KEY (`id_productor`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of productores
@@ -822,9 +822,9 @@ INSERT INTO `productores` VALUES (5, 'MARCO MEJÍA', 8);
 DROP TABLE IF EXISTS `productos`;
 CREATE TABLE `productos`  (
   `id_producto` int NOT NULL AUTO_INCREMENT,
-  `nombre_producto` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `descripcion_corta` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `descripcion_larga` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+  `nombre_producto` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `descripcion_corta` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `descripcion_larga` text CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL,
   `precio` decimal(10, 2) NULL DEFAULT NULL,
   `cantidad` int NULL DEFAULT NULL,
   `id_tipo_cafe` int NULL DEFAULT NULL,
@@ -833,12 +833,13 @@ CREATE TABLE `productos`  (
   `updated_at` datetime NULL DEFAULT NULL,
   `id_pais` int NULL DEFAULT NULL,
   `idproductor` int NULL DEFAULT NULL,
-  `region` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `procesamiento_natural` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `procesamiento_lavado` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `imagen_principal` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `imagen_secundaria` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `altitud` varchar(65) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `region` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `procesamiento_natural` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `procesamiento_lavado` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `imagen_principal` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `imagen_secundaria` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `altitud` varchar(65) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `cantidad_seleccionada` int NULL DEFAULT NULL,
   PRIMARY KEY (`id_producto`) USING BTREE,
   INDEX `fk_productos_tipos_cafe1_idx`(`id_tipo_cafe`) USING BTREE,
   INDEX `fk_productos_unidad_medida1_idx`(`idunidad_medida`) USING BTREE,
@@ -848,19 +849,19 @@ CREATE TABLE `productos`  (
   CONSTRAINT `fk_productos_productores1` FOREIGN KEY (`idproductor`) REFERENCES `productores` (`id_productor`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_productos_tipos_cafe1` FOREIGN KEY (`id_tipo_cafe`) REFERENCES `tipos_cafe` (`id_tipo_cafe`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_productos_unidad_medida1` FOREIGN KEY (`idunidad_medida`) REFERENCES `unidad_medida` (`id_unidad_medida`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 25 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 26 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of productos
 -- ----------------------------
-INSERT INTO `productos` VALUES (1, 'API AROMA', 'Fabricado en Argentina', ' Café de alta calidad de Argentina con notas de sabor únicas que resaltan su origen. Este café ha sido cuidadosamente cultivado y procesado para ofrecer una experiencia sensorial excepcional. La combinación de altitudes y métodos de procesamiento confiere un perfil complejo y balanceado, ideal para los amantes del café de especialidad.', 59000.00, 100, 1, 1, '2024-09-14 00:08:45', '2024-09-22 00:24:30', 9, 1, 'Cuyo', '50 %', '50 %', 'apiAroma.png', 'apiAroma.png', '800 y 1650');
-INSERT INTO `productos` VALUES (2, 'ORACLE', 'Fabricado en Brasil', 'Café de alta calidad de Brasil con un perfil de sabor robusto y vibrante. Cultivado en las tierras fértiles de Brasil, este café ofrece una combinación de notas frutales y achocolatadas que deleitan el paladar. La cuidadosa selección y los métodos tradicionales de procesamiento aseguran una experiencia rica y aromática, ideal para los amantes del café de especialidad.', 40000.00, 100, 1, 1, '2024-09-22 04:10:06', '2024-09-22 13:39:28', 27, 2, 'Minas Gerais', '100%', '0', 'oracle.png', 'oracle.png', '1100 - 1450');
-INSERT INTO `productos` VALUES (3, 'SCRIPT', 'Fabricado en Guatemala', 'Café de alta calidad de Guatemala, conocido por su perfil de sabor brillante y afrutado. Este café es cultivado en las altitudes de Guatemala, lo que le proporciona un carácter único con notas de cacao y cítricos. El proceso de recolección y secado artesanal asegura una experiencia de taza excepcional, perfecta para aquellos que buscan un café de especialidad con una historia y sabor distintivos.', 75500.00, 100, 1, 1, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 76, 3, 'Huehuetenango', '100%', '0', 'script.png', 'script.png', '1600');
-INSERT INTO `productos` VALUES (4, 'STACK LATTE', 'Fabricado en Colombia', 'Café de alta calidad de Colombia, apreciado por su perfil de sabor suave y balanceado. Cultivado en las montañas colombianas, este café destaca por sus notas de caramelo y frutos secos. El cuidadoso proceso de selección y procesamiento garantiza una taza rica y compleja, ideal para quienes buscan disfrutar de un café de especialidad con una experiencia sensorial inigualable.', 55000.00, 100, 1, 1, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 43, 4, 'Salado Blanco, Huila', '100%', '0', 'stackLatte.png', 'stackLatte.png', '1680');
-INSERT INTO `productos` VALUES (5, 'SYNTAX LATTE', 'Fabricado en Bolivia', 'Café de alta calidad de Bolivia con un perfil de sabor único que destaca su origen. Este café ha sido cuidadosamente cultivado y procesado en las montañas bolivianas para ofrecer una experiencia sensorial excepcional. La combinación de altitudes y métodos de procesamiento confiere a este café un carácter complejo y equilibrado, perfecto para los amantes del café de especialidad que buscan descubrir nuevos sabores.', 53000.00, 100, 1, 1, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 24, 5, 'Finca El Porvenir', '0', '100%', 'syntaxLatte.png', 'syntaxLatte.png', '1700 - 2000');
-INSERT INTO `productos` VALUES (6, 'LOGIC', 'Fabricado en Ecuador', 'Café de alta calidad de Ecuador, conocido por su perfil de sabor excepcional que resalta su origen. Cultivado en las montañas ecuatorianas, este café se distingue por sus notas florales y frutales. El meticuloso proceso de cultivo y procesamiento garantiza una taza aromática y equilibrada, ideal para quienes aprecian los cafés especiales con carácter.', 48000.00, 100, 1, 1, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 53, 4, 'Galápagos', '50 %', '50 %', 'logic.png', 'logic.png', '800 y 1650');
-INSERT INTO `productos` VALUES (7, 'FULL STACK', 'Fabricado en Argentina', 'Café de alta calidad fabricado en Argentina, reconocido por su perfil de sabor robusto y profundo que refleja la pasión y tradición del café argentino. Este café es cultivado en las regiones cafetaleras argentinas y se caracteriza por sus notas intensas y equilibradas. El proceso de cultivo y tostado meticuloso asegura una taza rica y satisfactoria, ideal para los conocedores del café.', 60000.00, 100, 1, 1, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 9, 4, 'Noa', '50 %', '50 %', 'fullStack.png', 'fullStack.png', '800 y 1650');
-INSERT INTO `productos` VALUES (8, 'EXPRESS', 'Fabricado en Brasil', 'Café de alta calidad de Brasil, conocido por su perfil de sabor vibrante y dulce que captura la esencia única de las tierras brasileñas. Este café es cultivado en las ricas tierras cafetaleras de Brasil y se distingue por sus notas frutales y chocolateadas. El proceso de cultivo cuidadoso y el tostado artesanal garantizan una taza indulgente y deliciosa, ideal para disfrutar en cualquier momento del día.', 42000.00, 100, 1, 1, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 27, 4, 'Nordeste', '50 %', '50 %', 'express.png', 'express.png', '800 y 1650');
+INSERT INTO `productos` VALUES (1, 'API AROMA', 'Fabricado en Argentina', ' Café de alta calidad de Argentina con notas de sabor únicas que resaltan su origen. Este café ha sido cuidadosamente cultivado y procesado para ofrecer una experiencia sensorial excepcional. La combinación de altitudes y métodos de procesamiento confiere un perfil complejo y balanceado, ideal para los amantes del café de especialidad.', 59000.00, 100, 1, 1, '2024-09-14 00:08:45', '2024-11-07 01:52:11', 9, 1, 'Cuyo', '50 %', '50 %', 'apiAroma.png', 'apiAroma.png', '1650', NULL);
+INSERT INTO `productos` VALUES (2, 'ORACLE', 'Fabricado en Brasil', 'Café de alta calidad de Brasil con un perfil de sabor robusto y vibrante. Cultivado en las tierras fértiles de Brasil, este café ofrece una combinación de notas frutales y achocolatadas que deleitan el paladar. La cuidadosa selección y los métodos tradicionales de procesamiento aseguran una experiencia rica y aromática, ideal para los amantes del café de especialidad.', 40000.00, 100, 1, 1, '2024-09-22 04:10:06', '2024-09-22 13:39:28', 27, 2, 'Minas Gerais', '100%', '0', 'oracle.png', 'oracle.png', '1100 - 1450', NULL);
+INSERT INTO `productos` VALUES (3, 'SCRIPT', 'Fabricado en Guatemala', 'Café de alta calidad de Guatemala, conocido por su perfil de sabor brillante y afrutado. Este café es cultivado en las altitudes de Guatemala, lo que le proporciona un carácter único con notas de cacao y cítricos. El proceso de recolección y secado artesanal asegura una experiencia de taza excepcional, perfecta para aquellos que buscan un café de especialidad con una historia y sabor distintivos.', 75500.00, 100, 1, 1, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 76, 3, 'Huehuetenango', '100%', '0', 'script.png', 'script.png', '1600', NULL);
+INSERT INTO `productos` VALUES (4, 'STACK LATTE', 'Fabricado en Colombia', 'Café de alta calidad de Colombia, apreciado por su perfil de sabor suave y balanceado. Cultivado en las montañas colombianas, este café destaca por sus notas de caramelo y frutos secos. El cuidadoso proceso de selección y procesamiento garantiza una taza rica y compleja, ideal para quienes buscan disfrutar de un café de especialidad con una experiencia sensorial inigualable.', 55000.00, 100, 1, 1, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 43, 4, 'Salado Blanco, Huila', '100%', '0', 'stackLatte.png', 'stackLatte.png', '1680', NULL);
+INSERT INTO `productos` VALUES (5, 'SYNTAX LATTE', 'Fabricado en Bolivia', 'Café de alta calidad de Bolivia con un perfil de sabor único que destaca su origen. Este café ha sido cuidadosamente cultivado y procesado en las montañas bolivianas para ofrecer una experiencia sensorial excepcional. La combinación de altitudes y métodos de procesamiento confiere a este café un carácter complejo y equilibrado, perfecto para los amantes del café de especialidad que buscan descubrir nuevos sabores.', 53000.00, 100, 1, 1, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 24, 5, 'Finca El Porvenir', '0', '100%', 'syntaxLatte.png', 'syntaxLatte.png', '1700 - 2000', NULL);
+INSERT INTO `productos` VALUES (6, 'LOGIC', 'Fabricado en Ecuador', 'Café de alta calidad de Ecuador, conocido por su perfil de sabor excepcional que resalta su origen. Cultivado en las montañas ecuatorianas, este café se distingue por sus notas florales y frutales. El meticuloso proceso de cultivo y procesamiento garantiza una taza aromática y equilibrada, ideal para quienes aprecian los cafés especiales con carácter.', 48000.00, 100, 1, 1, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 53, 4, 'Galápagos', '50 %', '50 %', 'logic.png', 'logic.png', '800 y 1650', NULL);
+INSERT INTO `productos` VALUES (7, 'FULL STACK', 'Fabricado en Argentina', 'Café de alta calidad fabricado en Argentina, reconocido por su perfil de sabor robusto y profundo que refleja la pasión y tradición del café argentino. Este café es cultivado en las regiones cafetaleras argentinas y se caracteriza por sus notas intensas y equilibradas. El proceso de cultivo y tostado meticuloso asegura una taza rica y satisfactoria, ideal para los conocedores del café.', 60000.00, 100, 1, 1, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 9, 4, 'Noa', '50 %', '50 %', 'fullStack.png', 'fullStack.png', '800 y 1650', NULL);
+INSERT INTO `productos` VALUES (8, 'EXPRESS', 'Fabricado en Brasil', 'Café de alta calidad de Brasil, conocido por su perfil de sabor vibrante y dulce que captura la esencia única de las tierras brasileñas. Este café es cultivado en las ricas tierras cafetaleras de Brasil y se distingue por sus notas frutales y chocolateadas. El proceso de cultivo cuidadoso y el tostado artesanal garantizan una taza indulgente y deliciosa, ideal para disfrutar en cualquier momento del día.', 42000.00, 100, 1, 1, '2024-09-23 04:00:01', '2024-09-22 13:39:28', 27, 4, 'Nordeste', '50 %', '50 %', 'express.png', 'express.png', '800 y 1650', NULL);
 
 -- ----------------------------
 -- Table structure for provincias
@@ -868,12 +869,12 @@ INSERT INTO `productos` VALUES (8, 'EXPRESS', 'Fabricado en Brasil', 'Café de a
 DROP TABLE IF EXISTS `provincias`;
 CREATE TABLE `provincias`  (
   `id_provincia` int NOT NULL AUTO_INCREMENT,
-  `nombre_provincia` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `nombre_provincia` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   `id_pais` int NULL DEFAULT NULL,
   PRIMARY KEY (`id_provincia`) USING BTREE,
   INDEX `fk_provincias_paises1_idx`(`id_pais`) USING BTREE,
   CONSTRAINT `fk_provincias_paises1` FOREIGN KEY (`id_pais`) REFERENCES `paises` (`id_pais`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 24 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 24 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of provincias
@@ -921,7 +922,7 @@ CREATE TABLE `rel_carrito_productos`  (
   INDEX `fk_rel_carrito_productos_carrito1_idx`(`id_carrito`) USING BTREE,
   CONSTRAINT `fk_rel_carrito_productos_carrito1` FOREIGN KEY (`id_carrito`) REFERENCES `carrito` (`id_carrito`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_rel_carrito_productos_productos1` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of rel_carrito_productos
@@ -934,9 +935,9 @@ INSERT INTO `rel_carrito_productos` VALUES (1, 1, 1, 1, 59000.00, '2024-09-14 00
 DROP TABLE IF EXISTS `roles`;
 CREATE TABLE `roles`  (
   `id_rol` int NOT NULL AUTO_INCREMENT,
-  `nombre_rol` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `nombre_rol` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id_rol`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of roles
@@ -951,9 +952,9 @@ INSERT INTO `roles` VALUES (3, 'PRODUCTOR');
 DROP TABLE IF EXISTS `tipos_cafe`;
 CREATE TABLE `tipos_cafe`  (
   `id_tipo_cafe` int NOT NULL AUTO_INCREMENT,
-  `nombre_cafe` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `nombre_cafe` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id_tipo_cafe`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of tipos_cafe
@@ -970,9 +971,9 @@ INSERT INTO `tipos_cafe` VALUES (5, 'MODO VOLTURNO');
 DROP TABLE IF EXISTS `unidad_medida`;
 CREATE TABLE `unidad_medida`  (
   `id_unidad_medida` int NOT NULL AUTO_INCREMENT,
-  `nombre_medida` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `nombre_medida` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id_unidad_medida`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of unidad_medida
@@ -986,24 +987,24 @@ INSERT INTO `unidad_medida` VALUES (2, '250 GRAMOS');
 DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE `usuarios`  (
   `id_usuario` int NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `apellido` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `telefono` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `dni` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `imagen_perfil` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `barrio` varchar(65) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `calle` varchar(75) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `nombre` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `apellido` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `telefono` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `dni` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `email` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `imagen_perfil` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `barrio` varchar(65) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `calle` varchar(75) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   `numero` int NULL DEFAULT NULL,
-  `piso` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `departamento` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `piso` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `departamento` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   `created_at` datetime NULL DEFAULT NULL,
   `updated_at` datetime NULL DEFAULT NULL,
   `id_localidad` int NULL DEFAULT NULL,
   `id_estado` int NULL DEFAULT NULL,
   `id_rol` int NULL DEFAULT NULL,
-  `cuil_t` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `clave` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `cuil_t` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
+  `clave` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id_usuario`) USING BTREE,
   INDEX `fk_usuarios_roles_idx`(`id_rol`) USING BTREE,
   INDEX `fk_usuarios_estado1_idx`(`id_estado`) USING BTREE,
@@ -1011,7 +1012,7 @@ CREATE TABLE `usuarios`  (
   CONSTRAINT `fk_usuarios_estado1` FOREIGN KEY (`id_estado`) REFERENCES `estado` (`id_estado`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuarios_localidades1` FOREIGN KEY (`id_localidad`) REFERENCES `localidades` (`id_localidad`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuarios_roles` FOREIGN KEY (`id_rol`) REFERENCES `roles` (`id_rol`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE = InnoDB AUTO_INCREMENT = 15 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '					' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 18 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci COMMENT = '					' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of usuarios
@@ -1027,8 +1028,11 @@ INSERT INTO `usuarios` VALUES (8, 'Javier', 'Bustos', '3804568978', '40265896', 
 INSERT INTO `usuarios` VALUES (9, 'Alejandro', 'Fernández', '3804444223', '32156965', 'alefernandez@gmail.com', 'avatar-mini2.jpg', 'PAIMÁN', 'SANTA FÉ', 655, '0', '0', '2024-09-20 07:22:05', '2024-09-20 07:22:05', 38, 1, 2, '53321569654', '$2b$10$HFJXP7PH89qB5XHyfexWyu7xy1gIdCLKfGDtnz8GRoV1t9jfoRY86');
 INSERT INTO `usuarios` VALUES (10, 'Cecilia', 'Bordón', '3804385507', '25638956', 'ceciliabordon@gmail.com', 'avatar-mini2.jpg', 'ALBERDI', 'URQUIZA', 229, '0', '0', '2024-09-20 07:28:11', '2024-09-20 07:28:11', 38, 1, 2, '52563895623', '$2b$10$X3SEPwcC3qBxCrCSDvqVieOLh9WdbzLRXOJyZu7Sp2UtR.GLd5XnC');
 INSERT INTO `usuarios` VALUES (11, 'Matías', 'Álvarez', '3825535033', '37492767', 'matiasalvarez@gmail.com', 'avatarempresa.jpg', 'MACROCENTROCENTRO', '8 DE DICIEMBRE', 515, '0', '0', '2024-09-13 23:52:10', '2024-09-13 23:52:13', 38, 1, 3, '20374927672', '$10$mloK1rqTbjRMuCS5j8bjyuMDH3r9AjwZnIopxl');
-INSERT INTO `usuarios` VALUES (12, 'Mario', 'Alonso', '03804565656', '27161335', 'admin3@admin.com', 'avatar1.jpg', 'Parque sud', 'Las Heras', 1586, '0', '1', '2024-09-24 00:02:48', '2024-10-10 02:26:48', 1, 1, 1, '27271613356', '$2b$10$abhttYlebWjDBqKzoclOXuNcpWfpYBNx0cGFc7OcAUtBoRN3JyBn2');
+INSERT INTO `usuarios` VALUES (12, 'Mario', 'Alonso', '03804565656', '27161335', 'admin3@admin.com', 'leo.png-1730982788797.png', 'Parque sud', 'Las Heras', 1586, '0', '1', '2024-09-24 00:02:48', '2024-11-07 12:33:08', 1, 1, 1, '27271613356', '$2b$10$fMZnqN.6YNsMHhH7/xlQ6eEYXjnoohTX3PEZHOAtE.2XUv6KClwXq');
 INSERT INTO `usuarios` VALUES (13, 'Mario', 'Alan', '03804565656', NULL, 'admin33@admin.com', 'avatar-mini2.jpg', NULL, NULL, NULL, NULL, NULL, '2024-09-25 00:14:44', '2024-09-25 00:14:44', NULL, 1, 2, NULL, '$2b$10$43xAD.eSueSaAtI7851Yi.FRGmbb/QepAk1e.4ylrT/zKjZ/EAsLa');
 INSERT INTO `usuarios` VALUES (14, 'Amalia', 'Mercado', '2365656565', NULL, 'amaliamercado@gmail.com', 'avatar-mini2.jpg', NULL, NULL, NULL, NULL, NULL, '2024-10-10 02:22:12', '2024-10-10 02:22:12', NULL, 1, 2, NULL, '$2b$10$mV1pfLS24gaD33r8.EhKwu5OpI4qUIH9alWkbbQdjbPu517iZhLgC');
+INSERT INTO `usuarios` VALUES (15, 'Leo Martin', 'Loyola', '03804533543', '26731952', 'leo@leo.com', 'leo.png-1730683476526.png', 'parque sud', 'Las Heras', 1586, '0', '1', '2024-11-04 00:04:14', '2024-11-04 01:24:36', 38, 1, 1, '23267319529', '$2b$10$CbPWLoH4Y1Ft//1kx9O9L./6IdPzSoARbjIIzfV69s3ZyileS3LNC');
+INSERT INTO `usuarios` VALUES (16, 'Leo Martin', 'Loyola', '382455552', NULL, 'leoloyola@leo.com', 'avatar-mini2.jpg', NULL, NULL, NULL, NULL, NULL, '2024-11-07 01:26:30', '2024-11-07 01:26:30', NULL, 1, 2, NULL, '$2b$10$yW3FBbb7MO5OCwFyGnSnJuOddlWYXJOKwA9RUrgNOXS3RXwxRzC8K');
+INSERT INTO `usuarios` VALUES (17, 'Rodolfo', 'Arturao', '213215454', NULL, 'rodolfo@gmail.com', 'avatar-mini2.jpg', NULL, NULL, NULL, NULL, NULL, '2024-11-07 01:30:44', '2024-11-07 01:30:44', NULL, 1, 2, NULL, '$2b$10$KSD0zT279xZ1VRkpwZ3hteYLyE.JNDXEgVJok4S7Cdus8jvnJ2gAa');
 
 SET FOREIGN_KEY_CHECKS = 1;
